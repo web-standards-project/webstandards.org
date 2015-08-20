@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>The Web Standards Project &#187; Bugs</title>
+	<atom:link href="http://www.webstandards.org/buzz/bugs/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.webstandards.org</link>
+	<description>Working together for standards</description>
+	<lastBuildDate>Fri, 01 Mar 2013 18:30:30 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Acid3 receptions and misconceptions and do we have a winner?</title>
+		<link>http://www.webstandards.org/2008/10/02/dowehaveawinner/</link>
+		<comments>http://www.webstandards.org/2008/10/02/dowehaveawinner/#comments</comments>
+		<pubDate>Fri, 03 Oct 2008 03:37:42 +0000</pubDate>
+		<dc:creator>lgunther</dc:creator>
+				<category><![CDATA[Acid3]]></category>
+		<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[Bugs]]></category>
+
+		<guid isPermaLink="false">http://www.webstandards.org/?p=1157</guid>
+		<description><![CDATA[Acid3 progress and what it really means.]]></description>
+			<content:encoded><![CDATA[<p><a href="http://acid3.acidtests.org/">Acid3</a> is probably the most visible thing that WaSP has done the last year. When Google Chrome was launched almost every review included our little test as an indicator of standards support. It is often mentioned in blogs and articles. Now the <a href="http://webkit.org/blog/280/full-pass-of-acid-3/">Surfin Safari blog has announced</a> that the team behind Webkit considers that they have passed the test in every aspect. And no doubt this is a great achievement. Congratulations to the Webkit team, but even more we would like to congratulate the average web user &#8211;  who in a few years thanks to our test we hope will get a better experience!</p>
+<p>What exactly does it mean to pass the Acid3 test?</p>
+<p>There has been some confusion about the test and its importance. Some people have been saying things like ”my browser does not pass the test and I have no problems using it”. Quite a few other people seem to think that Webkit and Gogi (Opera&#8217;s internal build) passed the test already in March – despite the fact that neither team has made this claim.</p>
+<p>To answer these misconceptions we need to address the issue of what exactly is being tested and how. The main part of test is automated through JavaScript, a sort of test harness that runs 100 subtests. Getting a score of 100 is not the same as passing Acid3 – a common misconception, or perhaps an oversimplification.</p>
+<p>Many subtests are high on a developer&#8217;s wish list: Full CSS 3 selectors support, media queries, SVG fonts. Admittedly a few others test edge cases and more esoteric features – but the test was supposed to be a significant challenge!</p>
+<p>The second part is a rendering test. Some of the scripted subtests produce results that affect the rendering, but there are also rendering issues that come in addition to these. Some of them are high on many designers&#8217; wish list: Text shadow, downloadable fonts, and display: inline-block.</p>
+<p>The third test is the so called &#8220;smoothness&#8221; criterion. It is basically a speed test. No subtest may take too long – and especially subtest 26 is challenging. Compared to <a href="http://mootools.net/slickspeed/">Slickspeed</a>, <a href="http://webkit.org/perf/sunspider-0.9/sunspider.html">Sun Spider</a>, the <a href="http://code.google.com/apis/v8/run.html">V8 test suite</a> or <a href="http://dromaeo.com/">Dromaeo</a> Acid3 is not so thorough. It will give some indication of a browsers speed, though.</p>
+<p>This is exactly as planned. Acid3 was not meant to be the one and only indication of a browser&#8217;s performance. In fact many other test suites are far more important. (We provide links to some of them below.)</p>
+<p>Testing is really important. Without tests that check how well a certain browser follows standards, i.e. applies mark up and displays the result correctly, we can never guarantee an open, fully interoperable web.</p>
+<p>A highly visible test like Acid 3 hopefully helps to promote such interoperability. One can also hope that all the other tests will receive the attention they deserve. Writing them is not a glamorous task, but highly essential.</p>
+<p>Apart from improving its support for CSS in its browser, Microsoft has <a href="http://blogs.gotdotnet.com/ie/archive/2008/08/19/more-tests-submitted-to-the-w3c-css-2-1-test-suite.aspx">contributed 2524 test cases</a> to the CSS 2.1 test suite. For that they deserve credit!</p>
+<p>We all know that Internet Explorer currently lag a bit behind the other browsers in standards compliance. Indeed they are last of the big ones to pass <a href="http://acid2.acidtests.org/">Acid2</a> and they fail Acid3 more than any other browser. But can we declare Webkit as the best rendering engine now that they pass it?</p>
+<p>Of course not. Since Acid3 is only one indicator of many. Webkit&#8217;s achievement is great – and there are many other really exciting things they are pioneering, like <a href="http://webkit.org/specs/CSSVisualEffects/CSSTransitions.html">CSS transitions</a> and transformations. And with <a href="http://webkit.org/blog/214/introducing-squirrelfish-extreme/">Squirrelfish Extreme</a> JavaScript performance looks really exciting as well.</p>
+<p>In other regards Opera is a clear leader. It is <a href="http://www.codedread.com/svg-support.php">the only browser that supports more than 90 % of the SVG test suite</a>. It is the only browser that implements <a href="http://www.whatwg.org/specs/web-forms/current-work/">Web Forms 2.0</a>, currently <a href="http://blog.whatwg.org/this-week-in-html-5-episode-5">being merged into HTML 5</a>. They supported media queries and SMIL long before Acid3 came out.</p>
+<p>Gecko (with Spidermonkey) is no longer an underdog. Besides the fun of meeting the technical challenge it is not hard to guess that the Webkit team rushed to pass Acid3 also for marketing reasons – that they perhaps need a bit more than Mozilla. Mozilla concentrated on releasing Firefox 3 before Acid 3 received any real attention. Now that they are working on it they are impressive in another way, compared to Webkit. Looking at the discussions for <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=410460">bug 410460</a> and its related bugs, it is clear that any improvement must be rock solid. Work often continues even when a particular feature is good enough for Acid3.</p>
+<p>In fact, there is actually one open issue still in Acid 3 that might temporarily cause Webkit to become incompliant again. <a href="http://lists.w3.org/Archives/Public/www-style/2008Sep/0218.html">http://lists.w3.org/Archives/Public/www-style/2008Sep/0218.html</a>. I rest assured that a fix probably already is being made, though.</p>
+<p>Perhaps one can compare this to a race where you are supposed to run a distance, with a bucket of water. One competitor crosses the finishing line first, the other, on the other hand, has not lost a single drop from his bucket. Both have done great. (By the way, <a href="http://forums.mozillazine.org/viewtopic.php?f=42&#038;t=851335&#038;start=15&#038;st=0&#038;sk=t&#038;sd=a">internal builds of Firefox get a score of 97 now</a>, and downloadable fonts work on Windows and Mac.)</p>
+<p>In the end the winner is neither Webkit, Opera, Mozilla nor Microsoft, but developers who get more powerful features to work with and more consistency between browsers. And that means that in the long run they are able to focus on user experience, not browser shortcomings. This means that the true winner of Acid3 is anybody who surfs the web.</p>
+<p>Some other test suites for your review:</p>
+<ul>
+<li><a href="http://www.w3.org/Style/CSS/Test/CSS2.1/current/">Cascading Style Sheets level 2 revision 1 </a></li>
+<li><a href="http://www.w3.org/Style/CSS/Test/CSS3/Selectors/current/">Selectors</a></li>
+<li><a href="http://www.w3.org/Style/CSS/Test/CSS3/Color/20070927/">CSS Color Module</a></li>
+<li><a href="http://www.w3.org/DOM/Test/">Collection of DOM tests</a></li>
+<li><a href="http://en.wikipedia.org/wiki/SVG">SVG</a></li>
+<li><a href="http://en.wikipedia.org/wiki/HTML_5">Web Forms</a></li>
+<li><a href="http://philip.html5.org/tests/canvas/suite/tests/">Canvas</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2008/10/02/dowehaveawinner/feed/</wfw:commentRss>
+		<slash:comments>23</slash:comments>
+		</item>
+		<item>
+		<title>Acid 2 Test Back to Normal</title>
+		<link>http://www.webstandards.org/2008/07/24/acid-2-test-back-to-normal/</link>
+		<comments>http://www.webstandards.org/2008/07/24/acid-2-test-back-to-normal/#comments</comments>
+		<pubDate>Fri, 25 Jul 2008 02:11:37 +0000</pubDate>
+		<dc:creator>feather</dc:creator>
+				<category><![CDATA[Acid2]]></category>
+		<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[Bugs]]></category>
+
+		<guid isPermaLink="false">http://www.webstandards.org/?p=1139</guid>
+		<description><![CDATA[The Acid 2 test hosted here on the WaSP site was broken but is now fixed.]]></description>
+			<content:encoded><![CDATA[<p>For a while now we&#8217;ve had a problem with the <a href="http://www.webstandards.org/files/acid2/test.html">Acid 2 Test</a> on the WaSP site. If you&#8217;re unfamiliar with the Acid 2 Test, it is essentially a test for browser vendors to use as a means to gauge their standards compliance. If your browser renders the Acid 2 Test page the same as the <a href="http://www.webstandards.org/files/acid2/reference.html">Acid 2 reference rendering</a>, then you know you&#8217;re hitting the mark.</p>
+<p>I&#8217;ll be honest: over the last 10 days, I&#8217;ve learned more about the Acid 2 Test than I ever wanted to know. If you want to do the same, you might start with <a href="http://www.webstandards.org/action/acid2/guide/">Acid 2: The Guided Tour</a>.</p>
+<p>The short version is that part of Acid 2 is a test for the way a browser handles an <code>&lt;object&gt;</code> element when the data attribute references a URL that returns an HTTP status code of 404. A number of caching rules, mod_rewrite rules and redirects all collided to create a problem with our 404. The cached version of our 404 page was returning an HTTP status of 200. As you might expect, this basically makes the test useless.</p>
+<p>Acid 2 was broken. Now it is not. Carry on.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2008/07/24/acid-2-test-back-to-normal/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Safari 3 Public Beta for Mac and Windows</title>
+		<link>http://www.webstandards.org/2007/06/12/safari-3-public-beta-for-mac-and-windows/</link>
+		<comments>http://www.webstandards.org/2007/06/12/safari-3-public-beta-for-mac-and-windows/#comments</comments>
+		<pubDate>Tue, 12 Jun 2007 06:07:10 +0000</pubDate>
+		<dc:creator>Kimberly Blessing</dc:creator>
+				<category><![CDATA[Acid2]]></category>
+		<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[Bugs]]></category>
+
+		<guid isPermaLink="false">http://www.webstandards.org/2007/06/12/safari-3-public-beta-for-mac-and-windows/</guid>
+		<description><![CDATA[As the Apple Worldwide Developers Conference kicked off today, Steve Jobs announced the availability of the Safari 3 Public Beta — for both Mac and Windows. Caution: bug reports abound.]]></description>
+			<content:encoded><![CDATA[<p>As the Apple Worldwide Developers Conference kicked off today, Steve Jobs announced the availability of the Safari 3 Public Beta &#8212; for both Mac and Windows. <a href="http://www.apple.com/safari/">Download it here</a>.</p>
+<p>I&#8217;ve only just installed it on Windows XP, but it has frozen once and crashed once already. There are complaints of <a href="http://www.codinghorror.com/blog/archives/000884.html">blurry fonts</a> and <a href="http://apple.slashdot.org/apple/07/06/12/0120230.shtml">security bugs</a>. It&#8217;s not rendering <a href="http://www.webstandards.org/files/acid2/test.html#top">the Acid2 test</a> correctly. (In fact, it&#8217;s not rendering the WaSP site correctly either. I assume the same is true on the Mac, but can someone verify?)</p>
+<p>Don&#8217;t forget to send in your bug reports via the <a href="http://webkit.org/quality/reporting.html">WebKit bug reporting form</a> or the browser itself (Help > Report Bugs to Apple).</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2007/06/12/safari-3-public-beta-for-mac-and-windows/feed/</wfw:commentRss>
+		<slash:comments>85</slash:comments>
+		</item>
+		<item>
+		<title>You can improve IE.next</title>
+		<link>http://www.webstandards.org/2006/11/04/you-can-improve-ie-next/</link>
+		<comments>http://www.webstandards.org/2006/11/04/you-can-improve-ie-next/#comments</comments>
+		<pubDate>Sat, 04 Nov 2006 17:49:32 +0000</pubDate>
+		<dc:creator>agustafson</dc:creator>
+				<category><![CDATA[Action]]></category>
+		<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[Bugs]]></category>
+		<category><![CDATA[DOM]]></category>
+		<category><![CDATA[DOM Scripting TF]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[Microsoft TF]]></category>
+		<category><![CDATA[Outreach]]></category>
+
+		<guid isPermaLink="false">http://www.webstandards.org/2006/11/04/you-can-improve-ie-next/</guid>
+		<description><![CDATA[If you've ever wanted the opportunity to tell Microsoft what they should do with IE next, now is the time.]]></description>
+			<content:encoded><![CDATA[<p>The Microsoft Task Force, DOM Scripting Task Force, and the JS Ninjas have been approached to help give the IE team some direction for improvements needed in IE.next, focusing mainly on JavaScript and the DOM. Together, we&#8217;ve begun assembling <a href="http://easy-designs.stikipad.com/ie-next-wishlist">a list of things we think need addressing</a> (bugs &#38; implementation issues, enhancements in language support, etc.). We&#8217;ve tried to keep it balanced, with some things for the seasoned JavaScript developer and some for the folks who are just starting out in the world of DOM Scripting, but we need your help to make sure we aren&#8217;t missing anything.</p>
+<p>In the interest of time and keeping the process streamlined and organized, we&#8217;ve opted to make the wiki invitation-only, but we do need your input. Please have a look at what we&#8217;ve put together so far and leave your thoughts/ideas/recommendations in the comments below. We don&#8217;t know how soon we&#8217;ll need to get this list over to the IE team, so please don&#8217;t wait to long.</p>
+<p>We will work to incorporate any relevant ideas into the final list, prioritize it, and pass it along to the IE team. Once the list is out the door, we will need to develop test cases for each item on it (some of which we&#8217;ve already begun), so if you are interested, please let us know that as well.</p>
+<p><strong>Note:</strong> We&#8217;re not guaranteed to get everything we ask for, but they <em>are</em> listening.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2006/11/04/you-can-improve-ie-next/feed/</wfw:commentRss>
+		<slash:comments>75</slash:comments>
+		</item>
+		<item>
+		<title>Flash, JavaScript, UX, standards, apologia, apologies, and one man&#8217;s opinions</title>
+		<link>http://www.webstandards.org/2006/08/18/flash-javascript-ux-standards-apologia-apologies-and-one-mans-opinions/</link>
+		<comments>http://www.webstandards.org/2006/08/18/flash-javascript-ux-standards-apologia-apologies-and-one-mans-opinions/#comments</comments>
+		<pubDate>Fri, 18 Aug 2006 23:33:21 +0000</pubDate>
+		<dc:creator>bhenick</dc:creator>
+				<category><![CDATA[Accessibility]]></category>
+		<category><![CDATA[Authoring Tools]]></category>
+		<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[Bugs]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[Education]]></category>
+		<category><![CDATA[Emerging Technology]]></category>
+		<category><![CDATA[HTML/XHTML]]></category>
+		<category><![CDATA[Training]]></category>
+		<category><![CDATA[Usability]]></category>
+		<category><![CDATA[Validation]]></category>
+		<category><![CDATA[Web Standards (general)]]></category>
+
+		<guid isPermaLink="false">http://www.webstandards.org/2006/08/18/flash-javascript-ux-standards-apologia-apologies-and-one-mans-opinions/</guid>
+		<description><![CDATA[The recent discussion of plug-in implementation, here and elsewhere, points to broader issues that affect everyone who is invested in web standards adoption.]]></description>
+			<content:encoded><![CDATA[<p>My last <a href="http://www.webstandards.org/2006/08/15/valid-flash-video-and-audio-embed-object-markup/" title="Valid Flash, video, and audio embed (object) markup.">two</a> <a href="http://www.webstandards.org/2006/08/17/flash-javascript-and-web-standards-like-sodium-and-water/" title="Flash, JavaScript, and web standards - like sodium and water?">posts</a> here have engendered a lot of anger from some Flash developers, and even led to direct questioning of my professional skill.  Put bluntly, I believe the attacks say at least as much about the professionalism of their authors as they do about my own.</p>
+<h3>An apology</h3>
+<p>Regardless of that criticism, I offer an unqualified apology to Geoff Stearns for denigrating his work on <a href="http://blog.deconcept.com/swfobject/">SWFObject</a>.  It&#8217;s one thing for me to say that I don&#8217;t like it from a standards support perspective, but I framed my dislike in a tone that could counterproductively poison the attitudes of potential users of his work.</p>
+<p>I took far too long to concede that my detractors were pushing back for very good reasons, and I&#8217;ve remained a moving target.  They talk about user experience, I change the subject to Flash abuse.  They talk about progressive enhancement, I change the subject to markup.  They talk about the grating attitude of web standards advocates, and I (uncharacteristically) change the subject <em>again</em>.</p>
+<p>If for no other reason that I was brought up to better rhetorical skills than I&#8217;ve displayed lately, I&#8217;m writing here in an effort to set things straight.</p>
+<h3>Web browsers have unforgivably broken and poorly documented plug-in implementations</h3>
+<p>There seems to be an agreement in principle amongst the participants in this discussion that W3C was a bad actor on this, because they insisted on sanctioning an element for plug-in inclusion that ran counter to the most common contemporary implementation.  What we&#8217;re looking at, then, is an artifact of the Browser Wars.</p>
+<p>To make the mess worse, no single software vendor has stepped up and implemented <code>&lt;object&gt;</code> in a manner worthy of emulation.  To hazard a guess I pose that this is because browser vendors don&#8217;t really care for Flash, and each browser vendor wants to undercut the others&#8217; related media player titles.</p>
+<p>If my guess is anywhere near the truth, then the obvious result is that the expressed attitudes of the responsible companies are <strong>unconscionable</strong>, and need to change without delay.</p>
+<h3>There is a time and place for any given tool</h3>
+<p>If we can agree that content can be <em>anything</em> that will travel across the network, then the nearer layers of the web technology stack have their own particular uses, as well:  markup for structure, styling for presentation, scripting for behavior (on the client side) and logic (on the server side).  Likewise, there is no good reason I can think of to publish content in Flash or PDF when <acronym title="Extensible Hypertext Markup Language.">XHTML</acronym>+<acronym title="Cascading Style Sheets.">CSS</acronym> will do just as well.  I also see no reason to avoid using Flash when presented with any of the objectives it can accomplish with low overhead.</p>
+<h3>Tool abuse is unprofessional and inexcusable, particularly when it leads to the implementation of sites in ways that the web was never meant to handle</h3>
+<p>The web was and still is intended as a means to obtain and create content that poses minimal requirements for accessibility and usability.  Yet over here we see Microsoft pushing its own unique implementation for web applications, and over there you see Adobe marketing its own substitutes for just about everything the W3C can sanction.  Developers then buy in and insist on using the tools they&#8217;ve paid for to create <em>everything</em> they can think up, without regard for suitability to project requirements or the strengths of the web.  The resulting fragmentation makes everyone a loser:</p>
+<ul>
+<li>Developers are forced to specialize in order to maintain salable skillsets, which makes them vulnerable to shifts in market demand.</li>
+<li>Users are forced into a wilderness of software in order to use the web effectively, which is confusing, time consuming, and expensive.</li>
+<li>Project sponsors are forced to spend more money on software licenses and the professional services needed to stitch together all of their preferred technologies.</li>
+<li>Software vendors are forced into onerous release schedules, which reduces the reliability of their products and consequently their customers&#8217; trust.</li>
+<li>Network infrastructure is forced to account for more volume and protocol support than would  otherwise be the case.  This raises <em>everyone&#8217;s</em> overhead.</li>
+</ul>
+<h3>One of the most important definitions of a web standard is that rights to its use are completely and permanently unencumbered</h3>
+<p>This single fact accounts for most of my personal hostility toward the SWF format.  The ubiquity of Flash creates the potential for future rights abuse such as that committed by Unisys in the case of the Graphics Interchange Format, and Eolas over its submarine multimedia patents.  How many times do we have to go through experiences such as those before we learn to rely on the tools that are protected from such outcomes?</p>
+<h3>The desktop publishing metaphor does not and <em>never will</em> apply to the web, and developers need to do everything they can to get that point across to project sponsors</h3>
+<p>The insistence on pixel-perfect layout that results from reliance on the desktop publishing metaphor eats up time and money to an extent that places effective sites beyond the reach of many potential customers for web development services.  It also constrains meaningful use of the web to the personal computer platform, and sometimes printed documents.  While there are those who say that mobile platforms can also be used for visiting sites, there are so many caveats on that assertion as to make it empty.  (Universal support for the handheld CSS media type would be nice to have any day now.)</p>
+<h3>Web standards support should be given priority over exacting user experience requirements, if a choice must be made between the two</h3>
+<p>This is probably the most controversial of my positions, but it&#8217;s owed to my belief in the web as a universal publishing platform.  In the case of broken plug-in behavior, why not put plain links to bare media files inside their calling elements and let the visitor&#8217;s default media player take care of the rest?  Creating a fallback that results in a positive user experience for that case isn&#8217;t <em>impossible</em>.</p>
+<p>The balance of this attitude is engendered by the fact that given thoughtful implementation and valid markup, the resulting work product can be adapted to an extraordinarily broad range of contexts.  This may not seem like much to the folks who are stuck on the desktop publishing metaphor, but information published for the express purpose of being viewed anywhere, anytime, on any capable and connected platform &#8211; which is what web standards are meant to provide &#8211; appears more valuable to me than something that looks and behaves <em>exactly</em> as specified when viewed by a remote user in Internet Explorer on a 1024&#215;768 LCD or plasma display.</p>
+<h3>Using JavaScript to do an end run around the need for valid markup (and the content inside it) is at best a cop-out, and at worst an ingredient of future disaster</h3>
+<p>For starters, users who disable JavaScript will arguably <em>never</em> see the content you originally intended.  Given the number of security issues for which disabling JavaScript is the recommended remedy, this use case <em>cannot</em> be ignored.</p>
+<p>Another objection I have to this practice is that it increases the scope of production.  Rather than just repairing one component of a site implementation when it&#8217;s time to redesign, you run the risk of needing to fiddle with other components as well (in this case, JavaScript in addtiion to markup).</p>
+<p>Finally, you&#8217;re forcing another support assumption on the user.  While sites designed around a desktop publishing metaphor and viewed on a personal computer may not suffer as a result, every other potential use case will.</p>
+<h3>Forward compatible implementation is more valuable than you think</h3>
+<p>So much of what I fight back against is inertia:  people who use Internet Explorer because they&#8217;ve always used Internet Explorer, sponsors who insist that the work product have its layout nailed down to the pixel because that&#8217;s always the way it&#8217;s been done, producing far too many templates for lack of good wireframes because the graphic designers have never needed to work from wireframes, and so on.</p>
+<p>However, the growth in popularity of <a href="http://tools.ietf.org/html/rfc4287">Atom</a> and bona fide <a href="http://microformats.org/">microformats</a> suggests the web&#8217;s not going to be monopolized by static HTML forever.  When the evolution to <acronym title="Extensible Markup Language.">XML</acronym> gathers momentum, properly implemented XHTML+CSS infosystems will be the easiest and earliest such systems to utilize the full potential of XML.  Do you really want your work to be left in the dust?</p>
+<p>If not, then you need to learn how to do that kind of work, the sooner the better.</p>
+<h3>When standards advocates are unreasonable, it&#8217;s because they&#8217;re frustrated by the willful ignorance and sloth they see in the opposing camp</h3>
+<p>In practice, standards advocates demonstrate practices that require a different mindset than was typical for several years.  In effect, we&#8217;re in the uncomfortable position of telling a lot of folks that everything they know is wrong.  Here are some of the results:</p>
+<ul>
+<li>Back when Zeldman instituted the Browser Upgrade campaign, its message was immediately co-opted by several high-volume sites designed by teams who were too damned lazy to institute progressive enhancement.</li>
+<li>Rather than just admit that they are contstrained in their jobs by legacy content management systems that they cannot replace, some developers claim that they deserve the same credit given to colleagues who build fully standards compliant sites.</li>
+<li>Every time accessibility flaws in all-Flash sites are publicly skylined, Flash developers howl in protest&#8230; but rarely endeavor to make their sites accessible.</li>
+<li>Developers who have been in the business long enough to know better bitch and moan about the shift in perspective required to learn CSS, and refuse to learn it.</li>
+<li>Other so-called professionals abuse their <acronym title="Integrated Development Environment.">IDE</acronym>&#8217;s and bill hours even though (as I once put it) &#8220;they wouldn&#8217;t know emphasis from italics if the difference bit them on the ass.&#8221;</li>
+</ul>
+<p>All of these people continue to make noise and abuse the good will of their sponsors with a degree of persistence akin to that of Netscape 4&#8217;s erstwhile market share, and <em>you bet</em> we&#8217;re not happy about that&#8230; especially when they attack us ad hominem in the face of the fact that the truth hurts.  That happens all the time.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2006/08/18/flash-javascript-ux-standards-apologia-apologies-and-one-mans-opinions/feed/</wfw:commentRss>
+		<slash:comments>14</slash:comments>
+		</item>
+		<item>
+		<title>A DOM Scripting Wishlist for Microsoft</title>
+		<link>http://www.webstandards.org/2006/04/30/a-dom-scripting-wishlist-for-microsoft/</link>
+		<comments>http://www.webstandards.org/2006/04/30/a-dom-scripting-wishlist-for-microsoft/#comments</comments>
+		<pubDate>Sun, 30 Apr 2006 20:25:04 +0000</pubDate>
+		<dc:creator>adactio</dc:creator>
+				<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[Bugs]]></category>
+		<category><![CDATA[DOM]]></category>
+		<category><![CDATA[DOM Scripting TF]]></category>
+		<category><![CDATA[Microsoft]]></category>
+
+		<guid isPermaLink="false">http://www.webstandards.org/2006/04/30/dom-scripting-wishlist-for-microsoft/</guid>
+		<description><![CDATA[Peter Paul Koch has kick-started a discussion called "IE 7 and JavaScript: what needs to be fixed?"]]></description>
+			<content:encoded><![CDATA[<p>The development team working on Internet Explorer 7 have been doing a great job. They have &#8212; quite correctly &#8212; focused on improving the browser&#8217;s CSS support and, as the beta preview shows, IE7 will be a huge improvement on IE6.</p>
+<p>Internet Explorer&#8217;s JavaScript and DOM support is pretty darn good and IE7 introduces a few updates (like native support for <code>XMLHttpRequest</code> instead of using ActiveX). Still, there&#8217;s always room for improvement: that&#8217;s true of any browser. Here at the DOM Scripting Task Force, we&#8217;re hoping that some JavaScript nips and tucks might be on the cards for future versions of Internet Explorer.</p>
+<p>We want to make the browser developers&#8217; lives easier. To that end, Task Force member Peter-Paul Koch has kick-started a discussion called <a href="http://www.quirksmode.org/blog/archives/2006/04/ie_7_and_javasc.html">&#8220;IE 7 and JavaScript: what needs to be fixed?&#8221;</a></p>
+<p>If you have some issues with IE&#8217;s JavaScript support that you&#8217;d like to see addressed, write up a description of the problem and post a link to it in a comment on PPK&#8217;s blog entry (links are easy to pass around).</p>
+<p>As well as being a potentially useful resource for the browser makers, amassing a list of IE &#8220;gotchas&#8221; will be very beneficial for developers.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2006/04/30/a-dom-scripting-wishlist-for-microsoft/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>!important Fixed in Later IE7 Releases</title>
+		<link>http://www.webstandards.org/2006/02/03/important-fixed-in-later-ie7-releases/</link>
+		<comments>http://www.webstandards.org/2006/02/03/important-fixed-in-later-ie7-releases/#comments</comments>
+		<pubDate>Sat, 04 Feb 2006 01:58:39 +0000</pubDate>
+		<dc:creator>mollyeh</dc:creator>
+				<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[Bugs]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[Microsoft]]></category>
+
+		<guid isPermaLink="false">http://webstandards.kimberlyblessing.com/2006/02/03/important-fixed-in-later-ie7-releases/</guid>
+		<description><![CDATA[It was brought to my attention today that the IE7 Beta 2 Preview wasn&#8217;t honoring the role of the !important declaration and as such was causing alternative box model hacks to fail. !important is important for several important reasons. First is the very reason !important exists, which is to provide a balance between author and [...]]]></description>
+			<content:encoded><![CDATA[<p>It was brought to my attention today that the <a href="http://www.microsoft.com/windows/ie/ie7/ie7betaredirect.mspx">IE7 Beta 2 Preview</a> wasn&#8217;t honoring the role of the <code>!important</code> declaration and as such was causing alternative box model hacks to fail.</p>
+<p><code>!important</code> is important  for several important reasons. First is the very reason  <code>!important</code> exists, which is to provide a balance between author and user styles. It has been part of CSS since CSS 1.0, <a href="http://www.w3.org/TR/REC-CSS2/cascade.html#important-rules">although implemented differently back then</a>.</p>
+<p><!-- this is a comment for testing's sake -->The other important reason <code>!important</code> is so important in current practices is because it plays a role in 2 of the 3 <a href="http://www.info.com.ph/~etan/w3pantheon/style/abmh.html#tech3">Alternate Box Model Hacks</a> outlined by Edwardson Tan.</p>
+<p>The hacks in question work when the browser interprets CSS properly, and filters correct information to certain browsers that do not.  Ingo Chao has documented <a href="http://www.satzansatz.de/cssd/ie7b2_abmh.html">why this now fails</a> in the current IE7 Beta 2 Preview.</p>
+<p>The good news today is that the IE team has in fact fixed the way IE handles <code>!important</code> in <strong>all future builds</strong> beyond the IE7 Beta 2 Preview.</p>
+<p>So worry not, my important friends, we&#8217;ll soon have an IE that understands just how important <code>!important</code> is.</p>
+<p>Note: I apologize if any &#8220;importants&#8221; were inadvertently left out of this message. I assure you that I didn&#8217;t mean to suggest they were not (<code>!</code>) important.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2006/02/03/important-fixed-in-later-ie7-releases/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Star HTML and Microsoft IE7</title>
+		<link>http://www.webstandards.org/2005/12/22/star-html-and-microsoft-ie7/</link>
+		<comments>http://www.webstandards.org/2005/12/22/star-html-and-microsoft-ie7/#comments</comments>
+		<pubDate>Thu, 22 Dec 2005 20:19:32 +0000</pubDate>
+		<dc:creator>mollyeh</dc:creator>
+				<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[Bugs]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[DOM]]></category>
+		<category><![CDATA[HTML/XHTML]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[W3C/Standards Documentation]]></category>
+		<category><![CDATA[Web Standards (general)]]></category>
+
+		<guid isPermaLink="false">http://webstandards.kimberlyblessing.com/2005/12/22/star-html-and-microsoft-ie7/</guid>
+		<description><![CDATA[Chris Wilson, Group Program Manager for IE Platform and Security at Microsoft, and Position is Everything&#8216;s Big John Gallant have been having a conversation about * html in Microsoft&#8217;s upcoming Internet Explorer 7 for Windows (IE7). Wilson has been encouraging CSS designers and developers to repair any bug-specific hacks for several months now. Gallant remains [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://blogs.msdn.com/cwilso/">Chris Wilson</a>, Group Program Manager for IE Platform and Security at Microsoft, and <a href="http://www.positioniseverything.net/">Position is Everything</a>&#8216;s Big John Gallant have been having a conversation about <code>* html</code> in Microsoft&#8217;s upcoming Internet Explorer 7 for Windows  (IE7). Wilson has been encouraging CSS designers and developers to repair any bug-specific hacks for several months now. Gallant remains unconvinced the solution is that easy and is afraid countless, unpaid hours of repair work will wind up on the shoulders of those designers and developers who have employed <code>* html</code> related hacks in their designs. </p>
+<p><span id="more-661"></span></p>
+<h3>Universal woe</h3>
+<p>Hacks for browsers typically do one of two things. They exploit a bug (a flawed implementation) or they exploit the complete lack of an implementation. In the case of <code>* html</code> the hack is based on a bug. Child selector hacks, on the other hand, are based on the fact that IE versions up to 6.0 do not include any implementation for child selectors whatsoever.</p>
+<p>The popular <a href="http://www.communitymx.com/content/article.cfm?page=2&amp;cid=C37E0">Holly Hack</a> and related IE workarounds exploit a browser bug in which the universal selector, <code>*</code>, in CSS is misinterpreted. The bug is present in multiple versions of Internet Explorer. The hack is used primarily to correct a number of layout issues related to IE&#8217;s proprietary layout model.</p>
+<p>With the bug repaired, Wilson says universal selector-related hacks <strong>will fail</strong> in IE7&#8242;s <a href="http://blogs.msdn.com/ie/archive/2005/09/15/467901.aspx">strict mode</a> (compliance mode). The bug remains present when IE7 is running in quirks mode, and in that mode, the hacks will understandably work. Wilson began advocating that the Web design and development community <a href="http://blogs.msdn.com/ie/archive/2005/10/12/480242.aspx">prepare for change</a> back in October. Gallant wants to know <a href="http://www.positioniseverything.net/articles/poll/star-html.php">how the changes will affect you via a poll at </a><a href="http://www.positioniseverything.net" title="position is everything">p.i.e.</a><a>.</a></p>
+<p>Is the entire kafuffle a non-issue until we actually have IE7 and see what we really get? Or maybe we can learn from <a href="http://www.tantek.com/log/">Tantek &Ccedil;elik</a> (<a href="http://technorati.com/">Technorati</a>, <a href="http://www.webstandards.org/about/bios/tantek.html">WaSP</a>) who advocates that bugs including  <code>* html</code>  be repaired; and that implementations such as child selectors (which are often used in tandem with the Holly Hack),  could be held off until a later date if necessary.</p>
+<p>Exploiting a software bug to create a hack becomes dangerous as software is updated and bugs are repaired. While somewhat less danger exists when implementation issues are addressed, what happens when the implementation is introduced and it, too, is flawed? This is why hacks are so problematic, but just how these particular hacks in IE7 will affect the community is still vague.</p>
+<h3>Me, Me, Select Me!</h3>
+<p>The faulty interpretation of the universal selector is currently present in the following versions of Internet Explorer:</p>
+<ul>
+<li>Macintosh: 5.0, 5.15, 5.21</li>
+<li>Windows: 5.0, 5.5, 6.0</li>
+</ul>
+<p>The bug is present in both quirks and standards mode in these versions.  Here&#8217;s a look at what happens in these IE versions when the universal selector is involved:</p>
+<table summary="universal selector combinations as applied to html and body elements and their interpretations">
+<caption>Microsoft IE Browser Misnterpretations: Universal Selector</caption>
+<tr>
+<th>Selector</th>
+<th>IE Interpretation</th>
+<th>W3C Interpretation</th>
+</tr>
+<tr>
+<td><code>* html</code></td>
+<td><code>html</code></td>
+<td>Matches no element (the <code>html</code> element is root and therefore never has an ancestor)</td>
+</tr>
+<tr>
+<td><code>* * body</code></td>
+<td><code>* body</code></td>
+<td>Matches no element (<code>body</code> is the first child of <code>html</code> only)</td>
+</tr>
+<tr>
+<td><code>* html body</code></td>
+<td><code>html body</code></td>
+<td>Matches no element</td>
+</tr>
+</table>
+<h3>Have layout?</h3>
+<p>IE layout, which is IE&#8217;s determination of how elements are drawn, bound, and behave, has been a bit of a mystery for some time. This is largely due to lack of documentation and discussion about the issue. <a href="http://dean.edwards.name/weblog/2005/08/msdocs/">Dean Edwards</a> (<a href="http://www.webstandards.org/about/bios/deanedwards.html">WaSP</a>, <a href="http://www.whatwg.org/">WHATWG</a>), Gallant and others went in search of better documentation for <code>hasLayout</code>. Markus Mielke, a Microsoft program manager working with Wilson, joined in the conversations which <a href="http://blogs.msdn.com/ie/archive/2005/09/01/459119.aspx">bore fruit</a>.</p>
+<p>Two good references that emerged regarding IE layout are <a href="http://www.satzansatz.de/cssd/onhavinglayout.html">On Having Layout</a> and <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/IETechCol/cols/dnexpie/expie20050831.asp">HasLayout Overview</a> in which Mielke writes:</p>
+<blockquote><p>There are several bugs in Internet Explorer that can be worked around by forcing a layout (an IE internal data structure) on an element (like, dimensional bug fixes and  Holly hack). Most users are not aware of the implications of having a layout applied to an element. &#8211; HasLayout Overview, Markus Mielke, Microsoft</p>
+</blockquote>
+<p>Mielke&#8217;s article, which cites the input of Edwards, Gallant, Wilson and WaSP among others, goes directly to the heart of the <code>* html</code> concern.</p>
+<h3>Road to repair</h3>
+<p>Gallant says that the <code>* html</code> hack in CSS is &ldquo;the only hack that is going to cause serious pain&rdquo; and believes that the hack &ldquo;could probably be retained without getting in the way of any actual support enhancements&rdquo; that Microsoft has planned for IE7.</p>
+<p>Wilson points out that the goal is to fix IE, and getting there is a process. &ldquo;I want to remove the <code>* html</code> hack to make it useful . . . because it will then only apply to obsolete browsers.&rdquo;  He also shares a dislike for any hacks at all. &ldquo;All CSS hacks are too risky in the long run, unless they only apply in orphaned or obsolete browsers, period. <a href="http://tantek.com/log/2005/11.html">Tantek &Ccedil;elik said this</a>; I agree with it very strongly.&rdquo;</p>
+<p>Gallant states that the &ldquo;time to kill the <code>* html</code> hack is when Vista arrives, presumably without the layout problem.&rdquo; Wilson feels that fixing the browser is most important. &ldquo;The Holly hack, and I say this with the greatest of respect, is an elephant gun solution.  Sometimes it&#8217;s an elephant you&#8217;re trying to fix. Sometimes it&#8217;s a mouse.  Some elephants are fixed in IE7, some mice are. We will not fix every possible layout issue in IE in IE7, however, and it&#8217;s unrealistic to expect we can do so.&rdquo;</p>
+<p>This entry <a href="http://www.molly.com/2005/12/22/star-html-and-microsoft-ie7/">cross posted</a> to take your comments and trackbacks.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2005/12/22/star-html-and-microsoft-ie7/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Tool for tracking IE memory leaks</title>
+		<link>http://www.webstandards.org/2005/12/06/tool-for-tracking-ie-memory-leaks/</link>
+		<comments>http://www.webstandards.org/2005/12/06/tool-for-tracking-ie-memory-leaks/#comments</comments>
+		<pubDate>Tue, 06 Dec 2005 16:07:56 +0000</pubDate>
+		<dc:creator>chrisk</dc:creator>
+				<category><![CDATA[Authoring Tools]]></category>
+		<category><![CDATA[Bugs]]></category>
+		<category><![CDATA[DOM Scripting TF]]></category>
+
+		<guid isPermaLink="false">http://www.webstandards.org/2005/12/06/tool-for-tracking-ie-memory-leaks/</guid>
+		<description><![CDATA[Drip, the IE leak detector.]]></description>
+			<content:encoded><![CDATA[<p><a href="http://www.outofhanwell.com/ieleak/" title="Homepage for Drip, a tool for tracking memory leaks in IE/Windows">Drip</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2005/12/06/tool-for-tracking-ie-memory-leaks/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Pandora&#8217;s Box (Model) of CSS Hacks And Other Good Intentions</title>
+		<link>http://www.webstandards.org/2005/11/27/pandoras-box-model-of-css-hacks-and-other-good-intentions/</link>
+		<comments>http://www.webstandards.org/2005/11/27/pandoras-box-model-of-css-hacks-and-other-good-intentions/#comments</comments>
+		<pubDate>Sun, 27 Nov 2005 13:15:31 +0000</pubDate>
+		<dc:creator>tantek</dc:creator>
+				<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[Bugs]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[Education]]></category>
+		<category><![CDATA[HTML/XHTML]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[Outreach]]></category>
+		<category><![CDATA[Validation]]></category>
+		<category><![CDATA[W3C/Standards Documentation]]></category>
+		<category><![CDATA[Web Standards (general)]]></category>
+
+		<guid isPermaLink="false">http://webstandards.kimberlyblessing.com/2005/11/27/pandoras-box-model-of-css-hacks-and-other-good-intentions/</guid>
+		<description><![CDATA[This Thanksgiving I've decided it's about time that I provided some more background and analysis on one of the things I am certainly unintentionally (in)famous for.]]></description>
+			<content:encoded><![CDATA[<p>This Thanksgiving I&#8217;ve decided it&#8217;s about time that I provided some more background and analysis on one of the things I am certainly unintentionally (in)famous for.  This entry was started at 7pm on Thanksgiving evening, but took me until now to complete.
+</p>
+<h3>
+Before CSS hacks<br />
+</h3>
+<p>
+I don&#8217;t know who first came up with using the presence of a &#8216;<code>media</code>&#8216; attribute on <code>&lt;link&gt;</code> or <code>&lt;style&gt;</code> to hide CSS from Netscape 4, but it was the first technique that I remember hearing of to use a perfectly reasonable HTML feature (yes, the &#8216;media&#8217; <em>attribute</em> is in <em>HTML</em>, not CSS) to deliver CSS selectively to browsers that supported a certain feature.<br />
+This HTML-based &#8220;filter&#8221; was perhaps the first such technique, though it would be many years before the term &#8220;<a href="http://tantek.com/CSS/Examples/highpass.html">filter</a>&#8221; was introduced as a general term for such techniques.
+</p>
+<h3>
+Banishing version four browsers<br />
+</h3>
+<p>
+The first filter I came up with (again, before they were named as such) was perhaps the @import with quotes filter, which I didn&#8217;t even bother writing a page about in particular because it seemed so simple:  @import &#8220;foo.css&#8221;; is only supported by IE5, NS6, Opera3 and better.  I just posted <a href="http://www.tantek.com/XHTML/Examples/browserupgrade.html">an example usage</a> at the time for <a href="http://webstandards.org/">Web Standards Project</a>&#8216;s Browser Upgrade Campaign (BUC). That particular legacy contribution was also made anonymously to one of the <a href="http://alistapart.com">ALA</a> redesigns, though I believe <a href="http://zeldman.com">Jeffrey</a> has outed me at some point since.
+</p>
+<p>
+Neither the HTML &#8216;media&#8217; attrribute filter nor the CSS @import quotes filter, in my humble opinion, qualified as hacks, because they lacked what some might term the essence of a <a rel="tag" href="http://technorati.com/tag/hack">hack</a>:<br />
+<a href="http://en.wikipedia.org/wiki/Hack_%28technology_slang%29"><q cite="http://en.wikipedia.org/wiki/Hack_%28technology_slang%29">either a kludge, or the opposite of a kludge, as in a clever or elegant solution to a difficult problem</q></a>.   Neither of those filters were particularly kludgy (warning, not a <a href="http://scrabble.com">Scrabble</a> word), nor clever.  In other words they were too <a href="http://img.fark.com/images/topics/obvious.gif">&#8220;obvious&#8221;</a> to really be considered hacks.
+</p>
+<h3>
+Seemed harmless<br />
+</h3>
+<p>
+Anyway, the @import filter seemed harmless enough.   At the time the only big difference it made was to filter out IE4.x (both Mac and Windows), which had already been obsoleted by IE5 (both versions).  And it was <a href="http://www.alistapart.com/articles/journey/" title="See section titled 'Protecting the Innocent'">praised</a> as: <q cite="http://www.alistapart.com/articles/journey/">&#8230; for people who make websites, that is nothing short of revolutionary.</q><br />
+Sidenote: note the fact that that article on ditching &lt;table&gt;s for layout is  <strong>almost FIVE years old</strong><br />
+yet those of us that <a href="http://accessify.com/2005/11/interview-with-andy-clarke-aka.php">are</a> <a href="http://www.stuffandnonsense.co.uk/archives/accessibility_the_gloves_come_off.html">real</a> <a href="http://www.molly.com/2005/11/14/web-standards-and-the-new-professionalism/">professionals</a> <a href="http://www.456bereastreet.com/archive/200511/a_web_professional_can_never_stop_learning/">still</a> <a href="http://www.quirksmode.org/blog/archives/2005/11/the_new_amateur.html">have</a> <a href="http://robdickerson.com/blog/?p=9">to</a> <a href="http://www.webstandards.org/buzz/archive/2005_11.html#a000591">repeat</a> <a href="http://web-graphics.com/mtarchive/001672.php">the</a> <a href="http://placenamehere.com/article/107/OnCraftANewProfessionalismAndNewAmateurs">message</a> <a href="http://www.isolani.co.uk/blog/standards/KnowingOurCraft">.</a>
+</p>
+<p>
+Thus the idea of using a feature of  <em>CSS</em> to essentially do a lightweight form of browser specific style sheet switching was born, but the <a rel="tag" href="http://technorati.com/tag/pandora">Pandora</a>&#8216;s <a rel="tag" href="http://technorati.com/tag/box">Box</a> (<a rel="tag" href="http://technorati.com/tag/model">Model</a>) of <a rel="tag" href="http://technorati.com/tag/css">CSS</a> <a rel="tag" href="http://technorati.com/tag/hacks">Hacks</a> had yet to be opened.  That would come exactly one week later.
+</p>
+<h3>
+Hacking open the <a rel="tag" href="http://technorati.com/tag/boxmodel">Box Model</a> and releasing the filters<br />
+</h3>
+<p>
+<a href="http://zeldman.com">Jeffrey Zeldman</a> expressed to me how nice it was that it was possible to write CSS without having to worry about what might look bad in<br />
+(or even  <em>crash</em>) obsolete browsers like Netscape 4.   Having been freed to use more of (and depend more on) CSS, he and many others following <a rel="tag" href="http://technorati.com/tag/alistapart">A List Apart</a>&#8216;s suggestions quickly ran into the next issue which was the inconsistent box model treatment between IE5.x/Windows and <a rel="tag" href="http://technorati.com/tag/ie6">IE6</a>/Windows.
+</p>
+<p>
+<q>If only there were a way to send one width to IE5.x/Windows, and another width to modern browsers which supported the CSS box model&#8230;</q> is a rough approximation of what <a rel="tag" href="http://technorati.com/tag/jeffreyzeldman">Jeffrey Zeldman</a> said (emailed) to me at the time.
+</p>
+<p>
+Eager to be helpful, and armed with the intuitive knowledge that the key to  Pandora&#8217;s Box of <a rel="tag" href="http://technorati.com/tag/csshacks">CSS hacks</a> could be hidden amongst the jungle of <a href="http://www.w3.org/Style/CSS/Test/CSS1/current/sec71.htm">CSS1 section 7.1 parsing tests</a>, I went hunting.  It didn&#8217;t take long until (with Todd Fahrner&#8217;s help) I discovered how test twentyb (<code>rotation-code: "\"}\"";</code> &#8211; look familiar?) messed up all versions of IE5.x/Windows,<br />
+<em>but no other modern browser</em>.  After that it was a simple manner of finding <a href="http://www.w3.org/TR/REC-CSS2/aural.html#propdef-voice-family">an abandoned CSS2 property</a> which accepted arbitrary string values.
+</p>
+<p>
+I had <a href="http://tantek.com/CSS/Examples/boxmodelhack.html">opened</a> Pandora&#8217;s Box (Model) of CSS Hacks, and there was no turning back.
+</p>
+<p>
+Shortly thereafter, I generalized the Box Model Hack to enable hiding entire style sheets from IE5.x/Windows and <a href="http://tantek.com/CSS/Examples/highpass.html">CSS Filters</a> were born.  <a href="http://tantek.com/CSS/Examples/inlinehpf.html">More</a> <a href="http://tantek.com/CSS/Examples/midpass.html">followed</a> <a href="http://tantek.com/CSS/Examples/ie50winbandpass.html">soon</a> <a href="http://tantek.com/CSS/Examples/ie55winbandpass.html">thereafter</a>.
+</p>
+<h3>
+Intelligently designed hacks<br />
+</h3>
+<p>
+Implicit in the story above are a set of design <a rel="tag" href="http://technorati.com/tag/principles">principles</a> which I kept in mind when I first set about creating <a href="http://tantek.com/CSS/Examples/">CSS hacks</a>, and which I really should have noted at the time.  Given all the <a href="http://dougal.gunters.org/blog/2005/10/13/css-hacks">hand-wringing</a> about CSS hacks <a href="http://blogs.msdn.com/ie/archive/2005/10/12/480242.aspx">incited</a> by my colleague <a href="http://longhornblogs.com/mmielke/" rel="met colleague">Markus Mielke</a>, it&#8217;s about time I documented these principles.  More on the hang-wringing later.
+</p>
+<h4>
+A <a rel="tag" href="http://technorati.com/tag/csshack">CSS hack</a> should (or MUST in the <a href="http://www.ietf.org/rfc/rfc2119.txt">RFC2119</a> sense if you prefer):<br />
+</h4>
+<ol>
+<li>
+Be valid.  Invalid hacks are unacceptable. Back in the heyday of Web 1.0 (i.e. the late 1990s), the <a href="http://webstandards.org">The Web Standards Project</a> and numerous others were already spreading the message of better coding through validity, and thus hacks themselves had to validate as well. (Nevermind that many/most so-called &#8220;Web 2.0&#8243; sites can&#8217;t be bothered to validate.  See above about the real professionals having to repeat the message).
+</li>
+<li>
+Target  <strong>ONLY</strong> older/frozen/abandoned versions of user<br />
+agents / browsers.  When the Box Model Hack was introduced, we were already playing with betas of IE6/Windows (back when we expected there would be an IE6/Mac), and so we knew how to make sure it wasn&#8217;t affected.  And now we&#8217;re playing with betas of <a rel="tag" href="http://technorati.com/tag/ie7">IE7</a>.
+</li>
+<li>
+Be ugly. It&#8217;s actually a  <strong>good thing</strong> that a hack be visually ugly from a coding aesthetic point of view in the hopes that the<br />
+ugliness will be a reminder that the hack  <strong>is</strong> a hack, and should incite a tendency for people to a) minimize it&#8217;s usage, and b) remove it&#8217;s usage over time.  At it&#8217;s core, browser switching is one of those things you really shouldn&#8217;t, but must, do to get your job done.  Hacks&#8217; ugliness are like the equivalent of persistent warning tags, a reminder to dispose of them when no longer necessary.
+</li>
+</ol>
+<h3>
+Explosion of CSS hacks and filters<br />
+</h3>
+<p>
+But I didn&#8217;t document those principles at the time.  Once said Pandora&#8217;s Box was opened, it didn&#8217;t take long for the notion that hacking CSS was a &#8220;good idea&#8221; to spread far and wide in the web design and development community (much further than I could have possibly expected, to the <a href="http://www.google.com/search?q=hack">#4 result for &#8216;hack&#8217; on Google</a>, and even onto <a href="http://flickr.com/photos/jayallen/17325716/">t-shirts</a>!).  Of course once hacks for IE5.x/Windows had been discovered, and refined into the concept of &#8220;filtering&#8221; which browsers got to see whole style sheets, it was only a matter of time before hacks were developed and <a href="http://centricle.com/ref/css/filters/">documented  for nearly every browser</a>.  Nevermind that so many of the hacks violated the above-mentioned principles.  Those ideas spread and mutated without any such strings attached.
+</p>
+<p>
+At this point I can only strongly recommend that people evaluate these myriad hacks based on the above principles before using them.
+</p>
+<h3>
+IE7 Team Puts CSS Hacks On Notice<br />
+</h3>
+<p>
+Now, about that <a href="http://blogs.msdn.com/ie/archive/2005/10/12/480242.aspx">inciting</a> and <a href="http://dougal.gunters.org/blog/2005/10/13/css-hacks">hand-wringing</a> that took place last month.
+</p>
+<p>
+The irony is that I don&#8217;t disagree with the details of <a href="http://blogs.msdn.com/ie/archive/2005/10/12/480242.aspx">Marcus&#8217;s MSDN post</a>.  Note that his &#8220;Call to action: Please check your pages&#8221; does not mention a single one of the CSS hacks I developed.  The one partial overlap is the use of the child &#8220;&gt;&#8221; selector, which was introduced as part of the Box Model Hack to &#8220;Be Nice To Opera&#8221; (Opera 5 in particular, which at this point is probably ignorable &#8211; anyone even hear of anyone that still uses Opera 5, even for testing purposes?).
+</p>
+<p>
+The sad thing is that most of the hand-wringing could have been avoided (as <a href="http://blogs.msdn.com/ie/archive/2005/10/12/480242.aspx#480266">noted in the comments</a>) if people would first try fully standards based cross-browser solutions before resorting to hacks.
+</p>
+<p>
+However, the undertone of that blog post (and what Markus and Chris Wilson have expressed to me and others in person) is that web developers must stop using CSS hacks altogether.
+</p>
+<p>
+I know that&#8217;s perhaps a bit of a hyperbole, but that&#8217;s the message that&#8217;s been heard nonetheless.  However, such a message is, with all due respect, the impractical perspective of folks who are not a professional web designers / developers.  I know this, I was <a href="http://microsoft.com/ie/">there</a> once too.
+</p>
+<h3>
+Avoid Targeting Current Versions Of Browsers<br />
+</h3>
+<p>
+To be specific, the problems with hacks have arisen because of hacks that are targeted at a <strong>current</strong> browser, namely, IE6/Windows.  E.g.
+</p>
+<pre><code>* html</code></pre>
+<h3>
+Using A CSS2 Feature Is NOT a Hack<br />
+</h3>
+<p>
+And a misperception that the use of an implemented feature is a hack.
+</p>
+<p>
+E.g. people (ahem, starting with the <a href="http://tantek.com/CSS/Examples/boxmodelhack.html">&#8220;BMH&#8221;</a> as noted) have used the child selector to send &#8220;valid CSS&#8221; to &#8220;compliant implementations&#8221;, e.g. with
+</p>
+<pre><code>html&gt;body</code></pre>
+<p>
+That&#8217;s not a hack.  It&#8217;s not targeting a specific browser.  It&#8217;s actually<br />
+inclusive of all browsers who would support CSS2(.1) selectors.
+</p>
+<p>
+Sending valid CSS to compliant implementations is  <strong>proper behavior</strong>.
+</p>
+<h3>
+400 Tiny Violins For the Newcomer<br />
+</h3>
+<p>(With <a href="http://www.voyager.cz/tos/epizody/47gamestersoftriskeliontrans.htm">apologies to Star Trek</a>)</p>
+<p>
+Does this make it harder for new/late implementations (like IE7) to come along and support that selector?
+</p>
+<p>
+Why yes it does.  This is no surprise.
+</p>
+<p>
+If you support the child selector, now all of a sudden you have to<br />
+compliantly support all the other properties/values of <a href="http://w3.org/TR/css21">CSS2(.1)</a> that authors have been successfully using with the child selector.
+</p>
+<p>
+But given that  <strong>several</strong> other browsers do so (otherwise authors wouldn&#8217;t be using the child selector), and thus the  <strong>market</strong> has demonstrated this is not a problem, this is a reasonable expectation.
+</p>
+<p>
+However, if a browser is somehow unable to do so, then the answer is simple.
+</p>
+<p>
+Don&#8217;t implement that selector, until that browser <strong>is</strong> able to do so.  IE5/Mac did so, so can IE7, more than <em>five</em> years later&#8230;
+</p>
+<p>
+This may seem &#8220;unfair&#8221; that that these features (a CSS2(.1) selector and<br />
+some CSS2(.1) properties/values) are now &#8220;tied&#8221; together in terms of<br />
+requiring implementation support, but guess what?
+</p>
+<p>
+CSS2(.1) doesn&#8217;t say you can implement  <strong>part</strong> of the spec.  You&#8217;re supposed to implement the whole spec in the first place.
+</p>
+<h3>
+The Red Queen Problem<br />
+</h3>
+<p>
+Obviously this was hard (in fact, impossible for self-contradicting and ambiguously written REC-CSS2 in 1998), and browser vendors (yours truly included) tried to do the next best thing, which is to implement logical &#8220;chunks&#8221; of <a rel="tag" href="http://technorati.com/tag/css21">CSS2(.1)</a>.
+</p>
+<p>
+Well it&#8217;s been <strong>7 years</strong> since <a href="http://w3.org/TR/REC-CSS2/">REC-CSS2</a>, and those logical &#8220;chunks&#8221; have simply grown, more, chunky, as it were.  They&#8217;ve also been clarified down to previously unseen levels of details in <a href="http://w3.org/TR/CSS21">CSS2.1</a>
+</p>
+<p>
+You need to keep coding just to keep up.
+</p>
+<h3>
+Support CSS 2.1 NOW!<br />
+</h3>
+<p>
+The bottom line: eventually what will happen (within a couple of years at most?) is that so many browsers will have implemented <strong>all</strong> of CSS2.1, and authors will be writing with that in mind, that <strong>any</strong> new browser that wants to support part of CSS2.1 will have to support all of it in order to support the style sheets in the wild.
+</p>
+<p>
+<abbr title="in my humble opinion">IMHO</abbr>, that&#8217;s called progress.
+</p>
+<h3>For Now</h3>
+<p>
+But we don&#8217;t have any fully compliant CSS 2.1 browsers yet.  And we still have obsolete/abandoned browsers with enough marketshare (or machine dependence) to warrant the incremental bit of effort to support them. So for now:
+</p>
+<ol>
+<li>First try to simply author <a href="http://webstandards.org/">standards-based</a> cross browser designs.</li>
+<li><a href="http://validator.w3.org">Validate</a>, <a href="http://jigsaw.w3.org/css-validator/">validate</a>, <a href="http://validator.w3.org/feed/">validate</a>.</li>
+<li>Check any browser differences to see if your code is perhaps depending on an implicit browser default style sheet (like the example of the visible empty <code>&lt;legend&gt;</code> in IE6/Windows), and specify that styling <em>explicitly</em> instead of depending on the defaults.
+</li>
+<li>Use CSS hacks and filters sparingly (and only as needed) to get non-compliant obsolete/abandoned browsers to comply to your presentational wishes.</li>
+<li>And keep the pressure on the browser vendors to implement the web standards all of us web developers depend on to get our jobs done.</li>
+</ol>
+<p>
+If you&#8217;ve made it this far, you&#8217;ve been extraordinarily patient and have the attention span of a savant. I wish you a happy Thanksgiving holiday.
+</p>
+<p>[This <a href="http://tantek.com/log/2005/11.html#d26t1820">entry originally posted over here</a>.]</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2005/11/27/pandoras-box-model-of-css-hacks-and-other-good-intentions/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>
+
+<!-- Dynamic page generated in 0.196 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2015-08-20 14:35:06 -->

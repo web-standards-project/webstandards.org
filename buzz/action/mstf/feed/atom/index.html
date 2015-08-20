@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?><feed
+  xmlns="http://www.w3.org/2005/Atom"
+  xmlns:thr="http://purl.org/syndication/thread/1.0"
+  xml:lang="en"
+  xml:base="http://www.webstandards.org/wp-atom.php"
+   >
+	<title type="text">The Web Standards Project &#187; Microsoft TF</title>
+	<subtitle type="text">Working together for standards</subtitle>
+
+	<updated>2013-03-01T18:30:30Z</updated>
+
+	<link rel="alternate" type="text/html" href="http://www.webstandards.org" />
+	<id>http://www.webstandards.org/feed/atom/</id>
+	<link rel="self" type="application/atom+xml" href="http://www.webstandards.org/buzz/action/mstf/feed/atom/" />
+
+	<generator uri="http://wordpress.org/" version="3.3.1">WordPress</generator>
+		<entry>
+		<author>
+			<name>agustafson</name>
+						<uri>http://www.easy-reader.net</uri>
+					</author>
+		<title type="html"><![CDATA[IE8 Has Arrived]]></title>
+		<link rel="alternate" type="text/html" href="http://www.webstandards.org/2009/03/20/ie8-has-arrived/" />
+		<id>http://www.webstandards.org/?p=1690</id>
+		<updated>2009-03-21T18:08:28Z</updated>
+		<published>2009-03-20T13:14:20Z</published>
+		<category scheme="http://www.webstandards.org" term="Browsers" /><category scheme="http://www.webstandards.org" term="CSS" /><category scheme="http://www.webstandards.org" term="DOM" /><category scheme="http://www.webstandards.org" term="Microsoft" /><category scheme="http://www.webstandards.org" term="Microsoft TF" />		<summary type="html"><![CDATA[With a greater focus on standards-compliance, it seems possible that Microsoft's latest browser may redeem itself in the eyes of standards-savvy designers and developers.]]></summary>
+		<content type="html" xml:base="http://www.webstandards.org/2009/03/20/ie8-has-arrived/"><![CDATA[<p>As you may have heard, yesterday marked the official release of <a href="http://www.microsoft.com/windows/internet-explorer/?ocid=ie8_s_706ae4aa-994d-4444-bd09-8bed2d2852b2">Internet Explorer 8</a>. This new version of the oft-reviled browser has a completely rewritten rendering engine that was built, from the ground up, with the CSS 2.1 spec in hand.  Improvements in this version include
+<ul>
+<li>the death of <code>hasLayout</code></li>
+<li><code>object</code> fallbacks</li>
+<li>stylable <code>legend</code> elements</li>
+<li>generated content (including support for dynamic attribute insertion via <code>attr()</code>)</li>
+<li>CSS counters</li>
+<li>support for the <code>quotes</code> property</li>
+<li>outline control</li>
+<li>data URIs</li>
+<li>full access to the <code>style</code> attribute via the DOM</li>
+<li>mutable DOM prototypes</li>
+<li>and much more</li>
+</ul>
+<p>  This browser is a giant leap forward for standards support at Microsoft, but <a href="http://search.twitter.com/search?q=ie8">reviews so far</a> seem mixed. What do you think?</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://www.webstandards.org/2009/03/20/ie8-has-arrived/#comments" thr:count="35"/>
+		<link rel="replies" type="application/atom+xml" href="http://www.webstandards.org/2009/03/20/ie8-has-arrived/feed/atom/" thr:count="35"/>
+		<thr:total>35</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>agustafson</name>
+						<uri>http://www.easy-reader.net</uri>
+					</author>
+		<title type="html"><![CDATA[Microsoft rethinks IE8&#8242;s default behavior]]></title>
+		<link rel="alternate" type="text/html" href="http://www.webstandards.org/2008/03/03/microsoft-rethinks-ie8s-default-behavior/" />
+		<id>http://www.webstandards.org/2008/03/03/microsoft-rethinks-ie8s-default-behavior/</id>
+		<updated>2008-03-04T19:51:18Z</updated>
+		<published>2008-03-03T22:50:21Z</published>
+		<category scheme="http://www.webstandards.org" term="Browsers" /><category scheme="http://www.webstandards.org" term="Microsoft" /><category scheme="http://www.webstandards.org" term="Microsoft TF" />		<summary type="html"><![CDATA[Perhaps it was our complaining or perhaps it was a reconsideration of its own <a href="http://www.microsoft.com/presspass/presskits/interoperability/default.mspx">interoperability principles</a>, but Microsoft has decided to change its course on IE8 and will opt-in to its new standards mode by default.]]></summary>
+		<content type="html" xml:base="http://www.webstandards.org/2008/03/03/microsoft-rethinks-ie8s-default-behavior/"><![CDATA[<p>This afternoon, in <a href="http://blogs.msdn.com/ie/archive/2008/03/03/microsoft-s-interoperability-principles-and-ie8.aspx">an announcement posted on the IE Blog</a>, Microsoft officially reversed its position on IE8&#8242;s default behavior with regard to its new standards mode. The browser will now automatically opt-in all websites to &#8220;super standards mode&#8221; unless explicitly told not to (using IE&#8217;s version targeting mechanism).</p>
+<p>So what does this mean? Well, a few things:</p>
+<ol>
+<li>Standards-based developers will not have to add an additional header to their server or another <code>meta</code> element to their markup to realize the benefits of IE8&#8242;s new rendering and scripting engines.</li>
+<li>Any non-standards aware developers will need to be educated to either a) implement version targeting, or b) get their site compliant.</li>
+<li>Anyone using JavaScript that engages in browser sniffing will need to replace that for feature detection (and check their third-party code too) as many assumptions about IE&#8217;s scripting engine could be proven false in this release.</li>
+</ol>
+<p>This was a very complex issue and I fully understood and had come to accept Microsoft&#8217;s earlier decision to break with convention and <em>not</em> automatically opt sites in to the new engine, but I have to say I&#8217;m glad they&#8217;ve reversed that decision. In the end, this does put more pressure on them to get the word out about how version targeting can prevent a recurrence of the issues that came about when IE7 released, but, personally, I feel their product (and the web at large) is better for it.</p>
+<p>What do you think?</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://www.webstandards.org/2008/03/03/microsoft-rethinks-ie8s-default-behavior/#comments" thr:count="45"/>
+		<link rel="replies" type="application/atom+xml" href="http://www.webstandards.org/2008/03/03/microsoft-rethinks-ie8s-default-behavior/feed/atom/" thr:count="45"/>
+		<thr:total>45</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>agustafson</name>
+						<uri>http://www.easy-reader.net</uri>
+					</author>
+		<title type="html"><![CDATA[WaSP Round Table: IE8&#8242;s Default Version Targeting Behavior]]></title>
+		<link rel="alternate" type="text/html" href="http://www.webstandards.org/2008/02/24/wasp-round-table-ie8s-default-version-targeting-behavior/" />
+		<id>http://www.webstandards.org/2008/02/24/wasp-round-table-ie8s-default-version-targeting-behavior/</id>
+		<updated>2008-02-29T15:32:15Z</updated>
+		<published>2008-02-24T17:45:35Z</published>
+		<category scheme="http://www.webstandards.org" term="Browsers" /><category scheme="http://www.webstandards.org" term="General" /><category scheme="http://www.webstandards.org" term="Microsoft" /><category scheme="http://www.webstandards.org" term="Microsoft TF" /><category scheme="http://www.webstandards.org" term="Opinion" />		<summary type="html"><![CDATA[One week ago, several WaSP members took the time to have a virtual sit-down with Chris Wilson of Microsoft to talk about IE8's proposed default behavior of having to opt-in for the browser's new standards mode.]]></summary>
+		<content type="html" xml:base="http://www.webstandards.org/2008/02/24/wasp-round-table-ie8s-default-version-targeting-behavior/"><![CDATA[<p>On 16 February, Web Standards Project Members Faruk Ateş, Porter Glendinning, and I got together with Chris Wilson, Platform Architect for Internet Explorer to talk about IE8&#8242;s proposed default version targeting behavior of having to opt-in to the browser&#8217;s new standards mode.</p>
+<p>As you may recall, the version targeting opt-in requires developers to use the new <code>X-UA-Compatible</code> HTTP header (or the <code>meta</code> equivalent) in order to take advantage of the standards-based layout and scripting improvements in the IE8. Under the current setup, any page/server not opting-in to would continue to render and behave as though it were being viewed in IE7, even if the site was being viewed on IE8, IE9, or IE1000. This doesn&#8217;t sit well with many standards-aware developers who think that the IE team got it backwards; many of them believe that you should have to opt-in to <em>keep</em> your site from being interpreted by newer layout and scripting engines. (Folks interested in hearing both sides of that argument should check out <a href="http://www.alistapart.com/issues/253">the latest issue of <cite>A List Apart</cite></a>, where Jeremy Keith and Jeffrey Zeldman square off on the topic.)</p>
+<p>In our &#8220;round table&#8221; discussion, we talked about several proposals from the community that could help bring IE8&#8242;s standards mode to the masses, including:</p>
+<ul>
+<li>encouraging Microsoft to ship a patch to IIS that automatically targets sites run on that server to IE7 (in hopes of avoiding the potentially catastrophic impact IE8 may have on intranets and the like);</li>
+<li>shipping the IE8 beta with standards mode on by default just to see how many sites break; and</li>
+<li>making IE8 a standalone browser, capable of being run side-by-side with IE7 to allow users the flexibility of using one broswer for some sites and the other for other sites.</li>
+</ul>
+<p>If you are interested in listening to or reading a transcript of the discussion, you can do so by following one of these links:</p>
+<ul>
+<li><a href="http://www.webstandards.org.nyud.net/files/wasp_round_table_ie8s_default_behavior.mp3">WaSP Round Table: IE8&#8242;s Default Version Targeting Behavior [mp3]</a></li>
+<li><a href="http://www.glendathegood.com/wasp/transcript.html">WaSP Round Table: IE8&#8242;s Default Version Targeting Behavior [transcript]</a></li>
+</ul>
+<p>I&#8217;d like to give special thanks to fellow WaSPs Glenda Sims and Steph Troeth for organizing, producing, and transcribing this Round Table.</p>
+<p>This buzz has been translated into <a href="http://www.e-unlimited.net/28/" hreflang="pl">Polish</a>.</p>
+]]></content>
+<link href="http://www.webstandards.org.nyud.net/files/wasp_round_table_ie8s_default_behavior.mp3" rel="enclosure" length="22677129" type="audio/mpeg" />
+		<link rel="replies" type="text/html" href="http://www.webstandards.org/2008/02/24/wasp-round-table-ie8s-default-version-targeting-behavior/#comments" thr:count="22"/>
+		<link rel="replies" type="application/atom+xml" href="http://www.webstandards.org/2008/02/24/wasp-round-table-ie8s-default-version-targeting-behavior/feed/atom/" thr:count="22"/>
+		<thr:total>22</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>agustafson</name>
+						<uri>http://www.easy-reader.net</uri>
+					</author>
+		<title type="html"><![CDATA[Opting-in to standards support]]></title>
+		<link rel="alternate" type="text/html" href="http://www.webstandards.org/2008/01/22/ie8-will-see-the-smile/" />
+		<id>http://www.webstandards.org/2007/12/19/ie8-will-see-the-smile/</id>
+		<updated>2008-01-23T00:56:18Z</updated>
+		<published>2008-01-22T14:21:26Z</published>
+		<category scheme="http://www.webstandards.org" term="Authoring Tools" /><category scheme="http://www.webstandards.org" term="Browsers" /><category scheme="http://www.webstandards.org" term="CSS" /><category scheme="http://www.webstandards.org" term="DOM" /><category scheme="http://www.webstandards.org" term="HTML/XHTML" /><category scheme="http://www.webstandards.org" term="Microsoft" /><category scheme="http://www.webstandards.org" term="Microsoft TF" /><category scheme="http://www.webstandards.org" term="WaSP Announcement" />		<summary type="html"><![CDATA[In this week's issue of <cite>A List Apart</cite>, I was (finally) able to reveal Microsoft's new strategy for <em>forward</em>-compatibility, a strategy that was developed hand-in-hand with several of us here at WaSP.]]></summary>
+		<content type="html" xml:base="http://www.webstandards.org/2008/01/22/ie8-will-see-the-smile/"><![CDATA[<p>When IE7 came out, sites broke. Folks throughout the web community posited many reasons why, but none mentioned the fact that all standards-enabled rendering engines are triggered by an assumption we affectionately call the &#8220;<code>DOCTYPE</code> switch.&#8221; I&#8217;ll truck out a dusty old cliché here: &#8220;when you <em>assume</em>, you make an <em>ass</em> out of <em>you</em> and <em>me</em>.&#8221;</p>
+<p>So what does that have to do with the <code>DOCTYPE</code> switch? Well, the <code>DOCTYPE</code> switch <em>assumes</em> that if you are using a valid <code>DOCTYPE</code> for a &#8220;modern&#8221; language (e.g. HTML 4), you know what you&#8217;re doing and want the browser to render in standards mode.</p>
+<p>That assumption could have worked out all right, had it not been for authoring tool makers who&#8212;with the best intentions and under pressure from us (the web standards community and WaSP, in particular)&#8212;decided to include valid <code>DOCTYPE</code>s in new documents by default, thereby crippling the <code>DOCTYPE</code> switch because it wasn&#8217;t an explicit opt-in. Now add to that the fact that IE6 had the lion&#8217;s share of the browser market for so long&#8212;thereby becoming the primary browser in which many developers tested their work&#8212;and you have a recipe for disaster: developers assumed (there&#8217;s that word again) the layout they were getting in IE6 was accurate, not realizing they had been opted-in to accept rendering engine upgrades as the browser evolved (all of which was reinforced by the 5 years of stasis in terms of IE6&#8242;s rendering).</p>
+<p>So along comes IE7 with it&#8217;s tuned-up rendering engine and, well, it caused sites to broke.</p>
+<p>Not wanting to see that happen again, Microsoft approached us (WaSP) to help them find a better way of enabling standards support through an explicit opt-in. You can read more about <a href="http://alistapart.com/articles/beyonddoctype">the thought process we went through</a> in my article on <cite>A List Apart</cite>. <a href="http://alistapart.com/issues/251">The issue</a> also features a commentary piece by WaSP alum Eric Meyer (who was not involved in the development of the solution, but was asked for feedback on our work) that takes you on <a href="http://alistapart.com/articles/fromswitchestolocks">the mental journey he took in reaction to our recommendation</a>. The series for <cite>ALA</cite>&#8212;on what we are calling &#8220;browser version targeting&#8221;&#8212;will wrap in two weeks with a piece by Peter Paul Koch&#8212;who, like me, was involved in the development of this technique&#8212;that will cover application of the browser targeting mechanism in IE8 and beyond.</p>
+<p>This buzz has been translated into <a href="http://www.e-unlimited.net/akceptacja-obslugi-standardow/" hreflang="pl">Polish</a>.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://www.webstandards.org/2008/01/22/ie8-will-see-the-smile/#comments" thr:count="9"/>
+		<link rel="replies" type="application/atom+xml" href="http://www.webstandards.org/2008/01/22/ie8-will-see-the-smile/feed/atom/" thr:count="9"/>
+		<thr:total>9</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>blawson</name>
+						<uri>http://www.brucelawson.co.uk</uri>
+					</author>
+		<title type="html"><![CDATA[IE8 passes Acid2 test]]></title>
+		<link rel="alternate" type="text/html" href="http://www.webstandards.org/2007/12/19/ie8-passes-acid2-test-2/" />
+		<id>http://www.webstandards.org/2007/12/19/ie8-passes-acid2-test-2/</id>
+		<updated>2007-12-30T09:36:11Z</updated>
+		<published>2007-12-19T20:53:43Z</published>
+		<category scheme="http://www.webstandards.org" term="Acid2" /><category scheme="http://www.webstandards.org" term="Action" /><category scheme="http://www.webstandards.org" term="Browsers" /><category scheme="http://www.webstandards.org" term="CSS" /><category scheme="http://www.webstandards.org" term="HTML/XHTML" /><category scheme="http://www.webstandards.org" term="Microsoft" /><category scheme="http://www.webstandards.org" term="Microsoft TF" /><category scheme="http://www.webstandards.org" term="Web Standards (general)" />		<summary type="html"><![CDATA[Blimey. Cor luvvaduck and no mistake. Just after the announcement that Opera are complaining to the European Union about Internet Explorer&#8217;s dodgy standards support, Chris Wilson reports that an internal build of Internet Explorer 8 passes the Acid2 test. This doesn&#8217;t necessarily mean that IE8 has fixed all its float oddities, or its hasLayout hilarities. [...]]]></summary>
+		<content type="html" xml:base="http://www.webstandards.org/2007/12/19/ie8-passes-acid2-test-2/"><![CDATA[<p>Blimey. Cor luvvaduck and no mistake. Just after the announcement that <a href="/2007/12/13/opera-complains-to-europe-over-ie-lock-in/">Opera are complaining to the European Union</a> about Internet Explorer&#8217;s dodgy standards support, <a href="/2007/12/13/opera-complains-to-europe-over-ie-lock-in/#comment-59212">Chris Wilson reports</a> that an internal build of <a href="http://blogs.msdn.com/ie/archive/2007/12/19/internet-explorer-8-and-acid2-a-milestone.aspx">Internet Explorer 8 passes</a> the <a href="/action/acid2/">Acid2 test</a>.</p>
+<p>This doesn&#8217;t necessarily mean that IE8 has fixed all its float oddities, or its hasLayout hilarities. But what it does mean is that there is another browser war, and <a href="http://www.codinghorror.com/blog/archives/001006.html">Microsoft <em>did</em> decide to come</a>.</p>
+<p>Added 20 December 2007: Markus Mielke of the Internet Explorer team confirms &#8220;<a href="http://lists.w3.org/Archives/Public/www-style/2007Dec/0151.html">HasLayout will be history with IE8</a>&#8220;. Exciting times&hellip;</p>
+<p>(<a href="http://www.e-unlimited.net/ie8-spelnia-wymogi-testu-acid2/">This post translated into Polish</a>.)</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://www.webstandards.org/2007/12/19/ie8-passes-acid2-test-2/#comments" thr:count="50"/>
+		<link rel="replies" type="application/atom+xml" href="http://www.webstandards.org/2007/12/19/ie8-passes-acid2-test-2/feed/atom/" thr:count="50"/>
+		<thr:total>50</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>agustafson</name>
+						<uri>http://www.easy-reader.net</uri>
+					</author>
+		<title type="html"><![CDATA[Talking with Microsoft about IE.next]]></title>
+		<link rel="alternate" type="text/html" href="http://www.webstandards.org/2007/02/04/talking-with-microsoft-about-ienext/" />
+		<id>http://www.webstandards.org/2007/02/04/talking-with-microsoft-about-ienext/</id>
+		<updated>2007-02-04T20:51:03Z</updated>
+		<published>2007-02-04T20:49:43Z</published>
+		<category scheme="http://www.webstandards.org" term="Browsers" /><category scheme="http://www.webstandards.org" term="DOM Scripting TF" /><category scheme="http://www.webstandards.org" term="Microsoft TF" />		<summary type="html"><![CDATA[I was in Redmond on Friday to meet with a few folks on the Internet Explorer team to discuss improvements we (as in the WaSP DOM Scripting and Microsoft task forces, and the JS Ninjas) wanted to see in IE.next.]]></summary>
+		<content type="html" xml:base="http://www.webstandards.org/2007/02/04/talking-with-microsoft-about-ienext/"><![CDATA[<p>You may recall that the DOM Scripting and Microsoft task forces, in collaboration with JS Ninjas, had been <a href="http://www.webstandards.org/2006/11/04/you-can-improve-ie-next/">compiling a list of issues, needs, and wants for IE.next</a> over the last few months (a list many of you contributed to as well, via your feedback). The list was to focus on what we wanted to see happen in terms of JavaScript support (as IE7 didn&#8217;t get much of an update in that area), but when it came down to it, there were other areas we really felt needed some love.</p>
+<h4>The list</h4>
+<p>Last week, our groups voted for what we each saw as priorities and those votes were tallied to create a final list for me to present in Redmond. Though there is obviously a great deal more we want to see in IE.next, we felt several things were critical and wanted to focus on those as a starting point.</p>
+<p>Tied for first place, in order of priority, were some sort of fast, arbitrary node-matching API and better error reporting. In the realm of DOM Scripting, node-matching is key (just look at the number of scripts out there performing node matching based on CSS selectors, etc.), so being able to tap into a native XPath implementation (which we generally favored over the Selectors API) would greatly improve the speed of script execution. As for the error reporting, perhaps Justin Palmer (of JS Ninjas) said it best:</p>
+<blockquote>
+<p>We could possibly find ways to fix all the other problems if we could tell what the hell was breaking and why. Without better error reporting, the remaining stuff on that list is just giving us a bigger gun to shoot ourselves in the foot with.</p>
+</blockquote>
+<p>Next up in our list was a desire for mutable DOM prototypes. This would address the issues that arise from IE&#8217;s implementation of DOM objects in JavaScript, where elements of the core DOM are not derived from the standard Object prototype. While not technically a standards-support issue, this request does not conflict with standards and it does provide JavaScript developers with the ability to address some of the issues the IE team may not be able to address themselves in the next release. As Andrew Dupont (another Ninja) remarked, <q>I think it&#8217;s reasonable to ask that a DOM implementation in JavaScript behave like it&#8217;s part of JavaScript.</q></p>
+<p>Next up was a biggie: bring IE&#8217;s event system in line with the W3C event model. This has been an issue for a lot of developers and the code to equalize the two event systems makes up a significant chunk of all of the major JS libraries. Getting IE to implement the W3C event system would be a real boon for standards support and would drop the size of many libraries considerably.</p>
+<p>Finally, the last of our top 5 was not a JS issue, but rather a CSS one: implement generated content. I don&#8217;t know that I really need to get into the reasons why this would be really nice to have.</p>
+<p>Two “honorable mentions” were included in the list as well: fixing the issues with <code>getAttribute()</code> and <code>setAttribute()</code> and starting to implement some of the features of JS 1.7 (such as block-scope variables using <code>let</code>, etc.).</p>
+<p>Not willing to let the IE team off that easy, the document presented also highlighted several other issues which really need addressing including (among others)</p>
+<ul>
+<li>fixing CSS bugs (including collapsing adjoining margins and <code>z-index</code>);</li>
+<li>various form control fixes (including implementations of the <code>button</code> element, <code>label</code>s, and the <code>disabled</code> attribute);</li>
+<li>correcting its support for <code>object</code>;</li>
+<li>adding support for the <code>q</code> element (which should be a breeze once generated content is enabled); and</li>
+<li>fixing attribute issues (such as <code>alt</code> being used for a tooltip, <code>cite</code> not being supported on <code>q</code> and <code>blockquote</code>, and <code>summary</code> not being supported on <code>table</code>s).</li>
+</ul>
+<h4>The meeting</h4>
+<p>In Redmond, I met with Pete LePage, a Product Manager at Microsoft Web Platform and Tools, and several other key members on the IE team. We discussed the list and its implications in great detail for nearly two hours. While I am not at liberty to discuss all of the details of the meeting, I can say for certain that the group I met with was keenly aware of the issues we brought up and are eager to address them. One team member even said that he could have easily guessed our top 5.</p>
+<p>The one concern they have—especially with regard to the event model and <code>getAttribute()</code>/<code>setAttribute()</code>—is that any adjustments they make to bring IE in line with the standards not “break the web” for the large number of sites using the proprietary IE event model, etc. We discussed this particular topic at length as it is a valid concern and I&#8217;m happy to say that I think we&#8217;re close to a solution on that front. </p>
+<p>I came away from this meeting with a real sense of hope about where IE is going and am really encouraged by their willingness to engage the standards community (and web developers as a whole) in dialog like this. We did not resolve every issue in our two-hour talk, but I was assured that this was only the first of many steps toward improving IE.next. The IE team wants to continue this conversation and to continue to elicit feedback from the web community as a whole as things progress.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://www.webstandards.org/2007/02/04/talking-with-microsoft-about-ienext/#comments" thr:count="21"/>
+		<link rel="replies" type="application/atom+xml" href="http://www.webstandards.org/2007/02/04/talking-with-microsoft-about-ienext/feed/atom/" thr:count="21"/>
+		<thr:total>21</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>agustafson</name>
+						<uri>http://www.easy-reader.net</uri>
+					</author>
+		<title type="html"><![CDATA[You can improve IE.next]]></title>
+		<link rel="alternate" type="text/html" href="http://www.webstandards.org/2006/11/04/you-can-improve-ie-next/" />
+		<id>http://www.webstandards.org/2006/11/04/you-can-improve-ie-next/</id>
+		<updated>2006-11-04T17:49:32Z</updated>
+		<published>2006-11-04T17:49:32Z</published>
+		<category scheme="http://www.webstandards.org" term="Action" /><category scheme="http://www.webstandards.org" term="Browsers" /><category scheme="http://www.webstandards.org" term="Bugs" /><category scheme="http://www.webstandards.org" term="DOM" /><category scheme="http://www.webstandards.org" term="DOM Scripting TF" /><category scheme="http://www.webstandards.org" term="Microsoft" /><category scheme="http://www.webstandards.org" term="Microsoft TF" /><category scheme="http://www.webstandards.org" term="Outreach" />		<summary type="html"><![CDATA[If you've ever wanted the opportunity to tell Microsoft what they should do with IE next, now is the time.]]></summary>
+		<content type="html" xml:base="http://www.webstandards.org/2006/11/04/you-can-improve-ie-next/"><![CDATA[<p>The Microsoft Task Force, DOM Scripting Task Force, and the JS Ninjas have been approached to help give the IE team some direction for improvements needed in IE.next, focusing mainly on JavaScript and the DOM. Together, we&#8217;ve begun assembling <a href="http://easy-designs.stikipad.com/ie-next-wishlist">a list of things we think need addressing</a> (bugs &#38; implementation issues, enhancements in language support, etc.). We&#8217;ve tried to keep it balanced, with some things for the seasoned JavaScript developer and some for the folks who are just starting out in the world of DOM Scripting, but we need your help to make sure we aren&#8217;t missing anything.</p>
+<p>In the interest of time and keeping the process streamlined and organized, we&#8217;ve opted to make the wiki invitation-only, but we do need your input. Please have a look at what we&#8217;ve put together so far and leave your thoughts/ideas/recommendations in the comments below. We don&#8217;t know how soon we&#8217;ll need to get this list over to the IE team, so please don&#8217;t wait to long.</p>
+<p>We will work to incorporate any relevant ideas into the final list, prioritize it, and pass it along to the IE team. Once the list is out the door, we will need to develop test cases for each item on it (some of which we&#8217;ve already begun), so if you are interested, please let us know that as well.</p>
+<p><strong>Note:</strong> We&#8217;re not guaranteed to get everything we ask for, but they <em>are</em> listening.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://www.webstandards.org/2006/11/04/you-can-improve-ie-next/#comments" thr:count="75"/>
+		<link rel="replies" type="application/atom+xml" href="http://www.webstandards.org/2006/11/04/you-can-improve-ie-next/feed/atom/" thr:count="75"/>
+		<thr:total>75</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>agustafson</name>
+						<uri>http://www.easy-reader.net</uri>
+					</author>
+		<title type="html"><![CDATA[Microsoft predicts swift adoption of IE7]]></title>
+		<link rel="alternate" type="text/html" href="http://www.webstandards.org/2006/10/28/microsoft-predicts-swift-adoption-of-ie7/" />
+		<id>http://www.webstandards.org/2006/10/28/microsoft-predicts-swift-adoption-of-ie7/</id>
+		<updated>2006-10-28T15:49:02Z</updated>
+		<published>2006-10-28T15:49:02Z</published>
+		<category scheme="http://www.webstandards.org" term="Browsers" /><category scheme="http://www.webstandards.org" term="Microsoft" /><category scheme="http://www.webstandards.org" term="Microsoft TF" /><category scheme="http://www.webstandards.org" term="Web Standards (general)" />		<summary type="html"><![CDATA[Earlier this week, Chris Wilson of the IE team revealed some numbers he feels point to a swifter adoption of IE7 than previously thought.]]></summary>
+		<content type="html" xml:base="http://www.webstandards.org/2006/10/28/microsoft-predicts-swift-adoption-of-ie7/"><![CDATA[<p>As part of his keynote at <a href="http://theajaxexperience.com">The Ajax Experience</a> in Boston earlier this week, Chris Wilson, Lead Platform Architect for the IE team (and a WaSP Microsoft Task Force member), revealed that Internet Explorer 7 was downloaded about 3 million times within the first four days of its release. He also offered that, according to Microsoft&#8217;s own numbers, <q>90% of the Windows web share is running [Windows] XP</q>, which goes a long way toward relieving concerns that Microsoft&#8217;s plan to only offer <abbr title="Internet Explorer 7">IE7</abbr> to users of Windows XP and beyond will slow its adoption and never free us from the problematic world of <abbr title="Internet Explorer 6">IE6</abbr> support:</p>
+<blockquote cite="http://www.molly.com/2006/10/26/ie7-adoption-rate-faster-than-you-think/"><p>I think that you’ll actually see, and granted this is a little early since [it's] only been out for five days or something, &#8230; the curve on this [and it] will quickly be clear how soon we’ll get to ditch IE6 &#8230; I can’t really predict that, but I think you’ll find it’s going to be quicker than what most people expect today.</p></blockquote>
+<p>Chris also mentioned that the adoption thus-far has come without Microsoft pushing the browser update via its Windows Update service and I don&#8217;t think anyone is ruling out the possibility that Microsoft may choose to go that route, eventually.</p>
+<p>If Chris is right (and I hope he is), this is very good news for standards-based developers. While it is true that IE7 is far from perfect, it is a much needed step on the way to a world without CSS hacks and workarounds and one with more standardized DOM support. Having also had a few off-the-record conversations with folks from the IE team attending the event, I can honestly say I feel confident that we (the standards community) have Microsoft&#8217;s ear and that they are <em>very</em> interested in knowing what they can do to make our lives easier now and in what they are casually referring to as &#8220;IE.Next.&#8221;</p>
+<p>If you&#8217;re interested in seeing a snippet of video from the speech, captured by Molly, jump on over to <a href="http://www.molly.com/2006/10/26/ie7-adoption-rate-faster-than-you-think/">her post on the topic</a>.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://www.webstandards.org/2006/10/28/microsoft-predicts-swift-adoption-of-ie7/#comments" thr:count="26"/>
+		<link rel="replies" type="application/atom+xml" href="http://www.webstandards.org/2006/10/28/microsoft-predicts-swift-adoption-of-ie7/feed/atom/" thr:count="26"/>
+		<thr:total>26</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>deanedwards</name>
+						<uri>http://dean.edwards.name/</uri>
+					</author>
+		<title type="html"><![CDATA[IE7 JavaScript Improvements]]></title>
+		<link rel="alternate" type="text/html" href="http://www.webstandards.org/2006/09/21/ie7-javascript-improvements/" />
+		<id>http://www.webstandards.org/2006/09/21/ie7-javascript-improvements/</id>
+		<updated>2006-09-21T15:51:51Z</updated>
+		<published>2006-09-21T15:09:29Z</published>
+		<category scheme="http://www.webstandards.org" term="Browsers" /><category scheme="http://www.webstandards.org" term="DOM Scripting TF" /><category scheme="http://www.webstandards.org" term="Microsoft" /><category scheme="http://www.webstandards.org" term="Microsoft TF" />		<summary type="html"><![CDATA[<p>The IEBlog recently reported some improvements in IE7’s JavaScript engine.</p>]]></summary>
+		<content type="html" xml:base="http://www.webstandards.org/2006/09/21/ie7-javascript-improvements/"><![CDATA[<p>The IEBlog recently reported some <a href="http://blogs.msdn.com/ie/archive/2006/08/28/728654.aspx">improvements</a><br />
+ in IE7&#8217;s JavaScript engine:</p>
+<blockquote>
+<p>We have heard a lot of requests to improve our Jscript engine, especially now that AJAX<br />
+  sites are becoming more prevalent on the web.  I want you all to know that we have been<br />
+  listening and have recently made some great fixes to our engine to improve the garbage<br />
+  collection routine and to reduce unbounded memory growth.</p>
+</blockquote>
+<p>This was confirmed by tests performed by the <a href="http://qooxdoo.org">qooxdoo</a> developers:</p>
+<blockquote>
+<p>In fact <a href="http://qooxdoo.org/demo">many demos</a> of qooxdoo<br />
+  run much faster now in IE7 compared to IE6. And they are even faster than in Firefox 1.5 in many cases.<br />
+  This is a huge jump in performance. Microsoft did not tell about their exact modifications, of course.<br />
+  Anyway, they have fixed <em>the</em> major problem of large JavaScript-based web applications. This problem,<br />
+  despite having a catchy name, was mentioned many times before like<br />
+  <a href="http://demo.qooxdoo.org/html/performance/GlobalObject_2.html">here</a>,<br />
+  <a href="http://alex.dojotoolkit.org/?p=536">here</a> and<br />
+  <a href="http://groups.google.com/group/microsoft.public.inetsdk.programming.scripting.jscript/browse_thread/thread/d758f148f03cd2ed/cc6143cd1b0d1e38?lnk=st&amp;q=jscript+slow+performance+ie+firefox&amp;rnum=2#cc6143cd1b0d1e3">there</a>:<br />
+  If you have many objects created, which are simply accessible in the current scope, all<br />
+  methods and features of JavaScript slow down dramatically.</p>
+</blockquote>
+<p>It would be great if these bugs were fixed so I emailed<br />
+ <a href="http://blogs.msdn.com/cwilso/" title="Group Program Manager of the Internet Explorer Platform team">Chris Wilson</a> for comfirmation. He replied:</p>
+<blockquote>
+<p>Yes, it is true we&#8217;ve done some dramatic improvements to JavaScript<br />
+  performance.  I wouldn&#8217;t say we&#8217;ve fixed everything, but we&#8217;ve addressed<br />
+  a bunch of memory leak problems and most significantly, taken a<br />
+  different strategy for the Jscript garbage collector.  This last one<br />
+  makes a huge difference in many current JavaScript-heavy pages.</p>
+</blockquote>
+<p>Good news indeed.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://www.webstandards.org/2006/09/21/ie7-javascript-improvements/#comments" thr:count="14"/>
+		<link rel="replies" type="application/atom+xml" href="http://www.webstandards.org/2006/09/21/ie7-javascript-improvements/feed/atom/" thr:count="14"/>
+		<thr:total>14</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>mollyeh</name>
+						<uri>http://molly.com/</uri>
+					</author>
+		<title type="html"><![CDATA[IE7: The List is In]]></title>
+		<link rel="alternate" type="text/html" href="http://www.webstandards.org/2006/08/22/ie7-the-list-is-in/" />
+		<id>http://www.webstandards.org/2006/08/22/ie7-the-list-is-in/</id>
+		<updated>2006-08-23T03:48:31Z</updated>
+		<published>2006-08-23T03:28:11Z</published>
+		<category scheme="http://www.webstandards.org" term="Browsers" /><category scheme="http://www.webstandards.org" term="General" /><category scheme="http://www.webstandards.org" term="Microsoft TF" /><category scheme="http://www.webstandards.org" term="Web Standards (general)" />		<summary type="html"><![CDATA[A <a href="http://blogs.msdn.com/ie/archive/2006/08/22/712830.aspx">comprehensive list of bug fixes, implementations and developer/designer resources</a> for IE7 has been published by Markus Mielke of Microsoft (and also a member of the W3C CSS Working Group) on the <a href="http://blogs.msdn.com/ie/">IEBlog</a> today.]]></summary>
+		<content type="html" xml:base="http://www.webstandards.org/2006/08/22/ie7-the-list-is-in/"><![CDATA[<p>The list, which includes <a href="http://blogs.msdn.com/ie/archive/2006/08/22/712830.aspx">200 issues that have been addressed</a> including such coveted features as alpha transparency support for PNGs; the <code>:hover</code> dynamic pseudo class available for all elements; and min/max width supports. </p>
+<p>More details and views on what was fixed, what wasn&#8217;t and how to prepare your sites for IE7 are available via Markus&#8217; post.</p>
+<p>The work Microsoft has done in IE7 is impressive, and I am confident that it is a significant step forward in the improvement across all browsers. </p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://www.webstandards.org/2006/08/22/ie7-the-list-is-in/#comments" thr:count="19"/>
+		<link rel="replies" type="application/atom+xml" href="http://www.webstandards.org/2006/08/22/ie7-the-list-is-in/feed/atom/" thr:count="19"/>
+		<thr:total>19</thr:total>
+	</entry>
+	</feed>
+
+<!-- Dynamic page generated in 0.201 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2015-08-20 14:47:26 -->

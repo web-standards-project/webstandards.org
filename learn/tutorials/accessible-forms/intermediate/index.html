@@ -1,0 +1,445 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<!-- Mirrored from www.webstandards.org/learn/tutorials/accessible-forms/intermediate/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Aug 2015 19:47:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>  Accessible HTML/XHTML Forms: Intermediate Level - The Web Standards Project</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="The Web Standards Project is a grassroots coalition fighting for standards which ensure simple, affordable access to web technologies for all." />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<script type="text/javascript" src="../../../../wp/wp-content/themes/web-standards-project/collapse.js"></script>
+<link rel="stylesheet" type="text/css" media="screen, projection" href="../../../../wp/wp-content/themes/web-standards-project/styles.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../../../wp/wp-content/themes/web-standards-project/print.css" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="../../../../feed/index.html" />
+<link rel="alternate" type="text/xml" title="RSS .92" href="../../../../feed/rss/index.html" />
+<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="../../../../feed/atom/index.html" />
+<link rel="pingback" href="../../../../wp/xmlrpc.php" />
+<link rel="Shortcut Icon" type="image/ico" href="../../../../files/theme/wasp.ico" />
+<link rel="home" title="Web Standards Project Home" href="../../../../index.html" />
+	<link rel='archives' title='March 2013' href='../../../../2013/03/index.html' />
+	<link rel='archives' title='February 2012' href='../../../../2012/02/index.html' />
+	<link rel='archives' title='December 2011' href='../../../../2011/12/index.html' />
+	<link rel='archives' title='November 2011' href='../../../../2011/11/index.html' />
+	<link rel='archives' title='March 2011' href='../../../../2011/03/index.html' />
+	<link rel='archives' title='February 2011' href='../../../../2011/02/index.html' />
+	<link rel='archives' title='January 2011' href='../../../../2011/01/index.html' />
+	<link rel='archives' title='August 2010' href='../../../../2010/08/index.html' />
+	<link rel='archives' title='June 2010' href='../../../../2010/06/index.html' />
+	<link rel='archives' title='March 2010' href='../../../../2010/03/index.html' />
+	<link rel='archives' title='February 2010' href='../../../../2010/02/index.html' />
+	<link rel='archives' title='January 2010' href='../../../../2010/01/index.html' />
+	<link rel='archives' title='November 2009' href='../../../../2009/11/index.html' />
+	<link rel='archives' title='June 2009' href='../../../../2009/06/index.html' />
+	<link rel='archives' title='May 2009' href='../../../../2009/05/index.html' />
+	<link rel='archives' title='April 2009' href='../../../../2009/04/index.html' />
+	<link rel='archives' title='March 2009' href='../../../../2009/03/index.html' />
+	<link rel='archives' title='February 2009' href='../../../../2009/02/index.html' />
+	<link rel='archives' title='January 2009' href='../../../../2009/01/index.html' />
+	<link rel='archives' title='December 2008' href='../../../../2008/12/index.html' />
+	<link rel='archives' title='November 2008' href='../../../../2008/11/index.html' />
+	<link rel='archives' title='October 2008' href='../../../../2008/10/index.html' />
+	<link rel='archives' title='September 2008' href='../../../../2008/09/index.html' />
+	<link rel='archives' title='August 2008' href='../../../../2008/08/index.html' />
+	<link rel='archives' title='July 2008' href='../../../../2008/07/index.html' />
+	<link rel='archives' title='June 2008' href='../../../../2008/06/index.html' />
+	<link rel='archives' title='May 2008' href='../../../../2008/05/index.html' />
+	<link rel='archives' title='April 2008' href='../../../../2008/04/index.html' />
+	<link rel='archives' title='March 2008' href='../../../../2008/03/index.html' />
+	<link rel='archives' title='February 2008' href='../../../../2008/02/index.html' />
+	<link rel='archives' title='January 2008' href='../../../../2008/01/index.html' />
+	<link rel='archives' title='December 2007' href='../../../../2007/12/index.html' />
+	<link rel='archives' title='November 2007' href='../../../../2007/11/index.html' />
+	<link rel='archives' title='October 2007' href='../../../../2007/10/index.html' />
+	<link rel='archives' title='September 2007' href='../../../../2007/09/index.html' />
+	<link rel='archives' title='August 2007' href='../../../../2007/08/index.html' />
+	<link rel='archives' title='June 2007' href='../../../../2007/06/index.html' />
+	<link rel='archives' title='May 2007' href='../../../../2007/05/index.html' />
+	<link rel='archives' title='April 2007' href='../../../../2007/04/index.html' />
+	<link rel='archives' title='March 2007' href='../../../../2007/03/index.html' />
+	<link rel='archives' title='February 2007' href='../../../../2007/02/index.html' />
+	<link rel='archives' title='January 2007' href='../../../../2007/01/index.html' />
+	<link rel='archives' title='December 2006' href='../../../../2006/12/index.html' />
+	<link rel='archives' title='November 2006' href='../../../../2006/11/index.html' />
+	<link rel='archives' title='October 2006' href='../../../../2006/10/index.html' />
+	<link rel='archives' title='September 2006' href='../../../../2006/09/index.html' />
+	<link rel='archives' title='August 2006' href='../../../../2006/08/index.html' />
+	<link rel='archives' title='July 2006' href='../../../../2006/07/index.html' />
+	<link rel='archives' title='June 2006' href='../../../../2006/06/index.html' />
+	<link rel='archives' title='May 2006' href='../../../../2006/05/index.html' />
+	<link rel='archives' title='April 2006' href='../../../../2006/04/index.html' />
+	<link rel='archives' title='March 2006' href='../../../../2006/03/index.html' />
+	<link rel='archives' title='February 2006' href='../../../../2006/02/index.html' />
+	<link rel='archives' title='January 2006' href='../../../../2006/01/index.html' />
+	<link rel='archives' title='December 2005' href='../../../../2005/12/index.html' />
+	<link rel='archives' title='November 2005' href='../../../../2005/11/index.html' />
+	<link rel='archives' title='October 2005' href='../../../../2005/10/index.html' />
+	<link rel='archives' title='September 2005' href='../../../../2005/09/index.html' />
+	<link rel='archives' title='August 2005' href='../../../../2005/08/index.html' />
+	<link rel='archives' title='July 2005' href='../../../../2005/07/index.html' />
+	<link rel='archives' title='June 2005' href='../../../../2005/06/index.html' />
+	<link rel='archives' title='May 2005' href='../../../../2005/05/index.html' />
+	<link rel='archives' title='April 2005' href='../../../../2005/04/index.html' />
+	<link rel='archives' title='March 2005' href='../../../../2005/03/index.html' />
+	<link rel='archives' title='February 2005' href='../../../../2005/02/index.html' />
+	<link rel='archives' title='January 2005' href='../../../../2005/01/index.html' />
+	<link rel='archives' title='December 2004' href='../../../../2004/12/index.html' />
+	<link rel='archives' title='November 2004' href='../../../../2004/11/index.html' />
+	<link rel='archives' title='October 2004' href='../../../../2004/10/index.html' />
+	<link rel='archives' title='September 2004' href='../../../../2004/09/index.html' />
+	<link rel='archives' title='August 2004' href='../../../../2004/08/index.html' />
+	<link rel='archives' title='July 2004' href='../../../../2004/07/index.html' />
+	<link rel='archives' title='June 2004' href='../../../../2004/06/index.html' />
+	<link rel='archives' title='May 2004' href='../../../../2004/05/index.html' />
+	<link rel='archives' title='April 2004' href='../../../../2004/04/index.html' />
+	<link rel='archives' title='March 2004' href='../../../../2004/03/index.html' />
+	<link rel='archives' title='February 2004' href='../../../../2004/02/index.html' />
+	<link rel='archives' title='January 2004' href='../../../../2004/01/index.html' />
+	<link rel='archives' title='December 2003' href='../../../../2003/12/index.html' />
+	<link rel='archives' title='November 2003' href='../../../../2003/11/index.html' />
+	<link rel='archives' title='October 2003' href='../../../../2003/10/index.html' />
+	<link rel='archives' title='September 2003' href='../../../../2003/09/index.html' />
+	<link rel='archives' title='August 2003' href='../../../../2003/08/index.html' />
+	<link rel='archives' title='July 2003' href='../../../../2003/07/index.html' />
+	<link rel='archives' title='June 2003' href='../../../../2003/06/index.html' />
+	<link rel='archives' title='May 2003' href='../../../../2003/05/index.html' />
+	<link rel='archives' title='April 2003' href='../../../../2003/04/index.html' />
+	<link rel='archives' title='March 2003' href='../../../../2003/03/index.html' />
+	<link rel='archives' title='February 2003' href='../../../../2003/02/index.html' />
+	<link rel='archives' title='January 2003' href='../../../../2003/01/index.html' />
+	<link rel='archives' title='December 2002' href='../../../../2002/12/index.html' />
+	<link rel='archives' title='November 2002' href='../../../../2002/11/index.html' />
+	<link rel='archives' title='October 2002' href='../../../../2002/10/index.html' />
+	<link rel='archives' title='September 2002' href='../../../../2002/09/index.html' />
+	<link rel='archives' title='August 2002' href='../../../../2002/08/index.html' />
+	<link rel='archives' title='July 2002' href='../../../../2002/07/index.html' />
+	<link rel='archives' title='June 2002' href='../../../../2002/06/index.html' />
+	<link rel='archives' title='April 2002' href='../../../../2002/04/index.html' />
+	<link rel='archives' title='March 2002' href='../../../../2002/03/index.html' />
+	<link rel='archives' title='December 2001' href='../../../../2001/12/index.html' />
+	<link rel='archives' title='September 2001' href='../../../../2001/09/index.html' />
+	<link rel='archives' title='November 2000' href='../../../../2000/11/index.html' />
+	<link rel='archives' title='July 2000' href='../../../../2000/07/index.html' />
+	<link rel='archives' title='April 2000' href='../../../../2000/04/index.html' />
+	<link rel='archives' title='March 1999' href='../../../../1999/03/index.html' />
+	<link rel='archives' title='October 1998' href='../../../../1998/10/index.html' />
+	<link rel='archives' title='August 1998' href='../../../../1998/08/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../../wp/xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../../wp/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Accessible HTML/XHTML Forms: Beginner Level' href='../beginner/index.html' />
+<link rel='next' title='Accessible HTML/XHTML Forms: Advanced Level' href='../advanced/index.html' />
+<meta name="generator" content="WordPress 3.3.1" />
+<link rel='canonical' href='index.html' />
+</head>
+
+<body id="top" class="page">
+
+<div id="container">
+
+
+	<div id="branding">
+		<h1><span>Working together for standards </span> <a href="../../../../index.html">The Web Standards Project</a></h1>
+
+		<a id="skip" href="#content-main" title="Skip to content">Skip to content</a>
+	</div>
+
+	<div id="nav-main">
+				<form id="fm-search" method="get" action="http://www.webstandards.org/index.php">
+			<fieldset>
+				<legend>Search</legend>
+				<label for="s"><span>Search WaSP</span>
+				<input id="s" name="s" class="search" value="" /></label>
+				<input type="submit" class="submit" name="submit" value="Go!" />
+			</fieldset>
+		</form>
+		<ul>
+			<li><a href="../../../../index.html" title="Home">Home</a></li>
+			<li><a href="../../../../about/index.html" title="More About Who We Are">About</a></li>
+			<li><a href="../../../index.html" title="More About Standards">Learn</a></li>
+			<li><a href="../../../../action/index.html" title="WaSP and Community Actions">Action</a></li>
+			<li><a href="../../../../buzz/index.html" title="Current and Archive Buzz Posts">Buzz</a></li>
+			<li><a href="../../../../press/index.html" title="In the Press and For the Press">Press</a></li>
+		</ul>
+	</div>
+
+
+	<hr />
+
+	<div id="content">
+		<div id="content-main">
+
+			<h2>Accessible HTML/XHTML Forms: Intermediate Level</h2>
+			<h3>Introduction</h3>
+<p>The <a href="../beginner/index.html">beginner section</a> covered the basics<br />
+  of layout and positioning of form elements in your web page to improve the accessibility<br />
+  of your forms. In this section we&#8217;ll look at some specific elements that you<br />
+  can add to your forms that will go even further in insuring that your pages<br />
+  are usable and accessible by the widest possible audience.</p>
+<h3>Stick a Label On It that says &#8216;I Am Accessible!&#8217;</h3>
+<p>Without doubt, one of the most useful tags you can use to make a form more<br />
+  accessible is the <code>&lt;label&gt;</code> tag. In the beginner section we<br />
+  detailed how some screen readers can get extremely confused when you start moving<br />
+  the text that relates to a given form input too far away from it. With the &lt;label&gt;<br />
+  tag, you can start to be a little more adventurous and still feel reasonably<br />
+  happy that your form will be accessible.</p>
+<h4>What does the label do?</h4>
+<p>The label is a signpost. It tells the browser/user agent/screen reader: &quot;Hey,<br />
+  you see that form input over there? The one called &#8216;firstname&#8217;? Well, that belongs<br />
+  to me and make no mistake about it&quot;. Or, as you would have it in the more<br />
+  sober world of XHTML:</p>
+<p><code>&lt;label for=&quot;firstname&quot;&gt;First Name&lt;/label&gt;&lt;br<br />
+  /&gt;<br />
+  &lt;input type=&quot;text&quot; name=&quot;firstname&quot; id=&quot;firstname&quot;<br />
+  size=&quot;20&quot;/&gt;</code></p>
+<p>It creates an unambiguous link between the text and the input which is only<br />
+  broken if you introduce some sloppy markup (notably, by copy-pasting and forgetting<br />
+  to change some ids &#8211; remember, ids must be unique, you cannot have two elements<br />
+  on any page sharing the same id).</p>
+<p>If you so desired, you could now move the text around and many (but not all)<br />
+  assistive devices would still understand what test relates to the form input:</p>
+<p><code>&lt;input type=&quot;text&quot; name=&quot;firstname&quot; id=&quot;firstname&quot;<br />
+  size=&quot;20&quot;/&gt;</p>
+<p>  &lt;label for=&quot;firstname&quot;&gt;First Name&lt;/label&gt; </code></p>
+<p>There is another fringe benefit of using the <code>&lt;label&gt;</code> tag<br />
+  that might not be immediately obvious &#8211; by adding this tag, many browsers will<br />
+  allow you to click on the text contained in the <code>&lt;label&gt;</code> tag<br />
+  to focus on the input. This is particularly useful for the likes of checkboxes<br />
+  and radio buttons which have a very small hit area ordinarily:</p>
+<p><img src="../../../../files/accessible-forms/click-me-anywhere.gif" alt="Hit area increased by label tag" width="271" height="69" /></p>
+<h4>Where Can I use a Label?</h4>
+<p>The <code>&lt;label&gt;</code> tag can be used on almost every form element,<br />
+  with the exception of buttons (the control comprises the associated text &#8211; no<br />
+  link to anything external is required). Below is a chart of form elements with<br />
+  examples of this handy little tag being put to use:</p>
+<table border="1">
+<colgroup span="2" width="50%"></colgroup>
+<tr>
+<th>Form element looks like</th>
+<th>Coded like:</th>
+</tr>
+<tr>
+<td><span class="inputLabel"></p>
+<p>      <label for="txtFirstName">First Name:</label><br />
+      </span><br /> <br />
+<input class="input" type="text" title="Enter your first name" maxlength="" size="" name="txtFirstName" id="txtFirstName" value="" />
+    </td>
+<td><strong><code>&lt;label for=&quot;txtFirstName&quot;&gt;</code></strong><code>First<br />
+      Name:<strong>&lt;/label&gt;</strong>&lt;br /&gt;<br />
+      &lt;input class=&quot;input&quot; type=&quot;text&quot; title=&quot;Enter<br />
+      your first name&quot; maxlength=&quot;&quot; size=&quot;&quot; name=&quot;txtFirstName&quot;<br />
+      <strong>id=&quot;txtFirstName&quot;</strong> value=&quot;&quot;&gt;</code><br /> 
+    </td>
+</tr>
+<tr>
+<td> <span class="inputLabel">Age:</span><br /> <br />
+<input class="input" type="radio" title="Choose from one of the options" name="radAge" id="radAge4_0" value="Under30" />
+      <label for="radAge4_0">&nbsp;Under 30</label><br />
+      <br /> <br />
+<input class="input" type="radio" title="Choose from one of the options" name="radAge" id="radAge4_1" value="Over30" />
+      <label for="radAge4_1">&nbsp;Over 30</label><br />
+       </td>
+<td> <code>Age:&lt;br /&gt;<br />
+      &lt;input class=&quot;input&quot; type=&quot;radio&quot; title=&quot;Choose<br />
+      from one of the options&quot; name=&quot;radAge&quot; <strong>id=&quot;radAge4_0&quot;</strong><br />
+      value=&quot;Under30&quot;&gt;<strong>&lt;label for=&quot;radAge4_0&quot;&gt;</strong>&amp;nbsp;Under<br />
+      30<strong>&lt;/label&gt;</strong>&lt;br&gt;</p>
+<p>      &lt;input class=&quot;input&quot; type=&quot;radio&quot; title=&quot;Choose<br />
+      from one of the options&quot; name=&quot;radAge&quot; <strong>id=&quot;radAge4_1&quot;</strong><br />
+      value=&quot;Over30&quot;&gt;<strong>&lt;label for=&quot;radAge4_1&quot;&gt;</strong>&amp;nbsp;Over<br />
+      30<strong>&lt;/label&gt;</strong>&lt;br&gt;</code> </td>
+</tr>
+<tr>
+<td> <span class="inputLabel">What colours do you like:</span> </p>
+<input class="input" type="checkbox" title="Select what colours you like" name="chk0" id="chk0_0" value="red" />
+      <label for="chk0_0">&nbsp;red</label><br />
+      <br /> <br />
+<input class="input" type="checkbox" title="Select what colours you like" name="chk1" id="chk1_1" value="green" />
+      <label for="chk1_1">&nbsp;green</label><br />
+      <br /> <br />
+<input class="input" type="checkbox" title="Select what colours you like" name="chk2" id="chk2_2" value="blue" />
+      <label for="chk2_2">&nbsp;blue</label></p>
+<p> <br />
+<input class="input" type="checkbox" title="Select what colours you like" name="chk3" id="chk3_3" value="purple" />
+      <label for="chk3_3">&nbsp;purple</label><br />
+       </td>
+<td> <code>What colors do you like:&lt;br /&gt;<br />
+      &lt;input class=&quot;input&quot; type=&quot;checkbox&quot; title=&quot;Select<br />
+      what colors you like&quot; name=&quot;chk0&quot; <strong>id=&quot;chk0_0&quot;</strong><br />
+      value=&quot;red&quot;&gt;<strong>&lt;label for=&quot;chk0_0&quot;&gt;</strong>&amp;nbsp;red<strong>&lt;/label&gt;</strong>&lt;br&gt;</p>
+<p>      &lt;input class=&quot;input&quot; type=&quot;checkbox&quot; title=&quot;Select<br />
+      what colors you like&quot; name=&quot;chk1&quot; <strong>id=&quot;chk1_1&quot;</strong><br />
+      value=&quot;green&quot;&gt;<strong>&lt;label for=&quot;chk1_1&quot;&gt;</strong>&amp;nbsp;green<strong>&lt;/label&gt;</strong>&lt;br&gt;</p>
+<p>      &lt;input class=&quot;input&quot; type=&quot;checkbox&quot; title=&quot;Select<br />
+      what colors you like&quot; name=&quot;chk2&quot;<strong> id=&quot;chk2_2&quot;</strong><br />
+      value=&quot;blue&quot;&gt;<strong>&lt;label for=&quot;chk2_2&quot;&gt;</strong>&amp;nbsp;blue<strong>&lt;/label&gt;</strong>&lt;br&gt;</p>
+<p>      &lt;input class=&quot;input&quot; type=&quot;checkbox&quot; title=&quot;Select<br />
+      what colors you like&quot; name=&quot;chk3&quot; <strong>id=&quot;chk3_3&quot;</strong><br />
+      value=&quot;purple&quot;&gt;<strong>&lt;label for=&quot;chk3_3&quot;&gt;</strong>&amp;nbsp;purple<strong>&lt;/label&gt;</strong>&lt;br&gt;</code><br /> 
+    </td>
+</tr>
+<tr>
+<td> <span class="inputLabel"><br />
+      <label for="txtLifeStory">Your life story:</label><br />
+      </span><br /> <textarea title="Write your life story here" name="txtLifeStory" id="txtLifeStory" rows="5" cols="25" class="input"></textarea>
+    </td>
+<td><strong><code>&lt;label for=&quot;txtLifeStory&quot;&gt;</code></strong><code>Your<br />
+      life story:<strong>&lt;/label&gt;</strong>&lt;br /&gt;</p>
+<p>      &lt;textarea title=&quot;Write your life story here&quot; name=&quot;txtLifeStory&quot;<br />
+      <strong>id=&quot;txtLifeStory&quot;</strong> rows=&quot;5&quot; cols=&quot;25&quot;<br />
+      class=&quot;input&quot;&gt;&lt;/textarea&gt;</code> </td>
+</tr>
+<tr>
+<td> <span class="inputLabel"><br />
+      <label for="ddlTown">Favorite Town:</label><br />
+      </span><br /> <br />
+<select title="Please choose your favourite town" name="ddlTown" id="ddlTown">
+<option value="">Please Select &#8230; </option>
+<option value="Swindon">Swindon</option>
+<option value="London">London</option>
+<option value="Burkino Faso">Burkino Faso</option>
+</select>
+</td>
+<td> <strong><code>&lt;label for=&quot;ddlTown&quot;&gt;</code></strong><code>Favorite<br />
+      Town:<strong>&lt;/label&gt;</strong>&lt;br /&gt;</p>
+<p>      &lt;select title=&quot;Please choose your favorite town&quot; name=&quot;ddlTown&quot;<br />
+      <strong>id=&quot;ddlTown&quot;</strong>&gt;<br />
+      &lt;option value=&quot;&quot;&gt;Please Select ... &lt;/option&gt;<br />
+      &lt;option value=&quot;Swindon&quot;&gt;Swindon&lt;/option&gt;</p>
+<p>      &lt;option value=&quot;London&quot;&gt;London&lt;/option&gt;<br />
+      &lt;option value=&quot;Burkino Faso&quot;&gt;Burkino Faso&lt;/option&gt;<br />
+      &lt;/select&gt;</code> </td>
+</tr>
+</table>
+<h3>Grouping Elements Naturally</h3>
+<p>Heard of <code>&lt;fieldset&gt;</code> and <code>&lt;optgroup&gt;</code> before?<br />
+  No? Well let us introduce you to &#8230;</p>
+<h4>The Fieldset Entity</h4>
+<p>If you are presented with a list of 50 seemingly unrelated checkboxes to tick<br />
+  in a survey it&#8217;s very daunting. I wouldn&#8217;t bother &#8211; would you? But there is<br />
+  a saying &#8216;Divide and Conquer&#8217;, and it has a friend in the XHTML entity <code>&lt;fieldset&gt;</code>.
+</p>
+<p>Using fieldset you chunk up your 50 questions into, say, 5 clearly identifiable<br />
+  groups of topics, each with 10 properties/attributes. You increase the usability/accessibility<br />
+  by making the page clearer to the sighted user, or the user who may have cognitive<br />
+  difficulties. </p>
+<p>How much it helps blind users is questionable as screen reader support for<br />
+  these elements is patchy (where present at all) and even if they were supported,<br />
+  it&#8217;s even more doubtful how easy it would be for the user to access the semantic<br />
+  meaning of these items. But &#8230; just because these elements are not fully supported<br />
+  by assistive devices now is no excuse not to use them. Get into good practices<br />
+  now and when the assistive technology can do something useful with it you can<br />
+  pat yourself on the back for being so forward-thinking.</p>
+<p>An example of the Fieldset in use (and its related entity <code>legend</code><br />
+  &#8211; that&#8217;s the text that sits along the top and describes the content of the boxed<br />
+  area &#8211; &#8216;My Radio Buttons&#8217; in this example):</p>
+<p><img src="../../../../files/accessible-forms/fieldset.gif" alt="Example of a fieldset" width="211" height="179" /></p>
+<p>The markup to achieve this is as follows:</p>
+<p><code>&lt;fieldset&gt;<br />
+  &lt;legend&gt;My Radio Buttons&lt;/legend&gt;</p>
+<p>  &lt;input type=&quot;radio&quot; id=&quot;rad0&quot; name=&quot;rad&quot; /&gt;<br />
+  &lt;label for=&quot;rad0&quot;&gt;Option<br />
+  0&lt;/label&gt;</p>
+<p>&lt;input type=&quot;radio&quot; id=&quot;rad1&quot; name=&quot;rad&quot; /&gt;<br />
+&lt;label<br />
+for=&quot;rad1&quot;&gt;Option<br />
+1&lt;/label&gt;<br />
+&lt;input type=&quot;radio&quot; id=&quot;rad2&quot; name=&quot;rad&quot; /&gt;</p>
+<p>&lt;label<br />
+for=&quot;rad2&quot;&gt;Option<br />
+2&lt;/label&gt;<br />
+...<br />
+  &lt;/fieldset&gt;</code></p>
+<p>As with most HTML elements, you can style the fieldset to your own needs using<br />
+  CSS, as the following image shows:</p>
+<p><img src="../../../../files/accessible-forms/fieldset-styled.gif" alt="A CSS-styled fieldset" width="202" height="155" /></p>
+<p>Note that the fieldset can be used to group together <em>any</em> variety of<br />
+  form input elements &#8211; not just groups of the same type as detailed above. It&#8217;s<br />
+  also perfectly legal to use nested fieldsets, if you so desire, as this image<br />
+  (of the world&#8217;s most simple form) shows below:</p>
+<p><img src="../../../../files/accessible-forms/nested-fieldset.gif" alt="Nested fieldset" width="527" height="169" /></p>
+<h4>The Optgroup Element</h4>
+<p>In the same way that you can logically group related form controls, you can<br />
+  use the <code>&lt;optgroup&gt;</code> tag to group options (predictably) used<br />
+  in a <code>&lt;select&gt;</code> tag. Let&#8217;s take a look at the markup:</p>
+<p><code>&lt;select name=&quot;favoritefood&quot;&gt;<br />
+  &lt;optgroup label=&quot;Dairy products&quot;&gt;</p>
+<p>  &lt;option&gt;Cheese&lt;/option&gt;<br />
+  &lt;option&gt;Egg&lt;/option&gt;<br />
+  &lt;/optgroup&gt;<br />
+  &lt;optgroup label=&quot;Vegetables&quot;&gt;</p>
+<p>  &lt;option&gt;Cabbage&lt;/option&gt;<br />
+  &lt;option&gt;Lettuce&lt;/option&gt;<br />
+  &lt;option&gt;Beans&lt;/option&gt;<br />
+  &lt;option&gt;Onions&lt;/option&gt;</p>
+<p>  &lt;option&gt;Courgettes&lt;/option&gt;<br />
+  &lt;/optgroup&gt;<br />
+  &lt;optgroup label=&quot;Fruit&quot;&gt;<br />
+  &lt;option&gt;Apples&lt;/option&gt;</p>
+<p>  &lt;option&gt;Grapes&lt;/option&gt;<br />
+  &lt;option&gt;Pineapples&lt;/option&gt;<br />
+  &lt;/optgroup&gt;<br />
+  &lt;/select&gt; </code></p>
+<p>You see what&#8217;s happening? The drop-down list has been grouped by food types,<br />
+  in the example above. Some browsers are able to render this information on screen,<br />
+  others ignore it. But like the fieldset example above, just because not all<br />
+  browsers or assistive devices can currently pick up this extra information is<br />
+  no reason <em>not</em> to use it.</p>
+<p><img src="../../../../files/accessible-forms/optgroups.gif" alt="Example of Optgroup in Safari and Firebird browsers" width="290" height="280" /></p>
+<p>Note: don&#8217;t get confused between the <code>&lt;label&gt;</code> tag and the<br />
+  label attribute (which is only used on the <code>&lt;optgroup&gt;</code> tag)!</p>
+<h3>Summary</h3>
+<p>This section has shown some practical XHTML tags that you can use right now<br />
+  to add some extra meaning to your web pages, provide some extra categorization/grouping<br />
+  and in the case of &lt;label&gt; make in an immediate improvement to a form&#8217;s<br />
+  accessibility. While not all browsers or devices currently choose to honor<br />
+  these tags and attribute, when they do you can feel confident that you&#8217;ve done<br />
+  your bit. </p>
+<p>In the advanced section, we&#8217;ll look at some real-world problems of accessible<br />
+  forms and suggest how they can be addressed through a number of different solutions.
+</p>
+<p><a href="../advanced/index.html">View the Advanced Level page</a></p>
+
+		</div>
+
+		<div id="content-sub">
+			<div id="content-branding">
+				<p>The Web Standards Project is a grassroots coalition fighting for standards which ensure simple, affordable access to web technologies for all.</p>
+			</div>
+
+			<ul id="nav-sub">
+				<li class="page_item page-item-552"><a href="../../../faq/index.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="page_item page-item-597 current_page_ancestor"><a href="../../index.html">Tutorials</a></li>
+<li class="page_item page-item-599"><a href="../../../articles/index.html">Articles and Interviews</a></li>
+<li class="page_item page-item-555"><a href="../../../reference/index.html">Reference Materials</a></li>
+<li class="page_item page-item-596"><a href="../../../external/index.html">External Resources</a></li>
+			</ul>
+
+					</div>
+
+	</div>
+
+	<hr />
+
+	<div id="nav-supp">
+		<p><a href="#top" title="Back to Top">Back to Top</a></p> 
+	</div>
+
+	<div id="siteinfo">
+		<p>All of the entries posted in <abbr title="The Web Standards Project">WaSP</abbr> Buzz express the opinions of their individual authors. They do not necessarily reflect the plans or positions of the Web Standards Project as a group.</p>
+		<p>This site is valid <a href="http://validator.w3.org/check/referer" title="Validate this document">XHTML 1.0 Strict</a>, <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate this CSS">CSS</a> | Get Buzz via <a href="../../../../feed/index.html"><abbr title="Really Simple Syndication">RSS</abbr></a> or <a href="../../../../feed/atom/index.html">Atom</a> | <a href="../../../../about/colophon/index.html">Colophon</a> | <a href="../../../../about/legal/index.html">Legal</a></p>
+		<!-- 31 queries. 0.294 seconds. -->
+	</div>
+
+</div>
+
+
+</body>
+
+<!-- Mirrored from www.webstandards.org/learn/tutorials/accessible-forms/intermediate/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Aug 2015 19:47:35 GMT -->
+</html>
+
+<!-- Dynamic page generated in 0.283 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2015-08-20 14:33:41 -->
+
+<!-- super cache -->
