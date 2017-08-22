@@ -1,0 +1,2040 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<!-- Mirrored from www.webstandards.org/2008/01/18/tell-the-css-wg-what-you-want-from-css3/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Aug 2017 17:37:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>  Tell the CSS WG what you want from CSS3 - The Web Standards Project</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="The Web Standards Project is a grassroots coalition fighting for standards which ensure simple, affordable access to web technologies for all." />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<script type="text/javascript" src="../../../../wp/wp-content/themes/web-standards-project/collapse.js"></script>
+<link rel="stylesheet" type="text/css" media="screen, projection" href="../../../../wp/wp-content/themes/web-standards-project/styles.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../../../wp/wp-content/themes/web-standards-project/print.css" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="../../../../feed/index.html" />
+<link rel="alternate" type="text/xml" title="RSS .92" href="../../../../feed/rss/index.html" />
+<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="../../../../feed/atom/index.html" />
+<link rel="pingback" href="../../../../wp/xmlrpc.php" />
+<link rel="Shortcut Icon" type="image/ico" href="../../../../files/theme/wasp.ico" />
+<link rel="home" title="Web Standards Project Home" href="../../../../index.html" />
+	<link rel='archives' title='March 2013' href='../../../../2013/03/index.html' />
+	<link rel='archives' title='February 2012' href='../../../../2012/02/index.html' />
+	<link rel='archives' title='December 2011' href='../../../../2011/12/index.html' />
+	<link rel='archives' title='November 2011' href='../../../../2011/11/index.html' />
+	<link rel='archives' title='March 2011' href='../../../../2011/03/index.html' />
+	<link rel='archives' title='February 2011' href='../../../../2011/02/index.html' />
+	<link rel='archives' title='January 2011' href='../../../../2011/01/index.html' />
+	<link rel='archives' title='August 2010' href='../../../../2010/08/index.html' />
+	<link rel='archives' title='June 2010' href='../../../../2010/06/index.html' />
+	<link rel='archives' title='March 2010' href='../../../../2010/03/index.html' />
+	<link rel='archives' title='February 2010' href='../../../../2010/02/index.html' />
+	<link rel='archives' title='January 2010' href='../../../../2010/01/index.html' />
+	<link rel='archives' title='November 2009' href='../../../../2009/11/index.html' />
+	<link rel='archives' title='June 2009' href='../../../../2009/06/index.html' />
+	<link rel='archives' title='May 2009' href='../../../../2009/05/index.html' />
+	<link rel='archives' title='April 2009' href='../../../../2009/04/index.html' />
+	<link rel='archives' title='March 2009' href='../../../../2009/03/index.html' />
+	<link rel='archives' title='February 2009' href='../../../../2009/02/index.html' />
+	<link rel='archives' title='January 2009' href='../../../../2009/01/index.html' />
+	<link rel='archives' title='December 2008' href='../../../12/index.html' />
+	<link rel='archives' title='November 2008' href='../../../11/index.html' />
+	<link rel='archives' title='October 2008' href='../../../10/index.html' />
+	<link rel='archives' title='September 2008' href='../../../09/index.html' />
+	<link rel='archives' title='August 2008' href='../../../08/index.html' />
+	<link rel='archives' title='July 2008' href='../../../07/index.html' />
+	<link rel='archives' title='June 2008' href='../../../06/index.html' />
+	<link rel='archives' title='May 2008' href='../../../05/index.html' />
+	<link rel='archives' title='April 2008' href='../../../04/index.html' />
+	<link rel='archives' title='March 2008' href='../../../03/index.html' />
+	<link rel='archives' title='February 2008' href='../../../02/index.html' />
+	<link rel='archives' title='January 2008' href='../../index.html' />
+	<link rel='archives' title='December 2007' href='../../../../2007/12/index.html' />
+	<link rel='archives' title='November 2007' href='../../../../2007/11/index.html' />
+	<link rel='archives' title='October 2007' href='../../../../2007/10/index.html' />
+	<link rel='archives' title='September 2007' href='../../../../2007/09/index.html' />
+	<link rel='archives' title='August 2007' href='../../../../2007/08/index.html' />
+	<link rel='archives' title='June 2007' href='../../../../2007/06/index.html' />
+	<link rel='archives' title='May 2007' href='../../../../2007/05/index.html' />
+	<link rel='archives' title='April 2007' href='../../../../2007/04/index.html' />
+	<link rel='archives' title='March 2007' href='../../../../2007/03/index.html' />
+	<link rel='archives' title='February 2007' href='../../../../2007/02/index.html' />
+	<link rel='archives' title='January 2007' href='../../../../2007/01/index.html' />
+	<link rel='archives' title='December 2006' href='../../../../2006/12/index.html' />
+	<link rel='archives' title='November 2006' href='../../../../2006/11/index.html' />
+	<link rel='archives' title='October 2006' href='../../../../2006/10/index.html' />
+	<link rel='archives' title='September 2006' href='../../../../2006/09/index.html' />
+	<link rel='archives' title='August 2006' href='../../../../2006/08/index.html' />
+	<link rel='archives' title='July 2006' href='../../../../2006/07/index.html' />
+	<link rel='archives' title='June 2006' href='../../../../2006/06/index.html' />
+	<link rel='archives' title='May 2006' href='../../../../2006/05/index.html' />
+	<link rel='archives' title='April 2006' href='../../../../2006/04/index.html' />
+	<link rel='archives' title='March 2006' href='../../../../2006/03/index.html' />
+	<link rel='archives' title='February 2006' href='../../../../2006/02/index.html' />
+	<link rel='archives' title='January 2006' href='../../../../2006/01/index.html' />
+	<link rel='archives' title='December 2005' href='../../../../2005/12/index.html' />
+	<link rel='archives' title='November 2005' href='../../../../2005/11/index.html' />
+	<link rel='archives' title='October 2005' href='../../../../2005/10/index.html' />
+	<link rel='archives' title='September 2005' href='../../../../2005/09/index.html' />
+	<link rel='archives' title='August 2005' href='../../../../2005/08/index.html' />
+	<link rel='archives' title='July 2005' href='../../../../2005/07/index.html' />
+	<link rel='archives' title='June 2005' href='../../../../2005/06/index.html' />
+	<link rel='archives' title='May 2005' href='../../../../2005/05/index.html' />
+	<link rel='archives' title='April 2005' href='../../../../2005/04/index.html' />
+	<link rel='archives' title='March 2005' href='../../../../2005/03/index.html' />
+	<link rel='archives' title='February 2005' href='../../../../2005/02/index.html' />
+	<link rel='archives' title='January 2005' href='../../../../2005/01/index.html' />
+	<link rel='archives' title='December 2004' href='../../../../2004/12/index.html' />
+	<link rel='archives' title='November 2004' href='../../../../2004/11/index.html' />
+	<link rel='archives' title='October 2004' href='../../../../2004/10/index.html' />
+	<link rel='archives' title='September 2004' href='../../../../2004/09/index.html' />
+	<link rel='archives' title='August 2004' href='../../../../2004/08/index.html' />
+	<link rel='archives' title='July 2004' href='../../../../2004/07/index.html' />
+	<link rel='archives' title='June 2004' href='../../../../2004/06/index.html' />
+	<link rel='archives' title='May 2004' href='../../../../2004/05/index.html' />
+	<link rel='archives' title='April 2004' href='../../../../2004/04/index.html' />
+	<link rel='archives' title='March 2004' href='../../../../2004/03/index.html' />
+	<link rel='archives' title='February 2004' href='../../../../2004/02/index.html' />
+	<link rel='archives' title='January 2004' href='../../../../2004/01/index.html' />
+	<link rel='archives' title='December 2003' href='../../../../2003/12/index.html' />
+	<link rel='archives' title='November 2003' href='../../../../2003/11/index.html' />
+	<link rel='archives' title='October 2003' href='../../../../2003/10/index.html' />
+	<link rel='archives' title='September 2003' href='../../../../2003/09/index.html' />
+	<link rel='archives' title='August 2003' href='../../../../2003/08/index.html' />
+	<link rel='archives' title='July 2003' href='../../../../2003/07/index.html' />
+	<link rel='archives' title='June 2003' href='../../../../2003/06/index.html' />
+	<link rel='archives' title='May 2003' href='../../../../2003/05/index.html' />
+	<link rel='archives' title='April 2003' href='../../../../2003/04/index.html' />
+	<link rel='archives' title='March 2003' href='../../../../2003/03/index.html' />
+	<link rel='archives' title='February 2003' href='../../../../2003/02/index.html' />
+	<link rel='archives' title='January 2003' href='../../../../2003/01/index.html' />
+	<link rel='archives' title='December 2002' href='../../../../2002/12/index.html' />
+	<link rel='archives' title='November 2002' href='../../../../2002/11/index.html' />
+	<link rel='archives' title='October 2002' href='../../../../2002/10/index.html' />
+	<link rel='archives' title='September 2002' href='../../../../2002/09/index.html' />
+	<link rel='archives' title='August 2002' href='../../../../2002/08/index.html' />
+	<link rel='archives' title='July 2002' href='../../../../2002/07/index.html' />
+	<link rel='archives' title='June 2002' href='../../../../2002/06/index.html' />
+	<link rel='archives' title='April 2002' href='../../../../2002/04/index.html' />
+	<link rel='archives' title='March 2002' href='../../../../2002/03/index.html' />
+	<link rel='archives' title='December 2001' href='../../../../2001/12/index.html' />
+	<link rel='archives' title='September 2001' href='../../../../2001/09/index.html' />
+	<link rel='archives' title='November 2000' href='../../../../2000/11/index.html' />
+	<link rel='archives' title='July 2000' href='../../../../2000/07/index.html' />
+	<link rel='archives' title='April 2000' href='../../../../2000/04/index.html' />
+	<link rel='archives' title='March 1999' href='../../../../1999/03/index.html' />
+	<link rel='archives' title='October 1998' href='../../../../1998/10/index.html' />
+	<link rel='archives' title='August 1998' href='../../../../1998/08/index.html' />
+<link rel="alternate" type="application/rss+xml" title="The Web Standards Project &raquo; Tell the CSS WG what you want from CSS3 Comments Feed" href="feed/index.html" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../../wp/xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../../wp/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='What&#8217;s the best test for Acid3?' href='../../16/whats-the-best-test-for-acid3/index.html' />
+<link rel='next' title='Opting-in to standards support' href='../../22/ie8-will-see-the-smile/index.html' />
+<meta name="generator" content="WordPress 3.3.1" />
+<link rel='canonical' href='index.html' />
+<link rel='shortlink' href='../../../../index07a6.html?p=1060' />
+</head>
+
+<body id="top" class="individual">
+
+<div id="container">
+
+
+	<div id="branding">
+		<h1><span>Working together for standards </span> <a href="../../../../index.html">The Web Standards Project</a></h1>
+
+		<a id="skip" href="#content-main" title="Skip to content">Skip to content</a>
+	</div>
+
+	<div id="nav-main">
+				<form id="fm-search" method="get" action="http://www.webstandards.org/index.php">
+			<fieldset>
+				<legend>Search</legend>
+				<label for="s"><span>Search WaSP</span>
+				<input id="s" name="s" class="search" value="" /></label>
+				<input type="submit" class="submit" name="submit" value="Go!" />
+			</fieldset>
+		</form>
+		<ul>
+			<li><a href="../../../../index.html" title="Home">Home</a></li>
+			<li><a href="../../../../about/index.html" title="More About Who We Are">About</a></li>
+			<li><a href="../../../../learn/index.html" title="More About Standards">Learn</a></li>
+			<li><a href="../../../../action/index.html" title="WaSP and Community Actions">Action</a></li>
+			<li><a href="../../../../buzz/index.html" title="Current and Archive Buzz Posts">Buzz</a></li>
+			<li><a href="../../../../press/index.html" title="In the Press and For the Press">Press</a></li>
+		</ul>
+	</div>
+
+
+	<hr />
+
+	<div id="content">
+
+	
+		<div id="content-main">
+			<div id="content-summary">
+				<h2 class="stmjrNoCollapse" id="post-1060"><a href="index.html" rel="bookmark" title="Permanent Link: Tell the CSS WG what you want from CSS3">Tell the CSS WG what you want from CSS3</a></h2>
+				<p class="stmjrNoCollapse">By <span class="vcard"><a href="../../../../about/members/blawson/index.html" class="url fn">Bruce Lawson</a></span> | January 18th, 2008 | Filed in <a href="../../../../buzz/action/index.html" title="View all posts in Action" rel="category tag">Action</a>, <a href="../../../../buzz/css/index.html" title="View all posts in CSS" rel="category tag">CSS</a>, <a href="../../../../buzz/design/index.html" title="View all posts in Design" rel="category tag">Design</a>, <a href="../../../../buzz/w3cstandards-documentation/index.html" title="View all posts in W3C/Standards Documentation" rel="category tag">W3C/Standards Documentation</a></p> 
+								<a href="#content-sub" id="stmjrCollapse-content-summary" title="Skip to comment form">Skip to comment form</a>
+			</div>
+
+			<p>The W3C&#8217;s <a title="Look! they're real human beings!" href="http://www.flickr.com/photo_zoom.gne?id=107631809&amp;size=l">CSS Working Group</a> charter expires on 1 July 2008, so the group will be discussing its revised charter in March this year. Fantasai, an Invited Expert in the group, has put out a call for web professionals to help the working group prioritise its work:</p>
+<blockquote><p>The CSSWG plans to discuss its charter at our next face-to-face meeting in March. If groups like CSS3.info, the CSS Eleven, and the WaSP and/or individuals like Jeffrey Zeldman and Eric Meyer could organize a collectively-written list of priorities and submit it to us before then, we could take that into account when writing our charter for 2008+.</p>
+<p><a href="http://www.css3.info/slightly-broken-but-not-beyond-repair/#comment-84355">Source</a>
+</p></blockquote>
+<p>I&#8217;d like to use the comments below to collect your feedback so that fantasai can take it back to the working group. It&#8217;s possible that some (or all) will be subsequently imported into a wiki on <a href="http://www.css3.info/">css3.info</a> for further public discussion, with full attribution of course.</p>
+<p>If your comments are very long, require HTML or example screenshots, please  post a link to an entry on your own website&mdash;the aim is to get a single place for the working group to look at.</p>
+<h3>The CSS working group&#8217;s charter</h3>
+<p>The <a href="http://www.w3.org/Style/2004/css-charter-long">charter</a>  defines and limits the scope of work the CSS working group is expected to pursue, its deliverables and a timetable. It also defines the logistics of how it operates, how often it meets, and  whether it&#8217;s public or private.</p>
+<p>There&#8217;s been a lot of <a href="http://www.stuffandnonsense.co.uk/malarkey/more/css_unworking_group/">debate recently</a> about whether the current charter is adequate. The CSS Working Group read those, but in order to focus on the work of the group (rather than meta-issues like its constitution), I don&#8217;t want to re-open that discussion here; if you have something that hasn&#8217;t already been said about the constitution of the CSS working group, please comment on <a href="http://www.zeldman.com/2007/12/15/re-css-unworking-group/">those</a> <a href="http://alex.dojotoolkit.org/?p=642">discussions</a>.</p>
+<h3>The timetable</h3>
+<p>The charter contains a list of CSS3 modules and their <a href="http://www.w3.org/Style/2004/css-charter-long#publications">relative priorities</a>.  Remember, this list is from the expiring charter, and indicates the intentions and priorities as of 1 July 2006. (You can see the current statuses in the <a href="http://www.w3.org/Style/CSS/current-work">current work</a>.)</p>
+<p>The working group seeks feedback on whether those  priorities are correct. Please indicate which features are most important to you, with any explanation you can give to help the group understand the different priorities of various sectors of web professional work. </p>
+<p>For example, I&#8217;m an accessibility wonk, and I work with public sector organisations, so my emphasis is (by priority and by talent) on the information rather than the aesthetics. So, I can live without the borders module, but I&#8217;m very interested in the advanced printing options specified in the <a href="http://www.w3.org/TR/css3-gcpm/">Generated Content for Paged Media module</a> so that the large consultation documents and reports that I publish can be more<br />
+user-friendly and I can avoid having to dual-publish information in print formats (e.g., Word documents or PDFs). </p>
+<p>Your experience will certainly vary&mdash;so please tell the working group what you need, <strong>and why</strong>.</p>
+<h3>Do you have a new idea for CSS 3?</h3>
+<p>What do you think should be added to CSS? This is your chance to let the working group know what&#8217;s missing. Feel free to link to your own blog with mocked-up screenshots: whatever you need to get the point across. </p>
+<p>Fantasai told me </p>
+<blockquote><p>What we really need is to understand what problem needs solving   and some idea of how people would like it solved. If someone&#8217;s proposing   a solution, we need to understand why they&#8217;re framing the solution that way&mdash;so if we need to flesh out details or design a different solution   we can understand what capabilities are important.</p>
+<p> &hellip; If we can understand   what the author is really trying to do, then we can design a feature   that makes that possible. If it&#8217;s just a list of disconnected features,   we won&#8217;t be able to identify with the author&#8217;s goals and then it&#8217;s likely   we&#8217;ll either misunderstand what they want or not find it compelling.</p>
+</blockquote>
+<p>The definition of the problem is <em>by far</em> more important a suggested  solution or syntax. </p>
+<p>As an illustration, I propose a new pseudo-element which I called <code>::line-break</code>. There may be lots of good reasons why this might be bad syntax, but I don&#8217;t care whether the syntax is adopted. I just want a solution to the problem I define&mdash;that of styling to differentiate between an author-coded line break and one that the browser has inserted (very important if you&#8217;re reading poetry or code&mdash;see my <a href="http://www.brucelawson.co.uk/index.php/2005/what-i-want-from-css-3/">&#8220;What I want from CSS3&#8243; blog entry</a>).</p>
+<p>I should point out that there is no guarantee that  you&#8217;ll get what you want; both the CSSWG and the browser developers have limited resources, so  can&#8217;t do everything. For example, many people would like <a href="http://www.andybudd.com/archives/2006/01/what_i_want_from_css3_part_2/">parent selector</a>, but this is repeatedly dismissed because it&#8217;s too processor-intensive and because it breaks incremental rendering (although whether these are legitimate objections is another discussion).</p>
+<p>Fantasai adds</p>
+<blockquote><p>What we work on first is based also on how complicated something is, how   much prior work we can leverage, and sometimes other concerns that aren&#8217;t   as obvious to web designers, like interoperability, accessibility, and   internationalization. We know we haven&#8217;t been doing very well prioritizing   our work or getting web designer feedback, and we want to do better, but   practical issues will always be a factor.</p>
+</blockquote>
+<p>Whatever your interest in CSS, here&#8217;s a real chance to influence the development of the language. So let&#8217;s do it: tell them what you want &#8211; what you really <em>really</em> want.</p>
+<p><a href="http://www.e-unlimited.net/powiedz-grupie-css-wg-czego-oczekujesz-od-css3/">Polish translation by Sebastian Snopek</a></p>
+
+		</div>
+	
+		
+
+		<div id="content-replies">
+
+
+			<h3 id="comments">Your Replies</h3> 
+
+				<dl>
+
+
+					<dt id="comment-59432"><a href="#comment-59432" title="Link to this reply">#1</a> On January 18th, 2008 2:52 am <span><a href='http://www.brucelawson.co.uk/index.php/2008/tell-the-css-wg-what-you-want-from-css3/' rel='external nofollow' class='url'>Bruce Lawson&#8217;s personal site&nbsp; : Tell the CSS WG what you want from CSS3</a> replied:</span></dt>
+					<dd>
+												<p>[...] So at the Web Standards Project we&#8217;re collecting such a list of priorities. Thinking caps on, if you please. [...]</p>
+					</dd>
+
+
+					<dt id="comment-59438"><a href="#comment-59438" title="Link to this reply">#2</a> On January 18th, 2008 4:19 am <span><a href='http://alastairc.ac/' rel='external nofollow' class='url'>AlastairC</a> replied:</span></dt>
+					<dd>
+												<p>It&#8217;s great to here the CSSWG is listening and providing an avenue to comment. The CSS3 aspect I would like most is the layout module. </p>
+<p>Although people seem to be getting excited that IE8 will include table CSS properties for layout, this is <a href="http://alastairc.ac/2006/06/css-tables-verses-layout-tables/" rel="nofollow">no better than minimal tables</a>. Solid, source-order independent layout would make accessibility and device independence from one source actually possible.</p>
+<p>A minor one, but I&#8217;ll repeat it here is being able to i<a href="http://alastairc.ac/2006/10/text-nodes-and-css/" rel="nofollow">dentify text-only nodes in CSS</a>.</p>
+					</dd>
+
+
+					<dt id="comment-59439"><a href="#comment-59439" title="Link to this reply">#3</a> On January 18th, 2008 5:00 am <span><a href='http://pixy.cz/' rel='external nofollow' class='url'>Petr Stanicek</a> replied:</span></dt>
+					<dd>
+												<p><a href="http://pixy.cz/pixynergia/2008/what-im-missing-in-css/" rel="nofollow">http://pixy.cz/pixynergia/2008/what-im-missing-in-css/</a><br />
+(an english text on a non-english blog, I&#8217;m sorry for that).</p>
+					</dd>
+
+
+					<dt id="comment-59442"><a href="#comment-59442" title="Link to this reply">#4</a> On January 18th, 2008 8:27 am <span><a href='http://mattwilcox.net/' rel='external nofollow' class='url'>Matt Wilcox</a> replied:</span></dt>
+					<dd>
+												<p>/* variables */<br />
+$background1 = #333;<br />
+$background2 = #fff;<br />
+$border1 = 2px solid red;</p>
+<p>div#container { background : $background1; border : $border1; }</p>
+<p>/* expressions */<br />
+div#container { width : 24%; }<br />
+div#excerpt {<br />
+  width : (div#container &#8211; 80px); /* because sometimes % and em just aren&#8217;t good enough when mixed with px */<br />
+}</p>
+<p>/* finer control over positioning */<br />
+div#example {<br />
+  position : absolute;<br />
+  top : (div#container); /* let me place relative to an element other than the last explicitly positioned parent */<br />
+}<br />
+div#example2 {<br />
+  position : absolute;<br />
+  top : (div#container bottom right); /* and a known position on the specified element */<br />
+}</p>
+<p>/* better control of backgrounds */<br />
+why is it not possible to place a background image FROM THE BOTTOM AND RIGHT in pixels?</p>
+<p>div#example {<br />
+  width : 30%; height : 30%;<br />
+  background : #000 url(image.gif) ) (right-80px) (bottom-80px) no-repeat;<br />
+}</p>
+					</dd>
+
+
+					<dt id="comment-59444"><a href="#comment-59444" title="Link to this reply">#5</a> On January 18th, 2008 10:27 am <span><a href='http://my.opera.com/Fyrd' rel='external nofollow' class='url'>Fyrd</a> replied:</span></dt>
+					<dd>
+												<p>I personally like the following suggestions I&#8217;ve seen elsewhere:<br />
+- <a href="http://lists.w3.org/Archives/Public/www-style/2007Dec/0019.html" rel="nofollow">Color gradients</a><br />
+- <a href="http://lists.w3.org/Archives/Public/www-style/2007Oct/0144.html" rel="nofollow">Media queries for rendering engines</a><br />
+- <a href="http://my.opera.com/dstorey/blog/2007/11/14/css4-selectors" rel="nofollow">nth-word selectors, etc</a><br />
+- <a href="http://webkit.org/blog/130/css-transforms/" rel="nofollow">Transformations (especially rotate)</a><br />
+- <a href="http://webkit.org/blog/138/css-animation/" rel="nofollow">Basic animation</a></p>
+					</dd>
+
+
+					<dt id="comment-59450"><a href="#comment-59450" title="Link to this reply">#6</a> On January 18th, 2008 1:12 pm <span><a href='http://aloestudios.com/' rel='external nofollow' class='url'>Andy Ford</a> replied:</span></dt>
+					<dd>
+												<p>I&#8217;d like to see a &#8220;width-increment&#8221; and &#8220;height-increment&#8221; attribute.</p>
+<p>This would be helpful when using a precisely tiled background graphic such as a grid or torn piece of paper.</p>
+<p>Let&#8217;s say that the tiled background is 20px tall &#8211; it probably doesn&#8217;t look so good when it clips at an increment that&#8217;s not divisible by 20 pixels.  So if your container ends up being 513 pixels tall, the height-increment attribute would expand it to 520px.</p>
+<p>The selector would look something like this:<br />
+div.example {<br />
+background: url(tile.gif);<br />
+height-increment: 20px;<br />
+}</p>
+<p>so div.example would be transformed from 513px height to 520px height.</p>
+<p>there should probably be 3 ways to format the argument:<br />
+value[units]  (&#8220;normal&#8221; rounding &#8211; rounds up or down to nearest increment)<br />
+-value[units] (always rounds down)<br />
++value[units] (always rounds up)</p>
+<p>Hopefully I&#8217;ve articulated this sufficiently.  Please get in touch if a better explanation is needed.<br />
+Thanks!</p>
+					</dd>
+
+
+					<dt id="comment-59451"><a href="#comment-59451" title="Link to this reply">#7</a> On January 18th, 2008 1:36 pm <span>Dominic Shiells replied:</span></dt>
+					<dd>
+												<p><b>What is the aim of CSS</b><br />
+To me what is CSS&#8217;s aim is more important. With more and more people providing flash based websites.<br />
+To me the aim is to make it more easy for humans to use.<br />
+To me CSS&#8217;s aim is to provide a markup for HTML to make it a painters canvas.</p>
+<p><b>What the other Web technologies do</b><br />
+You have<br />
+1. Javascript<br />
+2.HTML to provide basic text functions and links and pictures and menu&#8217;s<br />
+3.SVG to provide pictures which can be manipulated and scaled<br />
+4.HTML DOM or XForms to provide things such as Textboxes and Checkboxes<br />
+5.MySQL,Access, Oracle, others to be a database<br />
+6.PHP, Pearl, AJAX, Python to provide a programming side to the Internet<br />
+I do know what function PHP, AJAX,</p>
+<p><b>What I would like to see new in CSS</b><br />
+Gradients<br />
+A gradient box or text</p>
+<p>Curved Text</p>
+<p>E:HoverR:red<br />
+Right Click Hover Element aswell as a Left Click Hover</p>
+					</dd>
+
+
+					<dt id="comment-59455"><a href="#comment-59455" title="Link to this reply">#8</a> On January 18th, 2008 3:43 pm <span><a href='http://www.brucelawson.co.uk/' rel='external nofollow' class='url'>bruce</a> replied:</span></dt>
+					<dd>
+												<p>Hi Dominic,<br />
+can you elaborate more on  &#8220;curved text&#8221;, and what you mean by left click hover and right click hover? </p>
+<p>(I&#8217;d like to understand the problem you&#8217;re trying to solve)</p>
+					</dd>
+
+
+					<dt id="comment-59456"><a href="#comment-59456" title="Link to this reply">#9</a> On January 18th, 2008 3:50 pm <span>Daniel replied:</span></dt>
+					<dd>
+												<p>I think a :current pseudo class is something many authors would like to see.</p>
+<p>So we can style the link that leads to the currently visited site. However, I understand, that this could be very hard to specify with all the possible URLs out in the web.</p>
+<p>This would be a great addition to the :link and :visited classes.</p>
+					</dd>
+
+
+					<dt id="comment-59462"><a href="#comment-59462" title="Link to this reply">#10</a> On January 18th, 2008 5:55 pm <span>Chris replied:</span></dt>
+					<dd>
+												<p>I&#8217;d like the ability to style &#8220;img&#8221; elements when they fall back to the &#8220;alt&#8221; attribute independently, for example, if I currently had:</p>
+<p>img {<br />
+float: left;<br />
+margin: 15px 5px;<br />
+border-top: 1px solid red;<br />
+}</p>
+<p>&#8230; but the image failed to load and the &#8220;alt&#8221; text was shown, I&#8217;d like to be able to bring it back in line with the rest of the document, using something like:</p>
+<p>img<strong>:alt</strong> {<br />
+margin: 0;<br />
+display:inline;<br />
+border:0;<br />
+}</p>
+<p>&#8230; so that I&#8217;m not left with some floating text with a large margin.</p>
+					</dd>
+
+
+					<dt id="comment-59463"><a href="#comment-59463" title="Link to this reply">#11</a> On January 18th, 2008 5:57 pm <span><a href='http://www.pigsonthewing.org.uk/' rel='external nofollow' class='url'>Andy Mabbett</a> replied:</span></dt>
+					<dd>
+												<p>The ability to have &#8220;stripy&#8221; tables, with alternate (or every third, or whatever)  rows *or columns* having, say, different font-faces, or different background colours, please.</p>
+					</dd>
+
+
+					<dt id="comment-59464"><a href="#comment-59464" title="Link to this reply">#12</a> On January 18th, 2008 6:10 pm <span><a href='http://thinsoldier.com/' rel='external nofollow' class='url'>thinsoldier</a> replied:</span></dt>
+					<dd>
+												<p><a href="http://thinsoldier.com/csswishlist/" rel="nofollow">http://thinsoldier.com/csswishlist/</a></p>
+<p>if more info is needed just email me. I&#8217;ll try to update the page with more explanation sometime this week.</p>
+<p>Possibly some of this is already possible in css3:</p>
+<p>#1 ability to use single pixel image combined with multiple backgrounds and stretch/scale it to achieve various designs that involved blocks of color and lots of horizonal/vertical lines.</p>
+<p>#2 is probably already in css3</p>
+<p>#3 Talks about background images but after i thought about it some more I think Foreground Images &amp; multiple foreground images would be better.</p>
+<p>There needs to be an explicit attribute to command an element to surround it&#8217;s floated children other than relying on overflow:hidden/overflow:auto</p>
+<p>There are time when I want to expand an element around its floated children only and just ignore it&#8217;s grand-children but with overflow:hidden the grand children won&#8217;t be fully visible if they partially extend below the bottom of their floating parents. And with overflow:auto the grand-children activate the scrollbar</p>
+					</dd>
+
+
+					<dt id="comment-59466"><a href="#comment-59466" title="Link to this reply">#13</a> On January 18th, 2008 6:17 pm <span><a href='http://thinsoldier.com/' rel='external nofollow' class='url'>thinsoldier</a> replied:</span></dt>
+					<dd>
+												<p>Also&#8230; I&#8217;m not sure I believe what they say about parent selectors being too hard to do.</p>
+<p>With prototype.js I can do $$(&#8216;form.loginForm&#8217;).up(); and have the parent div of the login form be selected.</p>
+<p>$$(&#8216;form.loginForm&#8217;).up().style.display=&#8217;none&#8217;;</p>
+					</dd>
+
+
+					<dt id="comment-59468"><a href="#comment-59468" title="Link to this reply">#14</a> On January 18th, 2008 6:22 pm <span><a href='http://thinsoldier.com/' rel='external nofollow' class='url'>thinsoldier</a> replied:</span></dt>
+					<dd>
+												<p>ability to mirror/flip images and background images so that I don&#8217;t have to use double the amount of files in a layout with left/right or top/bottom symmetry</p>
+<p>Old IE already has a propriety css property that sort of did this with image tags</p>
+					</dd>
+
+
+					<dt id="comment-59469"><a href="#comment-59469" title="Link to this reply">#15</a> On January 18th, 2008 7:07 pm <span><a href='http://thinsoldier.com/' rel='external nofollow' class='url'>thinsoldier</a> replied:</span></dt>
+					<dd>
+												<p>A&#8212;&#8212;<br />
+Curved Text / Text along a path<br />
+<a href="http://safari.oreilly.com/images/0201750430/graphics/11fig56.gif" rel="nofollow">http://safari.oreilly.com/images/0201750430/graphics/11fig56.gif</a></p>
+<p>#header p#slogan {<br />
+textpath: url(/svg/curlypath.svg); // must be an svg consisting of a single path</p>
+<p>textpath-direction: positive // text starts at the first anchor point of the path (or negative to flow backwards from the last anchor point &#8230; or &#8230; isn&#8217;t there something already to make text flow right to left?)</p>
+<p>textpath-base: top // makes the Top of the text flow along the path instead of the bottom<br />
+}</p>
+<p>B&#8212;&#8211;<br />
+Ability to absolutely position a picture or other sized element over a block of text and have the text flow around the element.</p>
+<p>C&#8212;-<br />
+Ability to define a non-square shape around an element as a &#8220;clipping path&#8221; that affects  the visiblity of the element (like an image) and the wrapping of text within the element based on the shape (paragraph) AND affects the flowing of text around the element as described in the previous section.</p>
+<p>#calloutStar {<br />
+clipping-path: url(/svg/star.svg);<br />
+background: url(http://www.imagemagick.org/RMagick/doc/ex/clip_path.gif) center; // look at the image<br />
+box-shadow: &#8230;drop shadow stuff&#8230;;</p>
+<p>// at this point text would still treat the element as a square<br />
+// to change that<br />
+text-flow-external: url(/svg/star.svg);<br />
+// now surrounding text would react to the shape of the star but text inside the element would still behave like it&#8217;s in a square<br />
+// to change that<br />
+text-flow-internal: url(/svg/star.svg);<br />
+}</p>
+<p>D&#8212;<br />
+Ability to use a grayscale image as an &#8220;alpha channel&#8221; to affect the visibility of an element. This could be used in place of create a new .png for multiple things</p>
+<p><a href="http://www.facilities.ohiou.edu/cats/images/Bus-Stop-Sign-oval-blur.gif" rel="nofollow">http://www.facilities.ohiou.edu/cats/images/Bus-Stop-Sign-oval-blur.gif</a><br />
+&#8230;I know I know I know&#8230;&#8230; :(<br />
+&#8220;But in the right hands it could be used for good!&#8221;</p>
+<p>img#mainPhoto {<br />
+alpha: url(/gray/oval.gif)<br />
+}</p>
+<p>Use: I have a left column with a photo at the top the fades out towards the bottom to blend into the background color AND TEXTURE of the column. Instead of having to<br />
+a. save a new .jpg with the photo + blend into texture/color for EVERY photo i plan to use<br />
+b. save a transparent .png for Every photo I plan to use<br />
+I only need to save the transparency itself as a greyscale file and reuse it as alpha on the photos on every page.</p>
+<p>E&#8212;<br />
+Ability to use a purely black and white image to do all the same stuff mentioned in section C of this reply. Wouldn&#8217;t want to try to do [C] using an alpha channel from [D]. Too much gray transitional data between black and white to calculate a difinitive boundary. But with pure black and white it should be a piece of cake.</p>
+<p>This would be for the benefit of people who want to do [C] but lack vector software.</p>
+<p>I think microsoft already did something like this with transparent .gifs long ago.</p>
+<p>F&#8212;&#8211;<br />
+I&#8217;m sure others have already requested css gradients.<br />
+I&#8217;d like for gradients to be able to have their colors defined with css variables.<br />
+Then I&#8217;d like to save the gradients themselves as css variables.<br />
+Then I&#8217;d like to be able to use a purely greyscale gradient as an alpha (see [D])</p>
+<p>p#downloadArea{<br />
+	background: cssVar($blueSunriseRadialGradient) top right;<br />
+	alpha: cssVar($sunriseAlphaRadialGradient) top right;<br />
+	foreground: url(/svg/sunLogo.svg) top right no-repeat; // Did I mention Foreground-images and using svg as background/foreground images<br />
+	foreground-passthrough: true //if the foreground image hides a link or something under it, if you click, you&#8217;ll still click the link as if the foreground image wasn&#8217;t there<br />
+}</p>
+					</dd>
+
+
+					<dt id="comment-59473"><a href="#comment-59473" title="Link to this reply">#16</a> On January 18th, 2008 7:18 pm <span><a href='http://pixy.cz/' rel='external nofollow' class='url'>Petr Stanicek</a> replied:</span></dt>
+					<dd>
+												<p>thisoldier remembers me another idea of background images, the crop:</p>
+<p>   background-image-crop: 16px 64px 32px 48px;</p>
+<p>Which means: crop the specified image (i.e. by given top-right-bottom-left coords) and use only the clipped part as the background image. This would allow single-image &#8220;sprites&#8221; (all graphics placed into a single image and positioned as background-image of small boxes) to be centered, aligned, repeated etc.</p>
+					</dd>
+
+
+					<dt id="comment-59475"><a href="#comment-59475" title="Link to this reply">#17</a> On January 18th, 2008 9:02 pm <span>Dominic Shiells replied:</span></dt>
+					<dd>
+												<p><b>Bendy Text</b><br />
+<a href="http://photo.xanga.com/photoproperty.aspx?pic=169304086" rel="nofollow"><br />
+Curved Text and Ordinary</a><br />
+I mean if you say have a title and you want the title to say bend round in say a bezier curve. So the text goes round and follows a circle or any other shape.</p>
+<p><b>Left Click and Right Click Hover</b><br />
+When clicking on a link it would be nice to have two different colours for say the left click and the right click or even the scrollbar.<br />
+Say you hover over a link in say AJAX where you use your right click button to maybe turn a different colour than the left click button</p>
+					</dd>
+
+
+					<dt id="comment-59477"><a href="#comment-59477" title="Link to this reply">#18</a> On January 18th, 2008 10:08 pm <span><a href='http://www.nealgrosskopf.com/' rel='external nofollow' class='url'>Neal</a> replied:</span></dt>
+					<dd>
+												<p>I have a few things I can think of:</p>
+<p>1. The ability to create gradients using only css and to choose where the midpoints fall.</p>
+<p>2. Change the color of strike-throughs, under-lines and over-lines</p>
+<p>3. The ability to create drop shadows (could be a combination of gradient and opacity)</p>
+<p>4. Better ability to style form controls (browse button anyone?)</p>
+<p>5. Ability to change scrollbar colors (I know IE and opera support this, why not just make it a standard, its part of the presentation)</p>
+<p>6. Ability to style alt/title popups within browsers.</p>
+<p>Also in the current CSS3 spec, I really like the double (or hopefully multiple background images) and the ability to resize elements (textareas etc) Also border radius sounds really cool to me as well. Other than that, CSS3 doesn&#8217;t seem too revolutionary to me. Keep up the good work with selectors, the more ways I can select elements the happier I am!</p>
+					</dd>
+
+
+					<dt id="comment-59479"><a href="#comment-59479" title="Link to this reply">#19</a> On January 19th, 2008 3:14 am <span><a href='http://fantasai.inkedblade.net/' rel='external nofollow' class='url'>fantasai</a> replied:</span></dt>
+					<dd>
+												<p>@Matt Wilcox &#8211; It would help if you drew up some sample layouts that you can&#8217;t achieve reasonably in CSS right now (source markup + resulting geometry), so we can better understand what you want to achieve. A lot of the current layout limitations in CSS can be solved with the <a href="http://www.w3.org/TR/css3-layout/" rel="nofollow">Advanced Layout</a> proposals, for example, but it&#8217;s hard to tell whether it&#8217;s sufficient to address your use cases from the information you&#8217;ve provided.</p>
+<p>@Fyrd &#8211; Can you give us some examples of what you&#8217;d want to use those for?</p>
+<p>@Andy Mabbett &#8211; We already have that, see the <a href="http://www.w3.org/TR/css3-selectors/#nth-child-pseudo" rel="nofollow">Selectors</a> module.</p>
+<p>@Neal &#8211; Can you elaborate about the drop shadows as a response to <a href="http://www.css3.info/css-drop-shadows/" rel="nofollow">this css3.info post</a>?</p>
+					</dd>
+
+
+					<dt id="comment-59484"><a href="#comment-59484" title="Link to this reply">#20</a> On January 19th, 2008 5:41 am <span><a href='http://chrisfjay.blogspot.com/' rel='external nofollow' class='url'>Chris Jay</a> replied:</span></dt>
+					<dd>
+												<p><a href="http://chrisfjay.blogspot.com/2007/11/css-color-gradients.html" rel="nofollow">Color gradients</a><br />
+<a href="http://webkit.org/blog/138/css-animation/" rel="nofollow">Transition animations</a><br />
+<a href="http://webkit.org/blog/130/css-transforms/" rel="nofollow">Transformations (especially rotate)</a><br />
+CSS expressions, especially the ability to make one element&#8217;s style depend in realtime on another, e.g. #div1{width: (div2.width * 2)}<br />
+Full <a href="http://chrisfjay.blogspot.com/2007/08/css-and-xpath-selectors.html" rel="nofollow">XPath selectors</a>, especially the ability to do what MS Excel calls &#8220;conditional styling&#8221;, e.g. XPath(&#8220;//p[contains(., 'Chris')]&#8220;) {border: 1px solid black} &#8211; give a border to all paragraphs containing the word &#8220;Chris&#8221;. After all, you can create slow javascript expressions as well as slow XPath expressions &#8211; but JS developers accept it&#8217;s their job to write code that executes fast. No reason why CSS developers shouldn&#8217;t have the same job too.</p>
+					</dd>
+
+
+					<dt id="comment-59488"><a href="#comment-59488" title="Link to this reply">#21</a> On January 19th, 2008 10:51 am <span>Rick replied:</span></dt>
+					<dd>
+												<p>What do I want from CSS3?  I&#8217;m not really sure.  I&#8217;m still far enough down on the learning curve for CSS2 that I can&#8217;t see what I&#8217;m missing or what I&#8217;d need/like.</p>
+<p>What I <em>do</em> want from the CSS3 WG is a solid set of deliverables with a clear timeline.  No more of this &#8216;we&#8217;ll get to it in about 2010 or so, if my real job doesn&#8217;t interfere too much.  If it does, then 2030 or so.&#8217;  This means the group will have to have enough enthusiastic  and committed participants to actually get some work done, instead of the apparent three or four bodies/minds working on the current draft.  More people means there needs to more and better leadership, something that currently is missing.  And something that is hard to come by.</p>
+					</dd>
+
+
+					<dt id="comment-59491"><a href="#comment-59491" title="Link to this reply">#22</a> On January 19th, 2008 11:09 am <span><a href='http://www.gunlaug.no/' rel='external nofollow' class='url'>Georg</a> replied:</span></dt>
+					<dd>
+												<p>The ability to use one positioning value for horizontal and one for vertical, like &#8216;position-x: absolute; position-y: fixed&#8217;.<br />
+This would make it possible to position an element relative to a layout-container horizontally and to the viewport vertically.<br />
+The existing position-values: &#8216;static / relative / absolute / fixed&#8217; can then be used more efficiently &#8211; in combination with media queries, to tune a layout to make use of available space without having to deal with overlapping or elements ending up outside the viewport and out of reach with browsers&#8217; scrolling-mechanisms.</p>
+<p>Example of what I&#8217;m after can be seen on _very_ narrow windows in IE6 (and older) on this page&#8230;  </p>
+<p>&#8230;where the &#8216;fixed&#8217; right column can be reached by scrolling horizontally. It works in IE6 because I&#8217;m using an IE-expression to fake &#8216;position: fixed&#8217;.<br />
+In Firefox the right, fixed&#8217;, column is lost outside the viewport on very narrow windows, as it would otherwise end up overlapping the main, scrollable, column.<br />
+In Opera 9.50beta the same example is &#8220;saved&#8221; to a degree by switching positioning value to &#8216;absolute&#8217; on narrow windows &#8211; same works in Safari 3 when page is reloaded on narrow windows, but all this would work a lot better if positioning could be switched for one axis at a time &#8211; depending on actual conditions.</p>
+					</dd>
+
+
+					<dt id="comment-59492"><a href="#comment-59492" title="Link to this reply">#23</a> On January 19th, 2008 11:11 am <span><a href='http://www.gunlaug.no/' rel='external nofollow' class='url'>Georg</a> replied:</span></dt>
+					<dd>
+												<p>Lost the example-page there. Look at the signature page since that&#8217;s using the same methods.</p>
+					</dd>
+
+
+					<dt id="comment-59495"><a href="#comment-59495" title="Link to this reply">#24</a> On January 19th, 2008 3:42 pm <span><a href='http://mattwilcox.net/' rel='external nofollow' class='url'>Matt Wilcox</a> replied:</span></dt>
+					<dd>
+												<p>@fantasai &#8211; my apologies, I had not got the time to do that when I replied. I shall try to get something more suitable done for you tomorrow. For what it&#8217;s worth, the Advanced Layout module as I understand it would not work for the positioning behaviour that I was after.</p>
+<p>As an aside, the advanced module appears to be a hideously complicated. And unless I&#8217;m missing a trick, you can&#8217;t style the slots themselves, only their content, which will be rather limiting in terms of design &#8211; I&#8217;d want to be able to specify background images for the slot itself for example. Which would allow me to make &#8216;seemless&#8217; layout areas. As I understand it at the moment, if one of the slots is not filled by content, then you&#8217;ll end up with a visual hole. It seems like we&#8217;d be needing to do another &#8216;faux columns&#8217; type work-around.</p>
+					</dd>
+
+
+					<dt id="comment-59496"><a href="#comment-59496" title="Link to this reply">#25</a> On January 19th, 2008 3:46 pm <span>Chris Griego replied:</span></dt>
+					<dd>
+												<p>Incorporate the :has() and :matches() CSS selector syntaxes proposed in 2002; it takes care of the need for selecting parents without breaking incremental rendering.</p>
+<p><a href="http://lists.w3.org/Archives/Public/www-style/2002May/0037.html" rel="nofollow">http://lists.w3.org/Archives/Public/www-style/2002May/0037.html</a></p>
+<p>Also, rotation as mentioned.</p>
+<p>I also believe some sort of time-based selector syntax based on keyframes would put animation, a stylistic thing, back into CSS.</p>
+					</dd>
+
+
+					<dt id="comment-59505"><a href="#comment-59505" title="Link to this reply">#26</a> On January 19th, 2008 8:48 pm <span>Sander Aarts replied:</span></dt>
+					<dd>
+												<p>&#8211; Float positioning &#8211;<br />
+A combination between absolute positioning and float: the ability to position an element by using coordinates, leaving no blank space (as with absolute positioning) and whereby the element behaves as a floating element on its new position, pushing other element aside (or maybe only elements that have the same z-index).</p>
+<p>For instance:</p>
+<p>#mainNav {<br />
+    position: float;<br />
+    top: 2em;<br />
+    left: 10px;<br />
+}</p>
+<p>This would make it possible to visually rearrange the order of the source code without the risk of elements overlapping when content or font sizes increase.</p>
+<p>&#8211; box radius &#8211;<br />
+Like border-radius a way to give round corners, where no background images or colors are shown, to elements without borders. Maybe &#8220;border-style: none;&#8221; combined with a border-radius will do the trick. That would be sufficient then I guess. The working draft is not clear about it though.</p>
+<p>&#8211; &#8211;<br />
+And issues <a href="index.html#comment-59442" rel="nofollow">mentioned by Matt Wilcox</a>:<br />
+- CSS variables<br />
+- Exprressions (though not relying on JavaScript being enabled), for simple calculations mixing different types of units<br />
+- Relative background positioning from the bottom and right side</p>
+					</dd>
+
+
+					<dt id="comment-59510"><a href="#comment-59510" title="Link to this reply">#27</a> On January 20th, 2008 12:57 am <span><a href='http://fantasai.inkedblade.net/' rel='external nofollow' class='url'>fantasai</a> replied:</span></dt>
+					<dd>
+												<p>@Chris Jay &#8211; A feature wishlist isn&#8217;t nearly as useful as explanations of what&#8217;s needed and <em>what it&#8217;s needed for</em>. Examples of what you want to do with the features you list would help.</p>
+<p>@Chris Griego &#8211; Changing the syntax doesn&#8217;t make the parent selector functionality easier to implement or affect incremental rendering any differently. Time-based selector syntax sounds like an interesting way to approach animation. I think <a href="http://lists.w3.org/Archives/Public/www-style/2007Nov/0090.html" rel="nofollow">Apple&#8217;s proposal</a> uses something similar.</p>
+<p>@Sander &#8211; The <a href="http://www.w3.org/TR/css3-layout" rel="nofollow">Advanced Layout</a> proposal makes it possible to visually rearrange the order of the source code without the complexity of floats. (If the layouts you can&#8217;t be done with that, we&#8217;ll need some examples to understand what you&#8217;re after.) Wrt &#8216;border-radius&#8217;, I recently clarified our draft to say that overflow, when hidden, is clipped to the curve. So you could, e.g. put curved corners on an image. Does that address your concern there, or am I misunderstanding what you meant?</p>
+					</dd>
+
+
+					<dt id="comment-59522"><a href="#comment-59522" title="Link to this reply">#28</a> On January 20th, 2008 8:55 am <span><a href='http://blog.grochtdreis.de/' rel='external nofollow' class='url'>Jens Grochtdreis</a> replied:</span></dt>
+					<dd>
+												<p>I hope for CSS3 in the near future. Please make an end to the discussions and finalize the now known CSS3. THEN go straight on and work on CSS3.5 or CSS4. And finalize this work within two years. Don&#8217;t hear our pleas for new functions in the next version. Just do it. Just make an end to the discussion.</p>
+<p>W3C is not better than Microsoft with a six year distance for a new browser. Tne internet is a powerful and fast medium. Unfortunately the standardization-institution seems too slow for the mediums speed. </p>
+<p>So: meet with the needs or step out of the way.</p>
+					</dd>
+
+
+					<dt id="comment-59523"><a href="#comment-59523" title="Link to this reply">#29</a> On January 20th, 2008 9:04 am <span><a href='http://grochtdreis.de/weblog/2008/01/20/css-working-group/' rel='external nofollow' class='url'>F-LOG-GE &raquo; Blog Archive &raquo; CSS Working-Group</a> replied:</span></dt>
+					<dd>
+												<p>[...] Die CSS Working-Group sucht eine Orientierung für die Arbeit der nächsten Jahre und holt das Feedback der Community ein. Das Webstandards Project vermeldet dies und bietet die Plattform für die Diskussion. [...]</p>
+					</dd>
+
+
+					<dt id="comment-59526"><a href="#comment-59526" title="Link to this reply">#30</a> On January 20th, 2008 12:14 pm <span><a href='http://www.css3.info/let-the-css-wg-know-what-you-need-from-css3/' rel='external nofollow' class='url'>Let the CSS WG know what you need from CSS3 - CSS3 . Info</a> replied:</span></dt>
+					<dd>
+												<p>[...] Is there ever a time when you wish CSS allowed you to apply style in ways that either are not currently possible, or require hacks and extra markup to make it possible? Well now is the chance to let the working group know exactly what you want. Bruce Lawson is collecting your feedback on the WaSP site. Go there and leave a comment outlining what effects you&#8217;d like to achieve. You can also leave feedback on the CSS3 Soapbox. [...]</p>
+					</dd>
+
+
+					<dt id="comment-59529"><a href="#comment-59529" title="Link to this reply">#31</a> On January 20th, 2008 12:46 pm <span><a href='http://www.iki.fi/ars/' rel='external nofollow' class='url'>Antti Rasinen</a> replied:</span></dt>
+					<dd>
+												<p>I&#8217;d like to see the DOM decoupled from the box-model. Specifically, I&#8217;d like to be able to specify my own boxes inside and outside already existing boxes. An example:</p>
+<p>#myBox {border: thin solid red:}<br />
+#mybox:outer {border: thin solid blue;}</p>
+<p>This would wrap the #myBox in a new anynomous box and in effect create a double border for #myBox. Other usecases are of course multiple backgrounds, different combinations of paddings and margins etc. There are also often cases when I&#8217;d like to see the border or the background spill outside the element itself.</p>
+<p>Variants for the syntax in the case of multiple boxes could be :inner:inner or :inner-nth(2).</p>
+<p>This proposition is unfortunately not orthogonal to other CSS3 improvements. Multiple background images, multiple borders and calc() solve many of the same use cases. Despite those reservations, I believe this would allow us to write more semantic HTML without the need for .content-wrapper that I see occasionally.</p>
+					</dd>
+
+
+					<dt id="comment-59530"><a href="#comment-59530" title="Link to this reply">#32</a> On January 20th, 2008 1:22 pm <span><a href='http://www.smfr.org/' rel='external nofollow' class='url'>Simon Fraser</a> replied:</span></dt>
+					<dd>
+												<p>I&#8217;d like to have a &#8220;shrink to fit&#8221; mode for background-image. &#8220;Shrink to fit&#8221; would reduce the scale of the image until both height and width fit in the background, while maintaining aspect ratio. Currently, it&#8217;s only possible to do either width or height.</p>
+<p>This should be really trivial to implement.</p>
+					</dd>
+
+
+					<dt id="comment-59531"><a href="#comment-59531" title="Link to this reply">#33</a> On January 20th, 2008 1:23 pm <span><a href='http://www.smfr.org/' rel='external nofollow' class='url'>Simon Fraser</a> replied:</span></dt>
+					<dd>
+												<p>Second request: I&#8217;d like a way to use rounded corners on elements that clip the contents (not just the background) of the element.</p>
+					</dd>
+
+
+					<dt id="comment-59532"><a href="#comment-59532" title="Link to this reply">#34</a> On January 20th, 2008 1:34 pm <span>Jon replied:</span></dt>
+					<dd>
+												<p>I had this crazy idea once that I wanted to be able to switch the direction of flow.</p>
+<p>I want to make it so that websites flow from left to right (or right to left if you language works like that) instead of top to bottom.</p>
+<p>Basically the way it works now is that if you create a block element and then another it will go underneath the first. Unless you use floats. Switching the flow rotates this 90degress. Now a new block element will go to the left of the first. You can float elements to the top or bottom.</p>
+<p>Scrolling a mouse wheel will be reinterpreted as down meaning scroll right, up meaning scroll left.</p>
+<p>Currently by default items fill the available width and are only as high as needed. Switching the flow will reverse this. </p>
+<p>That&#8217;s as simple as I can put it. I hope it makes sense.</p>
+<p>One thing of note is that this will make the proposed multi column layout stuff actually useful.</p>
+<p>And while I&#8217;m probably wrong, I reckon it&#8217;s probably fairly easy for browser vendors to implement this.</p>
+<p>Syntax could be flow: default; flow: ltr; flow: rt; maybe even go crazy and have flow: reverser; where elements stack from the bottom and you have to scroll up.</p>
+<p>I&#8217;ll say another thing about this idea&#8230;. lots and lots of ideas I have read and a lot of the stuff already planned for CSS3 just make stuff easier to do that can already be done with varying degrees of success by hacking various bits together.</p>
+<p>This idea, I think, presents an opportunity to break the mould a bit and open up totally new ways of laying out sites.</p>
+					</dd>
+
+
+					<dt id="comment-59533"><a href="#comment-59533" title="Link to this reply">#35</a> On January 20th, 2008 1:39 pm <span>ryan groth replied:</span></dt>
+					<dd>
+												<p>I think this is in CSS3, but rounded corners, rotated text, and drop shadows constantly seem to give me trouble.</p>
+					</dd>
+
+
+					<dt id="comment-59535"><a href="#comment-59535" title="Link to this reply">#36</a> On January 20th, 2008 2:31 pm <span>Sander Aarts replied:</span></dt>
+					<dd>
+												<p>@fantasai<br />
+- I will have tot take a closer look at the advanced layout proposal then.</p>
+<p>- In the working draft I indeed read that background-images are clipped outside the border-radius (although this is <a href="http://www.w3.org/TR/2005/WD-css3-background-20050216/#the-border-radius" rel="nofollow">immediatly questioned as well</a>), but I&#8217;m not sure how I can give rounded corners to a background-image without having to apply a border to the element. Does the clipping still occur if I set a border-radius combined with &#8216;border-style: none;&#8217;?</p>
+					</dd>
+
+
+					<dt id="comment-59537"><a href="#comment-59537" title="Link to this reply">#37</a> On January 20th, 2008 3:01 pm <span><a href='http://stifu.free.fr/' rel='external nofollow' class='url'>Stifu</a> replied:</span></dt>
+					<dd>
+												<p>One thing I wouldn&#8217;t mind having is a way to define diagonal borders. For example, if I want to make tabs with a sharp diagonal on one edge or both.<br />
+Check the blue tabs at <a href="http://stifu.free.fr/fr/links.php" rel="nofollow">http://stifu.free.fr/fr/links.php</a> for something just like that (done with images).</p>
+					</dd>
+
+
+					<dt id="comment-59540"><a href="#comment-59540" title="Link to this reply">#38</a> On January 20th, 2008 3:43 pm <span><a href='http://my.opera.com/dstorey' rel='external nofollow' class='url'>David Storey</a> replied:</span></dt>
+					<dd>
+												<p>I see a lot of requests to do things in CSS that can already be done in SVG.  That is an issue for a couple of reasons: a) most web developers don&#8217;t know much about SVG and b) most major browser engines have already implemented something that will do what web developers are asking for and c) If they are added to CSS it bloats the browser engine as it has to be implemented twice if the engine is to be CSS and SVG compliant.  </p>
+<p>As the things that are often asked for (gradients, rotation, text following paths, animation) are often fairly trivial to do in SVG (I&#8217;m in the process of writing one or two articles showing how easy it can be), then I&#8217;d propose that either CSS allows SVG to be attached to it or used inside CSS (this may be difficult as CSS isn&#8217;t XML), HTML elements can be selected from inside SVG (much like foreignObject, but just selecting that HTML element instead of actually including the HTML in the SVG file &#8211; or including SVG in the HTML file), or for a subset of SVG, have a CSS syntax that can be used to apply that SVG.  The first two would be more powerful as you could do anything SVG does, while the last would be easier as it would be transparent to the designer, and they&#8217;d just need to learn a new CSS property for each new functionality.  For the later to work it would have to take in the same arguments as SVG, or just allow a subset of what the equivalent SVG would do.  </p>
+<p>For things like gradients, it is very easy to use the SVG as it is at the moment.  Just create a SVG background-image.  You can even specify the colour of the gradient using the SVG extensions to CSS.  For rotation and animation it is more tricky.  If you want to rotate a HTML element, it can&#8217;t be done directly.  You have to either wrap the HTML is SVG in the XHTML file (it has to be XHTML, as HTML isn&#8217;t XML) or include the HTML in the SVG file.  To me this isn&#8217;t good enough as you are mixing content with style.  You can most likely do it with scripting of course, but this isn&#8217;t ideal.  Allowing SVG to be attached by CSS or being able to select HTML elements in a SVG file would solve this.  If you can do this already then I don&#8217;t know how to do it.  </p>
+<p>This is not all directly relating to CSS or the CSSWG,  but as they are being asked to add quite a few stuff that is already possible, they should perhaps work with the SVG WG to this stuff to be easier or allow both standards to work together better.</p>
+					</dd>
+
+
+					<dt id="comment-59541"><a href="#comment-59541" title="Link to this reply">#39</a> On January 20th, 2008 3:46 pm <span><a href='http://my.opera.com/dstorey' rel='external nofollow' class='url'>David Storey</a> replied:</span></dt>
+					<dd>
+												<p>@Stifu: You can probably do that with <code>border-image</code>.  See <a href="http://www.css3.info/preview/border-image/" rel="nofollow">CSS3.info</a> for more info.  You&#8217;ll need Safari, as it doesn&#8217;t work in any other browser yet.</p>
+					</dd>
+
+
+					<dt id="comment-59545"><a href="#comment-59545" title="Link to this reply">#40</a> On January 20th, 2008 6:00 pm <span><a href='http://mattwilcox.net/' rel='external nofollow' class='url'>Matt Wilcox</a> replied:</span></dt>
+					<dd>
+												<p>I have written up CSS3 wish-list with rationale and use-cases here:</p>
+<p><a href="http://mattwilcox.net/sandbox/css3-proposals.htm" rel="nofollow">http://mattwilcox.net/sandbox/css3-proposals.htm</a></p>
+					</dd>
+
+
+					<dt id="comment-59546"><a href="#comment-59546" title="Link to this reply">#41</a> On January 20th, 2008 6:06 pm <span><a href='http://www.gtalbot.org/BrowserBugsSection/MSIE7Bugs/' rel='external nofollow' class='url'>Gérard Talbot</a> replied:</span></dt>
+					<dd>
+												<p>Hello all,</p>
+<p>The first thing CSS 3 should do is <strong>clarify or specify or define the obscur points and issues remaining as such and stated as such in CSS 2.1</strong>. One can easily find some 20 of those points just by <strong>running a text string search for &#8220;undefined&#8221; (or &#8220;future&#8221; or &#8220;later&#8221; or &#8220;unspecified&#8221; or &#8220;unknown&#8221;, etc) in the CSS 2.1 sections of the specification.</p>
+<p>Examples:</p>
+<p>&#8220;The meaning of input that cannot be tokenized or parsed is undefined in CSS 2.1.&#8221; CSS 2.1, Section 4.1.1</p>
+<p>&#8220;It is undefined in CSS 2.1 what happens if a style sheet does contain a character with Unicode codepoint zero.&#8221; Section 4.1.3</p>
+<p>&#8220;If the containing block&#8217;s width depends on this element, then the resulting layout is undefined in CSS 2.1.&#8221;<br />
+Section 8.3</p>
+<p>&#8220;If the containing block&#8217;s width depends on this element, then the resulting layout is undefined in CSS 2.1.&#8221; CSS 2.1, Section 8.4</p>
+<p>&#8220;The effect of &#8216;position:relative&#8217; on table-row-group, table-header-group, table-footer-group, table-row, table-column-group, table-column, table-cell, and table-caption elements is undefined.&#8221; CSS 2.1, Section 9.3.1</p>
+<p>&#8220;For other media types, the presentation is undefined.&#8221; CSS 2.1, Section 9.3.1</p>
+<p>&#8220;The percentage is calculated with respect to the width of the generated box&#8217;s containing block. If the containing block&#8217;s width depends on this element&#8217;s width, then the resulting layout is undefined in CSS 2.1.&#8221; CSS 2.1, Section 10.2</p>
+<p>&#8220;If the containing block&#8217;s width depends on this element&#8217;s width, then the resulting layout is undefined in CSS 2.1.&#8221; CSS 2.1, Section 10.4</p>
+<p>&#8220;after 26 list items, &#8216;lower-latin&#8217; rendering is undefined.&#8221; CSS 2.1, Section 12.5.1</p>
+<p>&#8220;The tiling and positioning of the background-image on inline elements is undefined in this specification.&#8221; CSS 2.1, Section 14.2.1</p>
+<p>&#8220;Percentage offsets are no longer undefined for containing blocks without an explicit height.&#8221; CSS 2.1, Section C.2.46 does not say much, does not mean much and is still not sufficiently clear and univocal for some people despite &#8220;The percentage is calculated with respect to the height of the generated box&#8217;s containing block. If the height of the containing block is not specified explicitly (i.e., it depends on content height), and this element is not absolutely positioned, the value computes to &#8216;auto&#8217;.&#8221; section 10.5 which can be interpreted equivocally by some people.</p>
+<p>Above all, what CSS 3 must do is<br />
+- give, use, provide more examples (complete and/or small), ideally with screenshots of expected rendering results, graphics so that the specification is </strong><strong>less subject/vulnerable to different interpretations</strong> by software implementors and/or web authors<br />
+- <strong>avoid duplicating</strong> what is already defined, covered and addressed by other specifications. E.g. text-path is already covered by SVG</p>
+<p>Regards, Gérard</p>
+					</dd>
+
+
+					<dt id="comment-59551"><a href="#comment-59551" title="Link to this reply">#42</a> On January 20th, 2008 6:18 pm <span><a href='http://www.gtalbot.org/BrowserBugsSection/MSIE7Bugs/' rel='external nofollow' class='url'>Gérard Talbot</a> replied:</span></dt>
+					<dd>
+												<p><a href="http://www.w3.org/TR/CSS21/visufx.html#clipping" rel="nofollow">CSS 2.1, Section 11.1.2</a> Clipping shape values, not just rect: &#8220;In CSS 2.1, all clipping regions are rectangular. We anticipate future extensions to permit non-rectangular clipping. Future updates may also reintroduce a syntax for offsetting shapes from each edge instead of offsetting from a point.&#8221;</p>
+<p>Regards, Gérard</p>
+					</dd>
+
+
+					<dt id="comment-59555"><a href="#comment-59555" title="Link to this reply">#43</a> On January 20th, 2008 8:46 pm <span><a href='http://www.diogobaeder.com.br/' rel='external nofollow' class='url'>Diogo Baeder</a> replied:</span></dt>
+					<dd>
+												<p>Maybe &#8220;draggable&#8221; and &#8220;resizable&#8221; properties, if none of them would be processor-intensive and the second one could be not so hardly standardized for browser vendors (like what happens to box-models among different browsers) &#8211; fixing standards regarding to positioning could be a real pain, for example.</p>
+<p>Thanks,</p>
+<p>Diogo</p>
+					</dd>
+
+
+					<dt id="comment-59557"><a href="#comment-59557" title="Link to this reply">#44</a> On January 20th, 2008 10:55 pm <span>Rowan replied:</span></dt>
+					<dd>
+												<p>&#8220;Wrt ‘border-radius’, I recently clarified our draft to say that overflow, when hidden, is clipped to the curve. So you could, e.g. put curved corners on an image. Does that address your concern there, or am I misunderstanding what you meant?&#8221;</p>
+<p>I just created a table with rounded corners which uses a background color/image on the TH element, when I viewed this in Firefox 3 the table&#8217;s border didn&#8217;t crop the TH.</p>
+<p>So it would be great if there was a way to have a rounded corner that cropped every child element, as well as the first element. In my mind, border-radius is only fulfilling 50% of its potential for this reason.</p>
+					</dd>
+
+
+					<dt id="comment-59558"><a href="#comment-59558" title="Link to this reply">#45</a> On January 20th, 2008 11:08 pm <span><a href='http://trevordavis.net/blog/web/weekly-link-round-up-14.php' rel='external nofollow' class='url'>Trevor Davis | Blog &raquo; Weekly Link Round-Up #14</a> replied:</span></dt>
+					<dd>
+												<p>[...] Tell the CSS WG what you want from CSS3 [...]</p>
+					</dd>
+
+
+					<dt id="comment-59559"><a href="#comment-59559" title="Link to this reply">#46</a> On January 20th, 2008 11:08 pm <span><a href='http://wordpresstest.trevordavis.net/blog/web/weekly-link-round-up-14/' rel='external nofollow' class='url'>Trevor Davis | Blog | Weekly Link Round-Up #14</a> replied:</span></dt>
+					<dd>
+												<p>[...] Tell the CSS WG what you want from CSS3 [...]</p>
+					</dd>
+
+
+					<dt id="comment-59562"><a href="#comment-59562" title="Link to this reply">#47</a> On January 21st, 2008 2:10 am <span><a href='http://www.liechtenecker.at/?p=18' rel='external nofollow' class='url'>Liechtenecker&#8217;s Blog &raquo; Vorschläge für CSS 3?</a> replied:</span></dt>
+					<dd>
+												<p>[...] Die CSS-Working Group, also das Webstandard Projekt startet eine Diskussion was man alles in CSS 3 aufnehmen könnte. Nun ja, es sollte mal die Version 2.1 richtig verabschiedet werden, oder wie viele Jahre sollen noch vergehen bis die Browserhersteller endlich CSS 3 mit seinen unbestreitbaren Vorteilen einbauen können. [...]</p>
+					</dd>
+
+
+					<dt id="comment-59564"><a href="#comment-59564" title="Link to this reply">#48</a> On January 21st, 2008 4:01 am <span>Wilco replied:</span></dt>
+					<dd>
+												<p>Well, aside from the layout proposal they&#8217;ve already put out, and the calc() function which they&#8217;ve already got&#8230;. Hmmm, how about variables?</p>
+<p>Well maybe call them constants. You could have document constsants, force them to be defined at the top of the css file / style element. Like:</p>
+<p>@constants {<br />
+    page.width: 20em;<br />
+    content.width: calc(page.width &#8211; 5em);<br />
+}</p>
+<p>I tend to like the : and ; notation here so it&#8217;s not quite like making a calculation rather you reference a value to a name. This is more or less the way i use it in my comments. I also got to like the idea of having variables with the dot (.) in it&#8217;s name so you can have page.width and page.bgColor. Having a dot there, unlike most programming languages really doesn&#8217;t matter to the name and it just makes things easier to read, and easier to make good referenced.</p>
+<p>Coming to think of it, there&#8217;s another thing. It would be great if you could set up the base reference of the uris, because often you start local, so you make local references but then when you upload these all have to change. It&#8217;d be great if you could make CSS docs more portable.</p>
+<p>Oh! And another (yes I&#8217;m on a roll), some extra flexibility with selecters would be great .I&#8217;d like to be able to do something like this:</p>
+<p>#content {<br />
+    padding:1em .4em;</p>
+<p>    children: .comment {<br />
+        padding:.2em;<br />
+    }<br />
+}</p>
+<p>This idea has been floating around the web for a while now and I think it would make it a little easier to structure large documents.</p>
+					</dd>
+
+
+					<dt id="comment-59571"><a href="#comment-59571" title="Link to this reply">#49</a> On January 21st, 2008 7:03 am <span><a href='http://arjaneising.nl/' rel='external nofollow' class='url'>Arjan</a> replied:</span></dt>
+					<dd>
+												<p>I currently have no cool features, but I find it very important the CSS3 WG also provides proper test suites. If there are test suites, user-agents that want to implement (parts of) CSS3 can easily test if they&#8217;ve implemented it right.</p>
+<p>At this moment no browser fully supports CSS2.1. I think that&#8217;s because there is no good test suite for it. I don&#8217;t think many people want a repetition of lots of time waiting for good implementations.</p>
+<p>The best is to make images with intended renderings of pieces of code. And that for all features. For &#8216;difficult&#8217; features you could even provide more than one rendering image.</p>
+					</dd>
+
+
+					<dt id="comment-59575"><a href="#comment-59575" title="Link to this reply">#50</a> On January 21st, 2008 11:28 am <span>Moe replied:</span></dt>
+					<dd>
+												<p>A selector like &#8220;p s that contain a ) would be very useful.</p>
+					</dd>
+
+
+					<dt id="comment-59578"><a href="#comment-59578" title="Link to this reply">#51</a> On January 21st, 2008 12:59 pm <span><a href='http://my.opera.com/Fyrd' rel='external nofollow' class='url'>Fyrd</a> replied:</span></dt>
+					<dd>
+												<p>@Fantasai:<br />
+Here&#8217;s some elaboration and examples on how I&#8217;d like to use the aforementioned items:</p>
+<p>- <a href="http://lists.w3.org/Archives/Public/www-style/2007Dec/0019.html" rel="nofollow">Color gradients</a><br />
+Yes, this can be achieved fairly easily using SVG, but that&#8217;s not something that can be as easily modified like other properties. Using a separate image feels more like a hack than a real solution to me. Additionally, I suspect people may also want to use gradients on text, which could not be achieved using this method as far as I can tell.</p>
+<p>Modern GUIs seem to use gradient background colors more and more these days. Web 2.0 Textual logos and headers also often use gradients. Seems like a clear indication for a need to create them easily in CSS.</p>
+<p>- <a href="http://lists.w3.org/Archives/Public/www-style/2007Oct/0144.html" rel="nofollow">Media queries for rendering engines</a><br />
+Just having a practical and official way to write different rules for different rendering engines would help prevent the use of unseemly hacks. Note that I&#8217;m not just talking about writing special fixes for IE etc. here, but also for when using new properties that only one or few browsers support, it would be very helpful to easily send just them certain rules, while sending others alternative rules.</p>
+<p>Examples include issues where there&#8217;s no easy way to provide fallback, like text that would be invisible without a text-shadow (by having the text be the same color as the background), or an SVG background image where you would want to supply a different background image for browsers without support. </p>
+<p>- <a href="http://my.opera.com/dstorey/blog/2007/11/14/css4-selectors" rel="nofollow">nth-word selectors, etc</a><br />
+Useful for text effects, to prevent using spans over and over again. </p>
+<p>- <a href="http://webkit.org/blog/130/css-transforms/" rel="nofollow">Transformations (especially rotate)</a><br />
+Mostly useful when wanting to display images in different ways, but also for things like column header text in tables. </p>
+<p>- <a href="http://webkit.org/blog/138/css-animation/" rel="nofollow">Basic animation</a><br />
+Many javascript libraries offer easy ways to do animation, usually just for visual effects (rather than actual behaviour). Seems to me like something designers want to do easily, so it makes sense for CSS.</p>
+					</dd>
+
+
+					<dt id="comment-59582"><a href="#comment-59582" title="Link to this reply">#52</a> On January 21st, 2008 5:28 pm <span>Brad Kemper replied:</span></dt>
+					<dd>
+												<blockquote><p>For example, many people would like parent selector, but this is repeatedly dismissed because it’s too processor-intensive and because it breaks incremental rendering</p></blockquote>
+<p>In other words, &#8220;tell us what you need, and we will tell you why we refuse to implement it, despite popular demand.&#8221; The &#8220;incremental rendering&#8221; bugaboo is the popular excuse d&#8217;jour for turning down just about every suggestion of useful additions, even when they greatly resemble existing properties and behavior. Effects on incremental rendering should be just one consideration; they should not override all other considerations.</p>
+<p>What does it do to processor usage or incremental rendering when authors start turning to huge JavaScript libraries to accomplish what the CSSWG steadfastly refuses to provide? (JQuery, for instance, has many more pseudo-classes and pseudo-elements than CSS does, including parent selectors, and authors can use it to select elements and add style to them.) The result of using JS for basic styling is that the page takes longer to load, and the styling does not finish rendering until after the page load is already otherwise complete (not to mention all the other problems associated with relying on a scripting language to do styling). </p>
+<p>Yet authors <strong>will</strong> use such complex work-arounds in order to achieve the designs that they want, rather than limit themselves to the designs that the  WG engineer-types and design-hostile-types are willing to consider as valid efforts. Even basic things like centering often require extra markup, more complex rules to achieve, and sacrificing layout liquidity. Yet this is somehow considered preferable by the CSSWG than to, say, allowing authors to position an element by its center instead of just by its edges. </p>
+<p>The same sort of situation occurred in the 90s, when authors were told by the HTML purists that style and design were not important, and that authors should <strong>not</strong> try to make Web pages resemble other visual media. Well, the designers and their employers disagreed, and they discovered unsanctioned ways to wrest more design control into their pages than what the HTMl wonks considered appropriate. Thus were born invisible tables and transparent, single pixel GIFs as a layout tool and as a means for creating borders, padding, and margin. &#8220;Font&#8221; tags and the various &#8220;table&#8221; tags started to account for the vast majority of the markup on any page. </p>
+<p>It was these excesses of HTML abuse that directly lead to a recognition of a need for CSS, to get all that extra markup out of the html and into shared, style-centric files. Now authors are turning to JavaScript, complex twisting of CSS rules, and multiple embedded Flash files in order to be able to achieve the creative freedom that CSS can&#8217;t quite handle. Although the working group asks for designer feedback, the design freedom that designers care about most is never considered as important as &#8220;incremental rendering&#8221; or the anti-designer rhetoric that is allowed to drown out all other voices in the mailing list.</p>
+					</dd>
+
+
+					<dt id="comment-59583"><a href="#comment-59583" title="Link to this reply">#53</a> On January 21st, 2008 5:29 pm <span><a href='http://www.nealgrosskopf.com/' rel='external nofollow' class='url'>Neal</a> replied:</span></dt>
+					<dd>
+												<p>Fantasai: Here is how I see the css being for drop shadows</p>
+<p>drop-shadow-width: 5px;<br />
+drop-shadow-offset: 5px;<br />
+drop-shadow-color: #333333;<br />
+drop-shadow-direction: 300; /*degrees*/<br />
+drop-shadow-transparency: 80%; /*100% equals none*/</p>
+<p>Really, all you have to do is look at a typical image editing program and steal any of the features they offer. The less we have to open the program up the better.</p>
+					</dd>
+
+
+					<dt id="comment-59584"><a href="#comment-59584" title="Link to this reply">#54</a> On January 21st, 2008 6:21 pm <span>C L replied:</span></dt>
+					<dd>
+												<p>Nested selectors</p>
+<p>#pageid {<br />
+ #content {<br />
+    blah: blah;<br />
+    }<br />
+  #nav {<br />
+    yada: yada;<br />
+    }<br />
+  }</p>
+<p>instead of </p>
+<p>#pageid #content {<br />
+  blah: blah;<br />
+  }<br />
+#pageid nav {<br />
+  yada: yada;<br />
+  }</p>
+					</dd>
+
+
+					<dt id="comment-59588"><a href="#comment-59588" title="Link to this reply">#55</a> On January 21st, 2008 7:58 pm <span>Brad Kemper replied:</span></dt>
+					<dd>
+												<p>A few Features that I would like to see:</p>
+<p>• simple gradients that could be used almost everywhere that colors are used (borders, backgrounds, text, outlines, etc.), with a previously specified solid color as a fallback for browsers that don&#8217;t yet support the property. I do not want to have to use SVG for this, or to specify the gradients in a separate file. Simple and easy to read and write is key. Linear and Radial gradients should take precedence over other future types like fractal cloud.</p>
+<p>• A way to have float-like text-wrapping, but with more precise positioning (not just to left or right edges of container, and vertically not just to where it begins in the flow). Being able to set whether the text wraps on the left, right, or both. &#8220;Both&#8221; would mean starting on one side and continuing on the other (if there was room), unless the item straddled a column gap of a multi-column element (which would equate to there <strong>not</strong> being room for the text to start on one side and continue on the other within the column block).</p>
+<p>• In positioned elements, to be able to set the position of not only the left, right, top, and bottom, but also the horizontal center and/or vertical center of the element.</p>
+<p>• To have many more ways to select items with pseudo classes and pseudo elements. To select by content, for instance, such as by what elements the children are or by what text is inside. To have parent selectors that are the opposite of child selectors (carefully worded to prevent infinitely looping logic).</p>
+<p>• To be able to rotate HTML elements, such as DIVs, H1-H6s, and A&#8217;s. Not just rotating some text in an external SVG file, but rotating actual content elements that are part of the existing mark-up. 90 degree rotating would be a good start that does not require complex new ways to deal with margins (just rotate the margins too, same as the borders and padding, and end up with rectangular areas, same os now). </p>
+<p>• Have a special type of rotation for table headers (and those items styled as such with &#8220;display&#8221;), so that they can be rotated by any angle, given a width that is different from the column width, the leading and trailing edges would remain parallel to their original tops and bottoms, and the leading edge corners would align with the top corners of the column (the bottom edge corners before the rotation). This would allow long table headers to be usable on narrow columns.</p>
+<p>• Acknowledge that it will be many years, if ever, that UAs will have complete feature parity of CSS capabilities, and include a media-queries-based mechanism for providing different rules to different  rendering engines. When this is not part of the official specification and software, then authors have to find their own way of accomplishing the same thing, via CSS hacks, JavaScript UA detection, or server-side UA detection. All those other methods have significant disadvantages over an officially supported method, but authors will resort to them if it is the only way.</p>
+					</dd>
+
+
+					<dt id="comment-59590"><a href="#comment-59590" title="Link to this reply">#56</a> On January 21st, 2008 8:44 pm <span><a href='http://jivebay.com/' rel='external nofollow' class='url'>jive</a> replied:</span></dt>
+					<dd>
+												<p>text-vertical &#8211; being able to put text vertically EXAMPLE:</p>
+<p>c<br />
+o<br />
+o<br />
+l</p>
+<p>font-stretch, font-squash </p>
+<p>mask &#8211; this would be pretty powerful, but I&#8217;m not sure how you would define the mask.</p>
+					</dd>
+
+
+					<dt id="comment-59595"><a href="#comment-59595" title="Link to this reply">#57</a> On January 22nd, 2008 1:39 am <span><a href='http://kechjo.cogia.net/blogo/2008/01/22/kion-vi-volas-en-css-3-a/' rel='external nofollow' class='url'>La domo de karotoj &raquo; Kion vi volas en CSS 3-a?</a> replied:</span></dt>
+					<dd>
+												<p>[...] La CSS-a laborgrupo volas scii. Kelkaj bonaj proponoj estis faritaj, sed du elstaras: [...]</p>
+					</dd>
+
+
+					<dt id="comment-59596"><a href="#comment-59596" title="Link to this reply">#58</a> On January 22nd, 2008 1:40 am <span><a href='http://www.gtalbot.org/BrowserBugsSection/MSIE7Bugs/' rel='external nofollow' class='url'>Gérard Talbot</a> replied:</span></dt>
+					<dd>
+												<p>Fantasai,</p>
+<p>All of the obscur points (&#8220;this specification does not specify how&#8221;, &#8220;not defined by this specification&#8221;) of <a href="http://www.w3.org/TR/CSS21/visudet.html#inline-non-replaced" rel="nofollow">CSS 2.1, section 10.6.1</a> should be clarified, defined, specified in CSS 3.</p>
+<p>Regards, Gérard</p>
+					</dd>
+
+
+					<dt id="comment-59597"><a href="#comment-59597" title="Link to this reply">#59</a> On January 22nd, 2008 2:50 am <span><a href='http://fantasai.inkedblade.net/' rel='external nofollow' class='url'>fantasai</a> replied:</span></dt>
+					<dd>
+												<p>@Rowan: If you&#8217;re using a build from after 2007-12-18, <a href="http://bugzilla.mozilla.org/" rel="nofollow">file a bug</a> against Firefox.</p>
+<p>@Arjan: we are working on the <a href="http://www.w3.org/Style/CSS/Test/CSS2.1/current/" rel="nofollow">CSS2.1 Test Suite</a>, but it&#8217;s a massive amount of work. People are <a href="http://csswg.inkedblade.net/test/css2.1/contribute" rel="nofollow">welcome to help</a>. I&#8217;ll be posting more about that once the W3C lawyer-types sort out some licensing issues.</p>
+					</dd>
+
+
+					<dt id="comment-59602"><a href="#comment-59602" title="Link to this reply">#60</a> On January 22nd, 2008 5:03 am <span><a href='http://www.mywebcards.net/blog/2008/01/22/what-do-you-want-from-css-the-css3-working-group-want-to-know/' rel='external nofollow' class='url'>WebCards Blog &raquo; What Do You Want From CSS? The CSS3 Working Group Want To Know</a> replied:</span></dt>
+					<dd>
+												<p>[...] The CSS3 working group are looking for feedback on what people want implemented in CSS3. [...]</p>
+					</dd>
+
+
+					<dt id="comment-59604"><a href="#comment-59604" title="Link to this reply">#61</a> On January 22nd, 2008 5:38 am <span>Ian M replied:</span></dt>
+					<dd>
+												<p>I would like them to simplify their CSS ratification process, or simply reword the various levels of progress, such that Microsoft can&#8217;t claim that it&#8217;s a standard yet, like they STILL do with CSS 2.1.</p>
+					</dd>
+
+
+					<dt id="comment-59605"><a href="#comment-59605" title="Link to this reply">#62</a> On January 22nd, 2008 6:17 am <span>Anders replied:</span></dt>
+					<dd>
+												<p>Parent selectors would be a nice feature.</p>
+<p>Suppose I have a nested list, acting as a menu system, where the nested li:s are hidden by default. I would like to style only the li elements containing a child element, for example adding a background image to indicate that there’s a deeper level to navigate. The only current solution as I see it, is to get those parent elements through javascript, or having the server side put a class on those li:s.</p>
+<p>Could be a pseudo class, something like element:is-parent/element:has-children…</p>
+					</dd>
+
+
+					<dt id="comment-59606"><a href="#comment-59606" title="Link to this reply">#63</a> On January 22nd, 2008 6:39 am <span><a href='http://edeverett.co.uk/' rel='external nofollow' class='url'>Ed Everett</a> replied:</span></dt>
+					<dd>
+												<p>Here&#8217;s a simple one (I think&#8230;)</p>
+<p><strong>Grouped selectors.</strong></p>
+<p>.mySpecificClass #mySpecificId (h2, h3, h4) {color:red;}<br />
+.mySpecificClass #mySpecificId (p, ul, ol) {color:#666666;}</p>
+<p>So you could group child selectors under one parent making for neater css files and less repetative strain injury for web developers.</p>
+					</dd>
+
+
+					<dt id="comment-59607"><a href="#comment-59607" title="Link to this reply">#64</a> On January 22nd, 2008 7:22 am <span><a href='http://www.maxdesign.com.au/2008/01/22/some-links-159/' rel='external nofollow' class='url'>Max Design - standards based web design, development and training &raquo; Some links for light reading (22/1/08)</a> replied:</span></dt>
+					<dd>
+												<p>[...] Tell the CSS WG what you want from CSS3 [...]</p>
+					</dd>
+
+
+					<dt id="comment-59612"><a href="#comment-59612" title="Link to this reply">#65</a> On January 22nd, 2008 9:10 am <span>daembrace replied:</span></dt>
+					<dd>
+												<p>A shortcut to specify both the width and the height together, like this:</p>
+<p>size: 450px 100%;</p>
+<p>that would be the same as:</p>
+<p>width: 450px;<br />
+height: 100%;</p>
+<p>since a lot of times you specify both of them at the same time. The eventual override by the classic specification could be resolved just like the same override problem in the borders compact and expanded versions.</p>
+					</dd>
+
+
+					<dt id="comment-59632"><a href="#comment-59632" title="Link to this reply">#66</a> On January 22nd, 2008 12:47 pm <span>Christian Norton replied:</span></dt>
+					<dd>
+												<p>border-image, so you don&#8217;t need to mess with combining padding and background-image.</p>
+					</dd>
+
+
+					<dt id="comment-59640"><a href="#comment-59640" title="Link to this reply">#67</a> On January 22nd, 2008 4:17 pm <span><a href='http://www.swinglegacy.com/' rel='external nofollow' class='url'>Henry Francis</a> replied:</span></dt>
+					<dd>
+												<p>Suggestion for future CSS versions.</p>
+<p>The coding and maintenance efficiency of CSS would be enhanced by adding the capability of declaring a variable, which could then be assigned some value and used in multiple instances as a property value.  For example, suppose I wanted to assign a standard 25px of padding to many different classes of divs.  At the top of the style sheet I would declare a variable &#8220;xpad&#8221;, set it equal to 25px, and write my classes using padding: xpad; .  Then, if in the future I wished to change the amount of padding, I would only need to change the value of xpad.</p>
+					</dd>
+
+
+					<dt id="comment-59655"><a href="#comment-59655" title="Link to this reply">#68</a> On January 22nd, 2008 6:14 pm <span>Christopher replied:</span></dt>
+					<dd>
+												<p>I would like CSS3 to focus more on layout techniques that are easy to understand. The current CSS2 implementation is useless for creating fluid layouts unless you have an IQ above 300.</p>
+<p>Everything else CSS has to offer is top-notch.</p>
+					</dd>
+
+
+					<dt id="comment-59666"><a href="#comment-59666" title="Link to this reply">#69</a> On January 22nd, 2008 9:33 pm <span><a href='http://www.dadako.com/' rel='external nofollow' class='url'>hawken king</a> replied:</span></dt>
+					<dd>
+												<p>simple really.</p>
+<p>Auto spanning text columns, with column span variable<br />
+Vertical Japanese text with Japanese text options<br />
+rounded corner div blocks, with corner miter variable</p>
+<p>Thats all I&#8217;ve ever wanted.</p>
+					</dd>
+
+
+					<dt id="comment-59689"><a href="#comment-59689" title="Link to this reply">#70</a> On January 23rd, 2008 8:04 am <span>Sander Aarts replied:</span></dt>
+					<dd>
+												<p>&#8211; vertical-float &#8211;<br />
+I&#8217;d like to see an option to tell block elements to stretch to the maximum available height. A vertical-float property so to speak. The current, default behaviour would be:</p>
+<p>vertical-float: top;</p>
+<p>&#8230;and in order to make the element stretch to the available height you could use:</p>
+<p>vertical-float: none; (or maybe &#8216;full&#8217; or &#8216;stretch&#8217;)</p>
+<p>This would make it easy to give sibling elements the same height without hard coding it. The element with the largest content would stretch the mutual parent and the sibling would stretch to the height of the parent.</p>
+<p>&#8211; grouped (sub) selectors &#8211;<br />
+I like the grouped selectors (maybe grouped sub selectors is a better definition), as <a href="index.html#comment-59606" rel="nofollow">proposed by Ed Everett</a></p>
+<p>&#8211; :current pseudo class &#8211;<br />
+Selecting links to the current page</p>
+					</dd>
+
+
+					<dt id="comment-59713"><a href="#comment-59713" title="Link to this reply">#71</a> On January 23rd, 2008 2:32 pm <span>Christian Norton replied:</span></dt>
+					<dd>
+												<p>Also, but I don&#8217;t know if this is at all in the scope here&#8230; it would great to be able to pass css through a URL.  Say like <a href="http://www.url.com/?id=header" rel="nofollow">http://www.url.com?id=header</a>|display=none<br />
+something like that.</p>
+					</dd>
+
+
+					<dt id="comment-59720"><a href="#comment-59720" title="Link to this reply">#72</a> On January 23rd, 2008 6:56 pm <span><a href='http://fantasai.inkedblade.net/' rel='external nofollow' class='url'>fantasai</a> replied:</span></dt>
+					<dd>
+												<p>@Sander Aarts &#8211; I think I need an illustration to understand what you mean by your vertical-float idea.</p>
+<p>@Christian Norton &#8211; yeah, that&#8217;s out-of-scope here :) Your server application would have to handle something like that.</p>
+<p>@Christopher &#8211; Support for display: table/table-row/table-cell in IE8 should help with that. We&#8217;re also looking at some proposals for a <a href="http://www.w3.org/TR/css3-layout/" rel="nofollow">template-based system</a>. It would be helpful to get an illustrated list of specific layouts designers want to achieve.</p>
+					</dd>
+
+
+					<dt id="comment-59739"><a href="#comment-59739" title="Link to this reply">#73</a> On January 24th, 2008 4:42 am <span><a href='http://www.coleman-creative.com/' rel='external nofollow' class='url'>Tom Coleman</a> replied:</span></dt>
+					<dd>
+												<p>More cardinal points, i.e.: </p>
+<p>top-left, top-center, top-right,<br />
+mid-left, mid-center, mid-right,<br />
+bottom-left, bottom-center, bottom-right.</p>
+<p>(Sorry if this is redundant.)</p>
+					</dd>
+
+
+					<dt id="comment-59741"><a href="#comment-59741" title="Link to this reply">#74</a> On January 24th, 2008 5:37 am <span><a href='http://www.brucelawson.co.uk/' rel='external nofollow' class='url'>bruce</a> replied:</span></dt>
+					<dd>
+												<p><a href="#comment-59713" rel="nofollow">Christian</a>, what&#8217;s a use-case, please?</p>
+					</dd>
+
+
+					<dt id="comment-59761"><a href="#comment-59761" title="Link to this reply">#75</a> On January 24th, 2008 11:56 am <span>Christian Norton replied:</span></dt>
+					<dd>
+												<p>New idea:  encasing through CSS.  Lets say I have a chunk of HTML in the code tag instead of having to encase each of my greater then or less then we could set this in CSS.  Something like code {text-transform: escape;}</p>
+<p>As for the CSS in URL use case.  Say I&#8217;ve got an page I&#8217;m going to use in different ways, one as just a static page, and one from and email drawing attention to a particular parts of the page.  By allowing CSS in a URL I now have the ability to completely separate style from the structure, allowing different presentation of the same data at the <em>same time</em>.</p>
+					</dd>
+
+
+					<dt id="comment-59793"><a href="#comment-59793" title="Link to this reply">#76</a> On January 25th, 2008 8:30 am <span><a href='http://chrisfjay.blogspot.com/' rel='external nofollow' class='url'>Chris Jay</a> replied:</span></dt>
+					<dd>
+												<p>I&#8217;d like a &#8220;border-path&#8221; property that allows us to make an element&#8217;s border have any shape and size &#8211; e.g. stars, clouds, triangles, human outline, etc. Perhaps using the <a href="http://www.w3.org/TR/SVG11/paths.html#PathDataClosePathCommand" rel="nofollow">SVG closed path</a> notation.</p>
+<p>This is better than using background images, because it allows padding, margins and clips to follow the border shape (e.g. text automatically fits neatly inside). It&#8217;s like rounded corners on steroids!</p>
+					</dd>
+
+
+					<dt id="comment-59801"><a href="#comment-59801" title="Link to this reply">#77</a> On January 25th, 2008 1:22 pm <span>Dave replied:</span></dt>
+					<dd>
+												<p>This is exciting &#8211; I&#8217;d assumed that it was too late / there was no way for non-recognized experts to give any input on these processes.</p>
+<p>1) Defined defaults for margin and padding on all elements (or perhaps, for all attributes).  Right now, CSS authors must use a Reset stylesheet everywhere.  If everyone is using Reset stylesheets everywhere, wouldn&#8217;t it make more sense to build some foundation into CSS itself?  I would further suggest that the defaults aim for &#8220;0&#8243; rather than semi-arbitrary &#8220;this will make a page look nice when people don&#8217;t know what they&#8217;re doing.  I hate to make CSS3 an experts-only club, but if we try to juggle what experts need with what newbies need done for them, I think we all lose.</p>
+<p>2) Much stronger border style options.  I&#8217;m picturing the ability to use images for borders.  You could specify 8 images (4 corners and 4 tiles for borders), or a smaller number that would be rotated by the browser based on definitions in the spec.  (The popularity of the &#8220;sliding doors&#8221; hacks is one example of a need that stronger border styles could/should satisfy.)</p>
+<p>3) Better general layout tools.  I&#8217;ve gone from hardcore standards &amp; semantics fanatic back to someone who appreciates that tables are the only or easiest way to achieve some of the most desired layouts.  Any new layout tools that don&#8217;t offer everything tables did with the same ease as tables is truly an incremental step that is just wasting everyone&#8217;s time.</p>
+<p>4) A built-in system of CSS version support identification that gives developers some ability to trust/know/control/influence what a browser will actually do.  XHTML&#8217;s Strict/Transitional doctypes seem to be the closest example I can think of to what I&#8217;m picturing.  I would love to be able to say &#8220;if browser supports CSS4, use stylesheet.css4, else .css3, else .css&#8221;.  There will probably always be conditional comments / javascript /server-side solutions, but honestly there has to be a way to include this in the spec that would eliminate the (future) need for all those hack-type solutions.</p>
+<p>5) Declare entire font styles the way that font-family is currently used.  Instead of something like &#8220;font-x, font-y, sans&#8221;, let me say &#8220;Family size line height&#8221;. For example &#8220;font-x 14px 1.3em, font-y 16px 1.2em, sans 14px 1.2em&#8221;.  Should some solution offering more web fonts surface (which will probably happen in the very near future judging by potential) we need a way to work with the fact that different fonts are&#8230;different.</p>
+<p>I think that&#8217;s it.  I want CSS to have strong tools to let me put an HTML element where I want it, make it look how I want it to, (both without assuming anything for me which I then just have to tell the browser to override) and I want to be able to trust that the browser will do what I ask or else rollback to a stylesheet that it can handle.</p>
+					</dd>
+
+
+					<dt id="comment-59802"><a href="#comment-59802" title="Link to this reply">#78</a> On January 25th, 2008 1:26 pm <span><a href='http://www.andybudd.com/' rel='external nofollow' class='url'>Andy Budd</a> replied:</span></dt>
+					<dd>
+												<p>I would like:</p>
+<p>A parent selector<br />
+Linear gradients<br />
+Irregular shaped boxes<br />
+Presentational animations/fades</p>
+<p>I don&#8217;t think we should have:</p>
+<p>Variables (useful, but CSS isn&#8217;t a programming language)</p>
+<p>I will cry if we have:</p>
+<p>Coloured scroll bars</p>
+<p>But mostly I would like:</p>
+<p>The CSS-WG to finish what they already have without adding more features. CSS4 anybody?</p>
+					</dd>
+
+
+					<dt id="comment-59805"><a href="#comment-59805" title="Link to this reply">#79</a> On January 25th, 2008 2:36 pm <span><a href='http://thinsoldier.com/' rel='external nofollow' class='url'>thinsoldier</a> replied:</span></dt>
+					<dd>
+												<p>@jive (#56)<br />
+See my earlier posts on alpha/transparency masks, svg clipping path masks, and svg/bitmap text wrap masks.</p>
+					</dd>
+
+
+					<dt id="comment-59806"><a href="#comment-59806" title="Link to this reply">#80</a> On January 25th, 2008 2:50 pm <span><a href='http://thinsoldier.com/' rel='external nofollow' class='url'>thinsoldier</a> replied:</span></dt>
+					<dd>
+												<p>The scroolbar of the main window chrome MUST NEVER BE STYLED.</p>
+<p>However, I strongly believe than any scroll-bar on an overflow:auto element WITHIN  _MY_  page should obey my wishes and allow me to style it however I want.</p>
+<p>Use Case:<br />
+A website for old people with poor eye-sight and motor skills.<br />
+Using a couple scrolling areas on a single page so they don&#8217;t have to bother with all the complicated &#8220;back button&#8221; tom-foolery and style the scroll-bars to be FAT and impossible to miss or have trouble using.</p>
+<p>Also, I&#8217;ve seen interesting layouts that had their &#8220;artistic vibe&#8221; completely destroyed by the OS X shiny scroll-bars. We should be allowed to style scroll-bars _within_OUR_ layouts for visual consistency with the overall appearance of OUR CROSS-PLATFORM WEB-APP.</p>
+					</dd>
+
+
+					<dt id="comment-59808"><a href="#comment-59808" title="Link to this reply">#81</a> On January 25th, 2008 3:32 pm <span><a href='http://www.tekopia.co.uk/?p=13' rel='external nofollow' class='url'>Tekopia &raquo; Blog Archive &raquo; Tell the CSS WG what you want from CSS3 - The Web Standards Project</a> replied:</span></dt>
+					<dd>
+												<p>[...] Tell the CSS WG what you want from CSS3 &#8211; The Web Standards Project [...]</p>
+					</dd>
+
+
+					<dt id="comment-59825"><a href="#comment-59825" title="Link to this reply">#82</a> On January 26th, 2008 1:03 am <span><a href='http://fantasai.inkedblade.net/' rel='external nofollow' class='url'>fantasai</a> replied:</span></dt>
+					<dd>
+												<p>@Antti Rasinen &#8211; For effects not covered by other features such as multiple backgrounds, border-image, and calc(), <a href="http://www.w3.org/TR/xbl/" rel="nofollow">XBL</a> can add more boxes and generate content in a very powerful way. If there are some common effects that you feel really should be possible in CSS alone, you&#8217;d need to describe them individually.</p>
+<p>@Stifu &#8211; That&#8217;s something I&#8217;ve thought about, actually. I think the tough part is figuring out what color/style to make the slanted edges. What would you expect?</p>
+<p>@Diogo &#8211; See <a href="http://www.w3.org/TR/css3-ui/#resize" rel="nofollow">the &#8216;resize&#8217; property</a>. For dragging, you&#8217;ll probably have to check HTML5 since the effect of dragging involves semantics, i.e. knowing what the intent is.</p>
+<p>@Moe &#8211; what would you use it for?</p>
+<p>@Neal &#8211; That doesn&#8217;t help me much. I need examples of the <strong>end result</strong> you want to get on the web page. Telling me to look at a graphics program doesn&#8217;t help much because I know that designers often do further manual processing after applying a drop shadow and that processing would need to be built-into CSS.</p>
+<p>@Gérard Talbot &#8211; Yep, defining behavior, or at least specifying preferred behavior, for undefined parts of CSS2.1 is one of our goals for CSS3. Some things will remain undefined, e.g. line breaking rules, but for box model stuff I think we do want more precision.</p>
+<p>@hawken king &#8211; I&#8217;m not sure what &#8220;auto spanning text columns, with column span variable&#8221; means. Could you give some examples?</p>
+<p>@Tom Coleman &#8211; I have no idea what you mean by that. You&#8217;ll have to explain more.</p>
+<p>@Christian Norton &#8211; You can&#8217;t use CSS for escaping code. CSS applies to the document after the HTML has been parsed.</p>
+<p>@Dave &#8211; I believe the HTML5 effort will be looking to create a recommended default stylesheet for HTML. We can&#8217;t set things to zero because many pages depend on the defaults. CSS can&#8217;t be versioned for the same reasons HTML can&#8217;t be properly versioned &#8212; that&#8217;s a long argument I won&#8217;t get into here.</p>
+					</dd>
+
+
+					<dt id="comment-59840"><a href="#comment-59840" title="Link to this reply">#83</a> On January 26th, 2008 12:02 pm <span><a href='http://www.dvxl.com/' rel='external nofollow' class='url'>Andrew Senter</a> replied:</span></dt>
+					<dd>
+												<p>They seem to of covered most of that I&#8217;m after;</p>
+<p>1. Full control over the DOM using selectors. Seems to be part the way there, but I notice we&#8217;re missing a parent selector, and how about something similar to  xPath? Although that could be seen as crossing into XML territory.</p>
+<p>2. Background-size,multiple backgrounds etc; I truly believe that these beauties will greatly remove the need some people feel for extraneous HTML elements (for creating drop shadows, fancy corners, complex navigation items etc).</p>
+					</dd>
+
+
+					<dt id="comment-59848"><a href="#comment-59848" title="Link to this reply">#84</a> On January 26th, 2008 6:48 pm <span>Kenny replied:</span></dt>
+					<dd>
+												<p>Please read this, and take heed of the recommendations. In particular, the reference to ASCII art. </p>
+<p><a href="http://alex.dojotoolkit.org/?p=625" rel="nofollow">http://alex.dojotoolkit.org/?p=625</a></p>
+					</dd>
+
+
+					<dt id="comment-59865"><a href="#comment-59865" title="Link to this reply">#85</a> On January 27th, 2008 10:47 am <span><a href='http://cmsblog.msdazu.de/' rel='external nofollow' class='url'>Harald</a> replied:</span></dt>
+					<dd>
+												<p>Variables or constants would be nice. </p>
+<p>/*Overwritable*/<br />
+$myred:var = #cc0000;<br />
+/*Not overwritable:*/<br />
+$myblue:constant = #000099; </p>
+<p>p { color: $myblue; border: 1px solid $myred }</p>
+<p>Another suggestion is float by a vector form, a bit like area elements with the keywords rect, poly and circle. </p>
+<p>img.decoration {<br />
+floatarea: poly 1px 2px 3px 4px 5px;<br />
+float: left;<br />
+margin-right: 5px;<br />
+}</p>
+<p>The floatarea my use paths in images to:</p>
+<p>img.decoration {<br />
+floatarea: imagepath;<br />
+float: left;<br />
+margin-right: 5px;<br />
+}</p>
+<p>Hyphenation should be supported by UAs in the future, so there is an need to handle it:</p>
+<p>p { hyphenation: off; }<br />
+blockquote { hyphen-follow-limit: 3}</p>
+					</dd>
+
+
+					<dt id="comment-59869"><a href="#comment-59869" title="Link to this reply">#86</a> On January 27th, 2008 12:50 pm <span><a href='http://www.growsonyou.com/' rel='external nofollow' class='url'>peter</a> replied:</span></dt>
+					<dd>
+												<p>I would like two simple things&#8230;<br />
+Imagine a div containing two columns; both columns have width 48%, one is floated left and the other floated right, neither has a height specified. The left floated div contains a lot of text, the right floated div contains a little text.</p>
+<p>Firstly I would like a property meaning the element it applies to expands vertically to fill the containing element. E.g. my imaginary right hand column stretches to be the same height as my left hand column.</p>
+<p>Secondly I would like a property meaning the element it applies to expands vertically to include all floated elements within it. E.g My container div visually contains the two floated divs (without having an extra element after the two floated divs which has clear: both).</p>
+<p>I also like the idea of constants in CSS as per comment 4.</p>
+					</dd>
+
+
+					<dt id="comment-59910"><a href="#comment-59910" title="Link to this reply">#87</a> On January 28th, 2008 9:54 am <span>Anders replied:</span></dt>
+					<dd>
+												<p>Having the opportunity to vertically align content within a container would be good. Like margin:0 auto, but the other way round (margin:auto 0).</p>
+					</dd>
+
+
+					<dt id="comment-59927"><a href="#comment-59927" title="Link to this reply">#88</a> On January 28th, 2008 4:17 pm <span>Art Clark replied:</span></dt>
+					<dd>
+												<p>/*<br />
+If you&#8217;ve ever had the chance to read the &#8220;arguing&#8221; about the impementation of how scrollbars should/shouldn&#8217;t be included in the viewport&#8217;s dimensions, you know that each browser seems to have a different way of dealing with this. Microsoft had it half right by permitting the scrollbar to be styled, and firefox got the scrollbar half right by including the width of the scrollbar in the viewport&#8217;s area. I&#8217;ve read about hacks using overflow, but this is not consistant with all browsers either. How often have you read blogs with content in scrollable regions that were 1 em high, but there is a horizontal scrollbar which consumes all the visible viewport!<br />
+Maybe all I am looking for is an extended attribute to &#8220;overflow&#8221; like &#8220;inside&#8221; or &#8220;outside&#8221;.<br />
+*/<br />
+.box1 { overflow: auto outside }<br />
+.box2 { overflow: outside } /*same as box1*/<br />
+/*<br />
+scrollbar width when visible is not part of the viewport width(viewport gets wider)</p>
+<p>For an example, open &#8220;Word2007&#8243;, then goto &#8220;Word Options&#8221;, then &#8220;Customize&#8221;. Resize this dialog to various heights, and widths to see how the tablist and listboxes resize for an example of inclusive, and exclusive scroll regions in viewports box1 style may partially apply to the tablist on left (&#8220;Popular&#8221;,&#8221;Display&#8221;,&#8230;&#8221;Resources&#8221;)<br />
+*/<br />
+.box3 { overflow: auto inside }<br />
+.box4 { overflow: inside } /*same as box3*/<br />
+/*<br />
+scrollbar becomes part of viewport width-the viewport does not get wider</p>
+<p>Observe this behaviour in &#8220;Select&#8221; boxes in middle and right side of Word2007 dialog mentioned previously.<br />
+*/<br />
+/*<br />
+Notes:<br />
+Presently, achieving these effects is possible by adding some browser-targeted CSS and additional divisional blocks for presentation purposes only.<br />
+*/</p>
+					</dd>
+
+
+					<dt id="comment-59930"><a href="#comment-59930" title="Link to this reply">#89</a> On January 28th, 2008 4:37 pm <span>Art Clark replied:</span></dt>
+					<dd>
+												<p>/*<br />
+When can we start to style form field elements:<br />
+*/<br />
+option.item1<br />
+{<br />
+background-image: url(item1.png);<br />
+margin-left: 30px /*white space so that background image icon is visible */<br />
+}<br />
+/*<br />
+Bad syntax, I know, hoping that we might use a syntax similar to this to zebra-strip rows<br />
+*/<br />
+#table1 tbody td.elements[1,3,5,6,7]<br />
+{<br />
+background-color: #ff0000<br />
+}</p>
+					</dd>
+
+
+					<dt id="comment-59936"><a href="#comment-59936" title="Link to this reply">#90</a> On January 28th, 2008 7:43 pm <span>Simon Lilja replied:</span></dt>
+					<dd>
+												<p>This is, I believe, a simple and somewhat realistic request:</p>
+<p>In a nutshell, I&#8217;d like to be able to offset/wrap background images. Anyone who&#8217;s been working with image editing tools (_any_ decent ones) should know what I&#8217;m talking about. Having a background image that measures 200&#215;200 pixels and using this (imaginary) syntax&#8230;</p>
+<p>body {<br />
+   background-image: url(image.png);<br />
+   background-position: -100px 0;<br />
+   background-offset: wrap; /* This is just some made up syntax, it might not make too much sense but it&#8217;ll have to do for this example. */<br />
+}</p>
+<p>&#8230; would produce a result like this: <a href="http://tinyurl.com/ysg5ej" rel="nofollow">http://tinyurl.com/ysg5ej</a> (pardon the ugly image)</p>
+<p>Basically, instead of having parts of the image vanishing into thin cyberspace as it exits any edge of the browser window, that part will re-appear on the opposite end—both on the x and y-axis, of course.</p>
+<p>I can think of several really useful uses of something like this, having &#8220;two&#8221; virtual background-images (made up of just one actual image as in the example) on either side of a liquid-size element is just one of them.</p>
+					</dd>
+
+
+					<dt id="comment-60018"><a href="#comment-60018" title="Link to this reply">#91</a> On January 30th, 2008 5:27 am <span>Paul B replied:</span></dt>
+					<dd>
+												<p>I would like to see and extension of inheritance where you can specify one class to inherit/apply the styles of another class from within the stylesheet itself.</p>
+<p>Lite weight example:<br />
+Current practice is to assign two class names:</p>
+<p>  .pad10px{ padding:10px; } /* consistent padding for many text block divs */<br />
+  .article{ border:1px solid #333; text-align:justify; }</p>
+<p>  &#8230;</p>
+<p>What would be helpful is to assign the second (pad10px) class through the stylesheet: </p>
+<p>  .pad10px{ padding:10px; } /* consistent padding for all text blocks */<br />
+  .article{ inherit:.pad10px; border:1px solid #333; text-align:justify; }<br />
+  /* OR */<br />
+  .article{ .pad10px; border:1px solid #333; text-align:justify; }</p>
+<p>  &#8230;</p>
+<p>I also second the suggestion from C L re Nested selectors  &#8211; I always look for ways to reduce duplicate content in the sytlesheets and this is a good way to do so.</p>
+					</dd>
+
+
+					<dt id="comment-60019"><a href="#comment-60019" title="Link to this reply">#92</a> On January 30th, 2008 5:33 am <span>Paul B replied:</span></dt>
+					<dd>
+												<p>Edit to previous post&#8230;. my div examples did not show up:</p>
+<p>Example &#8211; current<br />
+ &lt;div class=&#8221;article pad10px&#8221;&gt;&#8230;&lt;/div&gt;</p>
+<p>Example 2 &#8211; proposed<br />
+  &lt;div class=&#8221;article&#8221;&gt;&#8230;&lt;/div&gt;</p>
+					</dd>
+
+
+					<dt id="comment-60021"><a href="#comment-60021" title="Link to this reply">#93</a> On January 30th, 2008 6:43 am <span><a href='http://www.zeb.de/it' rel='external nofollow' class='url'>Björn Weinbrenner</a> replied:</span></dt>
+					<dd>
+												<p>I agree to Paul that an (multiple) inheritance / extension mechanism would be a very nice feature . I would like a java-like syntax<br />
+.redBackground { background-color: red; }<br />
+.blueBorder { border: 1px blue solid; }<br />
+.redButtonWithBlueBorder extends redBackground, blueBorder {<br />
+&#8230;<br />
+}</p>
+<p>Regards<br />
+Björn</p>
+					</dd>
+
+
+					<dt id="comment-60022"><a href="#comment-60022" title="Link to this reply">#94</a> On January 30th, 2008 7:41 am <span>Ariel replied:</span></dt>
+					<dd>
+												<p>The problem:</p>
+<p>Float a number of boxes, give them a fixed width if you like, but the content, and thus the height is not known ahead of time.</p>
+<p>They don&#8217;t line up nicely. I understand why. I would like to fix it.</p>
+<p>My idea:</p>
+<p>Some sort of tag that says all the boxes should have the same hight.</p>
+<p>Something like:</p>
+<p>.box {<br />
+height: @foo;<br />
+}</p>
+<p>.box2 {<br />
+height: @foo;<br />
+}</p>
+<p>This basically means all block level elements using the same name in the height tag will all have the same height (specifically the height of the largest one).</p>
+<p>Something like:</p>
+<p>height: {@foo 10px}</p>
+<p>Would mean the height of the largest @foo box, or 10px, whichever is greater. Min-height probably can&#8217;t substitute since I&#8217;d like to be able to do:</p>
+<p>.box {<br />
+ min-height: @foo;<br />
+}</p>
+<p>.box2 {<br />
+height: @foo;<br />
+}</p>
+<p>So box will always be at least as large as box2, but could also be larger.</p>
+<p>And all the various permutations that this can provide. I would even suggest the the ID names are global &#8211; i.e. you can set the margin of one box to be equal to the height of another.</p>
+<p>My syntax is not fully thought out, and I&#8217;m worried about pathological cases when one element affects another in a circular fashion. (Some kind of restriction or cycle breaking rule might be necessary.)</p>
+<p>But you did ask what designers would like, and a syntax to have elements match, when the value (height, width) is browser determined would help tremendously!</p>
+<p>Can I add something to this? An align tag that does the same thing: all the elements with the same ID align to the same spot plus an optional offset.</p>
+<p>I&#8217;m trying to think of how to define the rules here, how to decide which elements should move, and at the moment I don&#8217;t know.</p>
+<p>But since this is a wishlist, that&#8217;s another major item in my wishlist. (I once posted it on slashdot, and the idea got modded to +5. It was the only +5 idea Håkon did not reply to &#8211; he told me it was not fleshed out enough, and he was right. But it&#8217;s still a big wishlist idea &#8211; not just from me, but other people as well as the +5 indicates.)</p>
+					</dd>
+
+
+					<dt id="comment-60023"><a href="#comment-60023" title="Link to this reply">#95</a> On January 30th, 2008 7:46 am <span>Ariel replied:</span></dt>
+					<dd>
+												<p>To add something to:</p>
+<p>height: {@foo 10px}</p>
+<p>If 10px is greater than all the others, that means @foo is now equal to 10px, and all the other boxes should grow too.</p>
+<p>And add a third element as well: an offset.</p>
+<p>height: {@foo 10px +5px}</p>
+<p>Means whatever size is calculated for @foo, add +5px just to this one element, but don&#8217;t change the meaning of @foo. (It doesn&#8217;t have to by the third item in the list the + (or -) before it tags it as being an offset, rather than an initializer.)</p>
+					</dd>
+
+
+					<dt id="comment-60025"><a href="#comment-60025" title="Link to this reply">#96</a> On January 30th, 2008 10:16 am <span>Phil Houghton replied:</span></dt>
+					<dd>
+												<p>Thanks for this opportunity.</p>
+<p>The arguments for and against constants have done the rounds for a long time.  Has anyone discussed what I might call &#8220;directed inheritance&#8221;?</p>
+<p>e.g.</p>
+<p>.class1 {color: #ABC456; background-color: #456ABC;font-size: 1em;}</p>
+<p>.class2 {&gt;&gt;.class1;   /* inherit properties from .class1 */ font-size: 1.2em;}</p>
+<p>And &#8211; in response to the number of very large displays out there &#8211; some way of gracefully stretching fixed background images.  Is that silly?</p>
+					</dd>
+
+
+					<dt id="comment-60048"><a href="#comment-60048" title="Link to this reply">#97</a> On January 30th, 2008 5:30 pm <span><a href='http://www.gtalbot.org/BrowserBugsSection/MSIE7Bugs/' rel='external nofollow' class='url'>Gérard Talbot</a> replied:</span></dt>
+					<dd>
+												<p>Fantasai,</p>
+<p><a href="http://www.w3.org/TR/CSS21/selector.html#first-letter" rel="nofollow">Section 5.12.2 The :first-letter pseudo-element</a> should be clarified with examples (<strong>with screenshots</strong>) and should be a lot more easy to predict. Right now, there may be up to 30 different properties which may affect, may style first-letter&#8230; there are just too many properties which can affect first-letter IMO. At the very least, the expected rendering should be easier &#8211; <em>a lot more easier</em> &#8211; to predict in CSS 3.</p>
+<p>Regards, Gérard</p>
+					</dd>
+
+
+					<dt id="comment-60087"><a href="#comment-60087" title="Link to this reply">#98</a> On January 31st, 2008 8:02 am <span>iain replied:</span></dt>
+					<dd>
+												<p>how come folks who wrote books on css haven&#8217;t commented yet? or have i skimmed too fast&#8230;</p>
+					</dd>
+
+
+					<dt id="comment-60147"><a href="#comment-60147" title="Link to this reply">#99</a> On February 1st, 2008 3:43 am <span><a href='http://graphicdivine.co.uk/' rel='external nofollow' class='url'>Chris Kennish</a> replied:</span></dt>
+					<dd>
+												<p>I&#8217;d like to be able to specify colours for the bullets (UL) and numbers (OL) that are different from the (LI) text colour.</p>
+<p>Also, I&#8217;d like to be able to reliably target the various different TYPES of INPUTS.</p>
+					</dd>
+
+
+					<dt id="comment-60160"><a href="#comment-60160" title="Link to this reply">#100</a> On February 1st, 2008 12:10 pm <span>Aaron replied:</span></dt>
+					<dd>
+												<p>It would be nice to have a style that would block inheritance/cascading.  An example may be Test.  This style is so needed because many web applications get inserted into websites as blocks that may be changed by hostile styles, and this would be a way to ensure consistency no matter what the user&#8217;s pre-existing style sheets were.</p>
+					</dd>
+
+
+					<dt id="comment-60220"><a href="#comment-60220" title="Link to this reply">#101</a> On February 2nd, 2008 8:21 am <span><a href='http://mattwilcox.net/' rel='external nofollow' class='url'>Matt Wilcox</a> replied:</span></dt>
+					<dd>
+												<p>Nice one Aaron &#8211; i had the same though myself yesterday when working on an old site where inheritence was causing big headaches. It&#8217;d be brilliant to have a</p>
+<p>inheritance : off;</p>
+<p>switch that could be used on an element.</p>
+					</dd>
+
+
+					<dt id="comment-60221"><a href="#comment-60221" title="Link to this reply">#102</a> On February 2nd, 2008 8:22 am <span><a href='http://mattwilcox.net/' rel='external nofollow' class='url'>Matt Wilcox</a> replied:</span></dt>
+					<dd>
+												<p>@ Chris Kenish</p>
+<p>you already can target differnt input types. It&#8217;s just that IE doesn&#8217;t support the attribute selector; but the method is already part of the specification.</p>
+<p>input[type='text'] { rules here }</p>
+					</dd>
+
+
+					<dt id="comment-60361"><a href="#comment-60361" title="Link to this reply">#103</a> On February 4th, 2008 7:18 am <span>Ron Wenton replied:</span></dt>
+					<dd>
+												<p>First and foremost:</p>
+<p>Gradients.<br />
+They are used everywhere, yet we still have to resort to clunky image files to create them. Make our life easier, and save bandwidth while you are at it: Implement gradients in CSS3. </p>
+<p>color: gradient( startColor, endColor,  [linear|radial], [angle] );</p>
+<p>(or implement using N colors for fancy gradients and inner-shadow-like properties)</p>
+<p>You have rounded borders in the spec, gradients are needed for the exact same reasons. </p>
+<p>CSS3 should give me the complete toolset I need to create a visually modern webpage, *without* resorting to external graphics. </p>
+<p>Constants.<br />
+Eliminate the need for search and replace operations, let us structure the CSS through constants for easier editing, and save some bandwidth while you are at it.</p>
+<p>$common border-left: 1px solid black;<br />
+$color1    color: #DEADBE;</p>
+<p>.class { $common  $color1 }</p>
+					</dd>
+
+
+					<dt id="comment-60363"><a href="#comment-60363" title="Link to this reply">#104</a> On February 4th, 2008 7:49 am <span>Ron Wenton replied:</span></dt>
+					<dd>
+												<p>Quick addition to my post: I see that the &#8220;svg can do it&#8221; argument gets thrown around in defense of not implementing gradients. I don&#8217;t like that line of reasoning.</p>
+<p>A gradient should be &#8220;just-another-color&#8221;, ie usable in fonts, in borders, everywhere you can define a color.</p>
+<p>The goal should be to give the designer a set of tools which allows him to do as much as possible without resorting to external files (an SVG is just the same as a gif, really, I do not find it a redeeming feature that I get to write the image using numbers rather than draw it).</p>
+<p>The SVG argument can be used for any feature. You can always just make an SVG with rounded borders and then include it. Or use it to make shadows. And so on.</p>
+<p>Gradients are used everywhere, it is an integral part of webdesign. It needs to be a part of the spec, just like red or blue. You can always just make &#8220;blue&#8221; with an SVG, right?</p>
+<p>Take a tip from HTML5 here and see what they are doing. They look at *what is the common things out there that has no markup*.  to replace floating ,  to replace &#8216;s with CSS fixes, and so on.</p>
+<p>And one of the most common design elements out there, which have no markup and thus have to be made as images, are gradients.</p>
+					</dd>
+
+
+					<dt id="comment-60364"><a href="#comment-60364" title="Link to this reply">#105</a> On February 4th, 2008 7:51 am <span>Ron Wenton replied:</span></dt>
+					<dd>
+												<p>Fix: </p>
+<p>Take a tip from HTML5 here and see what they are doing. They look at *what is the common things out there that has no markup*. column to replace floating div, menu to replace ul’s with CSS fixes, and so on.</p>
+					</dd>
+
+
+					<dt id="comment-60505"><a href="#comment-60505" title="Link to this reply">#106</a> On February 6th, 2008 7:55 am <span>Phil Houghton replied:</span></dt>
+					<dd>
+												<p>Ooooh!  Styleable scroll bars please!  Preferably using the same values as existing IE proprietary code.</p>
+					</dd>
+
+
+					<dt id="comment-60621"><a href="#comment-60621" title="Link to this reply">#107</a> On February 8th, 2008 1:10 am <span><a href='http://rayne-vandunem.livejournal.com/' rel='external nofollow' class='url'>Rayne Van-Dunem</a> replied:</span></dt>
+					<dd>
+												<p>* <a href="http://cssglobe.com/lab/textgradient/" rel="nofollow">Text gradients</a>, with the option of not needing a background gradient image for it to render correctly.</p>
+<p>* Greater behavioral capabilities, such as <a href="http://coium.com/" rel="nofollow">the ability to click a button which will dynamically scroll to another section smoothly</a>. Currently, it can only be done in JavaScript, but I think it could fit in with the idea of giving CSS the ability to style the page without interfering with the basic readability of the webpage with, say, a voice reader.</p>
+<p>Also, I agree with what everyone else has already said. Thanks.</p>
+					</dd>
+
+
+					<dt id="comment-60622"><a href="#comment-60622" title="Link to this reply">#108</a> On February 8th, 2008 1:21 am <span><a href='http://rayne-vandunem.livejournal.com/' rel='external nofollow' class='url'>Rayne Van-Dunem</a> replied:</span></dt>
+					<dd>
+												<p>Also, as a markup language like XHTML, SVG is supposed to handle the bare minimum of 2D graphics (lines and such), not the whole kaboodle (color filling, gradients, etc.). It should be as manipulable with CSS as XHTML currently is.</p>
+<p>Then again, I&#8217;d like to see if SVG + CSS can be used in future 3D animation, as the current solution for 3D animation in SVG is through JavaScript (as few browsers support SMIL). With the moves of the CSS WG towards incorporating basic animation, SVG could benefit from any CSS animation as well. A web animation standard could be developed around the greater capabilities of CSS in SVG.</p>
+					</dd>
+
+
+					<dt id="comment-60884"><a href="#comment-60884" title="Link to this reply">#109</a> On February 11th, 2008 6:02 pm <span>greg replied:</span></dt>
+					<dd>
+												<p>I read through about 92% of these suggestions so I am fairly certain that I am not duplicating anyone else&#8217;s input (good or bad?)&#8230; I have 2.5 longish suggestions / thoughts and they might be outside of the purist realm.</p>
+<p>1. I would be interested in seeing CSS create a slowly and carefully expanding library of &#8216;standard&#8217; fonts. The goal would be to solidify the display of web media not only on our current group of platforms but for different pixel depths in the future. The present situation with fonts seems to stagnate and I think if the organizing group were to say undertake the development of a standard font library that could help improve the situation with image replacement&#8230; The current morass that application development is in regarding higher &#8216;dpi&#8217; or &#8216;ppi&#8217; display is going to be compounded by difficulties on websites that cannot easily transition up&#8230; (MS is definitely the godfather of this issue because of the extra space added to text to maintain it&#8217;s &#8216;sharpness&#8217;) I would hate to think that web development could slow down the evolution of display technology even further.</p>
+<p>who pays for it? read on.</p>
+<p>1.5 (My half suggestion) &#8211; explore ways of bringing svg elements into css. This is attached to the previous thought. Because while I acknowledge that all fonts can&#8217;t (legally) be supported in a browser&#8230; if we could substitute characters, borders, corners etc with svg directly from css then the future for &#8216;hi-def&#8217; web display would be a lot more certain.</p>
+<p>I know some of this is available, but I like some of the suggestions above regarding svg css overlap and think there could be some interesting outcomes&#8230; like being able to specify a path in CSS for text to flow or be clipped where the path is an SVG import&#8230; some of this could be smooth like if you are specifying pixel values the browser defaults to raster (pixelated) display, but if you specify em or % the browser could switch to using a svg render. Maybe some forced controls and or hinting to boot. BTW: SVG is great for people without vector software, someone worried about that above. But some clean implementation of vector based display elements in CSS could be rad! And forward thinking.</p>
+<p>2. Has any thought been given to an all or nothing approach with regards to CSS? It seems to me that the carrot and the stick need to both have a place in the discussion of why certain browsers are unable to display CSS &#8216;correctly&#8217;. Again, maybe this is a bit extreme, but I could see the organizing body saying hey we are an open development project, but if you want to implement our standard you have to do it accurately, otherwise we will pull you &#8216;license&#8217; and force you not to display css at all! WOW, can&#8217;t believe that huh? but think about it&#8230; At this point the power has moved somewhat from the browser dev community to the web / app dev community. People want their youtube and their gmail and everything else, if you told even microsoft that you were going to stop them from using CSS incorrectly they would be hosed. There is the stick. </p>
+<p>I would see there being some sort of practice of noting / patching CSS render bugs or flagging a company for inappropriate usage and forcing a css shutdown patch or legal damages. ($$$) With regards to the earlier font-library, you just shuffle that and svg support in with it. Hey you want to use CSS? Great, here is the kit&#8230; use it or lose it.</p>
+<p>I think the purpose of CSS is eroded by poor / incomplete / intentionally inaccurate implementation. At least this is an interesting thought.</p>
+					</dd>
+
+
+					<dt id="comment-60932"><a href="#comment-60932" title="Link to this reply">#110</a> On February 12th, 2008 8:15 am <span>cynglas replied:</span></dt>
+					<dd>
+												<p>Wholehearted support for 2 of Dave&#8217;s points: </p>
+<p>1. &#8220;0&#8243; margin and padding on all elements rather than &#8220;this will make a page look nice when people don’t know what they’re doing&#8217;. The most frustrating case in point is the &#8220;collapsing border&#8221; model. Ditch it and let the designer set the aesthetic spacing between block elements as they see fit. What we currently have is built-in defaults arbitrarily demanding white space that breaks out of the  unless you set an invisible &#8220;border&#8221; etc. etc. In other words give the end user full control of the layout tools without CSS trying to second guess what is good design. That approach just creates confusion and endless workarounds.</p>
+<p>2. &#8220;Tables are the only or easiest way to achieve some of the most desired layouts&#8221;. Eric Meyer says the same thing in several books. So we need dedicated layout tools that are capable of the speed, intuitiveness and stability that tables gave to onscreen layout, without the disadvantages for accessibility and multi-agent deployment.  </p>
+<p>Specifically we need:</p>
+<p>a)  that can be quickly be set and remain associated in parallell across a screen (to form a grid-like framework that does not have to contain &#8220;tabular data&#8221;). </p>
+<p>b) Parallel  that can be grouped to auto adjust to the same height as the longest in the group (according to its variable content).</p>
+<p>Quite often I read help tutorials that explain (at great length) that once you understand the way the CSS rules (eg the float function) were drawn up, then you can see why the complexities arise. Well yes, but the answer surely is to change the rules becasue they aren&#8217;t fit for purpose.</p>
+<p>A cognitive suggestion for CSS3 planning: stop thinking of web &#8220;documents&#8221; on the model of just Word processors (like the awful Microsoft Word) and start thinking of flexibly designed spaces, more like DTP (eg. InDesign).</p>
+					</dd>
+
+
+					<dt id="comment-60958"><a href="#comment-60958" title="Link to this reply">#111</a> On February 12th, 2008 6:55 pm <span>greg replied:</span></dt>
+					<dd>
+												<p>To the previous post and Dave&#8230;</p>
+<p>Agreed, eliminate the reset.css<br />
+Would a value that could be applied to the document or a tag do this or would it just default to no-assumptions mode?</p>
+					</dd>
+
+
+					<dt id="comment-60964"><a href="#comment-60964" title="Link to this reply">#112</a> On February 12th, 2008 8:46 pm <span><a href='http://dwight.clickthesky.com/' rel='external nofollow' class='url'>Dwight L. Stegall</a> replied:</span></dt>
+					<dd>
+												<p>It doesn&#8217;t matter to me what you put in it. But I really don&#8217;t want to wait another 7 years for you to implement it. I&#8217;d like to use it sometime before I die. It&#8217;s time to stop dragging your feet and finish it. :(</p>
+					</dd>
+
+
+					<dt id="comment-60969"><a href="#comment-60969" title="Link to this reply">#113</a> On February 12th, 2008 10:18 pm <span><a href='http://miya.pe.kr/archives/70' rel='external nofollow' class='url'>겨미♡웹</a> replied:</span></dt>
+					<dd>
+												<p><strong>Some CSS3 Idea.</strong></p>
+<p>Conditional selector depends on child nodes<br />
+ul(a:hover) {property:value;}<br />
+Code means select ul element that contains a element with hover statement.<br />
+Example<br />
+&lt;style type=&quot;text/css&quot;&gt;<br />
+	ul { background-color: #999; }<br />
+	ul a:link { color: bl&#8230;</p>
+					</dd>
+
+
+					<dt id="comment-60990"><a href="#comment-60990" title="Link to this reply">#114</a> On February 13th, 2008 7:46 am <span>Ron Wenton replied:</span></dt>
+					<dd>
+												<p>Support loading fonts from the website</p>
+<p>font:  url(&#8230;);</p>
+					</dd>
+
+
+					<dt id="comment-61008"><a href="#comment-61008" title="Link to this reply">#115</a> On February 13th, 2008 1:07 pm <span>Alexandre Falcoeiras replied:</span></dt>
+					<dd>
+												<p>solving important CSS2 issues like:</p>
+<p>1 &#8211; a attribute to a container div to force all her child divs to be the same height, there are now dozens of ways to do that, css hack, javascript, div to behave like table row and table cell, background image &#8220;faux columns&#8221;.</p>
+<p>it would be really nice to do that a unique attribute to the container div and all her child divs would be the height of the mother div which would have height:auto, it would´n matter f it had 2,3,4 columns.</p>
+<p>2 &#8211; div overflow:hidden &#8211; there is a really important issue with anchors, solve the issue so the content does not slides up and down hiding the rest of the content, anchor in a div overflow hidden to behave like in normal html.</p>
+<p>many thanks</p>
+					</dd>
+
+
+					<dt id="comment-61368"><a href="#comment-61368" title="Link to this reply">#116</a> On February 17th, 2008 8:57 pm <span><a href='http://carre.dyndns.org/' rel='external nofollow' class='url'>Lee Carré</a> replied:</span></dt>
+					<dd>
+												<p>Relating to the “list-style-type” property.</p>
+<p>I request a value for the “list-style-type” property to produce ‘decimal’ list numbering, which is artifically produced on such projects as the GIMP (documentation), Wireshark (documentation), and the IETF&#8217;s very own RFCs.</p>
+<p>The effect I&#8217;m after is one in which the items of nested lists (eg a child list within an item of a parent list) is prefixed with the number value of it&#8217;s parent item followed by a dot, then the value of the child/sub list item.</p>
+<p>An example:<br />
+(Hopefully my indentation will be preserved upon posting.)</p>
+<p>1 Parent Item<br />
+	1.1 Sub-Item<br />
+	1.2 Sub-Item<br />
+2 Parent Item<br />
+	2.1 Sub-Item<br />
+	2.2 Sub-Item<br />
+3 Parent Item<br />
+	3.1 Sub-Item<br />
+	3.2 Sub-Item</p>
+<p>This seems to be a popular stylistic choice, and it would be nice to have it applied by the browser (via CSS) rathar than require manual maintanence.</p>
+					</dd>
+
+
+					<dt id="comment-61542"><a href="#comment-61542" title="Link to this reply">#117</a> On February 19th, 2008 3:51 pm <span><a href='http://www.reseaux-conseil.com/' rel='external nofollow' class='url'>Gus</a> replied:</span></dt>
+					<dd>
+												<p>I agree with Paul B (91) and Björn Weinbrenner (93) : an inheritance is needed when css is used on modular projects.<br />
+For example : a core developement team maintains a main.css, which contains style for standard objects of a framework (eg : buttons), and an other team maintains a module.css, which contains style for customized instaciations of the standard objects (eg : buttons with a specific icon in background).<br />
+In this case, for example :<br />
+ &#8211; the main.css will contain a.standard_button { background-color:gray; }<br />
+ &#8211; the module.css will contain a.user_icon_button extends a.standard_button { background-image:user.png; }</p>
+					</dd>
+
+
+					<dt id="comment-61591"><a href="#comment-61591" title="Link to this reply">#118</a> On February 20th, 2008 7:26 am <span>mac replied:</span></dt>
+					<dd>
+												<p>I&#8217;d like to see somekind of nested selectors. For example like this:</p>
+<p>img .smile {<br />
+  display: none;<br />
+}</p>
+<p>a:hover:external(img .smile) {<br />
+  display: block;<br />
+}</p>
+<p>I think that would look cleaner than this:</p>
+<p>a:hover {<br />
+  img .smile {<br />
+    display: block;<br />
+  }<br />
+}</p>
+<p>Another thing I&#8217;d like to have is <em>:target-referrer</em> pseudo-selector. It&#8217;s includes links, that refer to element mentioned.</p>
+<p>That/those would be useful when I want construct the whole site in to one xhtml-document using <em>:target</em> and absolute positioning like this:</p>
+<p>/*This is what I have in my xhtml-document*/<br />
+<a href="#place_one" rel="nofollow">Place one</a><br />
+<a href="#place_two" rel="nofollow">Place two</a><br />
+…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>/*And here is the css*/<br />
+.place {<br />
+  display: none;<br />
+  position: absolute;<br />
+  width: 100%;<br />
+  height: 100%;<br />
+}</p>
+<p>.place:target {<br />
+  display: block;<br />
+  z-index: 10;<br />
+}<br />
+/*Changes color of all links which&#8217; refer to .place (#place_one and #place_two)*/<br />
+.place:target-referrer {<br />
+  color: red;<br />
+}</p>
+					</dd>
+
+
+					<dt id="comment-62083"><a href="#comment-62083" title="Link to this reply">#119</a> On February 25th, 2008 9:09 pm <span>Crumpetstilskin replied:</span></dt>
+					<dd>
+												<p>1 anything that ppl like and would rather do without scripting.<br />
+re comments preceding this one:<br />
+2 gradient could be similar to opacity. gradient would need similar params, such as % start vs end?<br />
+3 instead of rejecting parent selector(s), consider ways to limit/control them? insert numeral to indicate parent level? apply the style narrowly?</p>
+					</dd>
+
+
+					<dt id="comment-62406"><a href="#comment-62406" title="Link to this reply">#120</a> On February 29th, 2008 12:31 pm <span><a href='http://www.futuremovies.co.uk/' rel='external nofollow' class='url'>Johan De Silva</a> replied:</span></dt>
+					<dd>
+												<p>Have the ability for multiple background images inside a div or element.</p>
+					</dd>
+
+
+					<dt id="comment-62458"><a href="#comment-62458" title="Link to this reply">#121</a> On February 29th, 2008 5:15 pm <span>WaSP Member <a href='http://kurafire.net/' rel='external nofollow' class='url'>faruk</a> replied:</span></dt>
+					<dd>
+												<p>Johan,</p>
+<p>That&#8217;s already part of the CSS3 Borders and Backgrounds module; Safari 3, Firefox 3 (beta) and I believe Opera 9.50 (not sure about that one) already support it.</p>
+					</dd>
+
+
+					<dt id="comment-62670"><a href="#comment-62670" title="Link to this reply">#122</a> On March 2nd, 2008 8:20 am <span><a href='http://neo-sophistry.blogspot.com/' rel='external nofollow' class='url'>Mark Wales</a> replied:</span></dt>
+					<dd>
+												<p>These have all be mentioned before, but these are what I&#8217;d want:</p>
+<p>Proper layout functionality: shouldn&#8217;t have to use float for page layout (other than for actually floating images and such). There should be an <em>easy</em> way to get a side-column to be the same height as everything else.</p>
+<p>Multiple background images would also be very useful. It would hopefully rid the world of divitis.</p>
+<p>Shadow support for any type of object. It would be misused by lots of people no doubt, but when used properly it could save a lot of image files.</p>
+					</dd>
+
+
+					<dt id="comment-62732"><a href="#comment-62732" title="Link to this reply">#123</a> On March 2nd, 2008 6:39 pm <span>Webmac replied:</span></dt>
+					<dd>
+												<p>- background-color with transparency would be nice<br />
+- background-color with gradient support<br />
+- extension of background-image for all kind of media types<br />
+[background-media: url("application/x-shockwave-flash","flash.swf")]<br />
+- support of x-repeat with non-zero start-position<br />
+- support of shadow for all elements</p>
+<p>support for &#8220;intelligent&#8221; css selektors<br />
+- apply if element is parent of another element<br />
+- apple if element if n- or mod-n- child-element<br />
+- &#8230;</p>
+					</dd>
+
+
+					<dt id="comment-62766"><a href="#comment-62766" title="Link to this reply">#124</a> On March 3rd, 2008 12:02 am <span>Daniel Delaney replied:</span></dt>
+					<dd>
+												<p>Death to <a href="http://www.alistapart.com/articles/fauxcolumns/" rel="nofollow">Faux Columns</a>. Long live properly handled percentage values for <code>height</code> and <code>width</code> rules on <code>div</code> elements.</p>
+					</dd>
+
+
+					<dt id="comment-62768"><a href="#comment-62768" title="Link to this reply">#125</a> On March 3rd, 2008 12:16 am <span><a href='http://corelist.net/' rel='external nofollow' class='url'>Ali Sattari</a> replied:</span></dt>
+					<dd>
+												<p>In addition to <a href="index.html#comment-59442" rel="nofollow">Matt Wilcox great ideas</a>,  i add:</p>
+<p>* Rule includes:<br />
+p#description {<br />
+font-size: 14px;<br />
+line-hight: 120%;<br />
+margin: 10px autp 5px;<br />
+}<br />
+p#info {<br />
+@include(p#description);<br />
+color: orange;<br />
+}</p>
+<p>* Parent selectors: some way to select the parent block using direct child elements.</p>
+<p>Sorry if they have mentioned before or they are already in working drafts :)</p>
+					</dd>
+
+
+					<dt id="comment-62769"><a href="#comment-62769" title="Link to this reply">#126</a> On March 3rd, 2008 12:28 am <span><a href='http://corelist.net/' rel='external nofollow' class='url'>Ali Sattari</a> replied:</span></dt>
+					<dd>
+												<p>Forgot this one:</p>
+<p>* a way to exclude some elements in selectors, simply a NOT!</p>
+<p>p.short-desc {<br />
+margin: 5px;<br />
+color: blue;<br />
+}<br />
+div#content p !p.short-desc {<br />
+padding: 10px;<br />
+color: black;<br />
+line-height: 120%;<br />
+}</p>
+<p>Here we have some paragraphs with &#8216;short-desc&#8217; class inside div with id &#8216;content&#8217;. and we need to exclude them from general paragraph styling (since it has its own style defined before and we do not like to reset unwanted rules after this)</p>
+					</dd>
+
+
+					<dt id="comment-62779"><a href="#comment-62779" title="Link to this reply">#127</a> On March 3rd, 2008 3:24 am <span>Thomas Peklak replied:</span></dt>
+					<dd>
+												<p>In my work there is often a number of styles that target the same area (e.g. header, footer, content). I would suggest to introduce something like a with block. This should lead to a much cleaner code and a good structure in the style sheet.</p>
+<p><strong>Example:</strong></p>
+<p><strong>standard code</strong><br />
+#header h1{&#8230;}<br />
+#header h1 a{&#8230;}<br />
+#header ul{&#8230;}<br />
+#header li{&#8230;}<br />
+#header li.current{&#8230;}</p>
+<p><strong>with block code</strong></p>
+<p>with #header{<br />
+  h1{&#8230;}<br />
+  h1 a{&#8230;}<br />
+  ul{&#8230;}<br />
+  li{&#8230;}<br />
+  li.current{&#8230;}<br />
+}</p>
+<p>If you structure your code this way, the code gets more legible and shorter and you would not even require a comment to know where the header starts and ends.</p>
+					</dd>
+
+
+					<dt id="comment-62788"><a href="#comment-62788" title="Link to this reply">#128</a> On March 3rd, 2008 4:50 am <span><a href='http://my.opera.com/dstorey' rel='external nofollow' class='url'>David Storey</a> replied:</span></dt>
+					<dd>
+												<p>Webmac: background-color with transparency can be done with HSLA and RGBA colour models.  background-color gradient can be done with a SVG file (including using CSS to specify the gradient).  I&#8217;m not sure about extending background-image to every media type, as it then becomes background-movie, or such, and you can never predict what plug-ins are installed.  As SVG is an image type, you can do many of the things you&#8217;d want to do with interactive media like Flash.  Only Opera supports this at present, but only supports static images, not animation.  I&#8217;m not sure if this is a bug or a design decision (or part of the spec?) .  Shadows can be applied to any element using box-shadow (or text-shadow for text).  For selectors, there are many that fit the bill, such as nth-child, nth-of-type, first-child, last-child etc.</p>
+<p>Ali:  There is a not selector, that should be useable for that purpose.  </p>
+<p>For the debate on CSS vs SVG gradients, I personally think it would be best to get things in CSS that currently can&#8217;t be done cleanly (such as adding extra mark up and scripting), over things that are already possible in a clean manor. There is no doubt that the integration between SVG and CSS could be stronger though (CSS support in SVG is already strong, but not the reverse).   You can already set the stop-color and stop-opacity of the gradient using CSS.  It is just really the offsets, and the gradient direction you have to set up using SVG attributes (for a linear gradient). Using SVG in this manor, there is not much difference than it would be if using pure CSS for a gradient.  If gradients are added to CSS though, it would make sense to make them syntax compatible with SVG, to enable transferable skills and less code duplication in the browser.</p>
+					</dd>
+
+
+					<dt id="comment-62810"><a href="#comment-62810" title="Link to this reply">#129</a> On March 3rd, 2008 7:32 am <span><a href='http://goosweb.tistory.com/' rel='external nofollow' class='url'>goosweb</a> replied:</span></dt>
+					<dd>
+												<p>body {width:full;height:full;}<br />
+#header {height:30px;background:#ccc;}<br />
+#content {clear:both;height:full;background:#ccc;}<br />
+    #left {height:full;background:#ccc;}<br />
+    #center {height:full;background:#ccc;}<br />
+    #right {height:full;background:#ccc;}<br />
+#footer {clear:both;height:50px;background:#ccc;}</p>
+<p>full size fixed&#8230;.?</p>
+					</dd>
+
+
+					<dt id="comment-62821"><a href="#comment-62821" title="Link to this reply">#130</a> On March 3rd, 2008 9:15 am <span>Pavel Panchekha replied:</span></dt>
+					<dd>
+												<p><strong>1. Gradients</strong><br />
+Gradients are very difficult and annoying to replicate with images. It would be great if they could be replicated with CSS.</p>
+<p><strong>2. Variables</strong><br />
+Especially for colors, to allow the layout to be easily changed</p>
+<p><strong>3. @engine</strong><br />
+Select rendering engines. While it could well fail due to non-support from IE and other &#8220;behind&#8221; engines, it would at least provide a way to easily differentiate between browsers.</p>
+<p><strong>4. Grid</strong><br />
+Already planned, but this would be awesome</p>
+<p><strong>5. a:hover-&gt;div#menu</strong><br />
+A selector matching one element (such as the :hover above) allows rules to apply to another selector. Here, hovering over the link would (for example) show the menu.</p>
+					</dd>
+
+
+					<dt id="comment-62830"><a href="#comment-62830" title="Link to this reply">#131</a> On March 3rd, 2008 11:05 am <span>Manne replied:</span></dt>
+					<dd>
+												<p>p:line(0n+1) {<br />
+background:#ccc;<br />
+}</p>
+<p>to select lines</p>
+					</dd>
+
+
+					<dt id="comment-62846"><a href="#comment-62846" title="Link to this reply">#132</a> On March 3rd, 2008 2:27 pm <span>Emil Ivanov replied:</span></dt>
+					<dd>
+												<p>I would like to see more CSS filters<br />
+This so old browser IE have some of them like alpha, grayscale, blur, invert, glow, shadow, drop shadow&#8230;</p>
+<p>CSS have only opacity and drop shadow.</p>
+<p>Also i would like to see more options for text decoration. For example styling the link is not a problem with border color and padding, but there is one big but: when the link is combined with image or background it becomes ugly mess, and inside the link there should be span which have to be decorated. This leads to extra markup. The text-decoration property is very limited, but combined with image is not bad. The reason why i dont use it, is because i want to control the line offset or to make the line with another style(dotted, dashed etc.), which at this time is impossible.</p>
+					</dd>
+
+
+					<dt id="comment-62849"><a href="#comment-62849" title="Link to this reply">#133</a> On March 3rd, 2008 2:58 pm <span>Emil Ivanov replied:</span></dt>
+					<dd>
+												<p>And one more thing:<br />
+I would like to control the border length. Creating navigation list with border only between every item is easier but the text is smaller than the borders and this is not the desired result thats why i use horizontal lines which are text and are the same height, but this is not very handy.</p>
+					</dd>
+
+
+					<dt id="comment-62850"><a href="#comment-62850" title="Link to this reply">#134</a> On March 3rd, 2008 3:06 pm <span><a href='http://www.nealgrosskopf.com/' rel='external nofollow' class='url'>Neal</a> replied:</span></dt>
+					<dd>
+												<p>@David Storey</p>
+<p>&#8220;I see a lot of requests to do things in CSS that can already be done in SVG. &#8221;</p>
+<p>The same argument could have been used when they created background-color.</p>
+					</dd>
+
+
+					<dt id="comment-62853"><a href="#comment-62853" title="Link to this reply">#135</a> On March 3rd, 2008 3:47 pm <span><a href='http://corelist.net/' rel='external nofollow' class='url'>Ali Sattari</a> replied:</span></dt>
+					<dd>
+												<p>@David Storey:<br />
+Thanks, i checked selectors module again and found it.</p>
+<p>NOT pseudo selector: <a href="http://www.w3.org/TR/css3-selectors/#negation" rel="nofollow">http://www.w3.org/TR/css3-selectors/#negation</a></p>
+					</dd>
+
+
+					<dt id="comment-62926"><a href="#comment-62926" title="Link to this reply">#136</a> On March 4th, 2008 2:11 am <span><a href='http://friendlybit.com/' rel='external nofollow' class='url'>Emil Stenström</a> replied:</span></dt>
+					<dd>
+												<p>If I could chooce, I would focus CSS3 on two things: DRY and Ease of use. </p>
+<p>Don&#8217;t repeat yourself (DRY) is something that goes strong in all other languages, but CSS is far behind when it comes to this. You&#8217;re required to repeat those colors, width, over and over again, and even if the cascade helps, it certainly does not go all the way.</p>
+<p>Ease of use is the other current. Ever tried to explain to a programmer how web development works? It&#8217;s a real pain. Floats are really difficult to understand, and even though your remove the problem with differing browser implementations you need lots of time to understand even the basics.</p>
+					</dd>
+
+
+					<dt id="comment-62960"><a href="#comment-62960" title="Link to this reply">#137</a> On March 4th, 2008 6:04 am <span>Lea Verou replied:</span></dt>
+					<dd>
+												<p>2-color gradients via css as a background would be nice.<br />
+Also, text-orientation, that would allow somebody to specify a value in degrees and have the text rotated by that amount.</p>
+					</dd>
+
+
+					<dt id="comment-62968"><a href="#comment-62968" title="Link to this reply">#138</a> On March 4th, 2008 7:32 am <span><a href='http://www.mrmil.cz/' rel='external nofollow' class='url'>Oldřich Vetešník</a> replied:</span></dt>
+					<dd>
+												<p>When I code horizontal navigation bars, sometimes I need to float them right instead of left, in this case I have to re-code &#8216;ul li&#8217; elements in reverse order in order to make them look like they are floated left. If there was a thing that would re-order them on screen but leave them untouched in the code would be awesome, don&#8217;t know if it&#8217;s possible though.</p>
+<p>(I&#8217;m sorry if I posted what has already been posted before, I cannot read all 137 comments right now.)</p>
+					</dd>
+
+
+					<dt id="comment-63029"><a href="#comment-63029" title="Link to this reply">#139</a> On March 4th, 2008 5:45 pm <span><a href='http://stephaniehobson.ca/' rel='external nofollow' class='url'>Stephanie</a> replied:</span></dt>
+					<dd>
+												<p>Thank you guys *very much* for soliciting this information, reading through it all, making sense of it in the context of your knowledge of CSS3, and working to incorporate it.  I know I want to read the proposals but I want to do a lot of things.  Also, thanks for the deadline.  I never get anything done without a deadline :)</p>
+<p>I&#8217;ve made a list of what parts of the specs I want sooner rather than later and what I would add given the opportunity.  It comes complete with images for illustration, the problems I&#8217;d be hoping to solve, and what the css code might look like.</p>
+<p><a href="http://stephaniehobson.ca/css3wishlist/css3wishlist.html" rel="nofollow">Part one of my CSS3 wish list.</a>  I&#8217;m happy to answer any questions or give more details.</p>
+<p>Thanks!</p>
+					</dd>
+
+
+					<dt id="comment-63064"><a href="#comment-63064" title="Link to this reply">#140</a> On March 4th, 2008 11:06 pm <span><a href='http://hiphapis.net/' rel='external nofollow' class='url'>johan kim</a> replied:</span></dt>
+					<dd>
+												<p>(i&#8217;m asian)</p>
+<p>I want you to ask I want a added function of dotted/dashed in a border </p>
+<p>When the border is dotted/solid, once we have the control of the border gop and width/height, we shoul be able to delete the meaningless border by image. </p>
+<p>regards.</p>
+<p>example &gt;&gt;<br />
+<a href="http://cfs3.tistory.com/upload_control/download.blog?fhandle=YmxvZzExNDYyQGZzMy50aXN0b3J5LmNvbTovYXR0YWNoLzAvMjEuZ2lm" rel="nofollow">http://cfs3.tistory.com/upload_control/download.blog?fhandle=YmxvZzExNDYyQGZzMy50aXN0b3J5LmNvbTovYXR0YWNoLzAvMjEuZ2lm</a></p>
+<p>.border {<br />
+border-width:10px;<br />
+border-height:3px;<br />
+border-margin:10px;<br />
+border-color:black;<br />
+}</p>
+					</dd>
+
+
+					<dt id="comment-63112"><a href="#comment-63112" title="Link to this reply">#141</a> On March 5th, 2008 10:02 am <span><a href='http://nerkalog.lumpus.info/' rel='external nofollow' class='url'>Isaac Csandl</a> replied:</span></dt>
+					<dd>
+												<p>(posted <a href="http://nerkalog.lumpus.info/2008/03/05/what-i-want-from-css3/" rel="nofollow">here</a>)</p>
+<p>Others have said this too, I&#8217;ll say it again for emphasis&#8230; I want:</p>
+<p>Positioning and sizing of elements relative to others. Grouping of elements. I want to say #a #b and every div.awesome constitute a group named #superGreat, and then be able to say that #c should always appear below that group, or to the right of it, or 23 ems from the top left of the group. I want to say that every item in that group should have the height of the tallest one among them, based on its content… or that all the members should have their bottom edges aligned, and the tops move down based on each element’s size.</p>
+<p>I realize that this is difficult to implement in a rendering engine because an amateur could easily create circular dependencies (to name just one of many). I’m not opposed to the browser throwing an error dialog in this situation. We’re all grown-ups here, and if you can’t think through your design well enough to avoid infinite recursion, then you need to think it through again.</p>
+<p>Next, I want to have variables where I can define a set of color, borders, backgrounds, or whatever, and then apply that set of styles to other elements.</p>
+<p>That’s about as simply as I can say it.</p>
+					</dd>
+
+
+					<dt id="comment-63120"><a href="#comment-63120" title="Link to this reply">#142</a> On March 5th, 2008 10:52 am <span><a href='http://blog.ailag.net/' rel='external nofollow' class='url'>ailaG</a> replied:</span></dt>
+					<dd>
+												<p>a. Calculations.<br />
+b. A variable for &#8220;my parent&#8217;s height/width&#8221;.<br />
+c. A variable for &#8220;the height/width I&#8217;m free to occupy&#8221;</p>
+<p>b. and c. would solve the equal-height columns problem, for example.</p>
+<p>d. floats that do matter for the parent&#8217;s height / width, to avoid all these &#8220;clearfix&#8221; elements that are, in fact, design.<br />
+(e.g. a picture gallery with all the thumbs floated would require clearing at its end, that should be native to css)</p>
+<p>e. BOX MODEL<br />
+give us a way to mix border-box and content-box on a whim. I read about a suggestion for &#8216;border-width&#8217; and &#8216;content-width&#8217;, that.</p>
+<p>f. Several background images.<br />
+That could make round corners easier, as we could just make 4 background images and place them.</p>
+<p>g. BACKGROUND POSITIONING RELATIVE TO BOTTOM / RIGHT. currently, background: url(foo.jpg) no-repeat 10px 10px; would set the background relative to the top / left sides of the box, but I know of no way to set it relative to the right / bottom sides.<br />
+It matters even more with RTL docs.</p>
+<p>Thanks to anyone who got to reading this.</p>
+					</dd>
+
+
+					<dt id="comment-63121"><a href="#comment-63121" title="Link to this reply">#143</a> On March 5th, 2008 10:57 am <span><a href='http://blog.ailag.net/' rel='external nofollow' class='url'>ailaG</a> replied:</span></dt>
+					<dd>
+												<p>Oh, and conditionals.</p>
+<p>e.g. #title:my-parent-is-very-thin #wideLogo { display: none; }<br />
+that way we could make a pretty liquid design for 1024&#215;768 and above, and modify it to be small but pretty in lower proportions. In this example, when the window is too thin I removed a redundant graphic to make room.</p>
+<p>It could be done by JS, I know.. but WHY?</p>
+					</dd>
+
+
+					<dt id="comment-63122"><a href="#comment-63122" title="Link to this reply">#144</a> On March 5th, 2008 11:03 am <span><a href='http://blog.ailag.net/' rel='external nofollow' class='url'>ailaG</a> replied:</span></dt>
+					<dd>
+												<p>That wasn&#8217;t conditionals. Oh, you know what I meant. Selectors that include info on the size of the parent, to help us deal with different window sizes.</p>
+					</dd>
+
+
+					<dt id="comment-63133"><a href="#comment-63133" title="Link to this reply">#145</a> On March 5th, 2008 2:26 pm <span>Emil Ivanov replied:</span></dt>
+					<dd>
+												<p>Would be good to see list-style-type on cyrillic.</p>
+					</dd>
+
+
+					<dt id="comment-63144"><a href="#comment-63144" title="Link to this reply">#146</a> On March 5th, 2008 6:39 pm <span>Jeroen Visser replied:</span></dt>
+					<dd>
+												<p>If I&#8217;m duplicating any issue here, please excuse me; see this comment as an extra kudos for the issue concerned.</p>
+<p>What I&#8217;d like to see:</p>
+<p><em>More control over bullets and numbering in lists</em><br />
+Think: sizing, color, alternative glyphs from the current font-family, etcetera.</p>
+<p><em>Xpath like selectors</em><br />
+It would be really useful to be able to apply CSS to an element <strong>depending on its children</strong>. For example: say you have a blockquote, but not always with a accompanying [cite] element. Depending on the presence of [cite] you could display one of two backgrounds:<br />
+<code>blockquote { (...) }</code><br />
+<code>blockquote &lt; cite { (...) }</code></p>
+<p>I think this would greatly diminish the need for classes all over the place. ;-)</p>
+<p><em>Typographic awareness</em><br />
+Most importantly: a true baseline grid, with an option to specify the distance from the first baseline to the top of the element&#8217;s box. This would greatly enhance legibility and design consistency within a site (for instance: lining up two content columns, or making tag clouds&#8217; keywords stick to a common baseline).</p>
+<p><em>Hyphenation</em><br />
+For most Western languages, it would be great to be able to specify where a long word can be hyphenated, without resorting to injecting all sorts of unicode characters in the content. Hyphenation essentially is a presentation issue (to avoid ugly gaps in left or fully justified text), so I&#8217;d guess it&#8217;s in its place in CSS.</p>
+<p>Just my two cents. Thanks for this opportunity, and I&#8217;m curious what makes it into the CSS3 working draft!</p>
+					</dd>
+
+
+					<dt id="comment-63159"><a href="#comment-63159" title="Link to this reply">#147</a> On March 5th, 2008 9:18 pm <span><a href='http://soonilddang2.namoweb.net/tc' rel='external nofollow' class='url'>Soon-il DDang</a> replied:</span></dt>
+					<dd>
+												<p>hello&#8230; i&#8217;m still green, but i want to tell for css3 style module&#8230;<br />
+i have things for scrollbar style&#8230; i was know this scrollbar style modul for ie only, and i think long time for this scrollbar&#8230;</p>
+<p>if i want to tell for this module&#8230;<br />
+this style code&#8230;</p>
+<p>/* this is pseudo class code exsample&#8230; */<br />
+div.box:scrollbar {<br />
+scrollbar-width: 3;<br />
+scrollbar-face: #555 url(img/blahblah.jpg);<br />
+scrollbar-heightlight : #ccc;<br />
+scrollbar-shadow: #000;<br />
+scrollbar-arrow: #fff;<br />
+scrollbar-track: #fff; }</p>
+<p>i want to change scrolbar color and style in css3 spac too&#8230; ( scrolbar style fot more web standard browsers ) and i want to able to chang transparent color too&#8230;</p>
+					</dd>
+
+
+					<dt id="comment-63274"><a href="#comment-63274" title="Link to this reply">#148</a> On March 6th, 2008 10:14 pm <span><a href='http://soonilddang2.namoweb.net/tc' rel='external nofollow' class='url'>Soon-il DDang</a> replied:</span></dt>
+					<dd>
+												<p>hello&#8230; i have things for anchor element style too&#8230;<br />
+i was think to able to toggle event for anchor and box in css3 spec&#8230;</p>
+<p>/* ex &#8211; pseudo class example for toggle event to anchor and more element */</p>
+<p>div.box a:toggle {}</p>
+<p>/* hide eventing menu */<br />
+div.box ul {display: none;}<br />
+div.box:toggle ul {display: block;}</p>
+<p>if user want to make toggle event to more menu or banner menu, it will be make and use javascript till now, but it is complex&#8230;<br />
+so&#8230; i was think to can use toggle event for more element in css3 spec too&#8230;</p>
+					</dd>
+
+
+					<dt id="comment-63275"><a href="#comment-63275" title="Link to this reply">#149</a> On March 6th, 2008 10:26 pm <span><a href='http://soonilddang2.namoweb.net/tc' rel='external nofollow' class='url'>Soon-il DDang</a> replied:</span></dt>
+					<dd>
+												<p>ah&#8230; my mistake&#8230;</p>
+<p>/* ex &#8211; hide event menu */<br />
+div.box ul {display: none;}<br />
+div.box:toggle-on ul {display: block;}<br />
+div.box:toggle-off ul {display: none;}</p>
+					</dd>
+
+
+					<dt id="comment-63320"><a href="#comment-63320" title="Link to this reply">#150</a> On March 7th, 2008 7:23 am <span>Darko Laus replied:</span></dt>
+					<dd>
+												<p>Hello&#8230;</p>
+<p>Wouldn&#8217;t it be neat if we could have variables in CSS3?</p>
+<p>For example you define a variable called my_color (and the syntax could be similar to PHP &#8211; with a $ before the variable name)</p>
+<p>$my_color: &#8220;#FFFFFF&#8221;;</p>
+<p>and then in the code you just use it like this</p>
+<p>border: 1px solid $my_color;<br />
+background-color: $my_color;</p>
+<p>It would be much easier to maintain the website with just changing the variable value (if you decide to change the color for example) then to change each induvidual value every time&#8230;</p>
+<p>Another suggestion &#8211; will vertical alignment be possible in CSS3?</p>
+					</dd>
+
+
+					<dt id="comment-63381"><a href="#comment-63381" title="Link to this reply">#151</a> On March 7th, 2008 5:00 pm <span><a href='http://stephaniehobson.ca/' rel='external nofollow' class='url'>Stephanie</a> replied:</span></dt>
+					<dd>
+												<p>Ah, I just remembered the problem I&#8217;ve been wanting calculations to try to solve.</p>
+<p>With the standard box model there&#8217;s no way to have to divs that are each 50% of the screen AND have padding, margin, or border.  There isn&#8217;t, in fact, a way to style anything an accurate percentage width of the screen and give it padding, margin, or border.</p>
+<p>In an ideal world we could say:<br />
+#box{<br />
+width:50% -20px;<br />
+border:10px;<br />
+}</p>
+<p>There are actually two other solutions to this particular problem.  Setting the box model:</p>
+<p>#box{<br />
+width:50%;<br />
+box-sizing: border-box;<br />
+border:10px;<br />
+}</p>
+<p>Or being able to dynamically define an inner box like <a href="index.html#comment-59529" rel="nofollow">comment #31</a> suggested:<br />
+#box{<br />
+width:50%;<br />
+}<br />
+#box:inner{<br />
+border:10px;<br />
+}</p>
+<p>Thanks again.</p>
+					</dd>
+
+
+					<dt id="comment-63382"><a href="#comment-63382" title="Link to this reply">#152</a> On March 7th, 2008 5:09 pm <span><a href='http://stephaniehobson.ca/' rel='external nofollow' class='url'>Stephanie</a> replied:</span></dt>
+					<dd>
+												<p>I&#8217;m going to admit to myself I&#8217;m not going to have time to read over the layout module before Saturday but I saw a demo that Andy Clarke did of the bit about the slots and it worries me.  It seems really unmaintainable.</p>
+<p>Not having read it myself there is one thing that I thought would improve it though it may already be part of it:</p>
+<p>Not having to define the slots in alphabetical order a.b.c.  For example could also be a.f.m.  That would make it much easier to make a.a.a.a.a.a.b.c.d.e.f into a.a.a.a.s.s.b.c.d.e.f without having to redefine a-f.</p>
+					</dd>
+
+
+					<dt id="comment-63408"><a href="#comment-63408" title="Link to this reply">#153</a> On March 7th, 2008 8:01 pm <span><a href='http://sdesign1.com/ben.htm' rel='external nofollow' class='url'>Ben 'Cerbera' Millard</a> replied:</span></dt>
+					<dd>
+												<p>I&#8217;ve blogged some review and ideas at <a href="http://projectcerbera.com/blog/2008/03#day05" rel="nofollow">What Ben Millard would like from <acronym title="Cascading Style Sheets Level 3">CSS3</acronym></a>. A lot more than I had planned to, actually.</p>
+<p>Main things from my perspective as an author are:</p>
+<p> widespread implementation of useful stuff from <acronym title="Cascading Style Sheets Level 2">CSS2</acronym>;<br />
+ avoiding a proliferation of features which all do very similar things in <acronym title="Cascading Style Sheets Level 3">CSS3</acronym>;<br />
+ and making <acronym title="Cascading Style Sheets Level">CSS</acronym> easier for authors.</p>
+					</dd>
+
+
+					<dt id="comment-63531"><a href="#comment-63531" title="Link to this reply">#154</a> On March 8th, 2008 10:43 pm <span><a href='http://www.roboshrub.blogspot.com/' rel='external nofollow' class='url'>Gyrobo</a> replied:</span></dt>
+					<dd>
+												<p>I&#8217;d really appreciate those <a href="http://my.opera.com/dstorey/blog/2007/11/14/css4-selectors" rel="nofollow">nth-word selectors.</a></p>
+<p>And maybe an nth-letter selector, which could be used in conjunction with web fonts to create some really nice effects.</p>
+<p>Also, could you add back in the :indeterminate pseudo-class? That would help users more easily see which options they haven&#8217;t selected yet.</p>
+<p>ex.<br />
+input[type=radio]:indeterminate + label:after {<br />
+  content:&#8221; Select One&#8221;;<br />
+}</p>
+					</dd>
+
+
+					<dt id="comment-63652"><a href="#comment-63652" title="Link to this reply">#155</a> On March 10th, 2008 2:21 am <span><a href='http://www.bernzilla.com/' rel='external nofollow' class='url'>Bernie Zimmermann</a> replied:</span></dt>
+					<dd>
+												<p>Back in 2004 I expressed a need for <a href="http://www.bernzilla.com/item.php?id=142" title="Ignoring All Styles" rel="nofollow">ignoring all styles</a> for a page element regardless of any other normal styling rules that might have normally been applied due to inheritance, etc.  If there&#8217;s a way to do this currently, I&#8217;d be interested in knowing.  If there isn&#8217;t, then it would be cool to see it considered for CSS3.</p>
+					</dd>
+
+
+					<dt id="comment-63658"><a href="#comment-63658" title="Link to this reply">#156</a> On March 10th, 2008 3:59 am <span>Fenring replied:</span></dt>
+					<dd>
+												<p>Everyone is coming with great ideas and if all this is developed in CSS3, it&#8217;ll be great.</p>
+<p>But I&#8217;m more concerned about HOW you will implement these features. Will you add yet another way to do things we already do ?<br />
+Please don&#8217;t.<br />
+I agree with David Storey.</p>
+<p>If I want a complex gradient, please let me point (xpath, xpointer) to the corresponding gradient in an svg document.<br />
+If I want an animation, please let me use SMIL.<br />
+If I want a filter effect (blur, shadow, noise, &#8230;), please let me point my svg again.</p>
+<p>Thanks heaps !</p>
+					</dd>
+
+
+					<dt id="comment-63659"><a href="#comment-63659" title="Link to this reply">#157</a> On March 10th, 2008 4:13 am <span>akrem replied:</span></dt>
+					<dd>
+												<p>i could need a pseudo-class that select evey even child in an element for exaple a table:</p>
+<p>table:evenchild{backgroundcolor:grey}</p>
+<p>this one has a grey bg</p>
+<p>this one has a grey bg</p>
+<p>this one has a grey bg</p>
+<p>ans so on&#8230;</p>
+<p>it would be possible to crate tables with alternating backgroundcolors like this <a href="http://www.innoq.com/blog/phaus/table.before.png" rel="nofollow">http://www.innoq.com/blog/phaus/table.before.png</a></p>
+					</dd>
+
+
+					<dt id="comment-63688"><a href="#comment-63688" title="Link to this reply">#158</a> On March 10th, 2008 12:03 pm <span>WaSP Member <a href='http://www.brucelawson.co.uk/' rel='external nofollow' class='url'>blawson</a> replied:</span></dt>
+					<dd>
+												<p>Thanks everyone. Comments are closed. To contribute to the discussion, please use the W3C mailing list www-style, which is open to all.</p>
+					</dd>
+
+
+				</dl>
+
+		</div>
+
+
+
+		<div id="content-sub" title="Comment form">
+			<a href="#top" id="stmjrCollapse-content-sub" title="Return to top">Return to top</a>
+
+			<h3 class="stmjrNoCollapse">Post a Reply</h3>
+
+
+			<p>Comments are closed.</p>
+
+
+		</div>
+	
+	
+	</div>
+
+	<hr />
+
+	<div id="nav-supp">
+		<p><a href="#top" title="Back to Top">Back to Top</a></p> 
+	</div>
+
+	<div id="siteinfo">
+		<p>All of the entries posted in <abbr title="The Web Standards Project">WaSP</abbr> Buzz express the opinions of their individual authors. They do not necessarily reflect the plans or positions of the Web Standards Project as a group.</p>
+		<p>This site is valid <a href="http://validator.w3.org/check/referer" title="Validate this document">XHTML 1.0 Strict</a>, <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate this CSS">CSS</a> | Get Buzz via <a href="../../../../feed/index.html"><abbr title="Really Simple Syndication">RSS</abbr></a> or <a href="../../../../feed/atom/index.html">Atom</a> | <a href="../../../../about/colophon/index.html">Colophon</a> | <a href="../../../../about/legal/index.html">Legal</a></p>
+		<!-- 11 queries. 0.379 seconds. -->
+	</div>
+
+</div>
+
+
+</body>
+
+<!-- Mirrored from www.webstandards.org/2008/01/18/tell-the-css-wg-what-you-want-from-css3/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Aug 2017 17:37:29 GMT -->
+</html>
+
+<!-- Dynamic page generated in 0.367 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2017-08-18 12:27:48 -->
+
+<!-- super cache -->

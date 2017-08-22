@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+
+<!-- Mirrored from www.webstandards.org/files/atf_microformats/uf.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Aug 2017 17:58:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Accessibility test of hCalendar microformat using object elements</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="uf.css"> <!-- page styles only (microformat object workarounf styles listed in-page below) -->
+
+<!-- empty object workaround for microformats -->
+<style type="text/css">
+
+/* It would be nice if we could just use this rule, but some browsers don't respect the display property correctly. */
+.vcard object, .vevent object{
+	display:none; /* display:none ignored by webkit, so zero the size. */
+	width:0;
+	height:0; 
+	/* This gets you most of the way there, but the next rule is easier and makes this one redundant. */
+}
+
+
+/* Even with the previous rule, the object still causes minor display bugs in IE and WebKit. */
+/* This rule solves both with the extra span element in the 3rd example. It also makes the previous rule redundant. */
+span.object{
+	display:none;
+}
+
+span.data{
+	display:none;
+}
+
+</style>
+
+</head>
+<body>
+<div class="body">
+
+	<h1>Microformat Examples</h1>
+
+	<p>Examples explained in the article, <a href="../../2007/04/27/haccessibility/index.html">hAccessibility</a>.</p>
+
+	<h2>datetime-design-pattern issues</h2>
+
+	<p>The following hCalendar examples demonstrate problems using the datetime abbr-design-pattern with ISO-formatted dates.</p>
+
+
+	<div class="vevent">
+		<h3 class="summary">hCalendar example with abbr-design-pattern</h3>
+		<p class="description">This hCalendar event uses the abbr-design-pattern to house machine-readable ISO date stamps. It is inaccessible in screen readers when the title attributes are read literally. It also has the unfortunate side effect of showing ISO gibberish tooltips to sighted users.</p>
+		<p class="details">
+			Time:
+			
+			<!-- datetime start-->
+			<abbr class="dtstart" title="20070312T083000Z">
+				March 12th from 8:30 AM
+			</abbr> to
+			
+			<!-- datetime end-->
+			<abbr class="dtend" title="20070312T093000Z">
+				9:30 AM
+			</abbr> in
+			
+			<span class="location">Conference Room 2.</span>
+		</p>
+	</div>
+
+	<div class="vevent">
+		<h3 class="summary">hCalendar event with object param</h3>
+		<p class="description">This hCalendar event uses data objects to house machine-readable ISO date stamps. It does not cause an accessibility issue with any tested screen reader, but has some minor display bugs in current versions of Internet Explorer and WebKit (Safari).</p>
+		<p class="details">
+			Time:
+			
+			<!-- datetime start-->
+			<span class="dtstart">
+				March 12th from 8:30 AM
+				<object><param name="value" value="20070312T083000Z" /></object>
+			</span> to
+			
+			<!-- datetime end-->
+			<span class="dtend">
+				9:30 AM
+				<object><param name="value" value="20070312T093000Z" /></object>
+			</span> in
+			
+			<span class="location">Conference Room 2.</span>
+		</p>
+	</div>
+
+	<div class="vevent">
+		<h3 class="summary">hCalendar event with object param and browser fixes</h3>
+		<p class="description">This hCalendar event uses data objects to house machine-readable ISO date stamps. One additional span element is added to workaround the Internet Explorer and WebKit bugs.</p>
+		<p class="details">
+			Time:
+			
+			<!-- datetime start-->
+			<span class="dtstart">
+				March 12th from 8:30 AM
+				<span class="object"><object><param name="value" value="20070312T083000Z" /></object></span> <!-- extra span.object here for workaround -->
+			</span> to
+			
+			<!-- datetime end-->
+			<span class="dtend">
+				9:30 AM
+				<span class="object"><object><param name="value" value="20070312T093000Z" /></object></span> <!-- extra span.object here for workaround -->
+			</span> in
+			
+			<span class="location">Conference Room 2.</span>
+		</p>
+	</div>
+
+	<div class="vevent">
+		<h3 class="summary">hCalendar event with span title</h3>
+		<p class="description">This hCalendar event uses a span title to house machine-readable ISO date stamps. It has the side effect of showing an ISO gibberish tool tip to GUI browser users, but is much less likely to be spoken to users of screen readers.</p>
+		<p class="details">
+			Time:
+			
+			<!-- datetime start-->
+			<span class="dtstart" title="20070312T083000Z">
+				March 12th from 8:30 AM
+			</span> to
+			
+			<!-- datetime end-->
+			<span class="dtend" title="20070312T093000Z">
+				9:30 AM
+			</span> in
+			
+			<span class="location">Conference Room 2.</span>
+		</p>
+	</div>
+
+	<div class="vevent">
+		<h3 class="summary">hCalendar event with empty span title</h3>
+		<p class="description">This hCalendar event uses the title element of an empty span to house machine-readable ISO date stamps.</p>
+		<p class="details">
+			Time:
+			
+			<!-- datetime start-->
+			<span class="dtstart">
+				March 12th from 8:30 AM
+				<span class="data value" title="20070312T083000Z"></span>
+			</span> to
+			
+			<!-- datetime end-->
+			<span class="dtend">
+				9:30 AM
+				<span class="data value" title="20070312T093000Z"></span>
+			</span> in
+			
+			<span class="location">Conference Room 2.</span>
+		</p>
+	</div>
+
+
+</div>
+</body>
+
+<!-- Mirrored from www.webstandards.org/files/atf_microformats/uf.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Aug 2017 17:58:32 GMT -->
+</html>

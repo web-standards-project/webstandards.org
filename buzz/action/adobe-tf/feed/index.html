@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>The Web Standards Project &#187; Adobe TF*</title>
+	<atom:link href="http://www.webstandards.org/buzz/action/adobe-tf/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.webstandards.org</link>
+	<description>Working together for standards</description>
+	<lastBuildDate>Fri, 01 Mar 2013 18:30:30 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Spry turns two</title>
+		<link>http://www.webstandards.org/2008/06/02/adobe-spry-turns-two/</link>
+		<comments>http://www.webstandards.org/2008/06/02/adobe-spry-turns-two/#comments</comments>
+		<pubDate>Mon, 02 Jun 2008 19:32:10 +0000</pubDate>
+		<dc:creator>agustafson</dc:creator>
+				<category><![CDATA[Adobe TF*]]></category>
+
+		<guid isPermaLink="false">http://www.webstandards.org/2008/06/02/adobe-spry-turns-two/</guid>
+		<description><![CDATA[Adobe's JavaScript frameworks is maturing, but there's still room for improvement.]]></description>
+			<content:encoded><![CDATA[<p>Two years ago, <a href="http://www.adobe.com/devnet/logged_in/pgubbay_spry.html">Adobe introduced their JavaScript framework</a>: <a href="http://labs.adobe.com/technologies/spry/home.html">Spry</a>. As <a href="http://www.webstandards.org/about/members/drewm">Drew</a> pointed out a few days later, that preview was <a href="http://www.webstandards.org/2006/05/12/adobes-spry-framework-for-ajax/">somewhat lackluster in the standards department</a>, using custom attributes and obtrusive JavaScript techniques.</p>
+<p>Two years on, the framework is at version 1.6.1 and has made some solid movement towards being more unobtrusive&#8212;even going so far as to offer a &#8220;make JavaScript unobtrusive&#8221; option in the <a href="http://labs.adobe.com/technologies/dreamweavercs4/">Dreamweaver <span class="caps">CS4</span> beta</a>&#8212;and, for that, I applaud them.</p>
+<p>As frameworks go, Spry has some nice features&#8212;such as turning arbitrary <span class="caps">HTML</span> into a dataset to name one&#8212;and is maturing rapidly. This version of Spry still seems directed at the novice programmer or people who feel more comfortable working in a tool like Dreamweaver, but I easily recognize the influence of other frameworks on this toolset, showing that they have an eye on the hardcore programmer audience as well. They’ve also made it easy to work around the custom attribute issues that earned them so many lashings when Spry first hit the scene.</p>
+<p>It isn’t all wine and roses though; I have two major criticisms of the framework as it stands today, and they’re directly linked.</p>
+<p>First off, while the framework makes it really easy to build out widgets from its stable and hangs most of that functionality from <code>class</code> names, Spry defaults to requiring a lot of extra markup in the document in order to tie together widget behaviors. These controls are usually hidden with a slathering of <code>display: none</code> and shown when the script runs, which is a step in the right direction, but still misses the mark.</p>
+<p>Why include that entire markup in the document in the first place? If someone doesn’t have JavaScript enabled, why force the download of that extra markup? Widget components like next and previous links, etc. have no business being in the document if they are useless regardless of whether they are hidden by <span class="caps">CSS</span>.</p>
+<p>Which brings me to my next criticism: the documentation.</p>
+<p>The documentation for Spry is pretty thorough, with lots of examples, but none of those examples truly demonstrate the proper way of doing JavaScript. It’s pretty obvious that the developers who wrote them were quite familiar with Spry and far less so with current best practices, especially in regards to progressive enhancement. The examples are riddled with markup that is required for the JavaScript widgets to function despite the fact that it could be quite easily generated at run-time.</p>
+<p>At this point Spry has yet to alias any of the <span class="caps">DOM</span> node creation methods to their framework, which I would have thought would be one of the core features in <code>SpryDOMUtils.js</code>, but that still doesn’t excuse them from using the native <span class="caps">DOM</span> methods like <code>createElement()</code>, <code>createTextNode()</code>, and so on to do the work. In fact, I was shocked to find that the only place Spry is actually generating markup into the document is when its debugger is in use.</p>
+<p>While I do think these two issues are critical for Adobe to address, neither is difficult to overcome. An overhaul of the example files with a clear focus on progressive enhancement techniques is a no-brainer. Adobe offers some <a href="http://labs.adobe.com/technologies/spry/articles/best_practices/">progressive enhancement with Spry information</a>, but the documentation could go further.</p>
+<p>Adobe’s own Greg Rowis has attempted to fill the gap by posting <a href="http://blog.assortedgarbage.com/?p=57">instructions on his personal blog for creating a more unobtrusive dynamic accordion list</a>. Taking the lead from Greg, Adobe should devote some serious time and effort to showing how to use its framework The Right Way&#8482;.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2008/06/02/adobe-spry-turns-two/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Announcing the Adobe Task Force</title>
+		<link>http://www.webstandards.org/2008/03/10/announcing-the-adobe-task-force/</link>
+		<comments>http://www.webstandards.org/2008/03/10/announcing-the-adobe-task-force/#comments</comments>
+		<pubDate>Mon, 10 Mar 2008 17:27:58 +0000</pubDate>
+		<dc:creator>Stephanie (Sullivan) Rewis</dc:creator>
+				<category><![CDATA[Adobe TF]]></category>
+		<category><![CDATA[Adobe TF*]]></category>
+		<category><![CDATA[Authoring Tools]]></category>
+		<category><![CDATA[Outreach]]></category>
+		<category><![CDATA[WaSP Announcement]]></category>
+
+		<guid isPermaLink="false">http://www.webstandards.org/2008/03/10/announcing-the-adobe-task-force/</guid>
+		<description><![CDATA[Today WaSP announced that the Dreamweaver Task Force will be renamed the Adobe Task Force to reflect a widened scope.]]></description>
+			<content:encoded><![CDATA[<p>The Web Standards Project Dreamweaver Task Force was created in 2001 to accomplish two tasks: to work with Macromedia (later Adobe) to improve the standards compliance and accessibility of Web pages produced with Dreamweaver and to communicate effectively within the online Dreamweaver community.  Having successfully completed its initial goals, WaSP announces that the Dreamweaver Task Force will be renamed the <strong>Adobe Task Force</strong> to reflect a widened scope. The Adobe Task Force will collaborate with Adobe on all of the company’s products that output code or content to the Web, and will continue to advocate compliance with Web Standards and accessibility guidelines by those who use Adobe’s products to design and build Web sites and applications.  <a href="http://www.webstandards.org/press/releases/20080310/">Read the press release to learn more.</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2008/03/10/announcing-the-adobe-task-force/feed/</wfw:commentRss>
+		<slash:comments>16</slash:comments>
+		</item>
+	</channel>
+</rss>
+
+<!-- Dynamic page generated in 0.266 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2017-08-18 12:43:34 -->

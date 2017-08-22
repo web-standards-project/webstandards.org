@@ -1,0 +1,994 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<!-- Mirrored from www.webstandards.org/2008/01/22/microsofts-version-targeting-proposal/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Aug 2017 17:37:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>  Microsoft&#8217;s Version Targeting Proposal - The Web Standards Project</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="The Web Standards Project is a grassroots coalition fighting for standards which ensure simple, affordable access to web technologies for all." />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<script type="text/javascript" src="../../../../wp/wp-content/themes/web-standards-project/collapse.js"></script>
+<link rel="stylesheet" type="text/css" media="screen, projection" href="../../../../wp/wp-content/themes/web-standards-project/styles.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../../../wp/wp-content/themes/web-standards-project/print.css" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="../../../../feed/index.html" />
+<link rel="alternate" type="text/xml" title="RSS .92" href="../../../../feed/rss/index.html" />
+<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="../../../../feed/atom/index.html" />
+<link rel="pingback" href="../../../../wp/xmlrpc.php" />
+<link rel="Shortcut Icon" type="image/ico" href="../../../../files/theme/wasp.ico" />
+<link rel="home" title="Web Standards Project Home" href="../../../../index.html" />
+	<link rel='archives' title='March 2013' href='../../../../2013/03/index.html' />
+	<link rel='archives' title='February 2012' href='../../../../2012/02/index.html' />
+	<link rel='archives' title='December 2011' href='../../../../2011/12/index.html' />
+	<link rel='archives' title='November 2011' href='../../../../2011/11/index.html' />
+	<link rel='archives' title='March 2011' href='../../../../2011/03/index.html' />
+	<link rel='archives' title='February 2011' href='../../../../2011/02/index.html' />
+	<link rel='archives' title='January 2011' href='../../../../2011/01/index.html' />
+	<link rel='archives' title='August 2010' href='../../../../2010/08/index.html' />
+	<link rel='archives' title='June 2010' href='../../../../2010/06/index.html' />
+	<link rel='archives' title='March 2010' href='../../../../2010/03/index.html' />
+	<link rel='archives' title='February 2010' href='../../../../2010/02/index.html' />
+	<link rel='archives' title='January 2010' href='../../../../2010/01/index.html' />
+	<link rel='archives' title='November 2009' href='../../../../2009/11/index.html' />
+	<link rel='archives' title='June 2009' href='../../../../2009/06/index.html' />
+	<link rel='archives' title='May 2009' href='../../../../2009/05/index.html' />
+	<link rel='archives' title='April 2009' href='../../../../2009/04/index.html' />
+	<link rel='archives' title='March 2009' href='../../../../2009/03/index.html' />
+	<link rel='archives' title='February 2009' href='../../../../2009/02/index.html' />
+	<link rel='archives' title='January 2009' href='../../../../2009/01/index.html' />
+	<link rel='archives' title='December 2008' href='../../../12/index.html' />
+	<link rel='archives' title='November 2008' href='../../../11/index.html' />
+	<link rel='archives' title='October 2008' href='../../../10/index.html' />
+	<link rel='archives' title='September 2008' href='../../../09/index.html' />
+	<link rel='archives' title='August 2008' href='../../../08/index.html' />
+	<link rel='archives' title='July 2008' href='../../../07/index.html' />
+	<link rel='archives' title='June 2008' href='../../../06/index.html' />
+	<link rel='archives' title='May 2008' href='../../../05/index.html' />
+	<link rel='archives' title='April 2008' href='../../../04/index.html' />
+	<link rel='archives' title='March 2008' href='../../../03/index.html' />
+	<link rel='archives' title='February 2008' href='../../../02/index.html' />
+	<link rel='archives' title='January 2008' href='../../index.html' />
+	<link rel='archives' title='December 2007' href='../../../../2007/12/index.html' />
+	<link rel='archives' title='November 2007' href='../../../../2007/11/index.html' />
+	<link rel='archives' title='October 2007' href='../../../../2007/10/index.html' />
+	<link rel='archives' title='September 2007' href='../../../../2007/09/index.html' />
+	<link rel='archives' title='August 2007' href='../../../../2007/08/index.html' />
+	<link rel='archives' title='June 2007' href='../../../../2007/06/index.html' />
+	<link rel='archives' title='May 2007' href='../../../../2007/05/index.html' />
+	<link rel='archives' title='April 2007' href='../../../../2007/04/index.html' />
+	<link rel='archives' title='March 2007' href='../../../../2007/03/index.html' />
+	<link rel='archives' title='February 2007' href='../../../../2007/02/index.html' />
+	<link rel='archives' title='January 2007' href='../../../../2007/01/index.html' />
+	<link rel='archives' title='December 2006' href='../../../../2006/12/index.html' />
+	<link rel='archives' title='November 2006' href='../../../../2006/11/index.html' />
+	<link rel='archives' title='October 2006' href='../../../../2006/10/index.html' />
+	<link rel='archives' title='September 2006' href='../../../../2006/09/index.html' />
+	<link rel='archives' title='August 2006' href='../../../../2006/08/index.html' />
+	<link rel='archives' title='July 2006' href='../../../../2006/07/index.html' />
+	<link rel='archives' title='June 2006' href='../../../../2006/06/index.html' />
+	<link rel='archives' title='May 2006' href='../../../../2006/05/index.html' />
+	<link rel='archives' title='April 2006' href='../../../../2006/04/index.html' />
+	<link rel='archives' title='March 2006' href='../../../../2006/03/index.html' />
+	<link rel='archives' title='February 2006' href='../../../../2006/02/index.html' />
+	<link rel='archives' title='January 2006' href='../../../../2006/01/index.html' />
+	<link rel='archives' title='December 2005' href='../../../../2005/12/index.html' />
+	<link rel='archives' title='November 2005' href='../../../../2005/11/index.html' />
+	<link rel='archives' title='October 2005' href='../../../../2005/10/index.html' />
+	<link rel='archives' title='September 2005' href='../../../../2005/09/index.html' />
+	<link rel='archives' title='August 2005' href='../../../../2005/08/index.html' />
+	<link rel='archives' title='July 2005' href='../../../../2005/07/index.html' />
+	<link rel='archives' title='June 2005' href='../../../../2005/06/index.html' />
+	<link rel='archives' title='May 2005' href='../../../../2005/05/index.html' />
+	<link rel='archives' title='April 2005' href='../../../../2005/04/index.html' />
+	<link rel='archives' title='March 2005' href='../../../../2005/03/index.html' />
+	<link rel='archives' title='February 2005' href='../../../../2005/02/index.html' />
+	<link rel='archives' title='January 2005' href='../../../../2005/01/index.html' />
+	<link rel='archives' title='December 2004' href='../../../../2004/12/index.html' />
+	<link rel='archives' title='November 2004' href='../../../../2004/11/index.html' />
+	<link rel='archives' title='October 2004' href='../../../../2004/10/index.html' />
+	<link rel='archives' title='September 2004' href='../../../../2004/09/index.html' />
+	<link rel='archives' title='August 2004' href='../../../../2004/08/index.html' />
+	<link rel='archives' title='July 2004' href='../../../../2004/07/index.html' />
+	<link rel='archives' title='June 2004' href='../../../../2004/06/index.html' />
+	<link rel='archives' title='May 2004' href='../../../../2004/05/index.html' />
+	<link rel='archives' title='April 2004' href='../../../../2004/04/index.html' />
+	<link rel='archives' title='March 2004' href='../../../../2004/03/index.html' />
+	<link rel='archives' title='February 2004' href='../../../../2004/02/index.html' />
+	<link rel='archives' title='January 2004' href='../../../../2004/01/index.html' />
+	<link rel='archives' title='December 2003' href='../../../../2003/12/index.html' />
+	<link rel='archives' title='November 2003' href='../../../../2003/11/index.html' />
+	<link rel='archives' title='October 2003' href='../../../../2003/10/index.html' />
+	<link rel='archives' title='September 2003' href='../../../../2003/09/index.html' />
+	<link rel='archives' title='August 2003' href='../../../../2003/08/index.html' />
+	<link rel='archives' title='July 2003' href='../../../../2003/07/index.html' />
+	<link rel='archives' title='June 2003' href='../../../../2003/06/index.html' />
+	<link rel='archives' title='May 2003' href='../../../../2003/05/index.html' />
+	<link rel='archives' title='April 2003' href='../../../../2003/04/index.html' />
+	<link rel='archives' title='March 2003' href='../../../../2003/03/index.html' />
+	<link rel='archives' title='February 2003' href='../../../../2003/02/index.html' />
+	<link rel='archives' title='January 2003' href='../../../../2003/01/index.html' />
+	<link rel='archives' title='December 2002' href='../../../../2002/12/index.html' />
+	<link rel='archives' title='November 2002' href='../../../../2002/11/index.html' />
+	<link rel='archives' title='October 2002' href='../../../../2002/10/index.html' />
+	<link rel='archives' title='September 2002' href='../../../../2002/09/index.html' />
+	<link rel='archives' title='August 2002' href='../../../../2002/08/index.html' />
+	<link rel='archives' title='July 2002' href='../../../../2002/07/index.html' />
+	<link rel='archives' title='June 2002' href='../../../../2002/06/index.html' />
+	<link rel='archives' title='April 2002' href='../../../../2002/04/index.html' />
+	<link rel='archives' title='March 2002' href='../../../../2002/03/index.html' />
+	<link rel='archives' title='December 2001' href='../../../../2001/12/index.html' />
+	<link rel='archives' title='September 2001' href='../../../../2001/09/index.html' />
+	<link rel='archives' title='November 2000' href='../../../../2000/11/index.html' />
+	<link rel='archives' title='July 2000' href='../../../../2000/07/index.html' />
+	<link rel='archives' title='April 2000' href='../../../../2000/04/index.html' />
+	<link rel='archives' title='March 1999' href='../../../../1999/03/index.html' />
+	<link rel='archives' title='October 1998' href='../../../../1998/10/index.html' />
+	<link rel='archives' title='August 1998' href='../../../../1998/08/index.html' />
+<link rel="alternate" type="application/rss+xml" title="The Web Standards Project &raquo; Microsoft&#8217;s Version Targeting Proposal Comments Feed" href="feed/index.html" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../../wp/xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../../wp/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Opting-in to standards support' href='../ie8-will-see-the-smile/index.html' />
+<link rel='next' title='Community CSS resources roundup' href='../../../02/04/community-css-resources-roundup/index.html' />
+<meta name="generator" content="WordPress 3.3.1" />
+<link rel='canonical' href='index.html' />
+<link rel='shortlink' href='../../../../index942e.html?p=1062' />
+</head>
+
+<body id="top" class="individual">
+
+<div id="container">
+
+
+	<div id="branding">
+		<h1><span>Working together for standards </span> <a href="../../../../index.html">The Web Standards Project</a></h1>
+
+		<a id="skip" href="#content-main" title="Skip to content">Skip to content</a>
+	</div>
+
+	<div id="nav-main">
+				<form id="fm-search" method="get" action="http://www.webstandards.org/index.php">
+			<fieldset>
+				<legend>Search</legend>
+				<label for="s"><span>Search WaSP</span>
+				<input id="s" name="s" class="search" value="" /></label>
+				<input type="submit" class="submit" name="submit" value="Go!" />
+			</fieldset>
+		</form>
+		<ul>
+			<li><a href="../../../../index.html" title="Home">Home</a></li>
+			<li><a href="../../../../about/index.html" title="More About Who We Are">About</a></li>
+			<li><a href="../../../../learn/index.html" title="More About Standards">Learn</a></li>
+			<li><a href="../../../../action/index.html" title="WaSP and Community Actions">Action</a></li>
+			<li><a href="../../../../buzz/index.html" title="Current and Archive Buzz Posts">Buzz</a></li>
+			<li><a href="../../../../press/index.html" title="In the Press and For the Press">Press</a></li>
+		</ul>
+	</div>
+
+
+	<hr />
+
+	<div id="content">
+
+	
+		<div id="content-main">
+			<div id="content-summary">
+				<h2 class="stmjrNoCollapse" id="post-1062"><a href="index.html" rel="bookmark" title="Permanent Link: Microsoft&#8217;s Version Targeting Proposal">Microsoft&#8217;s Version Targeting Proposal</a></h2>
+				<p class="stmjrNoCollapse">By <span class="vcard"><a href="../../../../about/members/drewm/index.html" class="url fn">Drew McLellan</a></span> | January 22nd, 2008 | Filed in <a href="../../../../buzz/general/index.html" title="View all posts in General" rel="category tag">General</a>, <a href="../../../../buzz/microsoft/index.html" title="View all posts in Microsoft" rel="category tag">Microsoft</a></p> 
+								<a href="#content-sub" id="stmjrCollapse-content-summary" title="Skip to comment form">Skip to comment form</a>
+			</div>
+
+			<p>Over at A List Apart today is Aaron Gustafson&#8217;s article <a href="http://alistapart.com/articles/beyonddoctype">Beyond DOCTYPE: Web Standards, Forward Compatibility, and IE8</a>, introducing a controversial proposal from Microsoft that developers should start locking their pages into set browser versions.</p>
+<p>Although members of the WaSP Microsoft Task Force were very much involved in this proposal, it is important to re-emphasise that this proposal is not one that every member of the Web Standards Project necessarily backs by default. Like many of you, many of us will (and do) have our own concerns about this and what it could mean for the web if enacted.</p>
+<p>However, that doesn&#8217;t mean we should dismiss it out of hand. A great deal of thought and research by people who know what web standards development means has gone into this. As a proposal, this should be greeted with the feedback and input it deserves. If Microsoft believe they have a solution which carries merit, then let&#8217;s look at that closely as a community of designers, developers <em>and browser vendors</em>, all together. This sort of discussion cannot happen in isolation.</p>
+<p>So go ahead, read the article and the <a href="http://alistapart.com/articles/fromswitchestotargets">accompanying opinion piece</a> by Eric Meyer, consider what that proposal may mean to you and join in with the discussion.</p>
+
+		</div>
+	
+		
+
+		<div id="content-replies">
+
+
+			<h3 id="comments">Your Replies</h3> 
+
+				<dl>
+
+
+					<dt id="comment-59621"><a href="#comment-59621" title="Link to this reply">#1</a> On January 22nd, 2008 11:13 am <span>Rob replied:</span></dt>
+					<dd>
+												<p>Here we go again.  Fixing the web for Microsoft.  Isn&#8217;t Microsoft supposed to be fixing IE for the web?</p>
+					</dd>
+
+
+					<dt id="comment-59626"><a href="#comment-59626" title="Link to this reply">#2</a> On January 22nd, 2008 11:48 am <span><a href='http://www.bryantwebconsulting.com/' rel='external nofollow' class='url'>Steve Bryant</a> replied:</span></dt>
+					<dd>
+												<p>Rob,</p>
+<p>I don&#8217;t think that is a fair or helpful accusation, especially in this case where Microsoft is actively trying to do the right thing and find a way to implement better standards support without breaking existing sites.</p>
+<p>I am not convinced, however, that I like an approach which targets specific browsers. Clearly the idea that a site could ensure that it won&#8217;t be broken by future changes has merit. It would be nice if the author could choose to specify a version of JS or CSS instead of a browser version (even knowing that to be a more risky choice &#8211; spec implementation generally being partial in most browsers).</p>
+					</dd>
+
+
+					<dt id="comment-59633"><a href="#comment-59633" title="Link to this reply">#3</a> On January 22nd, 2008 12:48 pm <span>WaSP Member <a href='http://www.easy-reader.net/' rel='external nofollow' class='url'>agustafson</a> replied:</span></dt>
+					<dd>
+												<blockquote>
+<p>It would be nice if the author could choose to specify a version of JS or CSS instead of a browser version (even knowing that to be a more risky choice &#8211; spec implementation generally being partial in most browsers).</p>
+</blockquote>
+<p>I strongly advocated that for quite a while before I realized (as you have) that timing, accuracy, and level of compliance with a given spec all make that an unsustainable approach. That was when I started to see browsers as the things that needed our primary attention because they are the only part of the equation that is really user-touching. And in the end, the users are the ones that matter.</p>
+					</dd>
+
+
+					<dt id="comment-59635"><a href="#comment-59635" title="Link to this reply">#4</a> On January 22nd, 2008 2:41 pm <span><a href='http://realtech.burningbird.net/standards/bobbing-heads-and-the-ie8-meta-tag/' rel='external nofollow' class='url'>Bb&#8217;s RealTech | Bobbing Heads and the IE8 Meta Tag</a> replied:</span></dt>
+					<dd>
+												<p>[...] I was astonished to read the A List Apart article Beyond DOCTYPE: Web Standards, Forward Compatibility, and IE8 and even more astonished to read compliance with the message from Eric Meyer, Molly Holzschlag, and the WaSP organization.  How the mighty have fallen is so very cliché but, oh, how appropriate.  According to Aaron Gustafson, who wrote the ALA article, the plan is rather than depend on DOCTYPE to trigger quirks and standard mode for page rendering&#8211;a necessity generated by Microsoft&#8217;s IE6 by the way&#8211;we all add a meta tag to our pages that locks the page into a specific browser rendering. For instance, the following would lock a page into IE8 rendering:   &lt;meta http-equiv=&#8221;X-UA-Compatible&#8221; content=&#8221;IE=8&#8243; /&gt; [...]</p>
+					</dd>
+
+
+					<dt id="comment-59637"><a href="#comment-59637" title="Link to this reply">#5</a> On January 22nd, 2008 2:46 pm <span><a href='http://www.yardley.ca/dash/2008/01/22/infinite-quirks-modes/' rel='external nofollow' class='url'>yardley.ca / dash &raquo; Infinite quirks modes</a> replied:</span></dt>
+					<dd>
+												<p>[...] Follow any comments here with the RSS feed for this post. Post a comment or leave a trackback: Trackback URL.    &laquo; Well, I&#8217;ll bedamned [...]</p>
+					</dd>
+
+
+					<dt id="comment-59639"><a href="#comment-59639" title="Link to this reply">#6</a> On January 22nd, 2008 3:28 pm <span><a href='http://www.finanznachrichten.de/' rel='external nofollow' class='url'>AG</a> replied:</span></dt>
+					<dd>
+												<p>Life would be so easy if everybody would be so kind to use the <a href="http://www.w3.org/" rel="nofollow">W3C</a> standards &#8230;</p>
+					</dd>
+
+
+					<dt id="comment-59641"><a href="#comment-59641" title="Link to this reply">#7</a> On January 22nd, 2008 4:22 pm <span><a href='http://www.gtalbot.org/BrowserBugsSection/MSIE7Bugs/' rel='external nofollow' class='url'>Gérard Talbot</a> replied:</span></dt>
+					<dd>
+												<p>Aaron,</p>
+<p>This &lt;meta http-equiv=”X-UA-Compatible” content=”IE=8″&gt; will make web authors target browser versions. In a sense, this was the logical complement to conditional comment. It certainly goes against the well acknowledged and recommended principle of detecting support of features and support of objects instead of browser or browser versions.</p>
+<p>Aaron, what was wrong with having a &lt;meta&gt; like</p>
+<p>&lt;meta name=&#8221;rendering-mode&#8221; content=&#8221;web-standards-compliance&#8221;&gt;</p>
+<p>or</p>
+<p>&lt;meta name=&#8221;rendering-mode&#8221; content=&#8221;full-standards-compliance&#8221;&gt;</p>
+<p>I think this (or a variation of it) was the least bad one. Such meta would have forced IE to always follow all web standards to the best of its capabilities. For IE 8.0 and future versions of IE which would implement such meta. In other words, applying to IE 8.1, IE 8.5, IE 9, etc. as well.</p>
+<p>Another question: with the addition of a new rendering mode, where is the <strong>incentive</strong> for web authors <strong>to upgrade their webpages</strong> to make them better and more web-standards-compliant? How is this new switch method going to incite, to motivate amateur web authors to read, to learn and to upgrade their coding techniques, their markup and CSS code to comply with W3C web standards? This part of the equation is crucial.</p>
+<p>Safeguarding backward-compatibility can easily become a reason for inertia or for using and reusing Front-Page again and still; safeguarding backward-compatibility can easily become the cement of web-tag-soup mediocrity.</p>
+<p>Regards, Gérard</p>
+					</dd>
+
+
+					<dt id="comment-59643"><a href="#comment-59643" title="Link to this reply">#8</a> On January 22nd, 2008 4:49 pm <span>Richard replied:</span></dt>
+					<dd>
+												<p>This is a very bad idea IMHO. The whole point of a standard is that it is a target for implementation. Write once, read many. </p>
+<p>We want browsers to render according to the standard and to get better with each version. I code for the most standards compliant browser, and hack to fix to the others.</p>
+<p>Frankly, conditional comments are a much better way to deal with any legacy issues with rendering.</p>
+					</dd>
+
+
+					<dt id="comment-59647"><a href="#comment-59647" title="Link to this reply">#9</a> On January 22nd, 2008 5:22 pm <span>Phil Langor replied:</span></dt>
+					<dd>
+												<p>I can just picture the future:</p>
+<p>or</p>
+<p>I love it!</p>
+					</dd>
+
+
+					<dt id="comment-59648"><a href="#comment-59648" title="Link to this reply">#10</a> On January 22nd, 2008 5:25 pm <span>Phil Langor replied:</span></dt>
+					<dd>
+												<p>I can just picture the future:</p>
+<p><code></code></p>
+<p>or</p>
+<p><code></code></p>
+<p>I love it!</p>
+					</dd>
+
+
+					<dt id="comment-59649"><a href="#comment-59649" title="Link to this reply">#11</a> On January 22nd, 2008 5:28 pm <span>Phil Langor replied:</span></dt>
+					<dd>
+												<p>[one more time]</p>
+<p>I can just picture the future:</p>
+<p>&lt;meta name=&#8221;rendering-mode&#8221; content=&#8221;no-really-this-time-we-mean-it-standards-compliance&#8221;&gt;</p>
+<p>or</p>
+<p>&lt;meta name=&#8221;rendering-mode&#8221; content=&#8221;sorry-about-that-last-version-we-released-but-this-time-we-think-we-have-fixed-the-problem-with-those-layout-issues&#8221;&gt;</p>
+					</dd>
+
+
+					<dt id="comment-59650"><a href="#comment-59650" title="Link to this reply">#12</a> On January 22nd, 2008 5:30 pm <span><a href='http://dannyayers.com/' rel='external nofollow' class='url'>Danny</a> replied:</span></dt>
+					<dd>
+												<p>What Richard &amp; co said. This isn&#8217;t a standard, at best it&#8217;s a vendor-specific fork. Essentially Microsoft haven&#8217;t changed their traditional position. Yet somehow this slight of hand is meant to make it acceptable&#8230; Frankly I find the doubletalk around this proposal rather embarrassing.</p>
+					</dd>
+
+
+					<dt id="comment-59651"><a href="#comment-59651" title="Link to this reply">#13</a> On January 22nd, 2008 5:59 pm <span>WaSP Member <a href='http://www.splintered.co.uk/' rel='external nofollow' class='url'>plauke</a> replied:</span></dt>
+					<dd>
+												<p>At least this time around it&#8217;s not proprietary code masquerading as harmless comments&#8230;</p>
+					</dd>
+
+
+					<dt id="comment-59652"><a href="#comment-59652" title="Link to this reply">#14</a> On January 22nd, 2008 6:01 pm <span>WaSP Member <a href='http://www.splintered.co.uk/' rel='external nofollow' class='url'>plauke</a> replied:</span></dt>
+					<dd>
+												<p>&#8230;and you&#8217;ll be able to spot substandard developers and companies because even their simplest sites will either lack the meta, or have one that specifies IE6 rendering&#8230;this will make weeding out contractors a lot easier&#8230;</p>
+					</dd>
+
+
+					<dt id="comment-59653"><a href="#comment-59653" title="Link to this reply">#15</a> On January 22nd, 2008 6:04 pm <span><a href='http://www.webclique.net/weblog/2008/01/22/that-red-headed-monster-next-to-you-yeah-thats-anger/' rel='external nofollow' class='url'>webclique.net &raquo; Blog Archive &raquo; That Red-headed Monster Next to You? Yeah, that&#8217;s Anger.</a> replied:</span></dt>
+					<dd>
+												<p>[...] I&#8217;ve read the original articles, I&#8217;ve read the commentary on Wasp, on Snook, on adactio and a variety of other sites that have chimed in, and I&#8217;m still not sure what I think. But what I do know is that all the positive change we have seen in this field has come not from one, mass decision to move in any one direction. It has come from a few individuals who have proposed ideas (that were generally not well accepted) and fought, kicking and screaming to get us to where we are today. That is change, plain and&nbsp;simple. [...]</p>
+					</dd>
+
+
+					<dt id="comment-59656"><a href="#comment-59656" title="Link to this reply">#16</a> On January 22nd, 2008 6:21 pm <span><a href='http://www.itwriting.com/blog/?p=484' rel='external nofollow' class='url'>Tim Anderson&#8217;s ITWriting - Tech writing blog &raquo; Why Internet Explorer users get the worst of the Web</a> replied:</span></dt>
+					<dd>
+												<p>[...] Still, Wilson makes a case for the decision and has some supporters. Nevertheless, he is getting a rough ride, in part because the IE team has failed to engage with the community &#8211; note for example the long silences on the IE blog. Why is Wilson telling us now about this decision, as opposed to discussing the options more widely before it was set in stone, as I suspect it now is? Even within the Web Standards Project, some of whose members assisted Microsoft, there is tension because it it appears that other members were excluded from the discussion. [...]</p>
+					</dd>
+
+
+					<dt id="comment-59658"><a href="#comment-59658" title="Link to this reply">#17</a> On January 22nd, 2008 6:59 pm <span><a href='http://dean.edwards.name/weblog/2008/01/quotes/' rel='external nofollow' class='url'>Dean Edwards: Quotes</a> replied:</span></dt>
+					<dd>
+												<p>[...] Although members of the WaSP Microsoft Task Force were very much involved in this proposal, it is important to re-emphasise that this proposal is not one that every member of the Web Standards Project necessarily backs by default. Drew McLellan (WaSP co-lead) [...]</p>
+					</dd>
+
+
+					<dt id="comment-59661"><a href="#comment-59661" title="Link to this reply">#18</a> On January 22nd, 2008 8:20 pm <span>Jorgie replied:</span></dt>
+					<dd>
+												<p>Reasonable comments for the most part but no one has suggested a more workable solution that _does_not_break_existing_pages. For the vast majority of IE users this is the most important factor.</p>
+<p>Those of you saying &#8220;follow the standards and don&#8217;t worry about broken pages&#8221; are what scares me the most. That is one of the worst things they could do.</p>
+					</dd>
+
+
+					<dt id="comment-59662"><a href="#comment-59662" title="Link to this reply">#19</a> On January 22nd, 2008 8:35 pm <span><a href='http://carmentastreet.com/notebook/2008/01/22/opting-in-opting-out/' rel='external nofollow' class='url'>Carmenta Street Notebook &raquo; Blog Archive &raquo; Opting in, opting out</a> replied:</span></dt>
+					<dd>
+												<p>[...] In honor of the craziness today surrounding Microsoft&#8217;s opt-in IE8 rendering announcement, I bring you an opt-in/opt-out comparison list. [...]</p>
+					</dd>
+
+
+					<dt id="comment-59664"><a href="#comment-59664" title="Link to this reply">#20</a> On January 22nd, 2008 9:01 pm <span><a href='http://www.gtalbot.org/BrowserBugsSection/MSIE7Bugs/' rel='external nofollow' class='url'>Gérard Talbot</a> replied:</span></dt>
+					<dd>
+												<p>Patrick Lauke,</p>
+<p>A built-in Webpage Quality indicator icon (smiley or green check for valid page, frown or red &#8216;X&#8217; when invalid) on the statusbar (or somewhere else) turn off by default (so that ordinary users don&#8217;t get confused or panic by it) would have also help spot substandard developers and companies &#8230; a suggestion I made in 3 distinct wiki Channel9.InternetExplorer webpages in 2005-2006 and which Microsoft did not adopt.</p>
+<p>Gérard</p>
+					</dd>
+
+
+					<dt id="comment-59668"><a href="#comment-59668" title="Link to this reply">#21</a> On January 22nd, 2008 10:07 pm <span><a href='http://www.nealgrosskopf.com/' rel='external nofollow' class='url'>Neal</a> replied:</span></dt>
+					<dd>
+												<p>Look on the bright side, microsoft could have done nothing at all, right? Heck they could have left the rendering engine the same and not even bothered trying to pass the acid2 test. Lets at least give them some credit for trying, something they haven&#8217;t done in the past.</p>
+					</dd>
+
+
+					<dt id="comment-59670"><a href="#comment-59670" title="Link to this reply">#22</a> On January 23rd, 2008 1:26 am <span>Robin Massart replied:</span></dt>
+					<dd>
+												<p>I think this is a big mistake.</p>
+<p>I appreciate all the work and effort Aaron has obviously put into dealing with Microsoft. However this solution has nothing to do with web standards at all.</p>
+<p>Rather, the real reason for this is that in future all the non compliant, IE only, in-house intranet systems don&#8217;t break when Microsoft ship the latest version of IE. Why has the uptake of IE7 been so slow? Because anybody with an IE based intranet system doesn&#8217;t dare upgrade for fear of needing to redesign the whole thing.</p>
+<p>This is not about MS not wanting to &#8220;break the internet&#8221;. It&#8217;s about them not wanting to &#8220;break the intranet&#8221;.  It is a solution to a microsoft specific problem. I hope Opera, Firefox, Apple and the other browser vendors shun this idea. I am not trying to bash MS here. I happen to quite like many of their products. But this solution is wrong! I mean how could they default to IE7 if you don&#8217;t include the meta tag. That&#8217;s truly awful.</p>
+					</dd>
+
+
+					<dt id="comment-59671"><a href="#comment-59671" title="Link to this reply">#23</a> On January 23rd, 2008 2:11 am <span><a href='http://www.gtalbot.org/BrowserBugsSection/MSIE7Bugs/' rel='external nofollow' class='url'>Gérard Talbot</a> replied:</span></dt>
+					<dd>
+												<p>A black and white TV can not render tv programs in color: owners have to upgrade. A 10 year old TV can not render tv programs served in High Definition (HD): owners have to upgrade.</p>
+<p>The solution was/is/will be always there, always available. Use valid markup code, clearly separate content from presentation, use valid CSS code, use a strict DTD, follow recommended, tested and widely acknowledged best forward-compatible coding practices, etc.. and voila: your webpage will not break (and should not break) in IE 8 (and in acid2-compliant browsers) and it still should degrade gracefully in buggy, non-conformant browsers. That solution was available last year and it will be available next year.</p>
+<p>With IE 8 reducing, narrowing the gap versus Firefox 3, Opera 9.5 and Safari 3, such recipe to create webpages rendering approximatively the same in all 4 beforementioned browsers should have become more prevalent, loud and clear, without an additional triggering switch.</p>
+<p>Regards, Gérard</p>
+					</dd>
+
+
+					<dt id="comment-59681"><a href="#comment-59681" title="Link to this reply">#24</a> On January 23rd, 2008 5:52 am <span><a href='http://thinkdrastic.net/' rel='external nofollow' class='url'>Olly</a> replied:</span></dt>
+					<dd>
+												<p><a href="index.html#comment-59652" rel="nofollow">@plauke</a><br />
+<blockquote>&#8230;you’ll be able to spot substandard developers and companies because even their simplest sites will either lack the meta&#8230;</p></blockquote>
+<p>What about the ones who send it down as an http header? :)</p>
+					</dd>
+
+
+					<dt id="comment-59684"><a href="#comment-59684" title="Link to this reply">#25</a> On January 23rd, 2008 6:39 am <span><a href='http://www.isolani.co.uk/blog/' rel='external nofollow' class='url'>Isofarro</a> replied:</span></dt>
+					<dd>
+												<p>I supported Microsoft&#8217;s efforts with IE7, praised the end result and defended them from a number of idiotic points.</p>
+<p>But not here. Web standards cannot compromise the fundamental tenet of future compatibility. A standard compliant page should be rendered in a standards compliant browser &#8211; that&#8217;s the web standards equation.</p>
+<p>A standards compliant page is well formed and structured HTML, with CSS for layout and presentation and JavaScript for behaviour. That&#8217;s the only flag that&#8217;s needed to indicate to a browser that a page is standards compliant.</p>
+<p>The moment we accept a tiny tiny tiny addition to all of our pages and websites to help one browser is the moment when future-proofing existing documents is thrown out of the window.</p>
+<p>We do not, nor should be expected, to have to opt in to any particular browser&#8217;s rendering mode. The presence of a standards compliant page is sufficient.</p>
+<p>Microsoft can just go back and find a proper solution that fixes the problem. Not lay the blame and responsibility of their failings on our doorstep.</p>
+<p>I&#8217;m also angered by Chris Wilson&#8217;s comments that this is supported by WaSP when its clear the majority of WaSP members (or even core WaSP members) were not involved or told or engaged.</p>
+<p>We, the web standards community, will continue to support Microsoft when it accepts responsibility to fix the problems its browsers have lumbered us with for years. But, we do not acceed to the demand to opt into a specific instance of a browser&#8217;s standards mode.</p>
+<p>If Internet Explorer 8 cannot render a web standards compliant page in its web standards renderer, then it is broken by design. It needs to be fixed by Microsoft, not patched up by every standards supporting web developer.</p>
+					</dd>
+
+
+					<dt id="comment-59685"><a href="#comment-59685" title="Link to this reply">#26</a> On January 23rd, 2008 6:47 am <span><a href='http://www.anieto2k.com/2008/01/23/internet-explorer-80-modo-super-estandar/' rel='external nofollow' class='url'>Internet Explorer 8.0 modo super estandar | aNieto2K</a> replied:</span></dt>
+					<dd>
+												<p>[...] Al parecer los chicos de A List Apart, anunciaban la aparición del tag meta X-UA-Compatible, un tag que la gente de Microsoft ha desarrollado sin tener en cuenta al resto de navegadores. Como era de esperar la mecha a echado a arder casi instantáneamente, recordando tiempo del ActiveX() y el document.all, desarrolladores como John Resig, Anne van Kesteren, Gareth Rushgrove o Roc (de mozillazine) que han tachado la iniciativa de inútil y perjudical para el desarrollo web en general. Aunque aún es una propuesta la cosa promete y seguro que este tema va a dar mucho que hablar en los proximos meses. [...]</p>
+					</dd>
+
+
+					<dt id="comment-59686"><a href="#comment-59686" title="Link to this reply">#27</a> On January 23rd, 2008 7:10 am <span><a href='http://www.pixelbox.net/2008/01/23/versioning-for-html-or-microsoft-saving-face/' rel='external nofollow' class='url'>Pixelbox &raquo; Versioning for HTML, or Microsoft saving face?</a> replied:</span></dt>
+					<dd>
+												<p>[...] Elsewhere thoughts Microsoft’s own announcement  Jonathan Snook Anne van Kesteren A Mozilla developers PPK defines the semantics An official Web Standards Project statement on their involvement Jeremy Keith Andy Budd Ethan Marcotte Zeldman defends the idea John ‘jQuery’ Resig Gareth Rushgrove Roger Johansson Rachel Andrew     Meta tags: Development   There are no comments yet [...]</p>
+					</dd>
+
+
+					<dt id="comment-59690"><a href="#comment-59690" title="Link to this reply">#28</a> On January 23rd, 2008 8:07 am <span>Robin Massart replied:</span></dt>
+					<dd>
+												<p>Could WaSP please post an official position on this subject. On the one hand we have Chris Wilson (<a href="http://blogs.msdn.com/ie/" rel="nofollow">http://blogs.msdn.com/ie/</a>) and the WaSP site itself (<a href="http://webstandards.org/action/mstf" rel="nofollow">http://webstandards.org/action/mstf</a>) saying this technique was developed in conjunction with WaSP. On the other hand core WaSP members are saying WaSP had nothing to do with this (<a href="http://annevankesteren.nl/2008/01/ie-lock-in#comment-6376" rel="nofollow">http://annevankesteren.nl/2008/01/ie-lock-in#comment-6376</a>).</p>
+<p>What exactly is going on here???</p>
+					</dd>
+
+
+					<dt id="comment-59691"><a href="#comment-59691" title="Link to this reply">#29</a> On January 23rd, 2008 8:51 am <span>Perduel replied:</span></dt>
+					<dd>
+												<p>Horrible mistake.<br />
+This so called solution breaks all the &#8220;rules&#8221; of good web design.</p>
+<p>I think I&#8217;m just going to forget Microsoft. I just can&#8217;t take this kind *beep* any longer. They had their chance and this time I actually thought they would use it&#8230;</p>
+					</dd>
+
+
+					<dt id="comment-59695"><a href="#comment-59695" title="Link to this reply">#30</a> On January 23rd, 2008 9:45 am <span>Ben Davies replied:</span></dt>
+					<dd>
+												<p>You know, I expected something like this from IE8. I don&#8217;t think I was alone in that regard. However, what burns the most is this apparent &#8220;back-door&#8221; rubber stamping from WaSP. It appears that many of your members <em>don&#8217;t</em> support this and in fact think this is a terrible solution to what is essentially a Microsoft problem. However, I have deeper concerns.</p>
+<p>The first is the slogan coming from the IE team: &#8220;Don&#8217;t break the web&#8221;. The web is a very complex platform, and standards compliance is the goal. However, this proposal shouts &#8220;Don&#8217;t <em>fix</em> the web&#8221;. In doing so, this effectively walls off a huge part of the web itself, under the banner of an IE7 compatible web. This is <strong>not</strong> what us developers, designers and least of all, the WaSP are trying to acomplish. If this proposal is allowed to go through, I can see all grass roots development work, the mom and pop stores, the local library site, stop advancing towards the web as a platform, and sticking with IE7 as a platform. This proposal enforces the emphasis that <em>everything will remain as it is and will continue to work as it currently does</em>. The current state of the web is NOT where we want to be, otherwise the WaSP wouldn&#8217;t even exist.</p>
+<p>Secondly, I personally don&#8217;t see a problem with IE8 supporting standards by default, and having an opt-out for IE7 compatability. IF this proposal goes through, and IE8 requires an opt-in, then due to the market share of Internet Explorer, <strong>the default standard for the web will be IE Web</strong>.</p>
+<p>Personally, I see this as an attempt to hijack the progress of the web away from web standards and towards IE Web. And sadly, many of my personal heroes, including Eric Myer and Jeffrey Zeldman, appear to support this.</p>
+<p>And that stings more than anything Microsoft could do to the web.</p>
+					</dd>
+
+
+					<dt id="comment-59697"><a href="#comment-59697" title="Link to this reply">#31</a> On January 23rd, 2008 10:21 am <span><a href='http://minimaldesign.net/' rel='external nofollow' class='url'>minimal design</a> replied:</span></dt>
+					<dd>
+												<p>The first comment here says it all&#8230; How can anyone argue that this is not a &#8220;Web adapted to IE&#8221; approach? And a complete negation of the foundations of Standards&#8230;</p>
+<p>I won&#8217;t repeat what <a href="http://adactio.com/journal/1402/" rel="nofollow">others have said</a> already. I don&#8217;t think it&#8217;s necessarily a bad way to go about it for IE specifically <strong>if the defaut behavior for IE8 is Standards compliance.</strong> The backward proposition is just ridiculous. No need to ponder about it, the only &#8220;feedback and input it deserves&#8221; is: are you kidding?!</p>
+<p>I&#8217;d be curious to know who those &#8220;people who know what web standards development means&#8221; are&#8230; because it seems they lost the necessary perspective to even have the most basic understanding of what Standards mean.</p>
+<p>The whole &#8220;do not brake the web&#8221; argument is so hypocritical&#8230; Anyone from the WASP buying into this sophistic rhetoric should be ashamed. Nothing &#8220;brakes the web.&#8221; If IE didn&#8217;t exist, this article on ALA wouldn&#8217;t either. Firefox, Safari, Opera, etc&#8230; don&#8217;t need this new meta tag garbage. Because they support WEB STANDARDS.</p>
+<p>Let&#8217;s face it, this whole discussion has nothing to do with providing the best possible user experience and everything to do with conserving Internet Explorer&#8217;s market share. It&#8217;s a very legitimate concern for Microsoft, and a new meta tag provided for people who don&#8217;t want/can&#8217;t code standards compliant sites makes *some* sense on a business level, but it is so far removed from anything the W3C and real web Standards stand for that I really have to wonder what got into the WASP, ALA, and all the people involved in this ludicrous proposal.</p>
+					</dd>
+
+
+					<dt id="comment-59698"><a href="#comment-59698" title="Link to this reply">#32</a> On January 23rd, 2008 10:23 am <span><a href='http://www.nikoport.com/' rel='external nofollow' class='url'>Niko Neugebauer</a> replied:</span></dt>
+					<dd>
+												<p>Yes, this time it’s not proprietary code masquerading, but lets be practical:<br />
+what does it stands for ? For innability creating standard-compliant pages(webdesigners) and especially for IE8. </p>
+<p>Why other browsers might need it ? I see no peoples crying over the net that asserting Firefox, Opera and Safari is pain in the arse. They have their quirks, but in general following standards makes them easy to develop for.</p>
+<p>Entering this &#8220;game&#8221; once won&#8217;t have an easy exit &#8211; pages created for such mode will stay, and software for producing them as well. Imagine some third-party developer that will manage those &#8220;meta-contents&#8221;. Or better &#8211; imagine new VS managing these metas&#8230; Opera and Mozilla, are you already shaking ? =O)</p>
+					</dd>
+
+
+					<dt id="comment-59699"><a href="#comment-59699" title="Link to this reply">#33</a> On January 23rd, 2008 10:27 am <span>Blah replied:</span></dt>
+					<dd>
+												<p>How can this idiocy even come to pass? Here&#8217;s a better suggestion, WaSP should disband, close doors and never again mention the words web standards or promote it. What an utter disgrace. Whoever wrote the beyonddoctype article is a retard.</p>
+					</dd>
+
+
+					<dt id="comment-59702"><a href="#comment-59702" title="Link to this reply">#34</a> On January 23rd, 2008 11:07 am <span><a href='http://robertdot.org/' rel='external nofollow' class='url'>Robert</a> replied:</span></dt>
+					<dd>
+												<p>This has been up for discussion for some time.  <a href="http://lists.whatwg.org/pipermail/whatwg-whatwg.org/2007-March/009949.html" rel="nofollow">I suggested a similar meta tag / header</a> back in March of 07 at the WHATWG around the time the W3C started their new effort.  The goal was to provide a switch for IE to render in it&#8217;s super standards mode.</p>
+<p>WHATWG was so exact in their specification (because they considered it an implementation, if I remember correctly) that there were no gray areas about rendering.  Once IE (or anyone for that matter) got HTML 5 right, they wouldn&#8217;t NEED any other rendering engine because it described how things already were and added a little to it.  So, specifying what version of HTML one was authoring against was a good-enough switch.  If it isn&#8217;t HTML5+, use the old rendering engine.  If it&#8217;s later than HTML5, use the new one.</p>
+<p>IE, however, is so afraid of &#8220;breaking the web&#8221; that specifying a browser version seems better to them.  That way, they have an out if they put bugs in (IE may be the only software that wants to leave bugs in it&#8217;s software instead of removing them).  IE 9  may have four rendering modes.  I think this is going to end up bloating IE, but that is Microsoft&#8217;s problem.</p>
+<p>Instead, I think IE should make the super-standards mode rendering a perpetual beta.  That is, they make no promises to developers that existing bugs will stay in the software.  This is pretty much the way every other browser works.  If you upgrade, they fix bugs (just like all software).  Using a generic switch (e.g. X-Standards-Mode) to trigger the &#8220;beta renderer&#8221; should be avoided by people who need their sites to always work the way they are when they made them, and let the rest of us (the people who KNOW what they are doing) code against standards with the knowledge that IE will get it right one day (and we&#8217;ll code for bugs with conditional comments until then).</p>
+<p>However, the browser version switch does give us the ability to pick the rendering method directly, which provides us with a little more control.  If we could make IE use a different rendering engine (say, Mozilla) as a &#8220;plug-in&#8221;, all our problems would be solved.</p>
+					</dd>
+
+
+					<dt id="comment-59703"><a href="#comment-59703" title="Link to this reply">#35</a> On January 23rd, 2008 11:17 am <span><a href='http://robert.mathmos.net/' rel='external nofollow' class='url'>Robert Whittaker</a> replied:</span></dt>
+					<dd>
+												<p>Presumably the meta tag itself is not so much of a problem, but standards enthusiasts are IMO rightly complaining that the default behaviour for sites written according to the standards is not to be the full standards mode. Yet another version of IE will be crippled so it does not behave properly by default.</p>
+<p>If the problem that this is trying to solve is indeed corporate intranets, then what is required is a way for those considering upgrades to be able to ensure that legacy intranet applications are not broken. While using semi-standards mode by default makes things easier for company admins considering an upgrade, the advantages are far outweighed (IMO) by the damage it will continue to do to the adoption of web standards throughout the rest of the web.</p>
+<p>As standards are concerned, the full standards mode really should be the default behaviour. I&#8217;d have thought that the best way to allow this would be to expect site authors to ensure they added an agreed &#8220;IE render in legacy mode&#8221; tags / headers to their sites. But if that&#8217;s too great a burden, then you could have some sort of &#8220;Legacy Sites&#8221; exceptions list in the IE settings to give control to the user.</p>
+<p>Company admins can add their intranets to the &#8220;Legacy Sites&#8221; list when they roll out the upgrade, and regular surfers who see a broken site can opt to add that site to the list too. Pages without doctypes are handled in the quirks mode way as before, and site-owners who really want their sites to be rendered in the old semi-standard way can use a doctype and add an appropriate IE-specific tag. For everything else, you happily get the default behaviour, namely to use the full standards mode.</p>
+					</dd>
+
+
+					<dt id="comment-59705"><a href="#comment-59705" title="Link to this reply">#36</a> On January 23rd, 2008 11:23 am <span><a href='http://www.dave-woods.co.uk/?p=153' rel='external nofollow' class='url'>Dave Woods - HTML, CSS, Web Design &raquo; Will my site break in IE8?</a> replied:</span></dt>
+					<dd>
+												<p>[...] The Web Standards Project [...]</p>
+					</dd>
+
+
+					<dt id="comment-59710"><a href="#comment-59710" title="Link to this reply">#37</a> On January 23rd, 2008 1:53 pm <span><a href='http://www.gtalbot.org/BrowserBugsSection/MSIE7Bugs/' rel='external nofollow' class='url'>Gérard Talbot</a> replied:</span></dt>
+					<dd>
+												<p>To Patrick Lauke,</p>
+<p>You said:<br />
+&#8220;and you’ll be able to spot substandard developers and companies because even their simplest sites will either <strong>lack the meta, or have one that specifies IE6 rendering…</strong> this will make weeding out contractors a lot easier…&#8221;</p>
+<p>1- Again, a Webpage Quality Indicator Icon idea/proposal just like I presented at <a href="http://channel9.msdn.com/wiki/default.aspx/Channel9.InternetExplorerStandardsSupport" rel="nofollow">Channel 9 wiki on Internet Explorer Standards Support</a>, <a href="http://channel9.msdn.com/wiki/default.aspx/Channel9.InternetExplorerFeatureRequests" rel="nofollow">Channel 9 wiki on Internet Explorer Feature Requests</a> and <a href="http://channel9.msdn.com/wiki/default.aspx/Channel9.InternetExplorerBugs" rel="nofollow">Channel 9 wiki on Internet Explorer Bugs</a> would have been a more useful, reliable and relevant way for everyone to spot substandard developers.</p>
+<p>2- You mention &#8220;have one that specifies IE6 rendering&#8221;. This is what confused me and lead me to think that the &lt;meta&gt;-tag in IE8 would/will actually be able to render a page with IE6 standards mode. Patrick, could you please re-examine what you meant to write&#8230; otherwise, could you please clarify, explicit what you were trying to say. Thank you.</p>
+<p>Best regards, Gérard</p>
+					</dd>
+
+
+					<dt id="comment-59711"><a href="#comment-59711" title="Link to this reply">#38</a> On January 23rd, 2008 2:13 pm <span><a href='http://www.gtalbot.org/BrowserBugsSection/MSIE7Bugs/' rel='external nofollow' class='url'>Gérard Talbot</a> replied:</span></dt>
+					<dd>
+												<p>Isofarro and others,</p>
+<p>What is your position on a) IE8 having an opt-out to trigger IE7 standards rendering mode and b) having IE8 render standards mode by default (assuming a proper doctype decl. to trigger standards mode, just working like it is in IE6 and in IE7)?</p>
+<p>To me, there is a consensus around this proposal.<br />
+Such proposal would meet your position/demands/requirements as defined in this blog.<br />
+And such opt-out mechanism would indeed offer big websites the possibility to adjust and to smooth the transition when a new browser version is released.</p>
+<p>I think that would (should? could?) be acceptable to all, not entirely satisfactory, but acceptable.</p>
+<p>Regards, Gérard<br />
+&#8211;<br />
+<a href="http://www.gtalbot.org/BrowserBugsSection/MSIE7Bugs/" rel="nofollow">Internet Explorer 7 bugs</a></p>
+					</dd>
+
+
+					<dt id="comment-59715"><a href="#comment-59715" title="Link to this reply">#39</a> On January 23rd, 2008 3:05 pm <span><a href='http://blog.3l0g.com/' rel='external nofollow' class='url'>emarts</a> replied:</span></dt>
+					<dd>
+												<p>Oh please, IE8 Developer Team, kill yourself! :S</p>
+<p>W3C Standards, not Microsoft $tandar$ please!!!!</p>
+					</dd>
+
+
+					<dt id="comment-59716"><a href="#comment-59716" title="Link to this reply">#40</a> On January 23rd, 2008 3:51 pm <span>WaSP Member <a href='http://www.brucelawson.co.uk/' rel='external nofollow' class='url'>blawson</a> replied:</span></dt>
+					<dd>
+												<p><a href="#comment-59690" rel="nofollow">Robin</a>, there is no &#8220;official&#8221; Web Standards Project statement: you&#8217;ll notice in the footer it says &#8220;All of the entries posted in WaSP Buzz express the opinions of their individual authors. They do not necessarily reflect the plans or positions of the Web Standards Project as a group.&#8221;</p>
+<p>Most of us had no idea that this was happening until we read the ALA article.</p>
+<p>My initial reaction was like Eric Meyer&#8217;s: WTF?!?!</p>
+<p>To be honest, if it were not my respect for Aaron, PPK, Eric and Zeldman, I&#8217;d not be giving it more brainspace now (which is wrong of me, but I&#8217;ve only got so many unused neurones). Personally, I still don&#8217;t know what I think; I&#8217;m torn between purist-Bruce and pragmatist-Bruce.</p>
+<p>I&#8217;ve got some long flights on Friday on budget airlines with no free G&#038;T, so  hope to do my thinking  then.</p>
+					</dd>
+
+
+					<dt id="comment-59718"><a href="#comment-59718" title="Link to this reply">#41</a> On January 23rd, 2008 5:03 pm <span><a href='http://www.maxdesign.com.au/2008/01/24/1e8/' rel='external nofollow' class='url'>Max Design - standards based web design, development and training &raquo; IE8 and versioning - very worrying developments</a> replied:</span></dt>
+					<dd>
+												<p>[...] Microsoft’s Version Targeting Proposal [...]</p>
+					</dd>
+
+
+					<dt id="comment-59722"><a href="#comment-59722" title="Link to this reply">#42</a> On January 23rd, 2008 7:31 pm <span><a href='http://jasonpenney.net/blog/2008/01/23/best-viewed-in-x-ua-compatible/' rel='external nofollow' class='url'>Best viewed in X-UA-Compatible &middot; All the Billion Other Moments (Jason Penney)</a> replied:</span></dt>
+					<dd>
+												<p>[...] Yesterday saw the release of A List Apart #251 which is causing quite a bit of discussion. It focuses on a proposal put forth my Microsoft and some members of the Web Standards Project for a new meta tag than will control the rendering mode of IE8. [...]</p>
+					</dd>
+
+
+					<dt id="comment-59724"><a href="#comment-59724" title="Link to this reply">#43</a> On January 23rd, 2008 8:10 pm <span><a href='http://preskryptywizm.sztamp.com/' rel='external nofollow' class='url'>Tom Presk</a> replied:</span></dt>
+					<dd>
+												<p>My initial thoughts were that it was a bad thing. Why should I have to insert extra code into my page in order to tell the browser that I’m writing using the latest web standards? Isn’t this resorting to browser sniffing which caused so many problems and extra hours of work?</p>
+					</dd>
+
+
+					<dt id="comment-59726"><a href="#comment-59726" title="Link to this reply">#44</a> On January 23rd, 2008 8:30 pm <span><a href='http://stevenclark.com.au/2008/01/24/the-version-targeting-in-ie8-proposal/' rel='external nofollow' class='url'>&raquo; Blog Archive &raquo; The Version Targeting In IE8 Proposal - StevenClark.com.au</a> replied:</span></dt>
+					<dd>
+												<p>[...] Drew McLellan&#8217;s Microsoft&#8217;s Version Targeting Proposal [...]</p>
+					</dd>
+
+
+					<dt id="comment-59727"><a href="#comment-59727" title="Link to this reply">#45</a> On January 23rd, 2008 8:36 pm <span><a href='http://electriblog.com/' rel='external nofollow' class='url'>Demian</a> replied:</span></dt>
+					<dd>
+												<p>I&#8217;m not going to put anything on my code that&#8217;s outside of what the W3C sets as a standard. Period.<br />
+I didn&#8217;t like the DOCTYPE, Conditional comments or CSS hacks. I don&#8217;t like this either. I&#8217;m tired of covering MS errors.<br />
+I want to code once, without hacks or foreign code and using the available standards.<br />
+They want us to hear them and help them. Did they hear us back then when they where making the web fit their needs?<br />
+I code for standards, not browsers.<br />
+I say NO to browser targeting.</p>
+					</dd>
+
+
+					<dt id="comment-59728"><a href="#comment-59728" title="Link to this reply">#46</a> On January 23rd, 2008 9:25 pm <span><a href='http://electriblog.com/?p=186' rel='external nofollow' class='url'>Electriblog &raquo; Blog Archive &raquo; If browsers were cars&#8230;</a> replied:</span></dt>
+					<dd>
+												<p>[...]    January 24th, 2008If browsers were cars&#8230; So, there&#8217;s a lot of discussion all around the web because of the proposal for browsertargeting. If you don&#8217;t know what I&#8217;m talking about, here you have the main sites: IEBlog announcement The A List Apart article by Aaron Gustafson (and Eric Meyer&#8217;s opinion) Jeffrey Zeldman&#8217;s opinion (from A List Apart) Drew McLellan&#8217;s and Dean Edwards&#8216; opinion (from WaSP) Robert O&#8217;Callahan&#8217;s opinion (fom Mozilla) and follow-up Anne van Kesteren&#8217;s opinion (from Opera) Maciej Stachowiak&#8217;s opinion (from WebKit) [...]</p>
+					</dd>
+
+
+					<dt id="comment-59729"><a href="#comment-59729" title="Link to this reply">#47</a> On January 23rd, 2008 9:26 pm <span>WaSP Member <a href='http://www.splintered.co.uk/' rel='external nofollow' class='url'>plauke</a> replied:</span></dt>
+					<dd>
+												<blockquote><p>Could WaSP please post an official position on this subject</p>
+</blockquote>
+<p>as bruce lawson already mentioned, the WaSP as a whole (mystical entity) was not consulted, and many didn&#8217;t even know it was in the works at all. and, not surprisingly, every single WaSP (full member or task force member) has their own ideas, viewpoints, agendas&#8230;getting consensus has historically been difficult, nay impossible.</p>
+<p>so, sadly, all you&#8217;re left with is disparate opinions of individuals. even more sadly, many members of WaSP who were completely in the dark on this certainly feel a bit awkward, if not outright dirty IMHO, of now being seen by the part of the community that thinks this is insanity as part of &#8220;that lot that tried to ratify it in the name of the community&#8221;&#8230;</p>
+<p>Gérard: it may not have come across, but there was a very heavy dose of sarcasm permeating my previous two comments. and the IE6 dig was taking it ad absurdum: yes, IE8 won&#8217;t switch to IE6 rendering, but only as far back as IE7. but once the meta is out there, the clueless developers which up to now have been unable to actually work with standards (the ones that Aaron mentions in his article, and the ones that were responsible for the IE6-specific sites that bombed so fantastically when IE7 came out, the ones that didn&#8217;t even bother checking the IE7 beta versions and use the ample time the betas were out to clean up their act) will see them, not understand them, and start plugging in the version number of the IE were their site still used to work as they intended. a mix of cargo cult and ignorance.</p>
+					</dd>
+
+
+					<dt id="comment-59733"><a href="#comment-59733" title="Link to this reply">#48</a> On January 24th, 2008 12:29 am <span><a href='http://www.grantpalin.com/2008/01/23/how-ie8-gets-standards-compliant/' rel='external nofollow' class='url'>How IE8 Gets Standards Compliant | GrantPalin.com</a> replied:</span></dt>
+					<dd>
+												<p>[...] The Web Standards Project website has posted a disclaimer that, although individuals who are members of the project have worked with Microsoft in this venture, said individuals do not represent WaSP in this regard. [...]</p>
+					</dd>
+
+
+					<dt id="comment-59734"><a href="#comment-59734" title="Link to this reply">#49</a> On January 24th, 2008 12:39 am <span>Robin Massart replied:</span></dt>
+					<dd>
+												<p>plauke, blawson:</p>
+<p>Thanks for your responses. The article in the MS task force section clearly states: </p>
+<blockquote><p>&#8220;In this week’s issue of A List Apart, I was (finally) able to reveal Microsoft’s new strategy for forward-compatibility, a strategy that was developed hand-in-hand with several of us here at WaSP.&#8221;</p></blockquote>
+<p>Likewise Chris Wilson&#8217;s IE blog states:</p>
+<blockquote><p>&#8220;With this painful and unexpected lesson under our belt, we worked together with The Web Standards Project (in the WaSP-Microsoft Task Force) on this problem.  I can’t give them enough credit for this work;&#8221;</p></blockquote>
+<p>As far as I&#8217;m concerned that&#8217;s an endorsement from WaSP for this proposal. If WaSP does not endorse this, these sentences need to be re-written to make it clear that WaSP, as a group, does not endorse this.</p>
+<p>I appreciate that individual members have their own opinions. But many half clued up managers will be reading these blogs and forcing their web designers to include this meta tag, since WaSP thinks it&#8217;s OK. This suggestion is fundamental to the future of standards in my opinion and if WaSP can&#8217;t come to a consensus on this I feel WaSP is heading down a slippery path (I personaly feel it is already suffering a lack of direction since Molly left, but that&#8217;s another matter).</p>
+<p>WaSP has fought so hard to make the internet standards aware. And just as standards become mainstream along comes a proposal that essential makes non-standard HTML rendering the most common on the web since: </p>
+<p>a) most sites do not and probably will not have this tag on their pages</p>
+<p>b) most people use IE</p>
+<p>c) therefore most people with see most pages rendered in a non-standard way.</p>
+<p>I have one question to all those WaSP members who support this idea. Do you honestly believe that any browser manufacturer will, &#8220;to the end of the web&#8221;, keep shipping their latest browsers with rendering modes for ALL their previous browsers. eg that IE 20 will ship with 100% accurate rendering modes for IE19, IE18, IE17 all the way down to IE7? Please&#8230; Microsoft doesn&#8217;t even do that for Word (it&#8217;s flagship application), why should it do so for IE?</p>
+					</dd>
+
+
+					<dt id="comment-59736"><a href="#comment-59736" title="Link to this reply">#50</a> On January 24th, 2008 2:23 am <span><a href='http://mandalaair.info/wordpress/?p=396' rel='external nofollow' class='url'>&nbsp; IE8 Version Targeting causes quite a stir&nbsp;by&nbsp;Mandala Air</a> replied:</span></dt>
+					<dd>
+												<p>[...] Microsoft&#8217;s own announcement drew both positive and negative comments Jonathan Snook welcomes the change Anne van Kesteren is not a fan A Mozilla developer chimes in PPK defines the semantics An official Web Standards Project statement on their involvement Jeremy Keith thinks the implementation is broken Andy Budd sees opportunities for other browser vendors Ethan Marcotte read it two weeks ago and still can&#8217;t decide Zeldman steps up to defend the idea John &#8216;jQuery&#8217; Resig thinks the new tag is worthless Gareth Rushgrove tentatively approves of the change Dean Edwards posts some pertinent quotes from the WHATWG mailing list Roger Johansson doesn&#8217;t think he likes it Rachel Andrew sees it as a backwards step Safari say they won&#8217;t be implementing version targeting Hixie thinks the move could be construed as anti-competitive Lachlan Hardy thinks we should accept the inevitable Mike Davies says it&#8217;s the end of the line for IE [...]</p>
+					</dd>
+
+
+					<dt id="comment-59738"><a href="#comment-59738" title="Link to this reply">#51</a> On January 24th, 2008 4:20 am <span>Tom replied:</span></dt>
+					<dd>
+												<p>I feel sorry for the IE developers, they are trying to make IE more standards compliant while trying keep their employer happy.  I fear this will be the best compromise.</p>
+					</dd>
+
+
+					<dt id="comment-59740"><a href="#comment-59740" title="Link to this reply">#52</a> On January 24th, 2008 5:07 am <span>Bitter replied:</span></dt>
+					<dd>
+												<p>How can anyone not be amazed at this event and how things have turned out?</p>
+<p>Today is the day that WaSP died. One person undoing everything that was being fought for and agreeing arbitarily to suggestions from the worst company in the world without even consulting other members.</p>
+<p>WaSP FAILED miserably, open web standards is meaningless now.</p>
+					</dd>
+
+
+					<dt id="comment-59747"><a href="#comment-59747" title="Link to this reply">#53</a> On January 24th, 2008 8:28 am <span><a href='http://jystewart.net/process/2008/01/the-fury-that-microsoft-have-unleashed/' rel='external nofollow' class='url'>a work on process &raquo; The fury that Microsoft have unleashed</a> replied:</span></dt>
+					<dd>
+												<p>[...] Eric Meyer and Jeffrey Zeldman explaining their support, Jeremy Keith suggesting that at the very least this is the wrong way round (the default should be the latest and greatest rendering engine), Drew McLellan (Web Standards Group Lead) pointing out that while members of the WaSP Microsoft Task Force had been involved in the initiative, this is not (currently) a WaSP-endorsed idea, comments from Ian Hickson, and Sam Ruby and his commenting crowd considering the technical implications. [...]</p>
+					</dd>
+
+
+					<dt id="comment-59750"><a href="#comment-59750" title="Link to this reply">#54</a> On January 24th, 2008 9:41 am <span><a href='http://manwithnoblog.com/2008/01/24/round-one-we-blinked-and-the-corporate-sector-won/' rel='external nofollow' class='url'>Man with no blog &raquo; Round One - We Blinked and the Corporate Sector Won</a> replied:</span></dt>
+					<dd>
+												<p>[...] Well we know that the WaSP-Microsoft Task Force have been working on this for a while. The question does come up if this has so many problems, what where the alternatives, like. Is it possible that they where so bad, or that Microsoft just put a gun to the task force&#8217;s head and said &#8220;We are doing it with you or without you.&#8221; &#8211; I really hope this was not the case. I guess we will never know with a cloak of NDA around it all. [...]</p>
+					</dd>
+
+
+					<dt id="comment-59751"><a href="#comment-59751" title="Link to this reply">#55</a> On January 24th, 2008 10:30 am <span><a href='http://minimaldesign.net/' rel='external nofollow' class='url'>minimal design</a> replied:</span></dt>
+					<dd>
+												<p>I just read Zelman&#8217;s article&#8230; wow&#8230;</p>
+<p>Is there some sort of official procedure to get those behind this proposal kicked out of the WaSP?</p>
+<p>If not, you might as well change the tag line to: &#8220;Working together for Microsoft&#8221;&#8230;</p>
+					</dd>
+
+
+					<dt id="comment-59752"><a href="#comment-59752" title="Link to this reply">#56</a> On January 24th, 2008 10:37 am <span><a href='http://www.csskarma.com/blog/?p=49' rel='external nofollow' class='url'>csskarma.com/blog &raquo; IE8 - Version Targeting</a> replied:</span></dt>
+					<dd>
+												<p>[...] The current hot topic in the world of web development is IE8 and its version targeting, Eric Meyer&#8217;s article on A List Apart and Aaron Gustafson&#8217;s Beyond DOCTYPE. I&#8217;ve commenting all over the place about this, so I thought I&#8217;d consolidate all the comments into a blog post, and maybe elaborate a little. [...]</p>
+					</dd>
+
+
+					<dt id="comment-59753"><a href="#comment-59753" title="Link to this reply">#57</a> On January 24th, 2008 11:02 am <span><a href='http://www.positionmakers.com/' rel='external nofollow' class='url'>Mr K PositionMakers</a> replied:</span></dt>
+					<dd>
+												<p>Come on now. Why are we fixing things for Microsoft? Let&#8217;s move on to a new world without paid software :).</p>
+					</dd>
+
+
+					<dt id="comment-59762"><a href="#comment-59762" title="Link to this reply">#58</a> On January 24th, 2008 12:43 pm <span>Ray McCord replied:</span></dt>
+					<dd>
+												<p>Thing is&#8230; locking into IE 7 strict mode *ends* the evolution of rendering in IE from then on, because every client and lazy developer will use the known rendering mode of IE 7 that they will get for free by doing *nothing at all*.</p>
+<p>This means, going forward, sites will *only* evolve to the level technically possible in IE 7 and no further, because it would cause more to &#8220;add bells and whistles&#8221; that only work in alternative browsers with less perceived market share.</p>
+<p>Face it, a lot of people don&#8217;t even know there are other browsers than IE, or even that IE is something separate of Windows that has its own name. It&#8217;s just &#8220;the Internet&#8221;. These people, and MS-dominated intranets that have locked into some previous version of IE, will always leave IE some measure of market share. This is especially true while IE ships as the default Windows browser, or if XP never gets replaced and we get stuck in IE 6 default baseline mode forever.</p>
+<p>In any event, a release version that implements this concept would mean necessarily mean standards evolution stops, since new standards weren&#8217;t implemented at the moment things froze at IE 7. HTML 5 can kiss its a** goodbye. XHTML with a proper mime-type will never see the light of day. The W3C may as well just hand over the keys to MS, since only MS can unlock the Web and standardize anything that has the chance of going mainstream. CSS 3 becomes a pipe dream. The WHAT-WG? POOF! It&#8217;s like they never existed. Can you say &#8220;The WHO-WG?&#8221; All of the work that people have put into standards like Web Applications 1.0 and Web Forms and SVG and MathML and&#8230; *all of it* &#8212; every single last thing we&#8217;ve done for almost a *decade* goes up in smoke nearly *instantly*.</p>
+<p>So, go ahead, swallow that pill, my friends. Enjoy the rest of your careers inside the Matrix.</p>
+<p>Those of us who care will not go idly into that cold night.</p>
+<p>Regards</p>
+					</dd>
+
+
+					<dt id="comment-59773"><a href="#comment-59773" title="Link to this reply">#59</a> On January 24th, 2008 6:08 pm <span>Pinoccio replied:</span></dt>
+					<dd>
+												<p>Just use DOCTYPE for HTML 5.</p>
+<p>If you use  it will send IE8 into standards mode. Other browsers act the same.</p>
+<p>Problem solved. No meta tags.</p>
+					</dd>
+
+
+					<dt id="comment-59776"><a href="#comment-59776" title="Link to this reply">#60</a> On January 24th, 2008 6:27 pm <span>Ray McCord replied:</span></dt>
+					<dd>
+												<p>Alternatives NOW!</p>
+<p><a href="http://blogs.msdn.com/ie/archive/2008/01/21/compatibility-and-ie8.aspx#7228772" rel="nofollow">http://blogs.msdn.com/ie/archive/2008/01/21/compatibility-and-ie8.aspx#7228772</a></p>
+<p>Give them something to do, other than coding the original proposal!</p>
+					</dd>
+
+
+					<dt id="comment-59778"><a href="#comment-59778" title="Link to this reply">#61</a> On January 24th, 2008 7:20 pm <span>Ray McCord replied:</span></dt>
+					<dd>
+												<p>@Pinoccio:</p>
+<p>It is not even near written in stone yet. HTML 5 is a draft; a mind dump to get it down and start discussing &#8212; nothing more. Stuff can and will be changed. It will be nowhere near complete in time for us to even have the hope of it being involved in saving us from this debacle.</p>
+<p>I commend you for attempting to present an alternative, though. We need more people to throw out some reasoned ideas!</p>
+					</dd>
+
+
+					<dt id="comment-59779"><a href="#comment-59779" title="Link to this reply">#62</a> On January 24th, 2008 7:29 pm <span>Ray McCord replied:</span></dt>
+					<dd>
+												<p>&#8230;and by &#8220;throw out&#8221; I don&#8217;t mean discard.</p>
+<p>If you have *any idea* that might have merit and *meet the goals of both camps* (IE and standards) of backward compatibility with IE6-era documents without having to edit them *AND* forward compatibility that lets standards-compliant pages get rendered in the latest available standards mode in IE 8 and up without having to add cruft for the good guys that authored to standards and shouldn&#8217;t have to go beyond the DOCTYPE to signify that in the page, then lay it on the line, baby. ;)</p>
+<p>See my post above, Alternatives NOW! and contribute to the alternative solution we so urgently need to save the work of the last half-decade of standards advancement.</p>
+<p>Thank you!</p>
+					</dd>
+
+
+					<dt id="comment-59781"><a href="#comment-59781" title="Link to this reply">#63</a> On January 24th, 2008 7:33 pm <span>Pinoccio replied:</span></dt>
+					<dd>
+												<p>@Ray (and anyone alse interested):</p>
+<p>See here for more info:</p>
+<p><a href="http://ejohn.org/blog/html5-doctype/" rel="nofollow">http://ejohn.org/blog/html5-doctype/</a></p>
+<p>Yeah, I guess we can speculate that DOCTYPE for HTML5 could change. Somehow I don&#8217;t see it happening since it is already recognized that way by all browsers, if I understood that guy properly.</p>
+					</dd>
+
+
+					<dt id="comment-59782"><a href="#comment-59782" title="Link to this reply">#64</a> On January 24th, 2008 8:21 pm <span>Ray McCord replied:</span></dt>
+					<dd>
+												<p>@Pinoccio:</p>
+<p>Interesting option. Thanks for the link.</p>
+<p>If this becomes the majority consensus of the best course, I think we should have a thorough look at what, if any, ramifications this could have before committing ourselves to this alternative.</p>
+<p>As this specification is still a draft, though, I think extra care is advised due to not having any real-world data as to how it will act in the wild, should we just start using the HTML5 DOCTYPE without the actual document semantics (tags and such) that are supposed to go along with it. :)</p>
+<p>I must admit, it beats extra tags and proprietary features. It also brings IE closer to the behavior of other modern browsers in their treatment of an likely standard. That and it meets the backward compatibility requirement for a resolution. The only thing is it still means that perfectly legitimate standards-compliant, strict-DOCTYPE pages of the now will be forever locked into the technological peak of rendering capabilities existing in IE 7 without being modified.</p>
+<p>Well, if a &#8220;works as good as HTML 4/XHTML 1 does now&#8221; subset of HTML 5 can be pragmatically implemented by the time we see IE 8 hit the net, I guess we might just get out of this one without some sort of blood sacrifice.</p>
+<p>But, when has that ever happened before in Web development? ;)</p>
+<p>(/me fingers crossed)</p>
+					</dd>
+
+
+					<dt id="comment-59790"><a href="#comment-59790" title="Link to this reply">#65</a> On January 25th, 2008 5:22 am <span>Rick replied:</span></dt>
+					<dd>
+												<p>Well, I must say, the Microsoft propaganda and lobbying machine is still going strong.  Within just a few days Microsoft has completely undermined the web standards effort, and turned WaSP, ALA and a number of promininent members of the community into mouthpieces for its proprietary &#8216;standards&#8217; strategy, aka &#8216;embrace, extend and extinguish&#8217;.</p>
+<p>For those who&#8217;ve only gotten into the whole standards thing when they started designing websites: this is nothing new. This has  been happening time and time again in the software world for the past few decades. It&#8217;s standard operating procedure for the boys and girls at Microsoft.</p>
+<p>It appears they didn&#8217;t even have to make much of an effort to come up with a plausible cover story this time: the whole concept of version targetting is completely and utterly unrealistic. Making people inside the industry drink the kool-aid must have rarely been so easy for MS.</p>
+<p>I had hoped the webdev community stood a better chance of standing up to Microsoft&#8217;s tactis than the old pre- open source IT community, but now that prominent members have sold out and the credibility of WaSP and ALA have been completely undermined, I&#8217;m afraid our only hope now is that IE can be defeated in the marketplace. Fat chance of that happening.</p>
+<p>Executive summary: although Microsoft has been forced to make IE8 capable of being current standards compliant, it has at the same time ensured that it will be very unlikely to be forced to implement open web standards EVER AGAIN, both at a technical and political level. Forget about HTML5, CSS3 etcetera. Unless any browser manufacturer can beat MS, this is the end of the line for web standards.</p>
+					</dd>
+
+
+					<dt id="comment-59792"><a href="#comment-59792" title="Link to this reply">#66</a> On January 25th, 2008 7:10 am <span>WaSP Member <a href='http://www.splintered.co.uk/' rel='external nofollow' class='url'>plauke</a> replied:</span></dt>
+					<dd>
+												<p>in the article, aaron states:</p>
+<p>“We could specify the version of the languages we use, such as CSS 2.1 or JavaScript 1.5. Unfortunately, browser vendors often implement only part of a spec and the interpretation of a specification often differs from browser to browser, so any two contemporary browsers may offer completely different renderings of the same CSS or may trigger completely different events from the same form control.”</p>
+<p>well, how’s this: what if we were to version the languages, and carry on doing EXACTLY what we’re already doing to accommodate for differences in browsers, i.e. use conditional comments and possibly a tiny amount of hacks/javascript-based sniffing (capability sniffing and/or browser sniffing)?</p>
+<p>personally, my gut feeling here would be that this is more “right” – you’re defining which W3C spec you’re assuming for the page to work, and make slight accommodations where you know for a fact that a specific browser hasn’t implemented it right. it’s specifying the capabilities expected of a browser, rather than the exact browser and version number that the page assumes.</p>
+<p>old legacy/intranet sites can stay as they are (without the versioning), and then it can be assumed they’re using the current JS spec and CSS 2.1. that would be the frozen bit: if you don’t version, this is the assumed spec. IE can then do whatever it likes when it comes across those pages…kick in a separate IE7 rendered / JS engine or whatever.</p>
+<p>yes, developers would have to modify their code to add versioning, even to their existing sites. but this feels descriptive (similar to doctypes, it’s something you add to your page to explicitly describe what it IS, not what it should do…a subtle, yet fundamental difference in my eyes).</p>
+<p>so…somebody explain to me again why this wouldn’t be far more desirable? am i missing something?</p>
+					</dd>
+
+
+					<dt id="comment-59794"><a href="#comment-59794" title="Link to this reply">#67</a> On January 25th, 2008 9:14 am <span><a href='http://theportraitofageek.com/blog/?p=26' rel='external nofollow' class='url'>theportraitofageek.com &raquo; X-UA-Compatible &amp; ΙΕ8</a> replied:</span></dt>
+					<dd>
+												<p>[...] O browser δεν έχει σκάσει μύτη ακόμα και καλό θα ήταν αυτό να διορθωθεί όσο είναι ακόμα νωρίς. Γιατι απ&#8217; οτι διαβάζω δεν έχει και την πλήρη υποστήριξη του WaSP. [...]</p>
+					</dd>
+
+
+					<dt id="comment-59807"><a href="#comment-59807" title="Link to this reply">#68</a> On January 25th, 2008 3:17 pm <span>Thomas replied:</span></dt>
+					<dd>
+												<p>&#8220;If you have *any idea* that might have merit and *meet the goals of both camps* (IE and standards) of backward compatibility with IE6-era documents without having to edit them *AND* forward compatibility that lets standards-compliant pages get rendered in the latest available standards mode in IE 8 and up without having to add cruft for the good guys that authored to standards and shouldn’t have to go beyond the DOCTYPE to signify that in the page, then lay it on the line, baby. ;)&#8221;</p>
+<p>Your post leaves out the possibility that there is no acceptable solution that will give Microsoft what they want while not impeding the forward progress of an open, standards based web.  I believe there are a lot of good reasons that have been given why it would be wrong and harmful for standard behavior that other browsers support to require an opt-in in IE8.</p>
+<p>If Microsoft doesn&#8217;t want a broken web then shouldn&#8217;t they make sure that pages that display properly in most other browsers also work in their new browser by default without any changes?  I have to agree with the suggestion that if there are broken pages that a developer doesn&#8217;t want to fix and it needs to be treated differently by IE then they should opt-out of standards mode and specify a previous version of IE.  That would make it easier for intranet applications to make the transition.  Otherwise, IE should treat web sites the way that just about every other browser does and render them according to the standards laid out to the best of its ability.</p>
+					</dd>
+
+
+					<dt id="comment-59821"><a href="#comment-59821" title="Link to this reply">#69</a> On January 25th, 2008 8:21 pm <span><a href='http://kechjo.cogia.net/' rel='external nofollow' class='url'>Keith Bowes</a> replied:</span></dt>
+					<dd>
+												<p>OK, this might be the stupidest thing you&#8217;ve ever heard (but considering the stupid things I&#8217;ve written, I somehow doubt it), but why not allow the user to decide if they want pages to use a legacy rendering or not and then have a blacklist/whitelist of sites that are the exception (like with popups)?  You could have most sites use the latest and greatest features and then have the &#8220;Intranet zone&#8221; default to the legacy rendering.</p>
+<p>But personally, I don&#8217;t see the deal with sites breaking.  I may be wrong, but it doesn&#8217;t seem like any functionality is lost between browser versions (even in Netscape 6 when they changed the DOM, surely Netscape 4 sites would have still worked, only without the DHTML goodness).  It seems more of a case of developers or their clients wanting absolute control over the display of web pages in all cases, which is an impossibility for this medium.</p>
+					</dd>
+
+
+					<dt id="comment-59834"><a href="#comment-59834" title="Link to this reply">#70</a> On January 26th, 2008 5:59 am <span>Ray McCord replied:</span></dt>
+					<dd>
+												<p>@ Thomas:</p>
+<blockquote><p>Your post leaves out the possibility that there is no acceptable solution that will give Microsoft what they want while not impeding the forward progress of an open, standards based web.</p></blockquote>
+<p>I don&#8217;t believe that to be the case, at least if Microsoft&#8217;s motive is indeed to not break existing pages that currently work in any version of IE to date while making IE 8 more compliant to current standards.</p>
+<blockquote><p>I believe there are a lot of good reasons that have been given why it would be wrong and harmful for standard behavior that other browsers support to require an opt-in in IE8.</p></blockquote>
+<p>Indeed. The DOCTYPE was more of a &#8220;natural opt-in&#8221; than the current proposal. It didn&#8217;t feel like an opt-in because the split between pages written to quirks and pages written to standards fell (more or less) dead on the line of who used a compliant DOCTYPE and who didn&#8217;t. So, opt-in was essentially what happened last time with DOCTYPE switching and so that is the approach this time around &#8212; to keep those millions of old documents that already work in quirkier versions of IE working in newer versions of IE without changes representing phenomenal expense.</p>
+<p>So, Microsoft *WILL NOT* break any pages that currently work with any version of IE to date and *WILL NOT* require them to be edited to accommodate moving forward with more complete standards compliance.</p>
+<p>This means IE *MUST* be able to tell which standards mode a document wants, and can&#8217;t use just the DOCTYPE to do it, because it&#8217;s already been screwed up with IE 6. That means a switch must be located in the document (like a META tag or a conditional comment) or must be linked to the document (like HTTP headers, external stylesheets, scripts, images, or other object).</p>
+<p>The short of it is, if we can&#8217;t find some other way to signal that distinction in a more granular manner than a blanket opt-in/opt-out trigger, web standards takes a big blow and proprietary IE rendering gets a big shot in the arm &#8212; as IE 7 standards mode rendering becomes the default for all documents that don&#8217;t have some trigger in them that send IE 8 and above into another mode.</p>
+<p>MS can&#8217;t change the user agent string, because too much code uses that to determine the DOM and/or generate the actual page and/or style rules embedded in the page and/or determine the availability of the IE feature set (ActiveX, VRML, COM interface, expressions, VBScript, and more). If they change the UA string, they break IE-specific pages. This would devastate their intranet market and MS *WON&#8217;T* do that, as it has a honking load of back-office, front-office, server-room, and middleware market share depending on IE for web integration.</p>
+<p>MS can&#8217;t just kill the existing bug-based style hooks because of open conditional comments like &#8220;if IE&#8221; from back in the day when, if you targeted styles at IE 5, you knew it was quirks mode regardless of DOCTYPE, so if the DOCTYPE was valid, you assume IE 6 standards mode and bug-fix accordingly. This logic assumed there would be no more IE versions after 6 or that things like Chris Wilson mentioned (about boxes overflowing against standards) would not be fixed in future &#8220;standards mode&#8221;, because that is &#8220;just how IE does it&#8221;.</p>
+<p>If that whole thing about assuming &#8220;there would be no more IE versions after 6&#8243; sounds naive, recall that MS announced no further development on IE after 6 came out. The IE development team was disbanded. People thought &#8216;standards mode&#8221; in IE would forever be the broken implementation that was in IE 6. People coded to this assumption and a heck of a lot of pages got made in the interim between that announcement and MS announcing the IE team was getting back together to make another version.</p>
+<p>The damage had already been done. So, we have code that assumed standards mode would always be the errant behavior of IE 6. Regrettably, the differences between IE 6 standards mode and the following IE versions will become more and more divergent. Unmaintained pages will become more and more broken over time and less and less usable.</p>
+<p>Another unfortunate factor is that, since IE 7 is already out without any new switching mechanism, nothing can be done about what IE 7 broke of the unmaintained pages out there. However, more pages will become unmaintained during the life cycle of IE 7. This makes for changes to standards mode behavior in IE 8 even more of a problem. With damage to maintained pages that broke with IE 7 getting fixed, the only logical fall-back point for the current &#8220;standards mode&#8221; is the interpretation as it is now in IE 7. This limits the damage to what has already occurred.</p>
+<p>So, the question becomes this: Is there any way current and future pages can be distinguished from pages made for IE 6 or 7 standards mode?</p>
+<p>I think it is safe to assume people will apply different styles for IE 8 than IE 7, using either conditional comments or some new mechanism available in IE 8 and up. That should be looked at as a more granular switching mechanism than an explicit opt-in mechanism.</p>
+<p>I think media queries are a promising option to look into for signaling IE 8 to use the latest standards mode. If once could query the UA string for MSIE or see if &#8220;conditional comments&#8221; are implemented, or some such, and since only IE 8 and up would know about media queries&#8230; you know to switch on maximum standards-compliance mode. Such a mechanism could possibly be used in conjunction with conditional comments to bury this in an IE-only stylesheet.</p>
+<p>That, or maybe just an evidence-based decision tree that errs on the side of IE 7 rendering unless there is evidence of explicit compensation for IE 8 (using an explicit major version number of 8 in an inclusively matching conditional comment) or something like that.</p>
+<p>Hence, my original post.</p>
+<p>So, let me revise it a bit to ask &#8220;can we get around the problem using what is already available with current or soon-to-be standards?&#8221;</p>
+<p>HTML 5 DOCTYPE may help or may not. Depending on if we end up with fallout from using it as a switching mechanism too soon, we may end up with yet another breaking point or we may end up constraining HTML 5 development to limiting factors of widespread premature deployment issues.</p>
+<p>Media queries are already implemented, at least in part, in some major browsers, and so are likely to remain viable and part of some future standard even if CSS-3 never makes it out the door (which we have absolutely no reason to think will occur).</p>
+<p>Conditional comments are already implemented in IE since version 5, with the commitment to their longevity. So, there is that as a potential part of a solution.</p>
+<p>Let&#8217;s just all put out heads together and see what else we can come up with that is more palatable than version targeting and markup-based switching. I&#8217;d like to see visual rendering issues kept separate of structural changes, if possible. It is a presentation issue, after all.</p>
+<p>Regards.</p>
+					</dd>
+
+
+					<dt id="comment-59835"><a href="#comment-59835" title="Link to this reply">#71</a> On January 26th, 2008 6:57 am <span>Ray McCord replied:</span></dt>
+					<dd>
+												<p><strong><em>We owe it to ourselves:</em></strong></p>
+<p>Alternatives NOW!</p>
+<p>See here for a breakdown of the problem (my previous post above) and start helping out on an alternative solution:</p>
+<p><a href="http://blogs.msdn.com/ie/archive/2008/01/21/compatibility-and-ie8.aspx#7254512" rel="nofollow">IE Blog Comment</a></p>
+<p><strong>Web developers unite!</strong></p>
+					</dd>
+
+
+					<dt id="comment-59885"><a href="#comment-59885" title="Link to this reply">#72</a> On January 27th, 2008 10:46 pm <span>RadiantGX replied:</span></dt>
+					<dd>
+												<p>&#8220;For many people, an excuse (meta tag lock-in) is better than an achievement (true standards compliance) because an achievement, no matter how great, leaves you having to prove yourself again in the future (IE9??) but an excuse (IE6-7) can last for lifetime (MS web reputation?).&#8221;   </p>
+<p>~Eric Hoffer (if he were a web designer)</p>
+					</dd>
+
+
+					<dt id="comment-59888"><a href="#comment-59888" title="Link to this reply">#73</a> On January 28th, 2008 1:38 am <span><a href='http://ampm-soluciones.com.ar/blog/2008/01/28/internet-explorer-80-modo-super-estandar/' rel='external nofollow' class='url'>Tecnología AMPM | El blog de AMPM Soluciones que repasa las noticias más relevantes del rubro &raquo; Internet Explorer 8.0: modo Super Estandar</a> replied:</span></dt>
+					<dd>
+												<p>[...] Al parecer los chicos de A List Apart, anunciaban la aparición del tag meta X-UA-Compatible, un tag que la gente de Microsoft ha desarrollado sin tener en cuenta al resto de navegadores. Como era de esperar la mecha ardió casi instantáneamente, recordando épocas del ActiveX() y el document.all, y desarrolladores como John Resig, Anne van Kesteren, Gareth Rushgrove o Roc (de mozillazine) han tachado la iniciativa de inútil y perjudicial para el desarrollo web en general. Aunque aún es una propuesta, la cosa promete y seguro que este tema va a dar mucho más que hablar en los próximos meses. [...]</p>
+					</dd>
+
+
+					<dt id="comment-59899"><a href="#comment-59899" title="Link to this reply">#74</a> On January 28th, 2008 7:43 am <span>ross replied:</span></dt>
+					<dd>
+												<p>I&#8217;m not one of those geeks out there or in management level but here I am, telling you how it is and how it should be!<br />
+   As for any out there that disagree with this well, this is just a feeling as is this saying; That we all [as a world of nations {as people}] want, need and have to have access to the Web [whether we are browsers or users]. For one simple reason that one without the other won&#8217;t work, full stop!<br />
+   Think of the Web as one large page and many readers world wide.<br />
+   So many readers per page [variety is necessary], so many more pages [of different contents] are necessarily needed too, to accommodate different levels of minds. The Web is a place of intellectual stimulation [in many different levels]; Thus it should be made user friendly; as progress [of our world] onwards is very rapid, any delay in the setting up of new sites, then the old turns to stale [as old information dries the brain].<br />
+   The Web should remain in a growth format at all times; New people born, new ideas brought into the world, other stimulation&#8217;s been born through constant use. Like songs of old give birth to songs of new as old is listened to.<br />
+   One mans sayings  [as this may be] is another mans  ideas been born a-new.<br />
+   Instead of conflict of products here, now is the time to unit your efforts and profits will come ten-fold, both for the users and the browsers.<br />
+   Need I say any &#8211; more for your comprehension.<br />
+   While keeping up to your protocols around the building of this Idea.</p>
+					</dd>
+
+
+					<dt id="comment-59902"><a href="#comment-59902" title="Link to this reply">#75</a> On January 28th, 2008 8:04 am <span><a href='http://olivierfarlotti.free.fr/' rel='external nofollow' class='url'>Oric</a> replied:</span></dt>
+					<dd>
+												<p>Why should others browsers companies should implement this &#8220;MS&#8221; tag ?</p>
+<p>Let MS browser support it for they own purpose and let the other browsers following the Web Standards way plain and simple.</p>
+<p>So, it will only be the developper concern to use it or not.</p>
+<p>Anyway, if MS want to put it on market, they will.</p>
+<p>My concern regards to the rude comments above is : its just an illusion to think MS does not influence W3C since years.<br />
+But the prove is, that meanwhile, we have to do with it everyday but nonetheless MS had to work in web standard way afterall (IE8 &#8211; cross finger).</p>
+<p>Also, not putting a browser-targetting (standard way) will be allways easier than managing one, so web standards will allways have our support has developper (yes only developper, has end-user dont care about what display his page has long has it display it correctly).</p>
+<p>So, what is stronger ? Our faith in web standards or MS ?</p>
+					</dd>
+
+
+					<dt id="comment-59929"><a href="#comment-59929" title="Link to this reply">#76</a> On January 28th, 2008 4:27 pm <span>John Foliot replied:</span></dt>
+					<dd>
+												<p>so here&#8217;s a question&#8230;</p>
+<p>Say you have a document that lacks a DTD, but *includes* the metatag.  What mode do you get?</p>
+<p>The lack of a DTD triggers quirks mode, but the metatag would trigger IE8.  What should it be?  Will the lack of DTD continue to trigger quirks mode, or will the new metatag *replace* the need for a DTD in IE.  What will this do to/for the other browsers?  (Do i hear the word &#8220;break&#8221;&#8230;?)</p>
+<p>Despite Zelman&#8217;s and Meyer&#8217;s reasoned and understandable explanations, this time they are wrong to support MS&#8217;s idea &#8211; it&#8217;s a backward step no matter which way you look at it.  Sorry.</p>
+<p>JF</p>
+					</dd>
+
+
+					<dt id="comment-59941"><a href="#comment-59941" title="Link to this reply">#77</a> On January 28th, 2008 9:37 pm <span>D Tondro replied:</span></dt>
+					<dd>
+												<p>I think we need to hear from EACH and EVERY member of the WaSP and from the various well-known contributors of ALA on their opinions on the inclusion of the meta tag.</p>
+<p>These are the people who are most influential, the people who write the books we buy, who publish the articles we have derived most of our &#8220;standards&#8221; form.  </p>
+<p>Are they letting Microsoft off the hook again?<br />
+Are they backtracking their statements from the past?<br />
+Shouldn&#8217;t new technology (IE8) make the old technology (IE6) obsolete?<br />
+Shouldn&#8217;t companies be required to ditch the old sites for new ones if IE8 is really going to catch up to the other vendors like MS is promising?</p>
+<p>What is running thru those huge brains of yours on the subject?</p>
+					</dd>
+
+
+					<dt id="comment-59951"><a href="#comment-59951" title="Link to this reply">#78</a> On January 29th, 2008 12:40 am <span><a href='http://www.gtalbot.org/BrowserBugsSection/MSIE7Bugs/' rel='external nofollow' class='url'>Gérard Talbot</a> replied:</span></dt>
+					<dd>
+												<p>To Drew McLellan and Kimberly Blessing,</p>
+<p><strong>What is the WaSP&#8217;s official position on Microsoft&#8217;s &lt;meta&gt; version targeting implementation?</strong> As a Web Standards movement, we have to take a position and express it.</p>
+<p>By now, we all have read a few blogs, seen lots of comments and had sufficient time to weight the advantages and disadvantages, etc&#8230; and form for ourselves an opinion&#8230;</p>
+<p>My position is that <strong>IE8 should default to standards compliant rendering mode</strong> and a &lt;meta&gt;-tag could be used but only and only as an opt-out (say, to IE 7 &#8220;<em>standards</em>&#8221; mode). I put quotes around &#8220;standards&#8221; regarding IE 7 because we all know that IE 7&#8242;s standards mode has over 750 bugs (spec. violations, incorrect implementations) and about 500 unsupported properties, attributes and methods in HTML 4, CSS 2.1, DOM 1 &amp; 2, etc.</p>
+<p>Regards, Gérard</p>
+					</dd>
+
+
+					<dt id="comment-59975"><a href="#comment-59975" title="Link to this reply">#79</a> On January 29th, 2008 12:41 pm <span>Steven replied:</span></dt>
+					<dd>
+												<p>Personally, I&#8217;m not happy with the idea of requiring an extra tag in my (X)HTML code just to ensure IE will display my web pages correctly.  Frankly, if a developer&#8217;s pages break because the new browser is _less_ buggy than the previous version, then the developer should fix its web pages.  If the developer has been following proper web standards, but has to use various hacks to work around specific brands of browser&#8217;s bugs then maybe the developer should rewrite its pages so that they&#8217;re less convoluted (KISS)!</p>
+<p>Anyhow, if Microsoft is so worried about this then maybe they should try this out: If a web page has a DOCTYPE declaration, but has errors, or has a missing/malformed DOCTYPE then not only revert to quirks mode, but offer to render the page in IEn-m engine.  </p>
+<p>Let IE8 render web pages in Standards mode by default.  Don&#8217;t make conscientious web developers and competing browser developers shoulder the burden of correcting Microsoft&#8217;s mistakes.</p>
+					</dd>
+
+
+					<dt id="comment-59979"><a href="#comment-59979" title="Link to this reply">#80</a> On January 29th, 2008 2:34 pm <span>geraldo replied:</span></dt>
+					<dd>
+												<p>Phew, so many great comments, but whether technical, thoughtful, partisan,  from-the-heart, whatever, the fact remains: DOCTYPE will create a fork in web-standards, and a fork in the web itself. </p>
+<p>The very fabric of the web itself rests on Open Standards (TCP/IP, HTTP, HTML, you-name-it), but DOCTYPE will give Microsoft the space to do what it does best: ignore Open Standards, force us to to use IE because only IE can render web-sites properly, and hence keep Windows on the desktop so that we keep paying the Windows tax.</p>
+<p>Guys &#8216;n Gals: box hard for Open Standards! Don&#8217;t let proprietary standards dictate to you.</p>
+					</dd>
+
+
+					<dt id="comment-60045"><a href="#comment-60045" title="Link to this reply">#81</a> On January 30th, 2008 4:16 pm <span><a href='http://green-beast.com/blog/?p=247' rel='external nofollow' class='url'>What&#8217;s Best for Web Standards? - Beast-Blog.com</a> replied:</span></dt>
+					<dd>
+												<p>[...] Microsoft&#8217;s Version Targeting Proposal by Crew McLellan (WaSP). [...]</p>
+					</dd>
+
+
+					<dt id="comment-60118"><a href="#comment-60118" title="Link to this reply">#82</a> On January 31st, 2008 6:23 pm <span>Daniel replied:</span></dt>
+					<dd>
+												<p>@Mr. Talbot.</p>
+<p>I do understand your position. However, since unknown doctypes will trigger Full Standards Mode in IE8, I conclude this mode is the default.</p>
+<p>The old &#8211; or known &#8211; doctypes are the real opt-out while the meta-element is an additional opt-in.</p>
+<p>And according to Chros Wilson, it may have been the last time an additional mode was introduced.</p>
+					</dd>
+
+
+					<dt id="comment-60166"><a href="#comment-60166" title="Link to this reply">#83</a> On February 1st, 2008 12:44 pm <span>Mike replied:</span></dt>
+					<dd>
+												<p>I like many others see this as a valiant effort by the current IE development team to fix the bed that Microsoft made for itself. However, I also see this as a terrible idea which will in the end only reinforce the dominance of IE/Microsoft in dictating what will and will not be standard.</p>
+<p>The solution that everyone keeps asking for is actually very simple. However, it is one that Microsoft themselves have to create. The solution is to simply not intertwine IE8 into the Windows operating system like bone cancer in a person. If they were to make IE8 a separated app then those big, slow, dinosaur companies with intranets that require IE6 could keep IE6 for their intranets and <strong>also</strong> run IE8 without this proprietary markup for the internet.</p>
+<p>So, the solution is simple. Microsoft will have to make a sacrifice now for their past actions. I know it is completely unAmerican to expect a company to pay for their past deeds, but that is the right solution to this.</p>
+<p>They caused this whole mess with their despicable actions in the 90s so now they should shoulder the burden for fixing it in their software not our standards.</p>
+					</dd>
+
+
+					<dt id="comment-60167"><a href="#comment-60167" title="Link to this reply">#84</a> On February 1st, 2008 1:54 pm <span>digihoo replied:</span></dt>
+					<dd>
+												<p>It should be pointed out that as of March 8, 2007, Microsoft’s net worth as a company was $267.53 Billion (USD). So here’s a company that has had hundreds of billions of dollars and several years to address this issue and THIS is the best it can do? Hmm. </p>
+<p>Years ago, they could’ve afforded to hire every single one of the brightest minds on the planet &#8211; minds that probably could’ve entirely re-written the buggy browser from scratch in a few months time, had it chosen to do so. Again, Hmm. </p>
+<p>So they’ve had the money, the time and the opportunity to fix things. With some thought, doesn’t it become rather obvious that they are most likely CHOOSING non-compliance? </p>
+<p>This would keep intranet and legacy app users locked in to their current IE stranglehold for the foreseeable future. </p>
+<p>Microsoft is a company that has never chosen compliancy. And this has been a DELIBERATE choice all the way, right down the line. </p>
+<p>And they NEVER WILL, or they would’ve done so by now.</p>
+<p>By far the most disturbing aspect of this IE8 debate is that some developers and organizations who in the past have made standards compliance such high a priority have now thrown their reputations aside in order to back this hack.</p>
+<p>People and groups that have announced their support of Microsoft on this issue can no longer truly consider themselves advocates of standards compliance. You can’t have it both ways. Standards are standards, whether it’s for Microsoft or Mozilla.</p>
+<p>Anyway, here’s my suggestion: Since Microsft has chosen this course (with everyone else paying the bill), let’s put the onus on them to handle the breakage when it occurs. </p>
+<p>They should put a big red button on the main toolbar of IE8 with the message: “Having trouble viewing this site?”. </p>
+<p>In which case a “Yes” reply would revert the browser back to IE7, or 6, or 5, or whatever ancient version they choose to keep people locked in to.</p>
+					</dd>
+
+
+					<dt id="comment-60281"><a href="#comment-60281" title="Link to this reply">#85</a> On February 3rd, 2008 3:52 am <span>Julio Lajara replied:</span></dt>
+					<dd>
+												<p>I have mixed opinions on this, but in general why dont they make the browser versioning part of the DOCTYPE tag to avoid further degrading its importance? I understand that making it a meta you can add it to the header and all, but they are making a simple solution way more complicated than it has to be. If the version is in the DOCTYPE&#8230; use it, if not assume its and old school DOCTYPE standards pre- IE8.</p>
+					</dd>
+
+
+					<dt id="comment-60443"><a href="#comment-60443" title="Link to this reply">#86</a> On February 5th, 2008 3:27 pm <span><a href='http://www.calcresult.com/' rel='external nofollow' class='url'>Mike</a> replied:</span></dt>
+					<dd>
+												<p>Microsoft are trying to fix a problem that doesn&#8217;t exist &#8211; every major corporate body that I know of have locked their desktop&#8217;s off at IE6, because IE7 breaks so many (Microsoft based) intranets. A rendering mode in IE8 that only goes back as far as IE7 is not going to be any use to these kinds of people. Presumably Vista won&#8217;t support IE6, so that is a shot in their other foot!</p>
+					</dd>
+
+
+					<dt id="comment-61576"><a href="#comment-61576" title="Link to this reply">#87</a> On February 20th, 2008 12:45 am <span><a href='http://www.nathan-kelly.com/' rel='external nofollow' class='url'>Nathan</a> replied:</span></dt>
+					<dd>
+												<p>I&#8217;m shocked we are going backwards so fast here&#8230; Why did I spend the last 7 years of my life developing my standards compliance skills when in the blink of an eye it will suddenly be all for nothing?</p>
+<p>I simply cannot and will not support this idea! The sites I create are standards compliant, they work in all of the major standards compliant  web browsers, they require some small tweaks using conditional comments to render correctly in IE5 and up. If this new IE8 browser has the spec right why should I be forced to insert a meta tag to allow that spec to be implemented?</p>
+<p>If IE8 has the spec right I would expect my sites to continue to render correctly, my tweaks will remain for lesser versions of IE. I can&#8217;t support the opt-in/out meta solution, but if there is no other way, don&#8217;t penalise the developers who are doing the right thing, penalise those that aren&#8217;t. </p>
+<p>Sadly I must say I have suddenly lost a lot of respect for a small portion of prominent people who have for so long lead the way in the web standards movement due to their support for this proposal, there is only one way they will ever earn that respect back now, <strong>&#8220;dump this BS proposal&#8221;</strong> for the love of everything you worked so hard for.</p>
+					</dd>
+
+
+					<dt id="comment-61746"><a href="#comment-61746" title="Link to this reply">#88</a> On February 22nd, 2008 5:52 am <span>MentalSheep replied:</span></dt>
+					<dd>
+												<p>*yawn* another MS attempt to patch the (broken in their eyes) Internet&#8230;</p>
+					</dd>
+
+
+				</dl>
+
+		</div>
+
+
+
+		<div id="content-sub" title="Comment form">
+			<a href="#top" id="stmjrCollapse-content-sub" title="Return to top">Return to top</a>
+
+			<h3 class="stmjrNoCollapse">Post a Reply</h3>
+
+
+			<p>Comments are closed.</p>
+
+
+		</div>
+	
+	
+	</div>
+
+	<hr />
+
+	<div id="nav-supp">
+		<p><a href="#top" title="Back to Top">Back to Top</a></p> 
+	</div>
+
+	<div id="siteinfo">
+		<p>All of the entries posted in <abbr title="The Web Standards Project">WaSP</abbr> Buzz express the opinions of their individual authors. They do not necessarily reflect the plans or positions of the Web Standards Project as a group.</p>
+		<p>This site is valid <a href="http://validator.w3.org/check/referer" title="Validate this document">XHTML 1.0 Strict</a>, <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate this CSS">CSS</a> | Get Buzz via <a href="../../../../feed/index.html"><abbr title="Really Simple Syndication">RSS</abbr></a> or <a href="../../../../feed/atom/index.html">Atom</a> | <a href="../../../../about/colophon/index.html">Colophon</a> | <a href="../../../../about/legal/index.html">Legal</a></p>
+		<!-- 11 queries. 0.286 seconds. -->
+	</div>
+
+</div>
+
+
+</body>
+
+<!-- Mirrored from www.webstandards.org/2008/01/22/microsofts-version-targeting-proposal/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Aug 2017 17:37:24 GMT -->
+</html>
+
+<!-- Dynamic page generated in 0.275 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2017-08-18 12:27:47 -->
+
+<!-- super cache -->

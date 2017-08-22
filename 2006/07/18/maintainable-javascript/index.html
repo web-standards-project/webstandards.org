@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<!-- Mirrored from www.webstandards.org/2006/07/18/maintainable-javascript/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Aug 2017 17:43:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>  Maintainable JavaScript - The Web Standards Project</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="The Web Standards Project is a grassroots coalition fighting for standards which ensure simple, affordable access to web technologies for all." />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<script type="text/javascript" src="../../../../wp/wp-content/themes/web-standards-project/collapse.js"></script>
+<link rel="stylesheet" type="text/css" media="screen, projection" href="../../../../wp/wp-content/themes/web-standards-project/styles.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../../../wp/wp-content/themes/web-standards-project/print.css" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="../../../../feed/index.html" />
+<link rel="alternate" type="text/xml" title="RSS .92" href="../../../../feed/rss/index.html" />
+<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="../../../../feed/atom/index.html" />
+<link rel="pingback" href="../../../../wp/xmlrpc.php" />
+<link rel="Shortcut Icon" type="image/ico" href="../../../../files/theme/wasp.ico" />
+<link rel="home" title="Web Standards Project Home" href="../../../../index.html" />
+	<link rel='archives' title='March 2013' href='../../../../2013/03/index.html' />
+	<link rel='archives' title='February 2012' href='../../../../2012/02/index.html' />
+	<link rel='archives' title='December 2011' href='../../../../2011/12/index.html' />
+	<link rel='archives' title='November 2011' href='../../../../2011/11/index.html' />
+	<link rel='archives' title='March 2011' href='../../../../2011/03/index.html' />
+	<link rel='archives' title='February 2011' href='../../../../2011/02/index.html' />
+	<link rel='archives' title='January 2011' href='../../../../2011/01/index.html' />
+	<link rel='archives' title='August 2010' href='../../../../2010/08/index.html' />
+	<link rel='archives' title='June 2010' href='../../../../2010/06/index.html' />
+	<link rel='archives' title='March 2010' href='../../../../2010/03/index.html' />
+	<link rel='archives' title='February 2010' href='../../../../2010/02/index.html' />
+	<link rel='archives' title='January 2010' href='../../../../2010/01/index.html' />
+	<link rel='archives' title='November 2009' href='../../../../2009/11/index.html' />
+	<link rel='archives' title='June 2009' href='../../../../2009/06/index.html' />
+	<link rel='archives' title='May 2009' href='../../../../2009/05/index.html' />
+	<link rel='archives' title='April 2009' href='../../../../2009/04/index.html' />
+	<link rel='archives' title='March 2009' href='../../../../2009/03/index.html' />
+	<link rel='archives' title='February 2009' href='../../../../2009/02/index.html' />
+	<link rel='archives' title='January 2009' href='../../../../2009/01/index.html' />
+	<link rel='archives' title='December 2008' href='../../../../2008/12/index.html' />
+	<link rel='archives' title='November 2008' href='../../../../2008/11/index.html' />
+	<link rel='archives' title='October 2008' href='../../../../2008/10/index.html' />
+	<link rel='archives' title='September 2008' href='../../../../2008/09/index.html' />
+	<link rel='archives' title='August 2008' href='../../../../2008/08/index.html' />
+	<link rel='archives' title='July 2008' href='../../../../2008/07/index.html' />
+	<link rel='archives' title='June 2008' href='../../../../2008/06/index.html' />
+	<link rel='archives' title='May 2008' href='../../../../2008/05/index.html' />
+	<link rel='archives' title='April 2008' href='../../../../2008/04/index.html' />
+	<link rel='archives' title='March 2008' href='../../../../2008/03/index.html' />
+	<link rel='archives' title='February 2008' href='../../../../2008/02/index.html' />
+	<link rel='archives' title='January 2008' href='../../../../2008/01/index.html' />
+	<link rel='archives' title='December 2007' href='../../../../2007/12/index.html' />
+	<link rel='archives' title='November 2007' href='../../../../2007/11/index.html' />
+	<link rel='archives' title='October 2007' href='../../../../2007/10/index.html' />
+	<link rel='archives' title='September 2007' href='../../../../2007/09/index.html' />
+	<link rel='archives' title='August 2007' href='../../../../2007/08/index.html' />
+	<link rel='archives' title='June 2007' href='../../../../2007/06/index.html' />
+	<link rel='archives' title='May 2007' href='../../../../2007/05/index.html' />
+	<link rel='archives' title='April 2007' href='../../../../2007/04/index.html' />
+	<link rel='archives' title='March 2007' href='../../../../2007/03/index.html' />
+	<link rel='archives' title='February 2007' href='../../../../2007/02/index.html' />
+	<link rel='archives' title='January 2007' href='../../../../2007/01/index.html' />
+	<link rel='archives' title='December 2006' href='../../../12/index.html' />
+	<link rel='archives' title='November 2006' href='../../../11/index.html' />
+	<link rel='archives' title='October 2006' href='../../../10/index.html' />
+	<link rel='archives' title='September 2006' href='../../../09/index.html' />
+	<link rel='archives' title='August 2006' href='../../../08/index.html' />
+	<link rel='archives' title='July 2006' href='../../index.html' />
+	<link rel='archives' title='June 2006' href='../../../06/index.html' />
+	<link rel='archives' title='May 2006' href='../../../05/index.html' />
+	<link rel='archives' title='April 2006' href='../../../04/index.html' />
+	<link rel='archives' title='March 2006' href='../../../03/index.html' />
+	<link rel='archives' title='February 2006' href='../../../02/index.html' />
+	<link rel='archives' title='January 2006' href='../../../01/index.html' />
+	<link rel='archives' title='December 2005' href='../../../../2005/12/index.html' />
+	<link rel='archives' title='November 2005' href='../../../../2005/11/index.html' />
+	<link rel='archives' title='October 2005' href='../../../../2005/10/index.html' />
+	<link rel='archives' title='September 2005' href='../../../../2005/09/index.html' />
+	<link rel='archives' title='August 2005' href='../../../../2005/08/index.html' />
+	<link rel='archives' title='July 2005' href='../../../../2005/07/index.html' />
+	<link rel='archives' title='June 2005' href='../../../../2005/06/index.html' />
+	<link rel='archives' title='May 2005' href='../../../../2005/05/index.html' />
+	<link rel='archives' title='April 2005' href='../../../../2005/04/index.html' />
+	<link rel='archives' title='March 2005' href='../../../../2005/03/index.html' />
+	<link rel='archives' title='February 2005' href='../../../../2005/02/index.html' />
+	<link rel='archives' title='January 2005' href='../../../../2005/01/index.html' />
+	<link rel='archives' title='December 2004' href='../../../../2004/12/index.html' />
+	<link rel='archives' title='November 2004' href='../../../../2004/11/index.html' />
+	<link rel='archives' title='October 2004' href='../../../../2004/10/index.html' />
+	<link rel='archives' title='September 2004' href='../../../../2004/09/index.html' />
+	<link rel='archives' title='August 2004' href='../../../../2004/08/index.html' />
+	<link rel='archives' title='July 2004' href='../../../../2004/07/index.html' />
+	<link rel='archives' title='June 2004' href='../../../../2004/06/index.html' />
+	<link rel='archives' title='May 2004' href='../../../../2004/05/index.html' />
+	<link rel='archives' title='April 2004' href='../../../../2004/04/index.html' />
+	<link rel='archives' title='March 2004' href='../../../../2004/03/index.html' />
+	<link rel='archives' title='February 2004' href='../../../../2004/02/index.html' />
+	<link rel='archives' title='January 2004' href='../../../../2004/01/index.html' />
+	<link rel='archives' title='December 2003' href='../../../../2003/12/index.html' />
+	<link rel='archives' title='November 2003' href='../../../../2003/11/index.html' />
+	<link rel='archives' title='October 2003' href='../../../../2003/10/index.html' />
+	<link rel='archives' title='September 2003' href='../../../../2003/09/index.html' />
+	<link rel='archives' title='August 2003' href='../../../../2003/08/index.html' />
+	<link rel='archives' title='July 2003' href='../../../../2003/07/index.html' />
+	<link rel='archives' title='June 2003' href='../../../../2003/06/index.html' />
+	<link rel='archives' title='May 2003' href='../../../../2003/05/index.html' />
+	<link rel='archives' title='April 2003' href='../../../../2003/04/index.html' />
+	<link rel='archives' title='March 2003' href='../../../../2003/03/index.html' />
+	<link rel='archives' title='February 2003' href='../../../../2003/02/index.html' />
+	<link rel='archives' title='January 2003' href='../../../../2003/01/index.html' />
+	<link rel='archives' title='December 2002' href='../../../../2002/12/index.html' />
+	<link rel='archives' title='November 2002' href='../../../../2002/11/index.html' />
+	<link rel='archives' title='October 2002' href='../../../../2002/10/index.html' />
+	<link rel='archives' title='September 2002' href='../../../../2002/09/index.html' />
+	<link rel='archives' title='August 2002' href='../../../../2002/08/index.html' />
+	<link rel='archives' title='July 2002' href='../../../../2002/07/index.html' />
+	<link rel='archives' title='June 2002' href='../../../../2002/06/index.html' />
+	<link rel='archives' title='April 2002' href='../../../../2002/04/index.html' />
+	<link rel='archives' title='March 2002' href='../../../../2002/03/index.html' />
+	<link rel='archives' title='December 2001' href='../../../../2001/12/index.html' />
+	<link rel='archives' title='September 2001' href='../../../../2001/09/index.html' />
+	<link rel='archives' title='November 2000' href='../../../../2000/11/index.html' />
+	<link rel='archives' title='July 2000' href='../../../../2000/07/index.html' />
+	<link rel='archives' title='April 2000' href='../../../../2000/04/index.html' />
+	<link rel='archives' title='March 1999' href='../../../../1999/03/index.html' />
+	<link rel='archives' title='October 1998' href='../../../../1998/10/index.html' />
+	<link rel='archives' title='August 1998' href='../../../../1998/08/index.html' />
+<link rel="alternate" type="application/rss+xml" title="The Web Standards Project &raquo; Maintainable JavaScript Comments Feed" href="feed/index.html" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../../wp/xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../../wp/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Internet Explorer 7 Readiness Toolkit' href='../../13/internet-explorer-7-readiness-toolkit/index.html' />
+<link rel='next' title='Acid2 and Opera 9 Clarifications: Yes, Opera 9 Passes the Test' href='../../20/acid2-and-opera-9-clarifications/index.html' />
+<meta name="generator" content="WordPress 3.3.1" />
+<link rel='canonical' href='index.html' />
+<link rel='shortlink' href='../../../../index82dc.html?p=909' />
+</head>
+
+<body id="top" class="individual">
+
+<div id="container">
+
+
+	<div id="branding">
+		<h1><span>Working together for standards </span> <a href="../../../../index.html">The Web Standards Project</a></h1>
+
+		<a id="skip" href="#content-main" title="Skip to content">Skip to content</a>
+	</div>
+
+	<div id="nav-main">
+				<form id="fm-search" method="get" action="http://www.webstandards.org/index.php">
+			<fieldset>
+				<legend>Search</legend>
+				<label for="s"><span>Search WaSP</span>
+				<input id="s" name="s" class="search" value="" /></label>
+				<input type="submit" class="submit" name="submit" value="Go!" />
+			</fieldset>
+		</form>
+		<ul>
+			<li><a href="../../../../index.html" title="Home">Home</a></li>
+			<li><a href="../../../../about/index.html" title="More About Who We Are">About</a></li>
+			<li><a href="../../../../learn/index.html" title="More About Standards">Learn</a></li>
+			<li><a href="../../../../action/index.html" title="WaSP and Community Actions">Action</a></li>
+			<li><a href="../../../../buzz/index.html" title="Current and Archive Buzz Posts">Buzz</a></li>
+			<li><a href="../../../../press/index.html" title="In the Press and For the Press">Press</a></li>
+		</ul>
+	</div>
+
+
+	<hr />
+
+	<div id="content">
+
+	
+		<div id="content-main">
+			<div id="content-summary">
+				<h2 class="stmjrNoCollapse" id="post-909"><a href="index.html" rel="bookmark" title="Permanent Link: Maintainable JavaScript">Maintainable JavaScript</a></h2>
+				<p class="stmjrNoCollapse">By <span class="vcard"><a href="../../../../about/members/adactio/index.html" class="url fn">Jeremy Keith</a></span> | July 18th, 2006 | Filed in <a href="../../../../buzz/dom/index.html" title="View all posts in DOM" rel="category tag">DOM</a>, <a href="../../../../buzz/action/dstf/index.html" title="View all posts in DOM Scripting TF" rel="category tag">DOM Scripting TF</a>, <a href="../../../../buzz/general/index.html" title="View all posts in General" rel="category tag">General</a></p> 
+								<a href="#content-sub" id="stmjrCollapse-content-summary" title="Skip to comment form">Skip to comment form</a>
+			</div>
+
+			<p>The <a href="http://webstandardsgroup.org/">Web Standards Group</a> (not to be confused with the Web Standards Project) is a grassroots organisation based in Australia dedicated to promoting web standards and accessibility. The organisation&#8217;s activities have now spread to the other side of the world.</p>
+<p>The first Web Standards Group event in London was held last Friday. The sold-out event was organised by <a href="http://muffinresearch.co.uk/">Stuart Colville</a> and featured two presentations. <a href="http://www.andybudd.com/">Andy Budd</a> talked about <a href="http://www.andybudd.com/wsg2006/">web standards and the history of the screw</a> (I guess you had to be there). <a href="http://www.wait-till-i.com/">Christian Heilmann</a> talked about <a href="http://icant.co.uk/articles/wsg_london_july06_maintainablejavascript/">maintainable JavaScript</a>. Both talks were recorded and are <a href="http://muffinresearch.co.uk/wsg/audio/index.xml">available via podcast</a>.</p>
+<p>The subject of maintainable, well-written code seems to elicit some strong reactions. Seasoned developers respond scornfully by saying that this kind of advice is obvious and goes without saying. If it&#8217;s so obvious, why is the advice to rarely put into practice?</p>
+<p>In my opinion, this kind of straightforward, practical advice can&#8217;t be repeated often enough. That&#8217;s why I recommend you read <a href="http://www.thinkvitamin.com/features/dev/the-importance-of-maintainable-javascript">Christian&#8217;s article in Think Vitamin</a>. It&#8217;s packed full of good advice.</p>
+<p>There&#8217;s more JavaScript goodness to be found in Christian&#8217;s new book, <a href="http://www.beginningjavascript.com/">Beginning JavaScript with DOM Scripting and AJAX</a>.</p>
+
+		</div>
+	
+		
+
+		<div id="content-replies">
+
+
+			<h3 id="comments">Your Replies</h3> 
+
+				<dl>
+
+
+					<dt id="comment-2382"><a href="#comment-2382" title="Link to this reply">#1</a> On July 19th, 2006 2:16 pm <span>Picus9 replied:</span></dt>
+					<dd>
+												<p>The namespace solutions are so simple i can&#8217;t believe it took us this long to figure it out &#8211; or at least for someone to start writing about it.</p>
+					</dd>
+
+
+					<dt id="comment-2385"><a href="#comment-2385" title="Link to this reply">#2</a> On July 19th, 2006 2:58 pm <span>Picus9 replied:</span></dt>
+					<dd>
+												<p>- or at least this long for me to read all about it.</p>
+					</dd>
+
+
+					<dt id="comment-2403"><a href="#comment-2403" title="Link to this reply">#3</a> On July 20th, 2006 12:33 am <span><a href='http://www.w3.org/QA/' rel='external nofollow' class='url'>karl</a> replied:</span></dt>
+					<dd>
+												<p>A good insight about Javascript in the context of AJAX is done in this weblog post as well: <a href="http://duncan-cragg.org/blog/post/right-way-to-do-ajax-is-declaratively/" rel="nofollow">The Right Way to do Ajax is Declaratively</a></p>
+<blockquote><p>Don&#8217;t write your interactive Web application in custom Javascript! The Web&#8217;s Declarative nature needn&#8217;t be broken just because you want two-way dynamic data instead of one-way documents on your site. </p></blockquote>
+					</dd>
+
+
+					<dt id="comment-3124"><a href="#comment-3124" title="Link to this reply">#4</a> On August 8th, 2006 6:50 am <span>Felisimina Jom replied:</span></dt>
+					<dd>
+												<p>Speaking of javascript, I recently found a good <a href="http://www.fatpublisher.com.au/resources.php?topic=5&amp;article=8&amp;page=1" rel="nofollow">drag and drop tutorial</a> that I thought others might be interested in.</p>
+					</dd>
+
+
+					<dt id="comment-6468"><a href="#comment-6468" title="Link to this reply">#5</a> On September 30th, 2006 1:03 pm <span><a href='http://www.megasolutions.net/' rel='external nofollow' class='url'>Asp_net_2_0_Rocks</a> replied:</span></dt>
+					<dd>
+												<p>hey<br />
+the drag and drop tutorial is great., thanks</p>
+<p>ms-</p>
+					</dd>
+
+
+					<dt id="comment-6474"><a href="#comment-6474" title="Link to this reply">#6</a> On September 30th, 2006 1:48 pm <span><a href='http://www.gridview.org/' rel='external nofollow' class='url'>Gridview guy</a> replied:</span></dt>
+					<dd>
+												<p>still stuck with namespaces&#8230;</p>
+<p><a href="http://www.gridview.org/" title="" rel="nofollow"> </a></p>
+					</dd>
+
+
+					<dt id="comment-8013"><a href="#comment-8013" title="Link to this reply">#7</a> On October 17th, 2006 5:58 am <span><a href='http://www.profesjonalna-reklama.pl/' rel='external nofollow' class='url'>Tom</a> replied:</span></dt>
+					<dd>
+												<p>Thanks Felisimina Jom for drag and drop tutorial it helps me alot. greetings</p>
+					</dd>
+
+
+					<dt id="comment-8703"><a href="#comment-8703" title="Link to this reply">#8</a> On October 22nd, 2006 3:51 pm <span><a href='http://0am.de/' rel='external nofollow' class='url'>Guido</a> replied:</span></dt>
+					<dd>
+												<p>Really good information, but the best is the drag and drop tutorial&#8230;</p>
+					</dd>
+
+
+					<dt id="comment-8828"><a href="#comment-8828" title="Link to this reply">#9</a> On October 23rd, 2006 2:51 pm <span><a href='http://www.miejsca.org/#architektura' rel='external nofollow' class='url'>aRchIteKTUra</a> replied:</span></dt>
+					<dd>
+												<p>&#8220;Beginning JavaScript with DOM Scripting and AJAX&#8221; is a nice one and I recommend it, too.</p>
+					</dd>
+
+
+					<dt id="comment-15718"><a href="#comment-15718" title="Link to this reply">#10</a> On November 27th, 2006 4:04 pm <span><a href='http://www.cablemodem.ch/' rel='external nofollow' class='url'>Andreas</a> replied:</span></dt>
+					<dd>
+												<p>Let me thank Christian for his new book &#8220;Beginning JavaScript with DOM Scripting and AJAX&#8221;. Great and free for all tutorial, what else do we need? :)</p>
+					</dd>
+
+
+					<dt id="comment-17557"><a href="#comment-17557" title="Link to this reply">#11</a> On December 4th, 2006 7:50 am <span><a href='http://www.gourmet-services.de/' rel='external nofollow' class='url'>Volker</a> replied:</span></dt>
+					<dd>
+												<p>Good news: The book &#8220;Beginning JavaScript with DOM Scripting and Ajax&#8221; in german is available once again.<br />
+It´s a really useful tutorial!</p>
+					</dd>
+
+
+					<dt id="comment-18581"><a href="#comment-18581" title="Link to this reply">#12</a> On December 8th, 2006 4:09 pm <span><a href='http://www.wimax.ch/' rel='external nofollow' class='url'>Thomas</a> replied:</span></dt>
+					<dd>
+												<p>Thank you Volker. Found it at amazone.de and ordered it. In a few day I&#8217;ll have it here. I am really loking forward to it!<br />
+These details will help you find it:<br />
+Verlag: Springer-Verlag GmbH<br />
+ISBN: 1590596803</p>
+					</dd>
+
+
+					<dt id="comment-35775"><a href="#comment-35775" title="Link to this reply">#13</a> On January 20th, 2007 7:18 am <span><a href='http://www.aerofun.gsi.pl/' rel='external nofollow' class='url'>Tanie linie lotnicze</a> replied:</span></dt>
+					<dd>
+												<p>The book “Beginning JavaScript with DOM Scripting and Ajax” in polish is available ???</p>
+					</dd>
+
+
+					<dt id="comment-43525"><a href="#comment-43525" title="Link to this reply">#14</a> On February 6th, 2007 3:54 pm <span><a href='http://www.bazarek24.pl/' rel='external nofollow' class='url'>Dzide</a> replied:</span></dt>
+					<dd>
+												<p>I greet<br />
+the drag and drop tutorial it is ideal to my uses. Thanks</p>
+					</dd>
+
+
+					<dt id="comment-46441"><a href="#comment-46441" title="Link to this reply">#15</a> On February 13th, 2007 11:35 am <span><a href='http://www.berlin-mum.de/' rel='external nofollow' class='url'>Antje</a> replied:</span></dt>
+					<dd>
+												<p>“Beginning JavaScript with DOM Scripting and Ajax” &#8211; helpesa lot, thansk, also the thinkvitamin is very helpfull!</p>
+					</dd>
+
+
+					<dt id="comment-52017"><a href="#comment-52017" title="Link to this reply">#16</a> On February 28th, 2007 3:58 am <span><a href='http://www.referenzfilm.de/' rel='external nofollow' class='url'>otilie</a> replied:</span></dt>
+					<dd>
+												<p>The drag and drop tutorial is very useful for me. Thank you very much</p>
+					</dd>
+
+
+				</dl>
+
+		</div>
+
+
+
+		<div id="content-sub" title="Comment form">
+			<a href="#top" id="stmjrCollapse-content-sub" title="Return to top">Return to top</a>
+
+			<h3 class="stmjrNoCollapse">Post a Reply</h3>
+
+
+			<p>Comments are closed.</p>
+
+
+		</div>
+	
+	
+	</div>
+
+	<hr />
+
+	<div id="nav-supp">
+		<p><a href="#top" title="Back to Top">Back to Top</a></p> 
+	</div>
+
+	<div id="siteinfo">
+		<p>All of the entries posted in <abbr title="The Web Standards Project">WaSP</abbr> Buzz express the opinions of their individual authors. They do not necessarily reflect the plans or positions of the Web Standards Project as a group.</p>
+		<p>This site is valid <a href="http://validator.w3.org/check/referer" title="Validate this document">XHTML 1.0 Strict</a>, <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate this CSS">CSS</a> | Get Buzz via <a href="../../../../feed/index.html"><abbr title="Really Simple Syndication">RSS</abbr></a> or <a href="../../../../feed/atom/index.html">Atom</a> | <a href="../../../../about/colophon/index.html">Colophon</a> | <a href="../../../../about/legal/index.html">Legal</a></p>
+		<!-- 12 queries. 0.195 seconds. -->
+	</div>
+
+</div>
+
+
+</body>
+
+<!-- Mirrored from www.webstandards.org/2006/07/18/maintainable-javascript/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Aug 2017 17:43:38 GMT -->
+</html>
+
+<!-- Dynamic page generated in 0.181 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2017-08-18 12:29:30 -->
+
+<!-- super cache -->

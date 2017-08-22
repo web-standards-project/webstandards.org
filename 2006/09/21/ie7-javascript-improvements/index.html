@@ -1,0 +1,363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<!-- Mirrored from www.webstandards.org/2006/09/21/ie7-javascript-improvements/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Aug 2017 17:42:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>  IE7 JavaScript Improvements - The Web Standards Project</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="The Web Standards Project is a grassroots coalition fighting for standards which ensure simple, affordable access to web technologies for all." />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<script type="text/javascript" src="../../../../wp/wp-content/themes/web-standards-project/collapse.js"></script>
+<link rel="stylesheet" type="text/css" media="screen, projection" href="../../../../wp/wp-content/themes/web-standards-project/styles.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../../../wp/wp-content/themes/web-standards-project/print.css" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="../../../../feed/index.html" />
+<link rel="alternate" type="text/xml" title="RSS .92" href="../../../../feed/rss/index.html" />
+<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="../../../../feed/atom/index.html" />
+<link rel="pingback" href="../../../../wp/xmlrpc.php" />
+<link rel="Shortcut Icon" type="image/ico" href="../../../../files/theme/wasp.ico" />
+<link rel="home" title="Web Standards Project Home" href="../../../../index.html" />
+	<link rel='archives' title='March 2013' href='../../../../2013/03/index.html' />
+	<link rel='archives' title='February 2012' href='../../../../2012/02/index.html' />
+	<link rel='archives' title='December 2011' href='../../../../2011/12/index.html' />
+	<link rel='archives' title='November 2011' href='../../../../2011/11/index.html' />
+	<link rel='archives' title='March 2011' href='../../../../2011/03/index.html' />
+	<link rel='archives' title='February 2011' href='../../../../2011/02/index.html' />
+	<link rel='archives' title='January 2011' href='../../../../2011/01/index.html' />
+	<link rel='archives' title='August 2010' href='../../../../2010/08/index.html' />
+	<link rel='archives' title='June 2010' href='../../../../2010/06/index.html' />
+	<link rel='archives' title='March 2010' href='../../../../2010/03/index.html' />
+	<link rel='archives' title='February 2010' href='../../../../2010/02/index.html' />
+	<link rel='archives' title='January 2010' href='../../../../2010/01/index.html' />
+	<link rel='archives' title='November 2009' href='../../../../2009/11/index.html' />
+	<link rel='archives' title='June 2009' href='../../../../2009/06/index.html' />
+	<link rel='archives' title='May 2009' href='../../../../2009/05/index.html' />
+	<link rel='archives' title='April 2009' href='../../../../2009/04/index.html' />
+	<link rel='archives' title='March 2009' href='../../../../2009/03/index.html' />
+	<link rel='archives' title='February 2009' href='../../../../2009/02/index.html' />
+	<link rel='archives' title='January 2009' href='../../../../2009/01/index.html' />
+	<link rel='archives' title='December 2008' href='../../../../2008/12/index.html' />
+	<link rel='archives' title='November 2008' href='../../../../2008/11/index.html' />
+	<link rel='archives' title='October 2008' href='../../../../2008/10/index.html' />
+	<link rel='archives' title='September 2008' href='../../../../2008/09/index.html' />
+	<link rel='archives' title='August 2008' href='../../../../2008/08/index.html' />
+	<link rel='archives' title='July 2008' href='../../../../2008/07/index.html' />
+	<link rel='archives' title='June 2008' href='../../../../2008/06/index.html' />
+	<link rel='archives' title='May 2008' href='../../../../2008/05/index.html' />
+	<link rel='archives' title='April 2008' href='../../../../2008/04/index.html' />
+	<link rel='archives' title='March 2008' href='../../../../2008/03/index.html' />
+	<link rel='archives' title='February 2008' href='../../../../2008/02/index.html' />
+	<link rel='archives' title='January 2008' href='../../../../2008/01/index.html' />
+	<link rel='archives' title='December 2007' href='../../../../2007/12/index.html' />
+	<link rel='archives' title='November 2007' href='../../../../2007/11/index.html' />
+	<link rel='archives' title='October 2007' href='../../../../2007/10/index.html' />
+	<link rel='archives' title='September 2007' href='../../../../2007/09/index.html' />
+	<link rel='archives' title='August 2007' href='../../../../2007/08/index.html' />
+	<link rel='archives' title='June 2007' href='../../../../2007/06/index.html' />
+	<link rel='archives' title='May 2007' href='../../../../2007/05/index.html' />
+	<link rel='archives' title='April 2007' href='../../../../2007/04/index.html' />
+	<link rel='archives' title='March 2007' href='../../../../2007/03/index.html' />
+	<link rel='archives' title='February 2007' href='../../../../2007/02/index.html' />
+	<link rel='archives' title='January 2007' href='../../../../2007/01/index.html' />
+	<link rel='archives' title='December 2006' href='../../../12/index.html' />
+	<link rel='archives' title='November 2006' href='../../../11/index.html' />
+	<link rel='archives' title='October 2006' href='../../../10/index.html' />
+	<link rel='archives' title='September 2006' href='../../index.html' />
+	<link rel='archives' title='August 2006' href='../../../08/index.html' />
+	<link rel='archives' title='July 2006' href='../../../07/index.html' />
+	<link rel='archives' title='June 2006' href='../../../06/index.html' />
+	<link rel='archives' title='May 2006' href='../../../05/index.html' />
+	<link rel='archives' title='April 2006' href='../../../04/index.html' />
+	<link rel='archives' title='March 2006' href='../../../03/index.html' />
+	<link rel='archives' title='February 2006' href='../../../02/index.html' />
+	<link rel='archives' title='January 2006' href='../../../01/index.html' />
+	<link rel='archives' title='December 2005' href='../../../../2005/12/index.html' />
+	<link rel='archives' title='November 2005' href='../../../../2005/11/index.html' />
+	<link rel='archives' title='October 2005' href='../../../../2005/10/index.html' />
+	<link rel='archives' title='September 2005' href='../../../../2005/09/index.html' />
+	<link rel='archives' title='August 2005' href='../../../../2005/08/index.html' />
+	<link rel='archives' title='July 2005' href='../../../../2005/07/index.html' />
+	<link rel='archives' title='June 2005' href='../../../../2005/06/index.html' />
+	<link rel='archives' title='May 2005' href='../../../../2005/05/index.html' />
+	<link rel='archives' title='April 2005' href='../../../../2005/04/index.html' />
+	<link rel='archives' title='March 2005' href='../../../../2005/03/index.html' />
+	<link rel='archives' title='February 2005' href='../../../../2005/02/index.html' />
+	<link rel='archives' title='January 2005' href='../../../../2005/01/index.html' />
+	<link rel='archives' title='December 2004' href='../../../../2004/12/index.html' />
+	<link rel='archives' title='November 2004' href='../../../../2004/11/index.html' />
+	<link rel='archives' title='October 2004' href='../../../../2004/10/index.html' />
+	<link rel='archives' title='September 2004' href='../../../../2004/09/index.html' />
+	<link rel='archives' title='August 2004' href='../../../../2004/08/index.html' />
+	<link rel='archives' title='July 2004' href='../../../../2004/07/index.html' />
+	<link rel='archives' title='June 2004' href='../../../../2004/06/index.html' />
+	<link rel='archives' title='May 2004' href='../../../../2004/05/index.html' />
+	<link rel='archives' title='April 2004' href='../../../../2004/04/index.html' />
+	<link rel='archives' title='March 2004' href='../../../../2004/03/index.html' />
+	<link rel='archives' title='February 2004' href='../../../../2004/02/index.html' />
+	<link rel='archives' title='January 2004' href='../../../../2004/01/index.html' />
+	<link rel='archives' title='December 2003' href='../../../../2003/12/index.html' />
+	<link rel='archives' title='November 2003' href='../../../../2003/11/index.html' />
+	<link rel='archives' title='October 2003' href='../../../../2003/10/index.html' />
+	<link rel='archives' title='September 2003' href='../../../../2003/09/index.html' />
+	<link rel='archives' title='August 2003' href='../../../../2003/08/index.html' />
+	<link rel='archives' title='July 2003' href='../../../../2003/07/index.html' />
+	<link rel='archives' title='June 2003' href='../../../../2003/06/index.html' />
+	<link rel='archives' title='May 2003' href='../../../../2003/05/index.html' />
+	<link rel='archives' title='April 2003' href='../../../../2003/04/index.html' />
+	<link rel='archives' title='March 2003' href='../../../../2003/03/index.html' />
+	<link rel='archives' title='February 2003' href='../../../../2003/02/index.html' />
+	<link rel='archives' title='January 2003' href='../../../../2003/01/index.html' />
+	<link rel='archives' title='December 2002' href='../../../../2002/12/index.html' />
+	<link rel='archives' title='November 2002' href='../../../../2002/11/index.html' />
+	<link rel='archives' title='October 2002' href='../../../../2002/10/index.html' />
+	<link rel='archives' title='September 2002' href='../../../../2002/09/index.html' />
+	<link rel='archives' title='August 2002' href='../../../../2002/08/index.html' />
+	<link rel='archives' title='July 2002' href='../../../../2002/07/index.html' />
+	<link rel='archives' title='June 2002' href='../../../../2002/06/index.html' />
+	<link rel='archives' title='April 2002' href='../../../../2002/04/index.html' />
+	<link rel='archives' title='March 2002' href='../../../../2002/03/index.html' />
+	<link rel='archives' title='December 2001' href='../../../../2001/12/index.html' />
+	<link rel='archives' title='September 2001' href='../../../../2001/09/index.html' />
+	<link rel='archives' title='November 2000' href='../../../../2000/11/index.html' />
+	<link rel='archives' title='July 2000' href='../../../../2000/07/index.html' />
+	<link rel='archives' title='April 2000' href='../../../../2000/04/index.html' />
+	<link rel='archives' title='March 1999' href='../../../../1999/03/index.html' />
+	<link rel='archives' title='October 1998' href='../../../../1998/10/index.html' />
+	<link rel='archives' title='August 1998' href='../../../../1998/08/index.html' />
+<link rel="alternate" type="application/rss+xml" title="The Web Standards Project &raquo; IE7 JavaScript Improvements Comments Feed" href="feed/index.html" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../../wp/xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../../wp/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Target sighted &#8211; a hit but not quite a bullseye' href='../../14/target-interim-ruling/index.html' />
+<link rel='next' title='Event Handling versus  Event Delegation' href='../../24/event-handling-versus-event-delegation/index.html' />
+<meta name="generator" content="WordPress 3.3.1" />
+<link rel='canonical' href='index.html' />
+<link rel='shortlink' href='../../../../index68cd.html?p=939' />
+</head>
+
+<body id="top" class="individual">
+
+<div id="container">
+
+
+	<div id="branding">
+		<h1><span>Working together for standards </span> <a href="../../../../index.html">The Web Standards Project</a></h1>
+
+		<a id="skip" href="#content-main" title="Skip to content">Skip to content</a>
+	</div>
+
+	<div id="nav-main">
+				<form id="fm-search" method="get" action="http://www.webstandards.org/index.php">
+			<fieldset>
+				<legend>Search</legend>
+				<label for="s"><span>Search WaSP</span>
+				<input id="s" name="s" class="search" value="" /></label>
+				<input type="submit" class="submit" name="submit" value="Go!" />
+			</fieldset>
+		</form>
+		<ul>
+			<li><a href="../../../../index.html" title="Home">Home</a></li>
+			<li><a href="../../../../about/index.html" title="More About Who We Are">About</a></li>
+			<li><a href="../../../../learn/index.html" title="More About Standards">Learn</a></li>
+			<li><a href="../../../../action/index.html" title="WaSP and Community Actions">Action</a></li>
+			<li><a href="../../../../buzz/index.html" title="Current and Archive Buzz Posts">Buzz</a></li>
+			<li><a href="../../../../press/index.html" title="In the Press and For the Press">Press</a></li>
+		</ul>
+	</div>
+
+
+	<hr />
+
+	<div id="content">
+
+	
+		<div id="content-main">
+			<div id="content-summary">
+				<h2 class="stmjrNoCollapse" id="post-939"><a href="index.html" rel="bookmark" title="Permanent Link: IE7 JavaScript Improvements">IE7 JavaScript Improvements</a></h2>
+				<p class="stmjrNoCollapse">By <span class="vcard"><a href="../../../../about/members/deanedwards/index.html" class="url fn">Dean Edwards</a></span> | September 21st, 2006 | Filed in <a href="../../../../buzz/browsers/index.html" title="View all posts in Browsers" rel="category tag">Browsers</a>, <a href="../../../../buzz/action/dstf/index.html" title="View all posts in DOM Scripting TF" rel="category tag">DOM Scripting TF</a>, <a href="../../../../buzz/microsoft/index.html" title="View all posts in Microsoft" rel="category tag">Microsoft</a>, <a href="../../../../buzz/action/mstf/index.html" title="View all posts in Microsoft TF" rel="category tag">Microsoft TF</a></p> 
+				<p>The IEBlog recently reported some improvements in IE7’s JavaScript engine.</p>
+				<a href="#content-sub" id="stmjrCollapse-content-summary" title="Skip to comment form">Skip to comment form</a>
+			</div>
+
+			<p>The IEBlog recently reported some <a href="http://blogs.msdn.com/ie/archive/2006/08/28/728654.aspx">improvements</a><br />
+ in IE7&#8217;s JavaScript engine:</p>
+<blockquote>
+<p>We have heard a lot of requests to improve our Jscript engine, especially now that AJAX<br />
+  sites are becoming more prevalent on the web.  I want you all to know that we have been<br />
+  listening and have recently made some great fixes to our engine to improve the garbage<br />
+  collection routine and to reduce unbounded memory growth.</p>
+</blockquote>
+<p>This was confirmed by tests performed by the <a href="http://qooxdoo.org/">qooxdoo</a> developers:</p>
+<blockquote>
+<p>In fact <a href="http://qooxdoo.org/demo">many demos</a> of qooxdoo<br />
+  run much faster now in IE7 compared to IE6. And they are even faster than in Firefox 1.5 in many cases.<br />
+  This is a huge jump in performance. Microsoft did not tell about their exact modifications, of course.<br />
+  Anyway, they have fixed <em>the</em> major problem of large JavaScript-based web applications. This problem,<br />
+  despite having a catchy name, was mentioned many times before like<br />
+  <a href="http://demo.qooxdoo.org/html/performance/GlobalObject_2.html">here</a>,<br />
+  <a href="http://alex.dojotoolkit.org/?p=536">here</a> and<br />
+  <a href="http://groups.google.com/group/microsoft.public.inetsdk.programming.scripting.jscript/browse_thread/thread/d758f148f03cd2ed/cc6143cd1b0d1e38?lnk=st&amp;q=jscript+slow+performance+ie+firefox&amp;rnum=2#cc6143cd1b0d1e3">there</a>:<br />
+  If you have many objects created, which are simply accessible in the current scope, all<br />
+  methods and features of JavaScript slow down dramatically.</p>
+</blockquote>
+<p>It would be great if these bugs were fixed so I emailed<br />
+ <a href="http://blogs.msdn.com/cwilso/" title="Group Program Manager of the Internet Explorer Platform team">Chris Wilson</a> for comfirmation. He replied:</p>
+<blockquote>
+<p>Yes, it is true we&#8217;ve done some dramatic improvements to JavaScript<br />
+  performance.  I wouldn&#8217;t say we&#8217;ve fixed everything, but we&#8217;ve addressed<br />
+  a bunch of memory leak problems and most significantly, taken a<br />
+  different strategy for the Jscript garbage collector.  This last one<br />
+  makes a huge difference in many current JavaScript-heavy pages.</p>
+</blockquote>
+<p>Good news indeed.</p>
+
+		</div>
+	
+		
+
+		<div id="content-replies">
+
+
+			<h3 id="comments">Your Replies</h3> 
+
+				<dl>
+
+
+					<dt id="comment-5603"><a href="#comment-5603" title="Link to this reply">#1</a> On September 21st, 2006 11:18 am <span><a href='http://www.shapeshed.com/' rel='external nofollow' class='url'>George</a> replied:</span></dt>
+					<dd>
+												<p>Good news indeed. I&#8217;m really impressed with IE7 &#8211; it will make a huge difference when it is released. Standards compliance, a great rendering engine and better Javascript are really exciting.</p>
+					</dd>
+
+
+					<dt id="comment-5635"><a href="#comment-5635" title="Link to this reply">#2</a> On September 21st, 2006 6:29 pm <span><a href='http://pigpen.info/2006/09/22/ie7-javascript-improvements/' rel='external nofollow' class='url'>Pig Pen - Web Standards Compliant Web Design Blog &raquo; Blog Archive &raquo; IE7 JavaScript Improvements</a> replied:</span></dt>
+					<dd>
+												<p>[...] IE7 JavaScript Improvements is interesting to mention. [...]</p>
+					</dd>
+
+
+					<dt id="comment-5654"><a href="#comment-5654" title="Link to this reply">#3</a> On September 22nd, 2006 12:42 am <span>me replied:</span></dt>
+					<dd>
+												<p>There is still a lot to be done though. e.g. prototypes on Object extensions on HtmlElement</p>
+					</dd>
+
+
+					<dt id="comment-5661"><a href="#comment-5661" title="Link to this reply">#4</a> On September 22nd, 2006 2:01 am <span>Robert replied:</span></dt>
+					<dd>
+												<p>While certainely true that this is very good news, do not forget that we already have browsers with all these features. So, it&#8217;s still a game of catch-up for IE.</p>
+					</dd>
+
+
+					<dt id="comment-5662"><a href="#comment-5662" title="Link to this reply">#5</a> On September 22nd, 2006 2:41 am <span>NiQuil replied:</span></dt>
+					<dd>
+												<p>Ie7 is a huge improvement, I wonder though if it will actually make programmers work easyer in th NEAR future. Since they still will have maintain backwards compatibility.</p>
+					</dd>
+
+
+					<dt id="comment-5676"><a href="#comment-5676" title="Link to this reply">#6</a> On September 22nd, 2006 5:27 am <span><a href='http://www.jakearchibald.com/' rel='external nofollow' class='url'>Jake Archibald</a> replied:</span></dt>
+					<dd>
+												<p>If you rate IE7 compared to Firefox / Opera, then yes it&#8217;s nothing special.</p>
+<p>If you rate IE7 compared to IE6 it&#8217;s a huge leap forward.</p>
+<p>Really happy with the improvements they&#8217;ve made and hope there&#8217;s more to come. Recently been designing a new CV site there&#8217;s been very little in the way of specific IE7 fixes. Still have to have an additional css for IE6 and below, but at least that will eventually become a thing of the past.</p>
+					</dd>
+
+
+					<dt id="comment-5937"><a href="#comment-5937" title="Link to this reply">#7</a> On September 24th, 2006 3:36 pm <span>Ollie replied:</span></dt>
+					<dd>
+												<p>Although we should all be happy because (a lot of us) are web designers and developers, maybe we shouldn&#8217;t be happy because Microsoft is just putting bugs right that should have never existed in the first place!</p>
+					</dd>
+
+
+					<dt id="comment-5995"><a href="#comment-5995" title="Link to this reply">#8</a> On September 25th, 2006 6:36 am <span><a href='http://www.razorx.com/' rel='external nofollow' class='url'>RazorX</a> replied:</span></dt>
+					<dd>
+												<p>While it is nice that IE 7 has performance and standards improvements in the JScript engine, it&#8217;s catch-up arrival is late in the game. JScript (JavaScript) itself is still a client-side &#8220;convenience&#8221; script. Your good designers are using less and less JavaScript in favor of server-side scripting in every new design. The future trend, mostly based on a culminating increase in data reliance and security, is to use none, or as little JavaScript as possible. If JavaScript is turned off, your web site and your forms better still work without it.</p>
+					</dd>
+
+
+					<dt id="comment-6462"><a href="#comment-6462" title="Link to this reply">#9</a> On September 30th, 2006 11:06 am <span><a href='http://www.gridview.org/' rel='external nofollow' class='url'>Asp_net_2_0_Rocks</a> replied:</span></dt>
+					<dd>
+												<p>really good support for Jscript. but it doesnt get easy on developers they will still need to keep up with prior versions since market wont switch to IE7 quickly.</p>
+					</dd>
+
+
+					<dt id="comment-7180"><a href="#comment-7180" title="Link to this reply">#10</a> On October 7th, 2006 1:21 pm <span><a href='http://www.internetschoon.nl/' rel='external nofollow' class='url'>rick</a> replied:</span></dt>
+					<dd>
+												<p>When reading some replies I am very doubtful if these are real improvements. See for example this reply:<br />
+<a href="http://blogs.msdn.com/ie/archive/2006/08/28/728654.aspx#735949" rel="nofollow">http://blogs.msdn.com/ie/archive/2006/08/28/728654.aspx#735949</a></p>
+					</dd>
+
+
+					<dt id="comment-7299"><a href="#comment-7299" title="Link to this reply">#11</a> On October 9th, 2006 4:53 am <span>pedja replied:</span></dt>
+					<dd>
+												<p>javascript in IE7 RC1 still does not work well for me. Actualy, some javascript that can be executed with the IE7 beta 2 does not work in IE7 RC1.<br />
+One of my major problems with the IE&amp; is that I still cannot use properly an old MSDN Library for Visual Studio 6.0 since many links in it execute some javascript which can&#8217;t be run with IE7.</p>
+					</dd>
+
+
+					<dt id="comment-8521"><a href="#comment-8521" title="Link to this reply">#12</a> On October 21st, 2006 7:02 am <span>vHoward replied:</span></dt>
+					<dd>
+												<p><em>&#8216;Your good designers are using less and less JavaScript in favor of server-side scripting in every new design.&#8217;</em></p>
+<p>On the contary, javascript has had a fresh lease of life, enabling a whole range of web apps that owe there snappy performance  and rich featureset to ajax style scripting. </p>
+<p>After all lower server hits can only be a good thing, unless you&#8217;re in the ad sales game!</p>
+<p>Lets hope that IE7 js really does banish the sluggish performance and soul destroying memory leaks that developers have had to fight with IE6.</p>
+					</dd>
+
+
+					<dt id="comment-15811"><a href="#comment-15811" title="Link to this reply">#13</a> On November 28th, 2006 9:41 am <span>Peter replied:</span></dt>
+					<dd>
+												<p>I have been looking at IE7 and in many ways it seems better, but I have a major problem with the way it is implementing JavaScript arrrays.</p>
+<p>I have an old application that holds data in a large Javascript array.  This has always worked fine.</p>
+<p>However, in IE7 it falls over.   It seems like it is just falling over when an array gets too big.</p>
+<p>Has anyone else come across this problem or any related problem with IE7.</p>
+<p>I have been hunting around and cannot find any reference to an upper limit to array sizes in JavaScript.</p>
+					</dd>
+
+
+					<dt id="comment-23799"><a href="#comment-23799" title="Link to this reply">#14</a> On December 21st, 2006 4:25 pm <span>Bob replied:</span></dt>
+					<dd>
+												<p>As Peter stated I&#8217;ve discovered the same issue with Javascript array sizes. Code that has run fine pre IE7 now fails. I&#8217;m curious if a solution is available. I&#8217;m in agreement that with the advent and growth of AJAX and it&#8217;s dynamic capabilities, imposing limits on Javascript within the browser is a step backwards.</p>
+					</dd>
+
+
+				</dl>
+
+		</div>
+
+
+
+		<div id="content-sub" title="Comment form">
+			<a href="#top" id="stmjrCollapse-content-sub" title="Return to top">Return to top</a>
+
+			<h3 class="stmjrNoCollapse">Post a Reply</h3>
+
+
+			<p>Comments are closed.</p>
+
+
+		</div>
+	
+	
+	</div>
+
+	<hr />
+
+	<div id="nav-supp">
+		<p><a href="#top" title="Back to Top">Back to Top</a></p> 
+	</div>
+
+	<div id="siteinfo">
+		<p>All of the entries posted in <abbr title="The Web Standards Project">WaSP</abbr> Buzz express the opinions of their individual authors. They do not necessarily reflect the plans or positions of the Web Standards Project as a group.</p>
+		<p>This site is valid <a href="http://validator.w3.org/check/referer" title="Validate this document">XHTML 1.0 Strict</a>, <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate this CSS">CSS</a> | Get Buzz via <a href="../../../../feed/index.html"><abbr title="Really Simple Syndication">RSS</abbr></a> or <a href="../../../../feed/atom/index.html">Atom</a> | <a href="../../../../about/colophon/index.html">Colophon</a> | <a href="../../../../about/legal/index.html">Legal</a></p>
+		<!-- 12 queries. 0.200 seconds. -->
+	</div>
+
+</div>
+
+
+</body>
+
+<!-- Mirrored from www.webstandards.org/2006/09/21/ie7-javascript-improvements/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Aug 2017 17:42:53 GMT -->
+</html>
+
+<!-- Dynamic page generated in 0.188 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2017-08-18 12:29:05 -->
+
+<!-- super cache -->

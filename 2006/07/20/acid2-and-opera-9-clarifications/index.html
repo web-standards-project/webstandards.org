@@ -1,0 +1,433 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<!-- Mirrored from www.webstandards.org/2006/07/20/acid2-and-opera-9-clarifications/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Aug 2017 17:43:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>  Acid2 and Opera 9 Clarifications: Yes, Opera 9 Passes the Test - The Web Standards Project</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="The Web Standards Project is a grassroots coalition fighting for standards which ensure simple, affordable access to web technologies for all." />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<script type="text/javascript" src="../../../../wp/wp-content/themes/web-standards-project/collapse.js"></script>
+<link rel="stylesheet" type="text/css" media="screen, projection" href="../../../../wp/wp-content/themes/web-standards-project/styles.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../../../wp/wp-content/themes/web-standards-project/print.css" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="../../../../feed/index.html" />
+<link rel="alternate" type="text/xml" title="RSS .92" href="../../../../feed/rss/index.html" />
+<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="../../../../feed/atom/index.html" />
+<link rel="pingback" href="../../../../wp/xmlrpc.php" />
+<link rel="Shortcut Icon" type="image/ico" href="../../../../files/theme/wasp.ico" />
+<link rel="home" title="Web Standards Project Home" href="../../../../index.html" />
+	<link rel='archives' title='March 2013' href='../../../../2013/03/index.html' />
+	<link rel='archives' title='February 2012' href='../../../../2012/02/index.html' />
+	<link rel='archives' title='December 2011' href='../../../../2011/12/index.html' />
+	<link rel='archives' title='November 2011' href='../../../../2011/11/index.html' />
+	<link rel='archives' title='March 2011' href='../../../../2011/03/index.html' />
+	<link rel='archives' title='February 2011' href='../../../../2011/02/index.html' />
+	<link rel='archives' title='January 2011' href='../../../../2011/01/index.html' />
+	<link rel='archives' title='August 2010' href='../../../../2010/08/index.html' />
+	<link rel='archives' title='June 2010' href='../../../../2010/06/index.html' />
+	<link rel='archives' title='March 2010' href='../../../../2010/03/index.html' />
+	<link rel='archives' title='February 2010' href='../../../../2010/02/index.html' />
+	<link rel='archives' title='January 2010' href='../../../../2010/01/index.html' />
+	<link rel='archives' title='November 2009' href='../../../../2009/11/index.html' />
+	<link rel='archives' title='June 2009' href='../../../../2009/06/index.html' />
+	<link rel='archives' title='May 2009' href='../../../../2009/05/index.html' />
+	<link rel='archives' title='April 2009' href='../../../../2009/04/index.html' />
+	<link rel='archives' title='March 2009' href='../../../../2009/03/index.html' />
+	<link rel='archives' title='February 2009' href='../../../../2009/02/index.html' />
+	<link rel='archives' title='January 2009' href='../../../../2009/01/index.html' />
+	<link rel='archives' title='December 2008' href='../../../../2008/12/index.html' />
+	<link rel='archives' title='November 2008' href='../../../../2008/11/index.html' />
+	<link rel='archives' title='October 2008' href='../../../../2008/10/index.html' />
+	<link rel='archives' title='September 2008' href='../../../../2008/09/index.html' />
+	<link rel='archives' title='August 2008' href='../../../../2008/08/index.html' />
+	<link rel='archives' title='July 2008' href='../../../../2008/07/index.html' />
+	<link rel='archives' title='June 2008' href='../../../../2008/06/index.html' />
+	<link rel='archives' title='May 2008' href='../../../../2008/05/index.html' />
+	<link rel='archives' title='April 2008' href='../../../../2008/04/index.html' />
+	<link rel='archives' title='March 2008' href='../../../../2008/03/index.html' />
+	<link rel='archives' title='February 2008' href='../../../../2008/02/index.html' />
+	<link rel='archives' title='January 2008' href='../../../../2008/01/index.html' />
+	<link rel='archives' title='December 2007' href='../../../../2007/12/index.html' />
+	<link rel='archives' title='November 2007' href='../../../../2007/11/index.html' />
+	<link rel='archives' title='October 2007' href='../../../../2007/10/index.html' />
+	<link rel='archives' title='September 2007' href='../../../../2007/09/index.html' />
+	<link rel='archives' title='August 2007' href='../../../../2007/08/index.html' />
+	<link rel='archives' title='June 2007' href='../../../../2007/06/index.html' />
+	<link rel='archives' title='May 2007' href='../../../../2007/05/index.html' />
+	<link rel='archives' title='April 2007' href='../../../../2007/04/index.html' />
+	<link rel='archives' title='March 2007' href='../../../../2007/03/index.html' />
+	<link rel='archives' title='February 2007' href='../../../../2007/02/index.html' />
+	<link rel='archives' title='January 2007' href='../../../../2007/01/index.html' />
+	<link rel='archives' title='December 2006' href='../../../12/index.html' />
+	<link rel='archives' title='November 2006' href='../../../11/index.html' />
+	<link rel='archives' title='October 2006' href='../../../10/index.html' />
+	<link rel='archives' title='September 2006' href='../../../09/index.html' />
+	<link rel='archives' title='August 2006' href='../../../08/index.html' />
+	<link rel='archives' title='July 2006' href='../../index.html' />
+	<link rel='archives' title='June 2006' href='../../../06/index.html' />
+	<link rel='archives' title='May 2006' href='../../../05/index.html' />
+	<link rel='archives' title='April 2006' href='../../../04/index.html' />
+	<link rel='archives' title='March 2006' href='../../../03/index.html' />
+	<link rel='archives' title='February 2006' href='../../../02/index.html' />
+	<link rel='archives' title='January 2006' href='../../../01/index.html' />
+	<link rel='archives' title='December 2005' href='../../../../2005/12/index.html' />
+	<link rel='archives' title='November 2005' href='../../../../2005/11/index.html' />
+	<link rel='archives' title='October 2005' href='../../../../2005/10/index.html' />
+	<link rel='archives' title='September 2005' href='../../../../2005/09/index.html' />
+	<link rel='archives' title='August 2005' href='../../../../2005/08/index.html' />
+	<link rel='archives' title='July 2005' href='../../../../2005/07/index.html' />
+	<link rel='archives' title='June 2005' href='../../../../2005/06/index.html' />
+	<link rel='archives' title='May 2005' href='../../../../2005/05/index.html' />
+	<link rel='archives' title='April 2005' href='../../../../2005/04/index.html' />
+	<link rel='archives' title='March 2005' href='../../../../2005/03/index.html' />
+	<link rel='archives' title='February 2005' href='../../../../2005/02/index.html' />
+	<link rel='archives' title='January 2005' href='../../../../2005/01/index.html' />
+	<link rel='archives' title='December 2004' href='../../../../2004/12/index.html' />
+	<link rel='archives' title='November 2004' href='../../../../2004/11/index.html' />
+	<link rel='archives' title='October 2004' href='../../../../2004/10/index.html' />
+	<link rel='archives' title='September 2004' href='../../../../2004/09/index.html' />
+	<link rel='archives' title='August 2004' href='../../../../2004/08/index.html' />
+	<link rel='archives' title='July 2004' href='../../../../2004/07/index.html' />
+	<link rel='archives' title='June 2004' href='../../../../2004/06/index.html' />
+	<link rel='archives' title='May 2004' href='../../../../2004/05/index.html' />
+	<link rel='archives' title='April 2004' href='../../../../2004/04/index.html' />
+	<link rel='archives' title='March 2004' href='../../../../2004/03/index.html' />
+	<link rel='archives' title='February 2004' href='../../../../2004/02/index.html' />
+	<link rel='archives' title='January 2004' href='../../../../2004/01/index.html' />
+	<link rel='archives' title='December 2003' href='../../../../2003/12/index.html' />
+	<link rel='archives' title='November 2003' href='../../../../2003/11/index.html' />
+	<link rel='archives' title='October 2003' href='../../../../2003/10/index.html' />
+	<link rel='archives' title='September 2003' href='../../../../2003/09/index.html' />
+	<link rel='archives' title='August 2003' href='../../../../2003/08/index.html' />
+	<link rel='archives' title='July 2003' href='../../../../2003/07/index.html' />
+	<link rel='archives' title='June 2003' href='../../../../2003/06/index.html' />
+	<link rel='archives' title='May 2003' href='../../../../2003/05/index.html' />
+	<link rel='archives' title='April 2003' href='../../../../2003/04/index.html' />
+	<link rel='archives' title='March 2003' href='../../../../2003/03/index.html' />
+	<link rel='archives' title='February 2003' href='../../../../2003/02/index.html' />
+	<link rel='archives' title='January 2003' href='../../../../2003/01/index.html' />
+	<link rel='archives' title='December 2002' href='../../../../2002/12/index.html' />
+	<link rel='archives' title='November 2002' href='../../../../2002/11/index.html' />
+	<link rel='archives' title='October 2002' href='../../../../2002/10/index.html' />
+	<link rel='archives' title='September 2002' href='../../../../2002/09/index.html' />
+	<link rel='archives' title='August 2002' href='../../../../2002/08/index.html' />
+	<link rel='archives' title='July 2002' href='../../../../2002/07/index.html' />
+	<link rel='archives' title='June 2002' href='../../../../2002/06/index.html' />
+	<link rel='archives' title='April 2002' href='../../../../2002/04/index.html' />
+	<link rel='archives' title='March 2002' href='../../../../2002/03/index.html' />
+	<link rel='archives' title='December 2001' href='../../../../2001/12/index.html' />
+	<link rel='archives' title='September 2001' href='../../../../2001/09/index.html' />
+	<link rel='archives' title='November 2000' href='../../../../2000/11/index.html' />
+	<link rel='archives' title='July 2000' href='../../../../2000/07/index.html' />
+	<link rel='archives' title='April 2000' href='../../../../2000/04/index.html' />
+	<link rel='archives' title='March 1999' href='../../../../1999/03/index.html' />
+	<link rel='archives' title='October 1998' href='../../../../1998/10/index.html' />
+	<link rel='archives' title='August 1998' href='../../../../1998/08/index.html' />
+<link rel="alternate" type="application/rss+xml" title="The Web Standards Project &raquo; Acid2 and Opera 9 Clarifications: Yes, Opera 9 Passes the Test Comments Feed" href="feed/index.html" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../../wp/xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../../wp/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Maintainable JavaScript' href='../../18/maintainable-javascript/index.html' />
+<link rel='next' title='Misplaced Anger: A Rebuttal to Zeldman&#8217;s Criticism of the W3C' href='../../26/misplaced-anger-a-rebuttal-to-zeldmans-criticism-of-the-w3c/index.html' />
+<meta name="generator" content="WordPress 3.3.1" />
+<link rel='canonical' href='index.html' />
+<link rel='shortlink' href='../../../../index0865.html?p=910' />
+</head>
+
+<body id="top" class="individual">
+
+<div id="container">
+
+
+	<div id="branding">
+		<h1><span>Working together for standards </span> <a href="../../../../index.html">The Web Standards Project</a></h1>
+
+		<a id="skip" href="#content-main" title="Skip to content">Skip to content</a>
+	</div>
+
+	<div id="nav-main">
+				<form id="fm-search" method="get" action="http://www.webstandards.org/index.php">
+			<fieldset>
+				<legend>Search</legend>
+				<label for="s"><span>Search WaSP</span>
+				<input id="s" name="s" class="search" value="" /></label>
+				<input type="submit" class="submit" name="submit" value="Go!" />
+			</fieldset>
+		</form>
+		<ul>
+			<li><a href="../../../../index.html" title="Home">Home</a></li>
+			<li><a href="../../../../about/index.html" title="More About Who We Are">About</a></li>
+			<li><a href="../../../../learn/index.html" title="More About Standards">Learn</a></li>
+			<li><a href="../../../../action/index.html" title="WaSP and Community Actions">Action</a></li>
+			<li><a href="../../../../buzz/index.html" title="Current and Archive Buzz Posts">Buzz</a></li>
+			<li><a href="../../../../press/index.html" title="In the Press and For the Press">Press</a></li>
+		</ul>
+	</div>
+
+
+	<hr />
+
+	<div id="content">
+
+	
+		<div id="content-main">
+			<div id="content-summary">
+				<h2 class="stmjrNoCollapse" id="post-910"><a href="index.html" rel="bookmark" title="Permanent Link: Acid2 and Opera 9 Clarifications: Yes, Opera 9 Passes the Test">Acid2 and Opera 9 Clarifications: Yes, Opera 9 Passes the Test</a></h2>
+				<p class="stmjrNoCollapse">By <span class="vcard"><a href="../../../../about/members/mollyeh/index.html" class="url fn">Molly E. Holzschlag</a></span> | July 20th, 2006 | Filed in <a href="../../../../buzz/action/acid2/index.html" title="View all posts in Acid2" rel="category tag">Acid2</a>, <a href="../../../../buzz/action/index.html" title="View all posts in Action" rel="category tag">Action</a>, <a href="../../../../buzz/general/index.html" title="View all posts in General" rel="category tag">General</a></p> 
+				<p>There&#8217;s been a bit of confusion over the Acid2 test and Opera 9 results. Ian Hickson has provided WaSP with the following clarifications about the Acid2 test and how things should behave. Hopefully, this insight will serve to clarify why some people are reporting issues in Opera 9 compliance.</p>
+				<a href="#content-sub" id="stmjrCollapse-content-summary" title="Skip to comment form">Skip to comment form</a>
+			</div>
+
+			<p>From Ian:</p>
+<ol>
+<li>The image changes when you scroll: Not a bug. This is part of the<br />
+test&#8217;s checking of fixed positioning.</li>
+<li>The image changes when you resize the window such that the text in the becomes jagged when you zoom in. It should not; just like the text, it should remain smooth.</li>
+<li> The image breaks dramatically if you enable &#8220;Fit to Width&#8221; mode: This is a standards compliance bug, but it is by design. Fit to Width works by ignoring the specs. In this case, however, it shouldn&#8217;t need to change anything, and is therefore IMHO a bug; but it is not something that affects whether the browser complies to the test or not since anything that happens in &#8220;Fit to Width&#8221; mode is done with the understanding that it will probably violate the specs.</li>
+<li>The image breaks dramatically if you enable &#8220;Small Screen&#8221; mode: Same as &#8220;Fit to Width&#8221; mode, but more so.</li>
+<li>The image breaks if you change any of the user rendering preferences (e.g. colours, fonts): Not a bug. If you change the preferences, then you are changing how you want the test to look. Tests should only be tested with all the preferences set to their initial values.</li>
+<li>The eyes go orange if you view the test zoomed in or zoomed out: This is a bug. The image should get bigger as you zoom in, but it should not change colour. Another bug is that the nose becomes jagged when you zoom in. It should not; just like the text, it should remain smooth.</li>
+<li>The nose goes blue if you hover it: Not a bug. This is part of the test.</li>
+<li>The eyes disappear and show red if you disable images then reenable them: This is a bug. The eyes should disappear (and say &#8220;ERROR&#8221;, if I&#8217;m not mistaken) when you disable images, but when you reenable them, they should return to the normal rendering.</li>
+</ol>
+<p>So in conclusion: There are some standards compliance bugs (6 and 8 above), they are both exposed by the more advanced features that Opera has compared to other browsers. There are also a couple of minor UI bugs (2, 3, 4), but they don&#8217;t affect the WaSP&#8217;s mission.</p>
+<p>An additional note from Håkon Lie points out that &#8220;When taking the test, you should use the default settings of the browser you are testing. Changing the zoom level, minimum font<br />
+size, applying a fit-to-width algorithm, or making other changes may alter the rendition of the Acid2 page without this constituting a failure in compliance.&#8221;</p>
+
+		</div>
+	
+		
+
+		<div id="content-replies">
+
+
+			<h3 id="comments">Your Replies</h3> 
+
+				<dl>
+
+
+					<dt id="comment-2432"><a href="#comment-2432" title="Link to this reply">#1</a> On July 20th, 2006 9:53 pm <span><a href='http://mangee.livejournal.com/' rel='external nofollow' class='url'>Jo 'Mangee'</a> replied:</span></dt>
+					<dd>
+												<p>&#8220;The eyes disappear and show red if you disable images then reenable them: This is a bug. The eyes should disappear (and say “ERROR”, if I’m not mistaken) when you disable images, but when you reenable them, they should return to the normal rendering.&#8221;</p>
+<p>The eyes do say error, but the text showing it is red on a red background.</p>
+<p>So i&#8217;m confused, &#8220;It&#8217;s a Bug&#8221; means a bug with Opera or with the ACID2 test?</p>
+<p>-Jo.</p>
+					</dd>
+
+
+					<dt id="comment-2438"><a href="#comment-2438" title="Link to this reply">#2</a> On July 21st, 2006 4:20 am <span>Axel Siebert replied:</span></dt>
+					<dd>
+												<p>What&#8217;s up with point 2? Everything from &#8220;becomes jagged&#8221; onwards is actually copied from point 6, and what should really be there instead is missing&#8230;</p>
+					</dd>
+
+
+					<dt id="comment-2450"><a href="#comment-2450" title="Link to this reply">#3</a> On July 21st, 2006 2:56 pm <span><a href='http://ln.hixie.ch/' rel='external nofollow' class='url'>Ian Hickson</a> replied:</span></dt>
+					<dd>
+												<p>&#8220;It&#8217;s a bug&#8221; means it&#8217;s a bug in Opera.</p>
+<p>Point 2 got corrupted due to copy-and-paste issues. It should read &#8220;2. The image changes when you resize the window such that the text in the paragraph at the very top of the page wraps: Not a standards compliance issue. It could be considered a user interface bug, but it is not a standards bug. (It&#8217;s could be a UI bug because if you&#8217;re at a fragment identifier and you resize<br />
+the window, the page should arguably remain at that fragment identifier. As far as I know, all browsers have this &#8220;bug&#8221;.)&#8221;</p>
+					</dd>
+
+
+					<dt id="comment-2504"><a href="#comment-2504" title="Link to this reply">#4</a> On July 23rd, 2006 3:13 pm <span><a href='http://home.polarboing.com/nicomen' rel='external nofollow' class='url'>Nicolas Mendoza</a> replied:</span></dt>
+					<dd>
+												<p>You also forgot to mention:</p>
+<p>1. Adding User CSS files make ACID2 not render properly, for instance a css file like:</p>
+<blockquote><p>* { display: none; }</p></blockquote>
+<p>2. If you add a User JS file, like the ones you can get at <a href="http://userjs.org/" rel="nofollow">http://userjs.org</a> you might end up making Acid2 render wrong. For instance if you add a User JS file looking like this:</p>
+<blockquote><p>window.onload = function() { document.body.innerHTML = &#8220;&#8221;; }</p></blockquote>
+<p>3. If you execute some javascript on the page manually. For instance pasting this<br />
+<blockquote>javascript:document.body.innerHTML = &#8220;&#8221;;</p></blockquote>
+<p> in the addressbar of the tab currently displaying the  Acid2 page will break it.</p>
+<p>Of course all this examples are just nonsense just like some of the other points mentioned. The fact that Acid2 renders wrong in special view modes made to make up for badly designed pages (pages not made for small screens, devices, big screens, visually impaired etc.) has little to do with passing the Acid2 test IMHO.</p>
+					</dd>
+
+
+					<dt id="comment-2572"><a href="#comment-2572" title="Link to this reply">#5</a> On July 25th, 2006 9:05 am <span><a href='http://www.megasolutions.net/' rel='external nofollow' class='url'>khurram</a> replied:</span></dt>
+					<dd>
+												<p>getting some wrapping issue bugs</p>
+<p><a href="http://megasolutions.net/" rel="nofollow">http://megasolutions.net</a></p>
+					</dd>
+
+
+					<dt id="comment-2849"><a href="#comment-2849" title="Link to this reply">#6</a> On August 1st, 2006 3:52 am <span><a href='http://sheep.art.pl/' rel='external nofollow' class='url'>Radomir Dopieralski</a> replied:</span></dt>
+					<dd>
+												<p>If changing the preferences breaks the broswer (makes it not compliant to standards),  then why the preferences are changeable in the first place? I&#8217;m especially concerned with point 5, since I fail to see how this should unevitably break anything.</p>
+					</dd>
+
+
+					<dt id="comment-2883"><a href="#comment-2883" title="Link to this reply">#7</a> On August 2nd, 2006 12:36 am <span><a href='http://www.mcgladdery.org/' rel='external nofollow' class='url'>Kevin McGladdery</a> replied:</span></dt>
+					<dd>
+												<p>I would suggest that changing preferences doesn&#8217;t change standards compliance, but since user preferences can be controlled by user style sheets, when rules in a user style sheet override the CSS in the test, you&#8217;re going to get a different result, just like any other CSS styled document you open.  </p>
+<p>If I tell Opera to display all text in red and at three times the normal size, it&#8217;s going to alter the appearance of any page, Acid2 test included.</p>
+					</dd>
+
+
+					<dt id="comment-3088"><a href="#comment-3088" title="Link to this reply">#8</a> On August 7th, 2006 3:03 pm <span><a href='http://8th-wonder.co.uk/' rel='external nofollow' class='url'>Jordan Clark</a> replied:</span></dt>
+					<dd>
+												<p>I think that all the Opera team should be congratulated for their efforts on this version of their excellent browser. </p>
+<p>Whether or not <abbr title="version">v</abbr>9 strictly classes as a &#8220;pass&#8221;, I think that they should be applauded for a job well done and we as web designers should target our negative energy towards the Internet Explorer development team instead.</p>
+					</dd>
+
+
+					<dt id="comment-3451"><a href="#comment-3451" title="Link to this reply">#9</a> On August 14th, 2006 8:41 pm <span><a href='http://www.shwetinoo.net.ms/' rel='external nofollow' class='url'>shwetinoo</a> replied:</span></dt>
+					<dd>
+												<p>It&#8217;s difficult for me</p>
+					</dd>
+
+
+					<dt id="comment-3594"><a href="#comment-3594" title="Link to this reply">#10</a> On August 17th, 2006 9:52 am <span>Jesse replied:</span></dt>
+					<dd>
+												<p>I have no knowledge of web standards or coding but why is it that Opera can never properly render the original (non beta) Yahoo Mail pages?  The Check Mail, Compose, Search Mail, and Search the Web buttons are above each other and not all in one row.  The white background on the left side around the folders is not aligned with its edges.  The check boxes on the messages do not all line up.  And there is a large blank area at the top of the page.  IE and Firefox render this properly.  This has turned me off to Opera.  Any ideas?</p>
+					</dd>
+
+
+					<dt id="comment-3624"><a href="#comment-3624" title="Link to this reply">#11</a> On August 17th, 2006 8:02 pm <span>livingdots replied:</span></dt>
+					<dd>
+												<p>Jesse, I can&#8217;t see any siginficant difference in rendering between Opera 9 and IE6. I suspect you&#8217;ve made some changes to the default settings, which screws up the display. In the toolbar, uncheck View &gt; Fit to width (hit Ctrl+F11 to toggle). If that doesn&#8217;t help, do a clean install (uninstall, delete the Opera-folder, and install Opera 9 agian).</p>
+<p>HTH</p>
+					</dd>
+
+
+					<dt id="comment-5249"><a href="#comment-5249" title="Link to this reply">#12</a> On September 17th, 2006 4:14 pm <span>Gabriel replied:</span></dt>
+					<dd>
+												<p>I agree that the Opera team should be congratulated for their efforts on this version, which was able to pass the acid test.<br />
+At the same time, I&#8217;d like to point out some Opera 9.01 issues:</p>
+<p>- It seems that a FlashPaper object does not inherit its parent div&#8217;s z-index. Scrolling <a href="http://dev.ibcnet.hu/recreation/szolaradio.html" rel="nofollow">this page</a>, the parent div moves under the header, but the FlashPaper object slips over it. (I don&#8217;t know if it&#8217;s an Opera bug, experienced the same behavior with IE7 RC1. This page works properly only in Gecko-based browsers.)</p>
+<p>- Problems with rendering bold text in h2, h3 tags and links on a semi-transparent layer: <a href="http://dev.ibcnet.hu/recreation/index.html" rel="nofollow">sample 1</a>, <a href="http://dev.ibcnet.hu/recreation/gabor-linkjei.html" rel="nofollow">sample 2</a></p>
+					</dd>
+
+
+					<dt id="comment-5307"><a href="#comment-5307" title="Link to this reply">#13</a> On September 18th, 2006 10:01 am <span>kL replied:</span></dt>
+					<dd>
+												<p>AFAIK CSS doesn&#8217;t specify how pages should be zoomed and doesn&#8217;t require sub-pixel rendering precision, so jagged edges or see-though due to anti-aliasing algorighm IMHO shouldn&#8217;t be considered a bug &#8211; it&#8217;s just a minor, unspecified side-effect.</p>
+<p>Deformations caused by Fit to Width shouldn&#8217;t be called bugs &#8211; elements are disproportionally scaled deliberately. It&#8217;s a deliberate non-compiliance mode, not a bug.</p>
+<p>Disabling images is buggy indeed.</p>
+					</dd>
+
+
+					<dt id="comment-8325"><a href="#comment-8325" title="Link to this reply">#14</a> On October 19th, 2006 11:13 am <span><a href='http://citrite.org/blogs/blog/2006/10/19/ie7-arrives-along-with-first-security-vulnerability/' rel='external nofollow' class='url'>Citrites&#8217; Blogs &raquo; Blog Archive &raquo; IE7 Arrives (along with first security vulnerability)</a> replied:</span></dt>
+					<dd>
+												<p>[...] Microsoft having declared IE6 so broken that it needs to be replaced urgently but then having released a browser that has on the day of its release been found to be flawed leaves us administrators with a bit of a quandry: do we risk jumping out of the frypan and into the fire by letting them have their way with the IE7 update or do we declare that it&#8217;s better the devil you know and stick with IE6 by blocking the update? None of the new IE7 features are particularly innovative or compelling (eg tabs and RSS, which its competitors have had for years). They also missed a good opportunity to improve standards compliance &#8211; IE7 still fails the Acid2 Browser Test miserably as you can see from the IE7 rendering vs the reference (though Opera 9 is one of the only browsers to have passed). [...]</p>
+					</dd>
+
+
+					<dt id="comment-8326"><a href="#comment-8326" title="Link to this reply">#15</a> On October 19th, 2006 11:14 am <span><a href='http://citrite.org/blogs/samj/2006/10/19/ie7-arrives-along-with-first-security-vulnerability/' rel='external nofollow' class='url'>Sam Johnston &raquo; Blog Archive &raquo; IE7 Arrives (along with first security vulnerability)</a> replied:</span></dt>
+					<dd>
+												<p>[...] Microsoft having declared IE6 so broken that it needs to be replaced urgently but then having released a browser that has on the day of its release been found to be flawed leaves us administrators with a bit of a quandry: do we risk jumping out of the frypan and into the fire by letting them have their way with the IE7 update or do we declare that it&#8217;s better the devil you know and stick with IE6 by blocking the update? None of the new IE7 features are particularly innovative or compelling (eg tabs and RSS, which its competitors have had for years). They also missed a good opportunity to improve standards compliance &#8211; IE7 still fails the Acid2 Browser Test miserably as you can see from the IE7 rendering vs the reference (though Opera 9 is one of the only browsers to have passed). [...]</p>
+					</dd>
+
+
+					<dt id="comment-9137"><a href="#comment-9137" title="Link to this reply">#16</a> On October 25th, 2006 11:25 pm <span><a href='http://kadu.ducz.com/?p=547' rel='external nofollow' class='url'>Impressões sobre o Firefox 2 at blog palmeirense falador</a> replied:</span></dt>
+					<dd>
+												<p>[...] Ainda não desisti do Firefox, o Opera, apesar de passar no Acid2, renderiza muitas páginas de uma maneira que não me agrada, por isso, e pela ideologia do software, eu ainda continuarei com o Firefox. [...]</p>
+					</dd>
+
+
+					<dt id="comment-10695"><a href="#comment-10695" title="Link to this reply">#17</a> On November 6th, 2006 3:28 am <span>Tam replied:</span></dt>
+					<dd>
+												<p>Congrats for OPERA Team</p>
+					</dd>
+
+
+					<dt id="comment-13386"><a href="#comment-13386" title="Link to this reply">#18</a> On November 18th, 2006 9:51 pm <span>Anders replied:</span></dt>
+					<dd>
+												<p>I dont understand. When I use Opera and resize the window manually (grabing the corner and resizing) it messes up the test. </p>
+<p>So i guess Opera does not really pass then eh?</p>
+					</dd>
+
+
+					<dt id="comment-15431"><a href="#comment-15431" title="Link to this reply">#19</a> On November 26th, 2006 10:36 am <span>Swarvek replied:</span></dt>
+					<dd>
+												<p>What you reference to as a bug is not really a bug. This effect you get is due to fixed positioning. If you go back and click on the test again it will show correctly. Because there is no scrolling provided on the page you cannot go to the exactly the same spot on the page. Two blocks that &#8220;mess up&#8221; the test as you have put it have style set position:fixed and the keep position relative to the vieport not the document. When you resize the window opera seems to scroll document a bit (possibly to show as much of the anchor as possible or center it on the screen) and that messes up the looks. If you dont believe me measure the distance between the top egde of the viewport and the eyes (in the picture) &#8211; it will change as you resize the window.</p>
+					</dd>
+
+
+					<dt id="comment-17511"><a href="#comment-17511" title="Link to this reply">#20</a> On December 4th, 2006 5:47 am <span>Jon replied:</span></dt>
+					<dd>
+												<p>When I use the latest Opera 9, the Acid face looks fine until I change the screen size from maximum to&#8230; anything else&#8230; whereof the top of it&#8217;s head breaks off, looking a bit like he has a hat hovering over his head&#8230; does this means something is wrong, because it looks wrong?</p>
+					</dd>
+
+
+					<dt id="comment-19026"><a href="#comment-19026" title="Link to this reply">#21</a> On December 9th, 2006 11:43 am <span><a href='http://www.anieto2k.com/2006/12/09/la-nueva-version-de-firefox-pasa-por-fin-el-acid-test-2/' rel='external nofollow' class='url'>La nueva versión de Firefox pasa por fin el Acid Test 2 - aNieto2K</a> replied:</span></dt>
+					<dd>
+												<p>[...] Parece ser que la versión de día 7 de Diciembre de 2006 de lo que será el nuevo Firefox ha pasado el Acid2 test, esto se debe a la nueva versión de Gecko (la 1.9) que pasará a ser el nuevo corazón de Firefox.&nbsp; Aunque otro navegadores como Opera 9 tambien lo pasó este verano, esto es una gran noticia. [...]</p>
+					</dd>
+
+
+					<dt id="comment-22722"><a href="#comment-22722" title="Link to this reply">#22</a> On December 19th, 2006 9:00 am <span><a href='http://www.cablemodem.ch/' rel='external nofollow' class='url'>Andreas</a> replied:</span></dt>
+					<dd>
+												<p>Will Firefox 3.0  pass the Acid2 browser test?</p>
+<p>One of the things that has bothered Firefox&#8217;s creators has been it&#8217;s inability to pass the Acid2 browser test. A recent alpha release of Firefox 3.0 has been able to pass thanks to changes in it&#8217;s rendering engine. Now Firefox can pass it will join the likes of Safari and Opera in being able to say it is truely (or at least as near as possible) standards compliant. And, of course this puts them another step ahead of Microsoft with Internet Explorer.</p>
+					</dd>
+
+
+					<dt id="comment-32322"><a href="#comment-32322" title="Link to this reply">#23</a> On January 10th, 2007 3:55 pm <span>Jack replied:</span></dt>
+					<dd>
+												<p>Konqueror has passed the test since version 3.5. It was the second browser, after Apple&#8217;s Safari, to pass the test.</p>
+					</dd>
+
+
+					<dt id="comment-48351"><a href="#comment-48351" title="Link to this reply">#24</a> On February 18th, 2007 6:08 am <span>khaled khalil replied:</span></dt>
+					<dd>
+												<p>sadly, opera linux didn&#8217;t render it just like its windows release, but i am sure they will soon approve it.</p>
+<p>i confirm that konqueror passed it</p>
+					</dd>
+
+
+					<dt id="comment-48354"><a href="#comment-48354" title="Link to this reply">#25</a> On February 18th, 2007 6:15 am <span>khaled khalil replied:</span></dt>
+					<dd>
+												<p>sorry, seems that the opera linux problem was mine, a friend confirmed to me that it worked perfectly on his opera linux</p>
+					</dd>
+
+
+					<dt id="comment-53631"><a href="#comment-53631" title="Link to this reply">#26</a> On March 6th, 2007 6:52 pm <span><a href='http://www.itprodigy.com/' rel='external nofollow' class='url'>James Cornell</a> replied:</span></dt>
+					<dd>
+												<p>Jack, Konqueror passed ACID2 because Apple has to send patches upstream due to the GPLv2.  They fullfil their legal obligation, and are responsible specifically for furthering CSS standards adherence.  Apple doesn&#8217;t use KDE&#8217;s Subversion or CVS, so the extra features they do add are a little harder to remerge, especially given the fact that Cocoa/Obj-C is almost exclusively permeated throughout Mac OS X, while QT is cheifly C++.  WebCore however cross pollinates both business model driven communities.  Firefox 2 does not pass ACID2, and its UI toolkit still non-native on all platforms.  Mozilla, IE6, IE7, Netscape and pre-Opera 9 don&#8217;t pass ACID2 either.  Now if JavaScript standards existed and were enforced, currently I have to use Firefox more often since it has all the developer addons, which make debugging crazy AJAX scripts easier on it.</p>
+					</dd>
+
+
+				</dl>
+
+		</div>
+
+
+
+		<div id="content-sub" title="Comment form">
+			<a href="#top" id="stmjrCollapse-content-sub" title="Return to top">Return to top</a>
+
+			<h3 class="stmjrNoCollapse">Post a Reply</h3>
+
+
+			<p>Comments are closed.</p>
+
+
+		</div>
+	
+	
+	</div>
+
+	<hr />
+
+	<div id="nav-supp">
+		<p><a href="#top" title="Back to Top">Back to Top</a></p> 
+	</div>
+
+	<div id="siteinfo">
+		<p>All of the entries posted in <abbr title="The Web Standards Project">WaSP</abbr> Buzz express the opinions of their individual authors. They do not necessarily reflect the plans or positions of the Web Standards Project as a group.</p>
+		<p>This site is valid <a href="http://validator.w3.org/check/referer" title="Validate this document">XHTML 1.0 Strict</a>, <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate this CSS">CSS</a> | Get Buzz via <a href="../../../../feed/index.html"><abbr title="Really Simple Syndication">RSS</abbr></a> or <a href="../../../../feed/atom/index.html">Atom</a> | <a href="../../../../about/colophon/index.html">Colophon</a> | <a href="../../../../about/legal/index.html">Legal</a></p>
+		<!-- 11 queries. 0.221 seconds. -->
+	</div>
+
+</div>
+
+
+</body>
+
+<!-- Mirrored from www.webstandards.org/2006/07/20/acid2-and-opera-9-clarifications/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Aug 2017 17:43:37 GMT -->
+</html>
+
+<!-- Dynamic page generated in 0.209 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2017-08-18 12:29:28 -->
+
+<!-- super cache -->

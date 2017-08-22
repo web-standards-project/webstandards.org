@@ -1,0 +1,49 @@
+
+.vcard, .vevent {
+	margin:0 0 1em;
+	padding:10px 32px 10px 16px;
+	color:#000;
+	background:#f8f8ec url(uf.gif) 100% 0 no-repeat;
+	border:solid 2px #e0e7b8;
+	border-radius:8px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+}
+
+html,body{
+	font-size:100%;
+	margin:0;
+	padding:0;
+	color:#000;
+	background-color:#fff;
+	font-family:"Helvetica Neue",helvetica,arial,sans-serif;
+}
+.body{
+	font-size:0.8em;
+	margin:20px auto;
+	padding:0;
+	width:70%;
+	min-width:20em;
+}
+h1, h2, h3, h4, h5, h6, p{
+	font-size:1em;
+	margin:0 0 0.4em;
+	padding:0;
+}
+h1{font-size:1.6em;}
+h2{font-size:1.4em; margin-top:1em;}
+h3{font-size:1.1em;}
+p{margin-bottom:0.8em;}
+h1, h2, p{
+	margin-left:18px; 
+	margin-left:18px;
+}
+.vcard p, .vevent p{
+	margin-left:0; 
+	margin-left:0;
+}
+code{
+	font-size:1em;
+	font-family:monaco,monospace;
+	color:#669;
+}

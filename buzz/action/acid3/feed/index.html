@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>The Web Standards Project &#187; Acid3</title>
+	<atom:link href="http://www.webstandards.org/buzz/action/acid3/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.webstandards.org</link>
+	<description>Working together for standards</description>
+	<lastBuildDate>Fri, 01 Mar 2013 18:30:30 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Acid3 receptions and misconceptions and do we have a winner?</title>
+		<link>http://www.webstandards.org/2008/10/02/dowehaveawinner/</link>
+		<comments>http://www.webstandards.org/2008/10/02/dowehaveawinner/#comments</comments>
+		<pubDate>Fri, 03 Oct 2008 03:37:42 +0000</pubDate>
+		<dc:creator>lgunther</dc:creator>
+				<category><![CDATA[Acid3]]></category>
+		<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[Bugs]]></category>
+
+		<guid isPermaLink="false">http://www.webstandards.org/?p=1157</guid>
+		<description><![CDATA[Acid3 progress and what it really means.]]></description>
+			<content:encoded><![CDATA[<p><a href="http://acid3.acidtests.org/">Acid3</a> is probably the most visible thing that WaSP has done the last year. When Google Chrome was launched almost every review included our little test as an indicator of standards support. It is often mentioned in blogs and articles. Now the <a href="http://webkit.org/blog/280/full-pass-of-acid-3/">Surfin Safari blog has announced</a> that the team behind Webkit considers that they have passed the test in every aspect. And no doubt this is a great achievement. Congratulations to the Webkit team, but even more we would like to congratulate the average web user &#8211;  who in a few years thanks to our test we hope will get a better experience!</p>
+<p>What exactly does it mean to pass the Acid3 test?</p>
+<p>There has been some confusion about the test and its importance. Some people have been saying things like ”my browser does not pass the test and I have no problems using it”. Quite a few other people seem to think that Webkit and Gogi (Opera&#8217;s internal build) passed the test already in March – despite the fact that neither team has made this claim.</p>
+<p>To answer these misconceptions we need to address the issue of what exactly is being tested and how. The main part of test is automated through JavaScript, a sort of test harness that runs 100 subtests. Getting a score of 100 is not the same as passing Acid3 – a common misconception, or perhaps an oversimplification.</p>
+<p>Many subtests are high on a developer&#8217;s wish list: Full CSS 3 selectors support, media queries, SVG fonts. Admittedly a few others test edge cases and more esoteric features – but the test was supposed to be a significant challenge!</p>
+<p>The second part is a rendering test. Some of the scripted subtests produce results that affect the rendering, but there are also rendering issues that come in addition to these. Some of them are high on many designers&#8217; wish list: Text shadow, downloadable fonts, and display: inline-block.</p>
+<p>The third test is the so called &#8220;smoothness&#8221; criterion. It is basically a speed test. No subtest may take too long – and especially subtest 26 is challenging. Compared to <a href="http://mootools.net/slickspeed/">Slickspeed</a>, <a href="http://webkit.org/perf/sunspider-0.9/sunspider.html">Sun Spider</a>, the <a href="http://code.google.com/apis/v8/run.html">V8 test suite</a> or <a href="http://dromaeo.com/">Dromaeo</a> Acid3 is not so thorough. It will give some indication of a browsers speed, though.</p>
+<p>This is exactly as planned. Acid3 was not meant to be the one and only indication of a browser&#8217;s performance. In fact many other test suites are far more important. (We provide links to some of them below.)</p>
+<p>Testing is really important. Without tests that check how well a certain browser follows standards, i.e. applies mark up and displays the result correctly, we can never guarantee an open, fully interoperable web.</p>
+<p>A highly visible test like Acid 3 hopefully helps to promote such interoperability. One can also hope that all the other tests will receive the attention they deserve. Writing them is not a glamorous task, but highly essential.</p>
+<p>Apart from improving its support for CSS in its browser, Microsoft has <a href="http://blogs.gotdotnet.com/ie/archive/2008/08/19/more-tests-submitted-to-the-w3c-css-2-1-test-suite.aspx">contributed 2524 test cases</a> to the CSS 2.1 test suite. For that they deserve credit!</p>
+<p>We all know that Internet Explorer currently lag a bit behind the other browsers in standards compliance. Indeed they are last of the big ones to pass <a href="http://acid2.acidtests.org/">Acid2</a> and they fail Acid3 more than any other browser. But can we declare Webkit as the best rendering engine now that they pass it?</p>
+<p>Of course not. Since Acid3 is only one indicator of many. Webkit&#8217;s achievement is great – and there are many other really exciting things they are pioneering, like <a href="http://webkit.org/specs/CSSVisualEffects/CSSTransitions.html">CSS transitions</a> and transformations. And with <a href="http://webkit.org/blog/214/introducing-squirrelfish-extreme/">Squirrelfish Extreme</a> JavaScript performance looks really exciting as well.</p>
+<p>In other regards Opera is a clear leader. It is <a href="http://www.codedread.com/svg-support.php">the only browser that supports more than 90 % of the SVG test suite</a>. It is the only browser that implements <a href="http://www.whatwg.org/specs/web-forms/current-work/">Web Forms 2.0</a>, currently <a href="http://blog.whatwg.org/this-week-in-html-5-episode-5">being merged into HTML 5</a>. They supported media queries and SMIL long before Acid3 came out.</p>
+<p>Gecko (with Spidermonkey) is no longer an underdog. Besides the fun of meeting the technical challenge it is not hard to guess that the Webkit team rushed to pass Acid3 also for marketing reasons – that they perhaps need a bit more than Mozilla. Mozilla concentrated on releasing Firefox 3 before Acid 3 received any real attention. Now that they are working on it they are impressive in another way, compared to Webkit. Looking at the discussions for <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=410460">bug 410460</a> and its related bugs, it is clear that any improvement must be rock solid. Work often continues even when a particular feature is good enough for Acid3.</p>
+<p>In fact, there is actually one open issue still in Acid 3 that might temporarily cause Webkit to become incompliant again. <a href="http://lists.w3.org/Archives/Public/www-style/2008Sep/0218.html">http://lists.w3.org/Archives/Public/www-style/2008Sep/0218.html</a>. I rest assured that a fix probably already is being made, though.</p>
+<p>Perhaps one can compare this to a race where you are supposed to run a distance, with a bucket of water. One competitor crosses the finishing line first, the other, on the other hand, has not lost a single drop from his bucket. Both have done great. (By the way, <a href="http://forums.mozillazine.org/viewtopic.php?f=42&#038;t=851335&#038;start=15&#038;st=0&#038;sk=t&#038;sd=a">internal builds of Firefox get a score of 97 now</a>, and downloadable fonts work on Windows and Mac.)</p>
+<p>In the end the winner is neither Webkit, Opera, Mozilla nor Microsoft, but developers who get more powerful features to work with and more consistency between browsers. And that means that in the long run they are able to focus on user experience, not browser shortcomings. This means that the true winner of Acid3 is anybody who surfs the web.</p>
+<p>Some other test suites for your review:</p>
+<ul>
+<li><a href="http://www.w3.org/Style/CSS/Test/CSS2.1/current/">Cascading Style Sheets level 2 revision 1 </a></li>
+<li><a href="http://www.w3.org/Style/CSS/Test/CSS3/Selectors/current/">Selectors</a></li>
+<li><a href="http://www.w3.org/Style/CSS/Test/CSS3/Color/20070927/">CSS Color Module</a></li>
+<li><a href="http://www.w3.org/DOM/Test/">Collection of DOM tests</a></li>
+<li><a href="http://en.wikipedia.org/wiki/SVG">SVG</a></li>
+<li><a href="http://en.wikipedia.org/wiki/HTML_5">Web Forms</a></li>
+<li><a href="http://philip.html5.org/tests/canvas/suite/tests/">Canvas</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2008/10/02/dowehaveawinner/feed/</wfw:commentRss>
+		<slash:comments>23</slash:comments>
+		</item>
+		<item>
+		<title>Acid3 Passed in 23 Days!</title>
+		<link>http://www.webstandards.org/2008/04/07/acid3-passed-in-23-days/</link>
+		<comments>http://www.webstandards.org/2008/04/07/acid3-passed-in-23-days/#comments</comments>
+		<pubDate>Mon, 07 Apr 2008 06:19:28 +0000</pubDate>
+		<dc:creator>Kimberly Blessing</dc:creator>
+				<category><![CDATA[Acid3]]></category>
+		<category><![CDATA[Browsers]]></category>
+
+		<guid isPermaLink="false">http://www.webstandards.org/2008/04/07/acid3-passed-in-23-days/</guid>
+		<description><![CDATA[On March 3, the Web Standards Project launched the Acid3 Browser Test. On March 26, two browser teams reported that their builds passed. ]]></description>
+			<content:encoded><![CDATA[<p>Just over a month ago, WaSP announced the <a href="/action/acid3/">Acid3 Browser Test</a>. At the time, we knew that some of the browser development teams were aggressively working to pass the test. What we didn&#8217;t know was how long it would take for a browser to pass the test. </p>
+<p><q cite="http://ln.hixie.ch/?start=1206565203&#038;count=1">&#8220;When we released Acid2, the first browser passed it in about a fortnight. Acid3 is orders of magnitude more complicated. I really didn&#8217;t expect to see passing browsers this side of August, let alone within a month,&#8221;</q> wrote <a href="/about/members/hixie">Ian Hickson</a>, the architect of the test, on his <a href="http://ln.hixie.ch/?start=1206565203&#038;count=1">blog</a>.</p>
+<p>Well, now we know: It took under a month for not one but <em>two</em> browsers to <a href="http://acid3.acidtests.org/reference.html" title="See the reference rendering">pass the test</a>. On March 26, the WebKit team <a href="http://webkit.org/blog/173/webkit-achieves-acid3-100100-in-public-build/">announced</a> that their public build produced a 100/100 result; Opera <a href="http://my.opera.com/desktopteam/blog/2008/03/26/opera-and-the-acid3-test">announced</a> that they had an internal build which passed on the same day and they <a href="http://my.opera.com/desktopteam/blog/2008/03/28/public-acid3-build">released</a> the build on March 28. Congratulations to both teams!</p>
+<p>In the past month we&#8217;ve received plenty of <a class="email" href="mailto:acid3feedback-REPLACE_WITH_AT_SYMBOL-webstandards.org?body=replace%20-REPLACE_WITH_AT_SYMBOL-%20in%20the%20to:%20address%20with%20@" title="Send an email regarding Acid3 (opens your email software)">feedback and questions</a> about the test.  Thanks to the help of readers and browser developers, some bugs were identified and resolved. To learn more about the changes that were made as a result, read Ian&#8217;s post which lists the <a href="http://ln.hixie.ch/?start=1206565203&#038;count=1">major changes</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2008/04/07/acid3-passed-in-23-days/feed/</wfw:commentRss>
+		<slash:comments>26</slash:comments>
+		</item>
+		<item>
+		<title>Acid3: Putting Browser Makers on Notice, Again.</title>
+		<link>http://www.webstandards.org/2008/03/03/acid3-putting-browser-makers-on-notice-again/</link>
+		<comments>http://www.webstandards.org/2008/03/03/acid3-putting-browser-makers-on-notice-again/#comments</comments>
+		<pubDate>Mon, 03 Mar 2008 10:00:17 +0000</pubDate>
+		<dc:creator>drewm</dc:creator>
+				<category><![CDATA[Acid3]]></category>
+		<category><![CDATA[General]]></category>
+		<category><![CDATA[WaSP Announcement]]></category>
+
+		<guid isPermaLink="false">http://www.webstandards.org/2008/03/03/acid3-putting-browser-makers-on-notice-again/</guid>
+		<description><![CDATA[It&#8217;s been three years since we told browser makes that we want to see them smile, but now we wanna hold their hand. Acid3 goes beyond the CSS tests implemented by Acid2 and tests a browser&#8217;s DOM Scripting capability, as well as continuing to probe visual rendering of CSS, SVG and webfonts. Further information can [...]]]></description>
+			<content:encoded><![CDATA[<p>It&#8217;s been three years since we told browser makes that <a href="/2005/04/13/acid2-putting-browser-makers-on-notice/">we want to see them smile</a>, but now we wanna hold their hand.</p>
+<p><a href="/acid3/">Acid3</a> goes beyond the CSS tests implemented by Acid2 and tests a browser&#8217;s DOM Scripting capability, as well as continuing to probe visual rendering of CSS, SVG and webfonts. Further information can be found on the <a href="/acid3/">Acid3 page</a>, in the <a href="/press/releases/20080303/">press release</a>, or you can just go ahead and <a href="http://acid3.acidtests.org/">take the test</a>.</p>
+<p>We know that work is already underway based on the Acid3 previews, but time will tell which browser is the first to pass all 100 tests fully, and with default settings. This is going to be interesting.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2008/03/03/acid3-putting-browser-makers-on-notice-again/feed/</wfw:commentRss>
+		<slash:comments>34</slash:comments>
+		</item>
+		<item>
+		<title>Acid3 nearing completion</title>
+		<link>http://www.webstandards.org/2008/02/05/acid3-nearing-completion/</link>
+		<comments>http://www.webstandards.org/2008/02/05/acid3-nearing-completion/#comments</comments>
+		<pubDate>Tue, 05 Feb 2008 14:14:04 +0000</pubDate>
+		<dc:creator>Kimberly Blessing</dc:creator>
+				<category><![CDATA[Acid3]]></category>
+		<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[DOM]]></category>
+
+		<guid isPermaLink="false">http://www.webstandards.org/2008/02/05/acid3-nearing-completion/</guid>
+		<description><![CDATA[If you're a fan of the Acid browser tests, you already know that Acid3 is in the works. It's now in a "final review" state, so please check it out and submit your feedback.]]></description>
+			<content:encoded><![CDATA[<p>As noted previously, <a href="/about/members/hixie">Ian Hickson</a> has been hard at work on the <a href="http://acid3.acidtests.org/">Acid3 browser test</a>. We&#8217;re happy to report that his work is nearly done!</p>
+<p>Acid3 is a complex test compared to <a href="http://acid1.acidtests.org">Acid1</a> and <a href="http://acid2.acidtests.org">Acid2</a>. The Web is increasingly becoming a platform for application development, so Acid3 tests many of the DOM2 and ECMAScript specifications, in addition to markup languages, CSS, SVG, and others. A complete list of specifications tested will be available when the test launches, along with a guide to the test.</p>
+<p>Due to the complexity of the test, we&#8217;re asking for a final round of feedback to ensure its fairness and accuracy. Please review <a href="http://acid3.acidtests.org/">the test</a> and submit your comments here or <a class="email" href="mailto:acid3feedback-REPLACE_WITH_AT_SYMBOL-webstandards.org?body=replace%20-REPLACE_WITH_AT_SYMBOL-%20in%20the%20to:%20address%20with%20@" title="Send an email to the Acid3 team (opens your email software)">email them to us</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2008/02/05/acid3-nearing-completion/feed/</wfw:commentRss>
+		<slash:comments>44</slash:comments>
+		</item>
+		<item>
+		<title>What&#8217;s the best test for Acid3?</title>
+		<link>http://www.webstandards.org/2008/01/16/whats-the-best-test-for-acid3/</link>
+		<comments>http://www.webstandards.org/2008/01/16/whats-the-best-test-for-acid3/#comments</comments>
+		<pubDate>Wed, 16 Jan 2008 08:17:07 +0000</pubDate>
+		<dc:creator>Kimberly Blessing</dc:creator>
+				<category><![CDATA[Acid2]]></category>
+		<category><![CDATA[Acid3]]></category>
+		<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[Web Standards (general)]]></category>
+
+		<guid isPermaLink="false">http://www.webstandards.org/2008/01/16/whats-the-best-test-for-acid3/</guid>
+		<description><![CDATA[Now that all the major browsers (and many minor ones) have pledged support for Acid2, Ian Hickson has moved on to preparing Acid3 -- and you can help!]]></description>
+			<content:encoded><![CDATA[<p>Perhaps you expected this announcement, given the news that <a href="http://www.webstandards.org/2007/12/19/ie8-passes-acid2-test-2/">IE8 passes Acid2</a>. Or maybe it already seems like old news, if you caught the <a href="http://it.slashdot.org/it/08/01/11/1429216.shtml">recent Slashdot post</a>. In either case, the news is true &#8212; Acid3 will be coming soon!</p>
+<p>Whereas <a href="http://www.webstandards.org/action/acid2">Acid2</a> tested static HTML and CSS, Acid3 will focus on ECMAScript and DOM &#8212; the dynamic side of the Web. While it will include a few rendering tests to make things look interesting, the core of the test will be 100 scripting subtests.</p>
+<p>And that is where you can contribute! Ian has compiled 84 of the 100 scripts but is <a href="http://ln.hixie.ch/?start=1200301306&#038;count=1">seeking 16 additional tests</a>. If you&#8217;re up to the challenge, read the criteria, create your test, and submit it &#8212; within the next five days!</p>
+<p>As with Acid2, the Web Standards Project will play host to Acid3&#8230; so stay tuned for the final test, and the play-by-play on the browsers&#8217; progress!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2008/01/16/whats-the-best-test-for-acid3/feed/</wfw:commentRss>
+		<slash:comments>42</slash:comments>
+		</item>
+	</channel>
+</rss>
+
+<!-- Dynamic page generated in 0.184 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2017-08-18 12:43:11 -->

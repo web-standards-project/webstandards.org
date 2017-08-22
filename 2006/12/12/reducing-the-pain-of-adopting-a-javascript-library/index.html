@@ -1,0 +1,340 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<!-- Mirrored from www.webstandards.org/2006/12/12/reducing-the-pain-of-adopting-a-javascript-library/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Aug 2017 17:42:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>  Reducing the pain of adopting a JavaScript library - The Web Standards Project</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="The Web Standards Project is a grassroots coalition fighting for standards which ensure simple, affordable access to web technologies for all." />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<script type="text/javascript" src="../../../../wp/wp-content/themes/web-standards-project/collapse.js"></script>
+<link rel="stylesheet" type="text/css" media="screen, projection" href="../../../../wp/wp-content/themes/web-standards-project/styles.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../../../wp/wp-content/themes/web-standards-project/print.css" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="../../../../feed/index.html" />
+<link rel="alternate" type="text/xml" title="RSS .92" href="../../../../feed/rss/index.html" />
+<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="../../../../feed/atom/index.html" />
+<link rel="pingback" href="../../../../wp/xmlrpc.php" />
+<link rel="Shortcut Icon" type="image/ico" href="../../../../files/theme/wasp.ico" />
+<link rel="home" title="Web Standards Project Home" href="../../../../index.html" />
+	<link rel='archives' title='March 2013' href='../../../../2013/03/index.html' />
+	<link rel='archives' title='February 2012' href='../../../../2012/02/index.html' />
+	<link rel='archives' title='December 2011' href='../../../../2011/12/index.html' />
+	<link rel='archives' title='November 2011' href='../../../../2011/11/index.html' />
+	<link rel='archives' title='March 2011' href='../../../../2011/03/index.html' />
+	<link rel='archives' title='February 2011' href='../../../../2011/02/index.html' />
+	<link rel='archives' title='January 2011' href='../../../../2011/01/index.html' />
+	<link rel='archives' title='August 2010' href='../../../../2010/08/index.html' />
+	<link rel='archives' title='June 2010' href='../../../../2010/06/index.html' />
+	<link rel='archives' title='March 2010' href='../../../../2010/03/index.html' />
+	<link rel='archives' title='February 2010' href='../../../../2010/02/index.html' />
+	<link rel='archives' title='January 2010' href='../../../../2010/01/index.html' />
+	<link rel='archives' title='November 2009' href='../../../../2009/11/index.html' />
+	<link rel='archives' title='June 2009' href='../../../../2009/06/index.html' />
+	<link rel='archives' title='May 2009' href='../../../../2009/05/index.html' />
+	<link rel='archives' title='April 2009' href='../../../../2009/04/index.html' />
+	<link rel='archives' title='March 2009' href='../../../../2009/03/index.html' />
+	<link rel='archives' title='February 2009' href='../../../../2009/02/index.html' />
+	<link rel='archives' title='January 2009' href='../../../../2009/01/index.html' />
+	<link rel='archives' title='December 2008' href='../../../../2008/12/index.html' />
+	<link rel='archives' title='November 2008' href='../../../../2008/11/index.html' />
+	<link rel='archives' title='October 2008' href='../../../../2008/10/index.html' />
+	<link rel='archives' title='September 2008' href='../../../../2008/09/index.html' />
+	<link rel='archives' title='August 2008' href='../../../../2008/08/index.html' />
+	<link rel='archives' title='July 2008' href='../../../../2008/07/index.html' />
+	<link rel='archives' title='June 2008' href='../../../../2008/06/index.html' />
+	<link rel='archives' title='May 2008' href='../../../../2008/05/index.html' />
+	<link rel='archives' title='April 2008' href='../../../../2008/04/index.html' />
+	<link rel='archives' title='March 2008' href='../../../../2008/03/index.html' />
+	<link rel='archives' title='February 2008' href='../../../../2008/02/index.html' />
+	<link rel='archives' title='January 2008' href='../../../../2008/01/index.html' />
+	<link rel='archives' title='December 2007' href='../../../../2007/12/index.html' />
+	<link rel='archives' title='November 2007' href='../../../../2007/11/index.html' />
+	<link rel='archives' title='October 2007' href='../../../../2007/10/index.html' />
+	<link rel='archives' title='September 2007' href='../../../../2007/09/index.html' />
+	<link rel='archives' title='August 2007' href='../../../../2007/08/index.html' />
+	<link rel='archives' title='June 2007' href='../../../../2007/06/index.html' />
+	<link rel='archives' title='May 2007' href='../../../../2007/05/index.html' />
+	<link rel='archives' title='April 2007' href='../../../../2007/04/index.html' />
+	<link rel='archives' title='March 2007' href='../../../../2007/03/index.html' />
+	<link rel='archives' title='February 2007' href='../../../../2007/02/index.html' />
+	<link rel='archives' title='January 2007' href='../../../../2007/01/index.html' />
+	<link rel='archives' title='December 2006' href='../../index.html' />
+	<link rel='archives' title='November 2006' href='../../../11/index.html' />
+	<link rel='archives' title='October 2006' href='../../../10/index.html' />
+	<link rel='archives' title='September 2006' href='../../../09/index.html' />
+	<link rel='archives' title='August 2006' href='../../../08/index.html' />
+	<link rel='archives' title='July 2006' href='../../../07/index.html' />
+	<link rel='archives' title='June 2006' href='../../../06/index.html' />
+	<link rel='archives' title='May 2006' href='../../../05/index.html' />
+	<link rel='archives' title='April 2006' href='../../../04/index.html' />
+	<link rel='archives' title='March 2006' href='../../../03/index.html' />
+	<link rel='archives' title='February 2006' href='../../../02/index.html' />
+	<link rel='archives' title='January 2006' href='../../../01/index.html' />
+	<link rel='archives' title='December 2005' href='../../../../2005/12/index.html' />
+	<link rel='archives' title='November 2005' href='../../../../2005/11/index.html' />
+	<link rel='archives' title='October 2005' href='../../../../2005/10/index.html' />
+	<link rel='archives' title='September 2005' href='../../../../2005/09/index.html' />
+	<link rel='archives' title='August 2005' href='../../../../2005/08/index.html' />
+	<link rel='archives' title='July 2005' href='../../../../2005/07/index.html' />
+	<link rel='archives' title='June 2005' href='../../../../2005/06/index.html' />
+	<link rel='archives' title='May 2005' href='../../../../2005/05/index.html' />
+	<link rel='archives' title='April 2005' href='../../../../2005/04/index.html' />
+	<link rel='archives' title='March 2005' href='../../../../2005/03/index.html' />
+	<link rel='archives' title='February 2005' href='../../../../2005/02/index.html' />
+	<link rel='archives' title='January 2005' href='../../../../2005/01/index.html' />
+	<link rel='archives' title='December 2004' href='../../../../2004/12/index.html' />
+	<link rel='archives' title='November 2004' href='../../../../2004/11/index.html' />
+	<link rel='archives' title='October 2004' href='../../../../2004/10/index.html' />
+	<link rel='archives' title='September 2004' href='../../../../2004/09/index.html' />
+	<link rel='archives' title='August 2004' href='../../../../2004/08/index.html' />
+	<link rel='archives' title='July 2004' href='../../../../2004/07/index.html' />
+	<link rel='archives' title='June 2004' href='../../../../2004/06/index.html' />
+	<link rel='archives' title='May 2004' href='../../../../2004/05/index.html' />
+	<link rel='archives' title='April 2004' href='../../../../2004/04/index.html' />
+	<link rel='archives' title='March 2004' href='../../../../2004/03/index.html' />
+	<link rel='archives' title='February 2004' href='../../../../2004/02/index.html' />
+	<link rel='archives' title='January 2004' href='../../../../2004/01/index.html' />
+	<link rel='archives' title='December 2003' href='../../../../2003/12/index.html' />
+	<link rel='archives' title='November 2003' href='../../../../2003/11/index.html' />
+	<link rel='archives' title='October 2003' href='../../../../2003/10/index.html' />
+	<link rel='archives' title='September 2003' href='../../../../2003/09/index.html' />
+	<link rel='archives' title='August 2003' href='../../../../2003/08/index.html' />
+	<link rel='archives' title='July 2003' href='../../../../2003/07/index.html' />
+	<link rel='archives' title='June 2003' href='../../../../2003/06/index.html' />
+	<link rel='archives' title='May 2003' href='../../../../2003/05/index.html' />
+	<link rel='archives' title='April 2003' href='../../../../2003/04/index.html' />
+	<link rel='archives' title='March 2003' href='../../../../2003/03/index.html' />
+	<link rel='archives' title='February 2003' href='../../../../2003/02/index.html' />
+	<link rel='archives' title='January 2003' href='../../../../2003/01/index.html' />
+	<link rel='archives' title='December 2002' href='../../../../2002/12/index.html' />
+	<link rel='archives' title='November 2002' href='../../../../2002/11/index.html' />
+	<link rel='archives' title='October 2002' href='../../../../2002/10/index.html' />
+	<link rel='archives' title='September 2002' href='../../../../2002/09/index.html' />
+	<link rel='archives' title='August 2002' href='../../../../2002/08/index.html' />
+	<link rel='archives' title='July 2002' href='../../../../2002/07/index.html' />
+	<link rel='archives' title='June 2002' href='../../../../2002/06/index.html' />
+	<link rel='archives' title='April 2002' href='../../../../2002/04/index.html' />
+	<link rel='archives' title='March 2002' href='../../../../2002/03/index.html' />
+	<link rel='archives' title='December 2001' href='../../../../2001/12/index.html' />
+	<link rel='archives' title='September 2001' href='../../../../2001/09/index.html' />
+	<link rel='archives' title='November 2000' href='../../../../2000/11/index.html' />
+	<link rel='archives' title='July 2000' href='../../../../2000/07/index.html' />
+	<link rel='archives' title='April 2000' href='../../../../2000/04/index.html' />
+	<link rel='archives' title='March 1999' href='../../../../1999/03/index.html' />
+	<link rel='archives' title='October 1998' href='../../../../1998/10/index.html' />
+	<link rel='archives' title='August 1998' href='../../../../1998/08/index.html' />
+<link rel="alternate" type="application/rss+xml" title="The Web Standards Project &raquo; Reducing the pain of adopting a JavaScript library Comments Feed" href="feed/index.html" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../../wp/xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../../wp/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Recent Accessibility Podcasts' href='../../../11/24/recent-accessibility-podcasts/index.html' />
+<link rel='next' title='CSS Turns 10' href='../../20/css-turns-10/index.html' />
+<meta name="generator" content="WordPress 3.3.1" />
+<link rel='canonical' href='index.html' />
+<link rel='shortlink' href='../../../../indexe947.html?p=956' />
+</head>
+
+<body id="top" class="individual">
+
+<div id="container">
+
+
+	<div id="branding">
+		<h1><span>Working together for standards </span> <a href="../../../../index.html">The Web Standards Project</a></h1>
+
+		<a id="skip" href="#content-main" title="Skip to content">Skip to content</a>
+	</div>
+
+	<div id="nav-main">
+				<form id="fm-search" method="get" action="http://www.webstandards.org/index.php">
+			<fieldset>
+				<legend>Search</legend>
+				<label for="s"><span>Search WaSP</span>
+				<input id="s" name="s" class="search" value="" /></label>
+				<input type="submit" class="submit" name="submit" value="Go!" />
+			</fieldset>
+		</form>
+		<ul>
+			<li><a href="../../../../index.html" title="Home">Home</a></li>
+			<li><a href="../../../../about/index.html" title="More About Who We Are">About</a></li>
+			<li><a href="../../../../learn/index.html" title="More About Standards">Learn</a></li>
+			<li><a href="../../../../action/index.html" title="WaSP and Community Actions">Action</a></li>
+			<li><a href="../../../../buzz/index.html" title="Current and Archive Buzz Posts">Buzz</a></li>
+			<li><a href="../../../../press/index.html" title="In the Press and For the Press">Press</a></li>
+		</ul>
+	</div>
+
+
+	<hr />
+
+	<div id="content">
+
+	
+		<div id="content-main">
+			<div id="content-summary">
+				<h2 class="stmjrNoCollapse" id="post-956"><a href="index.html" rel="bookmark" title="Permanent Link: Reducing the pain of adopting a JavaScript library">Reducing the pain of adopting a JavaScript library</a></h2>
+				<p class="stmjrNoCollapse">By <span class="vcard"><a href="../../../../about/members/mdavies/index.html" class="url fn">Mike Davies</a></span> | December 12th, 2006 | Filed in <a href="../../../../buzz/dom/index.html" title="View all posts in DOM" rel="category tag">DOM</a>, <a href="../../../../buzz/action/dstf/index.html" title="View all posts in DOM Scripting TF" rel="category tag">DOM Scripting TF</a>, <a href="../../../../buzz/general/index.html" title="View all posts in General" rel="category tag">General</a></p> 
+				<p>Why is it so difficult to adopt a new JavaScript library? Chris Heilmann offers library developers a path for improvement.</p>
+				<a href="#content-sub" id="stmjrCollapse-content-summary" title="Skip to comment form">Skip to comment form</a>
+			</div>
+
+			<p>Chris Heilmann hits a number of pain points in <a href='http://www.wait-till-i.com/index.php?p=366' title='Chris Heilmann: Dear JavaScript Library Developers...'>adopting a new JavaScript library</a>. Developers don&#8217;t need more JavaScript libraries, we need better quality JavaScript libraries.</p>
+<p>One of the big problems of learning a new JavaScript library is the lack of practical step-by-step guides for that library. The <abbr title='Application Programmers Interface'>API</abbr> documentation barely scratches the surface of what&#8217;s needed. The API is just a dry snapshot taken at a point in time &#8211; a roll-call of methods and properties.</p>
+<p>A step-by-step developer&#8217;s guide should demonstrate the features of the library and show how its methods and properties work together to solve common development problems. What I&#8217;m looking for is a book that could be titled: &#8216;Develop web applications with XYZ library in a weekend&#8217;, that contains a series of working examples, using the features of a library as well as explaining those features.</p>
+<p>Perhaps its also worth creating a gallery of typical web applications (for example, a blog reader/editor, a calendar, a collapsible tree) and show how these applications are built and developed using the various JavaScript libraries. That gives us a chance to focus on the practical aspects of libraries, as well as identifying and comparing the strengths and weaknesses of libraries.</p>
+<p>Chris lists other <a href='http://www.wait-till-i.com/index.php?p=366' title='Chris Heilmann: Dear JavaScript Library Developers...'>frustrating pain points</a> including the lack of unobtrusive examples, libraries that break accepted conventions, lack of consistent terminology, and the lack of accurate and realistic evaluation of browser support.</p>
+<p>We&#8217;ve got a lot of work to do to make JavaScript libraries usable by web developers. It shouldn&#8217;t be this painful.</p>
+
+		</div>
+	
+		
+
+		<div id="content-replies">
+
+
+			<h3 id="comments">Your Replies</h3> 
+
+				<dl>
+
+
+					<dt id="comment-19868"><a href="#comment-19868" title="Link to this reply">#1</a> On December 12th, 2006 11:38 am <span><a href='http://www.blazenewmedia.com/' rel='external nofollow' class='url'>Andy Peatling</a> replied:</span></dt>
+					<dd>
+												<p>I very much agree, all of these libraries are very useful if you know exactly what, where and how to use them.</p>
+<p>I&#8217;ve looked through and used <a href="http://www.mootools.net/" rel="nofollow">Mootools</a> lately, which has come on leaps and bounds with its documentation. I still however needed to read posts with useable examples <a href="http://www.snook.ca/archives/javascript/mootools_drag_a/" rel="nofollow">like this</a> in order to get my head around the library a bit more.</p>
+<p>For me, the more I can learn from a library being used in real world examples, the better.</p>
+					</dd>
+
+
+					<dt id="comment-19886"><a href="#comment-19886" title="Link to this reply">#2</a> On December 12th, 2006 1:11 pm <span><a href='http://www.nczonline.net/' rel='external nofollow' class='url'>Nicholas C. Zakas</a> replied:</span></dt>
+					<dd>
+												<p>Seems to be a popular theme lately: <a href="http://www.amazon.com/gp/blog/id/A1J3TWE84RTHQX/" rel="nofollow">Why good JavaScript libraries fail</a>.</p>
+					</dd>
+
+
+					<dt id="comment-19911"><a href="#comment-19911" title="Link to this reply">#3</a> On December 12th, 2006 3:01 pm <span><a href='http://www.brainet.es/blog/index.php/2006/12/12/queridos-desarrolladores-de-librerias-de-javascript/' rel='external nofollow' class='url'>Weblog de Brainet S.L &raquo; Archivo del weblog &raquo; &#8220;Queridos desarrolladores de librerías de JavaScript&#8230;&#8221;</a> replied:</span></dt>
+					<dd>
+												<p>[...] Así es como comienza Christian Heilmann (autor del libro &#8220;Beginning JavaScript with DOM Scripting and Ajax: From Novice to Professional (Beginning: from Novice to Professional)&#8220;) uno de sus últimas entradas en su blog. Según él, tras estar trabajando en un futuro libro de librerías de JavaScript para no desarrolladores, echa en falta una serie de elementos que servirían para mejorar la utilización de las mismas, o como dicen en el blog de WebStandards, reducir el daño a la hora de utilizar una nueva librería de JavaScript (Reducing the pain of adopting a JavaScript library). [...]</p>
+					</dd>
+
+
+					<dt id="comment-19988"><a href="#comment-19988" title="Link to this reply">#4</a> On December 12th, 2006 8:26 pm <span>librarian replied:</span></dt>
+					<dd>
+												<p>There are general problems with the idea of reusable javascript libraries; one is bloat. JS libs should ship with a preprocessor to generate include files that only contain code for the objects and functions in use.  </p>
+<p>A good example of a javascript library is the google canvas lib for IE. I would hesitate to call it a library, it&#8217;s more of a compatability shim and this is why js libraries are popular. Most web developers could throw a library together in a weekend, however we only want to write and debug our code once, not once for every browser.</p>
+<p>As for client side <em>javascript frameworks</em>, this a more recent and disturbing trend. Perhaps Tamarin will integrate AOT compilation with browser caching, making these things slightly less rediculous.</p>
+					</dd>
+
+
+					<dt id="comment-19991"><a href="#comment-19991" title="Link to this reply">#5</a> On December 12th, 2006 8:57 pm <span>librarian replied:</span></dt>
+					<dd>
+												<p>I should add that I just looked through SVN trunk for mootools as mentioned above. The download of this framework lets you select just the files you need. A step in the right direction but the string class (yes I said class &#8211; go see for yourself) contains only a couple of functions I can imagine using. The array class is more useful and the framework is interesting enough to check out.</p>
+					</dd>
+
+
+					<dt id="comment-20033"><a href="#comment-20033" title="Link to this reply">#6</a> On December 13th, 2006 12:31 am <span>Rich Manalang replied:</span></dt>
+					<dd>
+												<p>I think most js libraries fail because of sparse or lack of documentation.  Documentation, for most, developers seems to be an after thought.  However, there are a few libraries that have really good documentation.  My favorite is jQuery (<a href="http://jquery.com/" rel="nofollow">http://jquery.com</a>).  They just recently posted their API doc on <a href="http://gotapi.com/" rel="nofollow">http://gotapi.com</a>.  The nice thing about jQuery is that the documentation is built into the development process.  You can count on new releases being documented thoroughly.</p>
+					</dd>
+
+
+					<dt id="comment-20153"><a href="#comment-20153" title="Link to this reply">#7</a> On December 13th, 2006 12:21 pm <span>Solid Source replied:</span></dt>
+					<dd>
+												<p>Having tried most of the libraries on the market, (having sometimes to switch libraries mid-project &#8211; lack of good documentation) I understand the frustrations, very well, of the time and pain it takes to find a good one, so thank you guys from bringing this to print.</p>
+<p>6 months ago I was deep in a conversion from prototype/scriptaculous to dojo (for an enterprise app) and found myself again scratching my head at the complexities, lack of solid cross browser support, and pure bloat of dojo. Thats when I found JQuery and after all 10 libraries or variations there of I have tried I will never go back and that is simple because of what this article is addressing. JQuery has a very different approach (the result of which is an easily manipulable DOM), they have loads of documentation (gotapi, as well as existing docs: visualjquery.com, etc), the community is strong, it&#8217;s lightweight, and the effects, plugins, AJAX support are second to none.</p>
+<p>Not that I want to plug one particular library but I think JQuery illustrates the solutions to the above points/problems better than the rest. Hopefully this article raises a bit of awareness to all of the soon to be lib developers out there that simply putting together another API is not what the development world needs now.</p>
+					</dd>
+
+
+					<dt id="comment-20164"><a href="#comment-20164" title="Link to this reply">#8</a> On December 13th, 2006 1:12 pm <span><a href='http://jquery.com/blog/2006/12/13/helping-you-understand-jquery/' rel='external nofollow' class='url'>jQuery: Blog: &raquo; Helping you understand jQuery</a> replied:</span></dt>
+					<dd>
+												<p>[...] Some recent articles have discussed the need for having &#8220;really good&#8221; tutorials for JavaScript libraries. [...]</p>
+					</dd>
+
+
+					<dt id="comment-20165"><a href="#comment-20165" title="Link to this reply">#9</a> On December 13th, 2006 1:12 pm <span>Jake replied:</span></dt>
+					<dd>
+												<p>When I went to choose a library, I downloaded some pages and the entire library. Some were horrible, full of modifications to the dom and non-valid xhtml or almost as many lines of code as the low level calls. But I kept on reading. Then I found jquery. at first look I thought &#8216;what language is this&#8217;, &#8216;it looks like some lambda influenced language, some son of a lisp&#8230;. upon further reading, I realized it&#8217;s just javascript&#8230;. and I understood most of the ways it was done. The code is brief,  and the code you write is almost lyrical! </p>
+<p>Where else can I say something like this:</p>
+<p>$(&#8220;#footer&#8221;)<br />
+		.width(&#8220;100%&#8221;)<br />
+		.addDir({dir:&#8221;Pix/Friends/&#8221;,width:30,randomize:true})<br />
+		.addDir({dir:&#8221;Pix/HD/&#8221;,width:50,randomize:true})<br />
+		.addDir({dir:&#8221;Pix/Family/&#8221;,width:30,randomize:true})</p>
+<p>with one little function addDir that is only a dozen lines of code?</p>
+<p>Where else can I ask a panel of experts about the simple and mundane or the complex and intricate  effects or ajax?</p>
+<p>Amazing code + amazing people = success.</p>
+					</dd>
+
+
+					<dt id="comment-20366"><a href="#comment-20366" title="Link to this reply">#10</a> On December 14th, 2006 4:37 am <span><a href='http://wait-till-i.com/' rel='external nofollow' class='url'>Chris Heilmann</a> replied:</span></dt>
+					<dd>
+												<p>John Resig of jQuery has asked people <a href="http://jquery.com/blog/2006/12/13/helping-you-understand-jquery/" rel="nofollow">on the jQuery blog</a> to give examples of what tutorials are needed, and this is a great step ahead. </p>
+<p>As to the comments here, please stop advertising one or the other library and their code, this is not the point of this. Especially the last code example by jake is an exact violation of the idea that you should leave CSS to the CSS parser and you shouldn&#8217;t create scripts that make functionality dependent on JavaScript. Just because you _can_ create a footer with JavaScript it doesn&#8217;t make it a good idea.</p>
+					</dd>
+
+
+					<dt id="comment-20940"><a href="#comment-20940" title="Link to this reply">#11</a> On December 14th, 2006 9:43 pm <span><a href='http://blog.founddrama.net/2006/12/links-for-2006-12-13/' rel='external nofollow' class='url'>links for 2006-12-13 at found_drama</a> replied:</span></dt>
+					<dd>
+												<p>[...] Reducing the pain of adopting a JavaScript library via The Web Standards Project (tags: webdev javascript essay todo) [...]</p>
+					</dd>
+
+
+					<dt id="comment-21486"><a href="#comment-21486" title="Link to this reply">#12</a> On December 16th, 2006 8:33 am <span>David A. G. Dávila Zambrano replied:</span></dt>
+					<dd>
+												<p>I got your page learning about HTML  because I am needing reach upgrade to my personal position.<br />
+All about W3C to me is as a new horizon, when i was to school the comptutacion was not existent and Java L.<br />
+Is something like the order all in this planet are nedding.<br />
+G. bless all you</p>
+					</dd>
+
+
+					<dt id="comment-22513"><a href="#comment-22513" title="Link to this reply">#13</a> On December 18th, 2006 5:43 pm <span>Joseph Morphy replied:</span></dt>
+					<dd>
+												<p>Perhaps the best JavaScript framework/library is <a href="http://prototype.conio.net/" rel="nofollow">Prototype</a>. Probably its only drawback is lack of great documentation. It isn&#8217;t so much of a problem anymore, though.</p>
+					</dd>
+
+
+				</dl>
+
+		</div>
+
+
+
+		<div id="content-sub" title="Comment form">
+			<a href="#top" id="stmjrCollapse-content-sub" title="Return to top">Return to top</a>
+
+			<h3 class="stmjrNoCollapse">Post a Reply</h3>
+
+
+			<p>Comments are closed.</p>
+
+
+		</div>
+	
+	
+	</div>
+
+	<hr />
+
+	<div id="nav-supp">
+		<p><a href="#top" title="Back to Top">Back to Top</a></p> 
+	</div>
+
+	<div id="siteinfo">
+		<p>All of the entries posted in <abbr title="The Web Standards Project">WaSP</abbr> Buzz express the opinions of their individual authors. They do not necessarily reflect the plans or positions of the Web Standards Project as a group.</p>
+		<p>This site is valid <a href="http://validator.w3.org/check/referer" title="Validate this document">XHTML 1.0 Strict</a>, <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate this CSS">CSS</a> | Get Buzz via <a href="../../../../feed/index.html"><abbr title="Really Simple Syndication">RSS</abbr></a> or <a href="../../../../feed/atom/index.html">Atom</a> | <a href="../../../../about/colophon/index.html">Colophon</a> | <a href="../../../../about/legal/index.html">Legal</a></p>
+		<!-- 12 queries. 0.207 seconds. -->
+	</div>
+
+</div>
+
+
+</body>
+
+<!-- Mirrored from www.webstandards.org/2006/12/12/reducing-the-pain-of-adopting-a-javascript-library/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Aug 2017 17:42:17 GMT -->
+</html>
+
+<!-- Dynamic page generated in 0.194 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2017-08-18 12:28:48 -->
+
+<!-- super cache -->

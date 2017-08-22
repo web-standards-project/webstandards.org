@@ -1,0 +1,843 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<!-- Mirrored from www.webstandards.org/2009/05/13/interview-with-ian-hickson-editor-of-the-html-5-specification/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Aug 2017 17:32:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>  Interview with Ian Hickson, editor of the HTML 5 specification. - The Web Standards Project</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="The Web Standards Project is a grassroots coalition fighting for standards which ensure simple, affordable access to web technologies for all." />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<script type="text/javascript" src="../../../../wp/wp-content/themes/web-standards-project/collapse.js"></script>
+<link rel="stylesheet" type="text/css" media="screen, projection" href="../../../../wp/wp-content/themes/web-standards-project/styles.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../../../wp/wp-content/themes/web-standards-project/print.css" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="../../../../feed/index.html" />
+<link rel="alternate" type="text/xml" title="RSS .92" href="../../../../feed/rss/index.html" />
+<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="../../../../feed/atom/index.html" />
+<link rel="pingback" href="../../../../wp/xmlrpc.php" />
+<link rel="Shortcut Icon" type="image/ico" href="../../../../files/theme/wasp.ico" />
+<link rel="home" title="Web Standards Project Home" href="../../../../index.html" />
+	<link rel='archives' title='March 2013' href='../../../../2013/03/index.html' />
+	<link rel='archives' title='February 2012' href='../../../../2012/02/index.html' />
+	<link rel='archives' title='December 2011' href='../../../../2011/12/index.html' />
+	<link rel='archives' title='November 2011' href='../../../../2011/11/index.html' />
+	<link rel='archives' title='March 2011' href='../../../../2011/03/index.html' />
+	<link rel='archives' title='February 2011' href='../../../../2011/02/index.html' />
+	<link rel='archives' title='January 2011' href='../../../../2011/01/index.html' />
+	<link rel='archives' title='August 2010' href='../../../../2010/08/index.html' />
+	<link rel='archives' title='June 2010' href='../../../../2010/06/index.html' />
+	<link rel='archives' title='March 2010' href='../../../../2010/03/index.html' />
+	<link rel='archives' title='February 2010' href='../../../../2010/02/index.html' />
+	<link rel='archives' title='January 2010' href='../../../../2010/01/index.html' />
+	<link rel='archives' title='November 2009' href='../../../11/index.html' />
+	<link rel='archives' title='June 2009' href='../../../06/index.html' />
+	<link rel='archives' title='May 2009' href='../../index.html' />
+	<link rel='archives' title='April 2009' href='../../../04/index.html' />
+	<link rel='archives' title='March 2009' href='../../../03/index.html' />
+	<link rel='archives' title='February 2009' href='../../../02/index.html' />
+	<link rel='archives' title='January 2009' href='../../../01/index.html' />
+	<link rel='archives' title='December 2008' href='../../../../2008/12/index.html' />
+	<link rel='archives' title='November 2008' href='../../../../2008/11/index.html' />
+	<link rel='archives' title='October 2008' href='../../../../2008/10/index.html' />
+	<link rel='archives' title='September 2008' href='../../../../2008/09/index.html' />
+	<link rel='archives' title='August 2008' href='../../../../2008/08/index.html' />
+	<link rel='archives' title='July 2008' href='../../../../2008/07/index.html' />
+	<link rel='archives' title='June 2008' href='../../../../2008/06/index.html' />
+	<link rel='archives' title='May 2008' href='../../../../2008/05/index.html' />
+	<link rel='archives' title='April 2008' href='../../../../2008/04/index.html' />
+	<link rel='archives' title='March 2008' href='../../../../2008/03/index.html' />
+	<link rel='archives' title='February 2008' href='../../../../2008/02/index.html' />
+	<link rel='archives' title='January 2008' href='../../../../2008/01/index.html' />
+	<link rel='archives' title='December 2007' href='../../../../2007/12/index.html' />
+	<link rel='archives' title='November 2007' href='../../../../2007/11/index.html' />
+	<link rel='archives' title='October 2007' href='../../../../2007/10/index.html' />
+	<link rel='archives' title='September 2007' href='../../../../2007/09/index.html' />
+	<link rel='archives' title='August 2007' href='../../../../2007/08/index.html' />
+	<link rel='archives' title='June 2007' href='../../../../2007/06/index.html' />
+	<link rel='archives' title='May 2007' href='../../../../2007/05/index.html' />
+	<link rel='archives' title='April 2007' href='../../../../2007/04/index.html' />
+	<link rel='archives' title='March 2007' href='../../../../2007/03/index.html' />
+	<link rel='archives' title='February 2007' href='../../../../2007/02/index.html' />
+	<link rel='archives' title='January 2007' href='../../../../2007/01/index.html' />
+	<link rel='archives' title='December 2006' href='../../../../2006/12/index.html' />
+	<link rel='archives' title='November 2006' href='../../../../2006/11/index.html' />
+	<link rel='archives' title='October 2006' href='../../../../2006/10/index.html' />
+	<link rel='archives' title='September 2006' href='../../../../2006/09/index.html' />
+	<link rel='archives' title='August 2006' href='../../../../2006/08/index.html' />
+	<link rel='archives' title='July 2006' href='../../../../2006/07/index.html' />
+	<link rel='archives' title='June 2006' href='../../../../2006/06/index.html' />
+	<link rel='archives' title='May 2006' href='../../../../2006/05/index.html' />
+	<link rel='archives' title='April 2006' href='../../../../2006/04/index.html' />
+	<link rel='archives' title='March 2006' href='../../../../2006/03/index.html' />
+	<link rel='archives' title='February 2006' href='../../../../2006/02/index.html' />
+	<link rel='archives' title='January 2006' href='../../../../2006/01/index.html' />
+	<link rel='archives' title='December 2005' href='../../../../2005/12/index.html' />
+	<link rel='archives' title='November 2005' href='../../../../2005/11/index.html' />
+	<link rel='archives' title='October 2005' href='../../../../2005/10/index.html' />
+	<link rel='archives' title='September 2005' href='../../../../2005/09/index.html' />
+	<link rel='archives' title='August 2005' href='../../../../2005/08/index.html' />
+	<link rel='archives' title='July 2005' href='../../../../2005/07/index.html' />
+	<link rel='archives' title='June 2005' href='../../../../2005/06/index.html' />
+	<link rel='archives' title='May 2005' href='../../../../2005/05/index.html' />
+	<link rel='archives' title='April 2005' href='../../../../2005/04/index.html' />
+	<link rel='archives' title='March 2005' href='../../../../2005/03/index.html' />
+	<link rel='archives' title='February 2005' href='../../../../2005/02/index.html' />
+	<link rel='archives' title='January 2005' href='../../../../2005/01/index.html' />
+	<link rel='archives' title='December 2004' href='../../../../2004/12/index.html' />
+	<link rel='archives' title='November 2004' href='../../../../2004/11/index.html' />
+	<link rel='archives' title='October 2004' href='../../../../2004/10/index.html' />
+	<link rel='archives' title='September 2004' href='../../../../2004/09/index.html' />
+	<link rel='archives' title='August 2004' href='../../../../2004/08/index.html' />
+	<link rel='archives' title='July 2004' href='../../../../2004/07/index.html' />
+	<link rel='archives' title='June 2004' href='../../../../2004/06/index.html' />
+	<link rel='archives' title='May 2004' href='../../../../2004/05/index.html' />
+	<link rel='archives' title='April 2004' href='../../../../2004/04/index.html' />
+	<link rel='archives' title='March 2004' href='../../../../2004/03/index.html' />
+	<link rel='archives' title='February 2004' href='../../../../2004/02/index.html' />
+	<link rel='archives' title='January 2004' href='../../../../2004/01/index.html' />
+	<link rel='archives' title='December 2003' href='../../../../2003/12/index.html' />
+	<link rel='archives' title='November 2003' href='../../../../2003/11/index.html' />
+	<link rel='archives' title='October 2003' href='../../../../2003/10/index.html' />
+	<link rel='archives' title='September 2003' href='../../../../2003/09/index.html' />
+	<link rel='archives' title='August 2003' href='../../../../2003/08/index.html' />
+	<link rel='archives' title='July 2003' href='../../../../2003/07/index.html' />
+	<link rel='archives' title='June 2003' href='../../../../2003/06/index.html' />
+	<link rel='archives' title='May 2003' href='../../../../2003/05/index.html' />
+	<link rel='archives' title='April 2003' href='../../../../2003/04/index.html' />
+	<link rel='archives' title='March 2003' href='../../../../2003/03/index.html' />
+	<link rel='archives' title='February 2003' href='../../../../2003/02/index.html' />
+	<link rel='archives' title='January 2003' href='../../../../2003/01/index.html' />
+	<link rel='archives' title='December 2002' href='../../../../2002/12/index.html' />
+	<link rel='archives' title='November 2002' href='../../../../2002/11/index.html' />
+	<link rel='archives' title='October 2002' href='../../../../2002/10/index.html' />
+	<link rel='archives' title='September 2002' href='../../../../2002/09/index.html' />
+	<link rel='archives' title='August 2002' href='../../../../2002/08/index.html' />
+	<link rel='archives' title='July 2002' href='../../../../2002/07/index.html' />
+	<link rel='archives' title='June 2002' href='../../../../2002/06/index.html' />
+	<link rel='archives' title='April 2002' href='../../../../2002/04/index.html' />
+	<link rel='archives' title='March 2002' href='../../../../2002/03/index.html' />
+	<link rel='archives' title='December 2001' href='../../../../2001/12/index.html' />
+	<link rel='archives' title='September 2001' href='../../../../2001/09/index.html' />
+	<link rel='archives' title='November 2000' href='../../../../2000/11/index.html' />
+	<link rel='archives' title='July 2000' href='../../../../2000/07/index.html' />
+	<link rel='archives' title='April 2000' href='../../../../2000/04/index.html' />
+	<link rel='archives' title='March 1999' href='../../../../1999/03/index.html' />
+	<link rel='archives' title='October 1998' href='../../../../1998/10/index.html' />
+	<link rel='archives' title='August 1998' href='../../../../1998/08/index.html' />
+<link rel="alternate" type="application/rss+xml" title="The Web Standards Project &raquo; Interview with Ian Hickson, editor of the HTML 5 specification. Comments Feed" href="feed/index.html" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../../wp/xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../../wp/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='InterAct translations and localizations' href='../../11/interact-translations-and-localizations/index.html' />
+<link rel='next' title='Introducing The Open Web Education Alliance' href='../../../06/29/introducing-the-open-web-education-alliance/index.html' />
+<meta name="generator" content="WordPress 3.3.1" />
+<link rel='canonical' href='index.html' />
+<link rel='shortlink' href='../../../../index41d8.html?p=1726' />
+</head>
+
+<body id="top" class="individual">
+
+<div id="container">
+
+
+	<div id="branding">
+		<h1><span>Working together for standards </span> <a href="../../../../index.html">The Web Standards Project</a></h1>
+
+		<a id="skip" href="#content-main" title="Skip to content">Skip to content</a>
+	</div>
+
+	<div id="nav-main">
+				<form id="fm-search" method="get" action="http://www.webstandards.org/index.php">
+			<fieldset>
+				<legend>Search</legend>
+				<label for="s"><span>Search WaSP</span>
+				<input id="s" name="s" class="search" value="" /></label>
+				<input type="submit" class="submit" name="submit" value="Go!" />
+			</fieldset>
+		</form>
+		<ul>
+			<li><a href="../../../../index.html" title="Home">Home</a></li>
+			<li><a href="../../../../about/index.html" title="More About Who We Are">About</a></li>
+			<li><a href="../../../../learn/index.html" title="More About Standards">Learn</a></li>
+			<li><a href="../../../../action/index.html" title="WaSP and Community Actions">Action</a></li>
+			<li><a href="../../../../buzz/index.html" title="Current and Archive Buzz Posts">Buzz</a></li>
+			<li><a href="../../../../press/index.html" title="In the Press and For the Press">Press</a></li>
+		</ul>
+	</div>
+
+
+	<hr />
+
+	<div id="content">
+
+	
+		<div id="content-main">
+			<div id="content-summary">
+				<h2 class="stmjrNoCollapse" id="post-1726"><a href="index.html" rel="bookmark" title="Permanent Link: Interview with Ian Hickson, editor of the HTML 5 specification.">Interview with Ian Hickson, editor of the HTML 5 specification.</a></h2>
+				<p class="stmjrNoCollapse">By <span class="vcard"><a href="../../../../about/members/blawson/index.html" class="url fn">Bruce Lawson</a></span> | May 13th, 2009 | Filed in <a href="../../../../buzz/accessibility/index.html" title="View all posts in Accessibility" rel="category tag">Accessibility</a>, <a href="../../../../buzz/browsers/index.html" title="View all posts in Browsers" rel="category tag">Browsers</a>, <a href="../../../../buzz/emerging-technology/index.html" title="View all posts in Emerging Technology" rel="category tag">Emerging Technology</a>, <a href="../../../../buzz/htmlxhtml/index.html" title="View all posts in HTML/XHTML" rel="category tag">HTML/XHTML</a>, <a href="../../../../buzz/w3cstandards-documentation/index.html" title="View all posts in W3C/Standards Documentation" rel="category tag">W3C/Standards Documentation</a>, <a href="../../../../buzz/web-standards-general/index.html" title="View all posts in Web Standards (general)" rel="category tag">Web Standards (general)</a></p> 
+								<a href="#content-sub" id="stmjrCollapse-content-summary" title="Skip to comment form">Skip to comment form</a>
+			</div>
+
+			<p>You&#8217;ve heard it&#8217;s coming in 2012. Or maybe 2022. It&#8217;s certainly <a href="http://ishtml5readyyet.com/">not ready yet</a>, but some parts are already in browsers <strong>now</strong> so for the standards-savvy  developers, the future is worth investigating today. <a href="../../../../about/members/hixie/index.html">Ian &#8220;Hixie&#8221; Hickson</a>, editor of the <abbr>HTML</abbr> 5 specification, hopes that the spec will go to Last Call Working Draft  in October <strong>this year</strong>.</p>
+<p>Accessibility Task Force member, <a href="../../../../about/members/blawson/index.html">Bruce Lawson</a>, interviews Hixie on how the specification for the next generation of the Web&#8217;s markup language is shaping up. Disclosure of affiliations: both work for browser vendors&mdash;Bruce  for Opera, Hixie  for Google (and previously, Opera and Netscape).</p>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p>The spec now known as <abbr>HTML</abbr> 5 began with a &quot;guerilla&quot; group called <abbr>WHATWG</abbr>. How and why did the <abbr>WHATWG</abbr> begin?</p>
+</blockquote>
+<p><cite>Hixie</cite></p>
+<blockquote>
+<p>The short answer is the <abbr>W3C</abbr> told us to. </p>
+<p> The long answer: Back in 2003, when XForms was going through its final<br />
+        stages (the &quot;Proposed Recommendation&quot; vote stage), the browser vendors<br />
+        were concerned that it wouldn&#8217;t take off on the Web without being made a<br />
+        part of <abbr>HTML</abbr>, and out of that big discussion (which unfortunately is<br />
+        mostly hidden behind the <abbr>W3C</abbr>&#8216;s confidentiality walls) came a proof of<br />
+        concept showing that it was possible to take some of XForms&#8217; ideas and put<br />
+        then into <abbr>HTML</abbr> 4. We originally called it &quot;XForms Basic&quot;, and later renamed<br />
+        it &quot;WebForms 2.0&quot;. This formed the basis of what is now <abbr>HTML</abbr> 5.</p>
+<p> In 2004, the <abbr>W3C</abbr> had a workshop, the &quot;The <abbr>W3C</abbr> Workshop on Web Applications<br />
+        and Compound Documents&quot;, where we (the browser vendors) argued that it was<br />
+        imperative that <abbr>HTML</abbr> be extended in a backwards-compatible way. It was a<br />
+        turning point in the <abbr>W3C</abbr>&#8216;s history&mdash;you could tell because at one point<br />
+        RedHat, Sun, and Microsoft, arch-rivals all, actually agreed on something,<br />
+        and that <b>never</b> happens.</p>
+<p> The outcome of that workshop was that the <abbr>W3C</abbr> concluded that <abbr>HTML</abbr> was<br />
+        still dead, as had been decided in a workshop in 1998, and that if we<br />
+        wanted to do something like <abbr>HTML</abbr> 5, we should go elsewhere. So we announced<br />
+        a mailing list, and did it there.</p>
+<p>At the time I was working for Opera Software, but &quot;we&quot; in this case was<br />
+        Opera and Mozilla acting together (with Apple cheering us from the<br />
+        sidelines).</p>
+</blockquote>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p>How did you become editor?</p>
+</blockquote>
+<p><cite>Hixie</cite></p>
+<blockquote>
+<p> I was at the right place at the right time and everyone else was too busy.</p>
+</blockquote>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p>How do you personally go about editing the spec and  incorporating<br />
+        feedback? What are your processes?</p>
+</blockquote>
+<p><cite>Hixie</cite></p>
+<blockquote>
+<p>This has varied over the years, as we&#8217;ve gone from a nascent organisation<br />
+        with a few dozen people to a well-established project with a mailing list<br />
+        with 900+ subscribers. Mostly it&#8217;s all down to managing e-mail. When<br />
+        someone writes feedback on the spec, whether by sending an e-mail to one<br />
+        of the mailing lists I&#8217;m on, or by blogging somewhere, or twittering, I<br />
+        log their feedback in a folder on my IMAP server. Feedback gets<br />
+        categorised into either feedback I can work on right away, or feedback<br />
+        that I can&#8217;t deal with yet for whatever reason. An example of the latter<br />
+        would be requests relating to mutation events, because I&#8217;m waiting for<br />
+        DOM3 Events to update how mutation events work. </p>
+<p> Then, I just go through all the feedback I have, e-mail by e-mail, more or<br />
+        less in the order that I received them, sending replies and fixing the<br />
+        spec to address the issues that were raised.</p>
+<p> This has some disadvantages, for example there&#8217;s a big delay in between<br />
+        when someone spots an error and when I fix it. It also has some really<br />
+        important advantages. If I respond to feedback on something I wrote<br />
+        straight after writing it, I sometimes find that I have an attachment to<br />
+        that section, so if someone suggests a total replacement, I tend to not<br />
+        like their idea. But if I have a delay, I find my attachment has gone<br />
+        away, and I&#8217;m eager to replace my old stupid idea with their better one.<br />
+        (Assuming it&#8217;s better, anyway!) </p>
+</blockquote>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p>What&#8217;s the hardest thing to do?</p>
+</blockquote>
+<p><cite>Hixie</cite></p>
+<blockquote>
+<p>There are a few things that are hard. One is saying &quot;no&quot; to people who have<br />
+        clearly spent the time to come up with a good idea. The sad truth is that<br />
+        I reject almost everything that I and anyone else thinks of, because if I<br />
+        didn&#8217;t, the spec would be a thousand times more bloated than it is now. We<br />
+        get proposals for all kinds of things, and we have to have a very high bar<br />
+        for what goes in. There&#8217;s also the danger that if we add too many things<br />
+        to the spec too quickly, the browser vendors will each implement their own<br />
+        bit and it&#8217;ll be a big mess that won&#8217;t help Web authors. </p>
+<p> So I have to make judgements about what is worth adding and what isn&#8217;t,<br />
+        and that&#8217;s hard. I&#8217;ve upset a lot of people by rejecting their ideas,<br />
+        because they take it personally. On the other hand, some of the most<br />
+        productive members of the community now are people who&#8217;ve had many of<br />
+        their ideas rejected, but they stuck around long enough to see a few of<br />
+        their ideas make it in. The best way to get an idea into the spec is to<br />
+        find something in the spec that&#8217;s just clearly wrong, which is something<br />
+        that a lot of the most active people do a lot, too!</p>
+<p> Something else that&#8217;s hard is making up new features. The bulk of <abbr>HTML</abbr> 5 is<br />
+        actually just defining how browsers already do things, which, although<br />
+        complicated and sometimes unbelievably arcane, is, at the end of the day,<br />
+        pretty easy to spec: you test the browsers, and you write what they do.<br />
+        Rinse, repeat, until the spec covers every possible case.</p>
+<p> Making up new features, though, means actually thinking about what should<br />
+        happen, what is the most understandable solution, figuring out how things<br />
+        should fit together, and so on. It&#8217;s often tempting to make something that<br />
+        is theoretically neat, but which doesn&#8217;t fit in with the rest of the<br />
+        language, too. After all, that&#8217;s where all this came from&mdash;we don&#8217;t want<br />
+        to create a new XForms, a really well-designed technology that doesn&#8217;t fit<br />
+        into the way people write pages. </p>
+</blockquote>
+<h3>What&#8217;s in the spec?</h3>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p>You&#8217;ve said that <a href="http://lists.w3.org/Archives/Public/public-html/2009Jan/0215.html"><abbr>HTML</abbr> 5 is in &quot;direct competition with other  technologies intended for applications deployed over the Web, in  particular Flash and Silverlight</a>&quot;. Why  is it so important to do so, and isn&#8217;t it a lost cause given that those  techologies are already out there while <abbr>HTML</abbr> 5 is not yet complete?</p>
+</blockquote>
+<p><cite>Hixie</cite></p>
+<blockquote>
+<p>HTML 4 is also in direct competition with proprietary technologies, and<br />
+        it&#8217;s winning, hands-down. HTML5 is just continuing the battle, because if<br />
+        we don&#8217;t keep up, then the proprietary technologies will gain ground.</p>
+</blockquote>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p>What are the main philosophies of <abbr>HTML</abbr> 5?</p>
+</blockquote>
+<p><cite>Hixie</cite></p>
+<blockquote>
+<p>Backwards-compatibility, incremental baby steps, defining error handling.<br />
+        Those are the main philosophies.</p>
+</blockquote>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p>What else did <abbr>WHATWG</abbr> try to achieve with this new iteration of <abbr>HTML</abbr>?</p>
+</blockquote>
+<p><cite>Hixie</cite></p>
+<blockquote>
+<p>We started from trying to put features from XForms into <abbr>HTML</abbr> 4, and we<br />
+        quickly also took the opportunity to fix some of the things in <abbr>HTML</abbr> 4 that<br />
+        were either too vague or disagreed with reality (that is, where the<br />
+        browsers all did one thing but the spec said another). It turns out that <abbr>HTML</abbr> 4 is so vague that this is a pretty big task&mdash;it even involved<br />
+        defining the whole <abbr>HTML</abbr> parsing model, including error handling, which is<br />
+        a huge job (it took me the better part of a month to write the first<br />
+        draft, and we were tweaking it for about a year before it become more or<br />
+        less stable).</p>
+<p>Something else we&#8217;ve tried to do is make things simpler. We&#8217;ve simplified<br />
+        the syntax (e.g. the rules about what can be quoted, what strings are<br />
+        valid <code>id</code>s, etc, are much simpler now). We&#8217;ve made things which people<br />
+        used to do in JavaScript have shortcuts, so now you can just say <code>autofocus=&quot;&quot;</code> to focus a form field when the page loads, instead of using <code>control.focus()</code>, which allows the browser to do clever things like not<br />
+        actually focus the control if the user is already typing elsewhere.</p>
+</blockquote>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p>Does <abbr>HTML</abbr> 5 legitimise tag soup? Does &quot;<a href="http://www.w3.org/TR/html-design-principles/#pave-the-cowpaths">paving the cowpaths</a>&quot; perpetuate<br />
+        bad markup?</p>
+</blockquote>
+<p><cite>Hixie:</cite></p>
+<blockquote>
+<p>No, <abbr>HTML</abbr> 5 actually makes the rules for markup even stricter than <abbr>HTML</abbr> 4 in<br />
+        many ways, both for authors (the rules are simpler, but stricter, than <abbr>HTML</abbr> 4&#8242;s) and for implementers (gone are the days where they can just do<br />
+        whatever they want when handling parse errors, now every browser has to<br />
+        act the same). </p>
+<p> Hopefully, we&#8217;ve managed to make the rules on what is valid syntax more<br />
+        understandable, which should help with getting more good markup. We&#8217;ve<br />
+        also made it possible to write clearer validators, so I have high hopes.</p>
+</blockquote>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p> Does including JavaScript and DOM <abbr>API</abbr>s in the <abbr>HTML</abbr> 5 spec dilute the<br />
+        message about separating behaviour and structure?</p>
+</blockquote>
+<p><cite>Hixie</cite></p>
+<blockquote>
+<p>I didn&#8217;t know about a message about separating behaviour and structure, I<br />
+        must have missed that memo! <abbr>HTML</abbr> 5 takes a pretty hard line on separating<br />
+        style and presentation from structure and semantics; there are no more <code>font</code> tags. Separating the logic and behaviour from the structure and<br />
+        semantics of an <abbr>HTML</abbr> document isn&#8217;t as important, generally, as far as I<br />
+        can tell. </p>
+<p> The main advantage of defining the <abbr>HTML</abbr> DOM <abbr>API</abbr>s and the <abbr>HTML</abbr> elements in<br />
+        the same specification is that we don&#8217;t let stuff fall through the cracks.<br />
+        In practice, browsers implement the <abbr>HTML</abbr> elements as DOM nodes, there&#8217;s no<br />
+        difference. When we separate the two in the specs, therefore, we introduce<br />
+        a conceptual gap where there isn&#8217;t one in reality. The DOM2 <abbr>HTML</abbr> spec, for<br />
+        instance, doesn&#8217;t say what happens when you change the <code>type</code> attribute of<br />
+        an <code>input</code> element <code>from</code> text  to <code>checkbox</code> on the fly, and the <abbr>HTML</abbr> 4<br />
+        spec doesn&#8217;t mention that changing attributes on the fly is possible, so<br />
+        in the <abbr>HTML</abbr> 4 / DOM2 <abbr>HTML</abbr> era, there&#8217;s a big hole there. In <abbr>HTML</abbr> 5, this is<br />
+        all defined together, so we can tighten this up and make sure there are no<br />
+        gaps.</p>
+</blockquote>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p>Why no native support for microformats/ <abbr>RDFa</abbr> in <abbr>HTML</abbr> 5?</p>
+</blockquote>
+<p><cite>Hixie</cite></p>
+<blockquote>
+<p>Microformats is natively supported in HTML5, just like it was in <abbr>HTML</abbr> 4,<br />
+        because Microformats use the built-in extension mechanisms of <abbr>HTML</abbr>.</p>
+<p>We considered RDFa long and hard (in fact this is an issue that&#8217;s a hot<br />
+        topic right now), but at the end of the day, while some people really like<br />
+        it, I don&#8217;t think it strikes the right balance between power and ease of<br />
+        authoring. For example, it uses namespaces and prefixes, which by and<br />
+        large confuse authors to no end. Just recently though I proposed something<br />
+        of a compromise which takes some of <abbr>RDFa</abbr>&#8216;s better ideas and puts them into <abbr>HTML</abbr> 5, so hopefully that will take care of the main needs that caused<br />
+        people to invent <abbr>RDFa</abbr>. We&#8217;ll see.</p>
+</blockquote>
+<h3>About browsers</h3>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p>Do the browser makers have too much influence on the spec?</p>
+</blockquote>
+<p><cite>Hixie</cite></p>
+<blockquote>
+<p>The reality is that the browser vendors have the ultimate veto on<br />
+        everything in the spec, since if they don&#8217;t implement it, the spec is<br />
+        nothing but a work of fiction. So they have a lot of influence&mdash;I don&#8217;t<br />
+        want to be writing fiction, I want to be writing a spec that documents the<br />
+        actual behaviour of browsers. </p>
+<p> Whether that&#8217;s too much, I don&#8217;t know. Does gravity have too much<br />
+        influence on objects on earth? It&#8217;s just the way it is.</p>
+</blockquote>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p>One of the chairs of the <abbr>W3C</abbr> working group is a Microsoft employee. Is that giving too much power to one browser vendor,  or a good thing,<br />
+        given that Microsoft&#8217;s browsers still dominate and their buy-in on any spec is<br />
+        therefore essential?</p>
+</blockquote>
+<p><cite>Hixie</cite></p>
+<blockquote>
+<p>Personally I would like Microsoft to get more involved with <abbr>HTML</abbr> 5. They&#8217;ve<br />
+        sent very little feedback over the years, far less than the other browser<br />
+        vendors. Even when asking them about their opinion on features they are<br />
+        implementing I rarely get any feedback. It&#8217;s very sad. If I e-mail them a<br />
+        question about how I can best help them, I usually get no reply; at best<br />
+        I&#8217;ll get a promise that they&#8217;ll get back to me, but that&#8217;s it.</p>
+</blockquote>
+<h3>Accessibility</h3>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p>There has been a lot of spirited debate (ahem) about accessibility in<br />
+        the development of <abbr>HTML</abbr> 5. How does the spec deal with the requirements<br />
+        of people with disabilities?</p>
+</blockquote>
+<p><cite>Hixie</cite></p>
+<blockquote>
+<p>Universal access&mdash;the requirement that anyone be able to use information<br />
+        on the Web&mdash;is a fundamental cornerstone of <abbr>HTML</abbr>&#8216;s design, just like<br />
+        security, privacy, and so on. In general, we try to design features so<br />
+        that they Just Work for everyone, regardless of how you are accessing the<br />
+        Web. For example, in <abbr>HTML</abbr> 5 we&#8217;ve added new input controls like calendars.<br />
+        These will Just Work with screen readers once browsers support them,<br />
+        authors don&#8217;t have to do anything special.</p>
+</blockquote>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p>Does your personal support of <a href="http://ln.hixie.ch/?start=1023585606&amp;count=1">humanitarian eugenics</a> affect your opinion of giving<br />
+        extra &quot;help&quot; for people with disabilities?</p>
+</blockquote>
+<p><cite>Hixie</cite></p>
+<blockquote>
+<p>You&#8217;ve been reading too much of our pet troll&#8217;s blog! ;-)</p>
+<p><i>[Bruce's note: this refers to Mr Last Week, mysterious author of the blog <a href="http://lastweekinhtml5.blogspot.com/">Last Week in <abbr>HTML</abbr> 5</a>, which lampoons the <abbr>HTML</abbr> 5 Working Group in very funny, frequently foul-mouthed manner.]</i> </p>
+<p> People with disabilities are just as important to me in my work on <abbr>HTML</abbr> 5 as is anyone else.</p>
+</blockquote>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p>You wrote to ask screenreader vendors to participate in<br />
+        the specification process. Did they ever reply?</p>
+</blockquote>
+<p><cite>Hixie</cite></p>
+<blockquote>
+<p>A couple did, but only to say they had little time for the standards<br />
+        process, which was quite disappointing. Since then, though, Apple has<br />
+        ramped up their efforts on their built-in Mac <abbr>OS X</abbr> screen reader software,<br />
+        and we <strong>do</strong> get a lot of feedback from Apple. So at least one screen<br />
+        reader vendor is actively involved.</p>
+</blockquote>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p><abbr>HTML</abbr> 5 and <a href="http://www.w3.org/WAI/intro/aria">WAI-ARIA</a> appear to  do the <a href="http://annevankesteren.nl/2009/04/html5-wai-aria">same thing</a> in some places.<br />
+        How should developers handle this?</p>
+</blockquote>
+<p><cite>Hixie</cite></p>
+<blockquote>
+<p>When there&#8217;s a built-in way to do something, using that is the simplest<br />
+        and most reliable solution. So for example, if you want to have a<br />
+        checkbox, using the <code>input</code> element with its <code>type</code> attribute set to <code>checkbox</code> is the simplest solution&mdash;it&#8217;ll work for everyone, with or<br />
+        without JavaScript, with or without a screen reader, and so on. ARIA is<br />
+        useful when <abbr>HTML</abbr> doesn&#8217;t let you do what you want and you find yourself<br />
+        hacking around with many nested <code>div</code>s, scripting your own controls and so<br />
+        forth.</p>
+</blockquote>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p>Can we expect ARIA-specific constructs which have no equivalent in <abbr>HTML</abbr> 5, such as live regions, to be allowed under the rules of <abbr>HTML</abbr> 5 so it will all validate?</p>
+</blockquote>
+<p><cite>Hixie</cite></p>
+<blockquote>
+<p>Yes, the plan is to make sure ARIA and HTML5 work well together. Right now<br />
+        I&#8217;m waiting for ARIA to be complete (there are a number of last call<br />
+        comments that they haven&#8217;t yet replied to), and for the ARIA<br />
+        implementation rules to be clearer (it&#8217;s not yet obvious as I understand<br />
+        it what should happen when ARIA says a checkbox is a radio button, for<br />
+        instance). Once that is cleared up, I expect <abbr>HTML</abbr> 5 will give a list of<br />
+        conformance criteria saying where ARIA attributes can be used and saying<br />
+        how they should be implemented in browsers.</p>
+</blockquote>
+<h3>Why, when, how, who?</h3>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p>Why would we  content authors  want to move to <abbr>HTML</abbr> 5? What&#8217;s in it<br />
+        for us? </p>
+</blockquote>
+<p><cite>Hixie</cite></p>
+<blockquote>
+<p>Today is probably too early to start using <abbr>HTML</abbr> 5. </p>
+<p> Long term, content authors will find a variety of new features in <abbr>HTML</abbr> 5.<br />
+        We have a bunch of new structural elements like <code>section</code>, <code>article</code>, <code>footer</code>, and so on. We have new elements for embedded media, like <code>video</code> and <code>audio</code>. We have new input controls, like the calendars I mentioned,<br />
+        but also fields for <abbr>URL</abbr>s, e-mail addresses, telephone numbers, and for<br />
+        color selection. We have control over autocomplete values in text fields,<br />
+        as well as field validation so that you can say which fields are required.<br />
+        We have context menus, <code>pushState()</code> so you can update the <abbr>URL</abbr> in Ajax<br />
+        applications, and offline application cache manifests so that your users<br />
+        can take your applications offline. The list goes on.</p>
+<p> There&#8217;s also the benefits that come from using an <abbr>HTML</abbr> 5 validator. <abbr>HTML</abbr> 5<br />
+        is much more precise about many things than <abbr>HTML</abbr> 4, so the validators will<br />
+        be more useful in catching real errors. The <code>embed</code> element is no longer<br />
+        invalid.</p>
+</blockquote>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p>Are there advantages for end-users, too? </p>
+</blockquote>
+<p><cite>Hixie</cite></p>
+<blockquote>
+<p>A more powerful <abbr>HTML</abbr> means more powerful Web applications. Just like <code>XMLHttpRequest</code> resulted in more interactive apps, <abbr>HTML</abbr> 5 will result in<br />
+        a richer and more consistently reliable experience. I hope!</p>
+</blockquote>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p>What&#8217;s the the timeline? When can we start using <abbr>HTML</abbr> 5?</p>
+</blockquote>
+<p><cite>Hixie</cite></p>
+<blockquote>
+<p>The plan is to have the spec mostly finished by October 2009. A lot<br />
+        depends on the browser vendors, though. I don&#8217;t know when things will be<br />
+        implemented widely enough that authors can use them reliably everywhere.<br />
+        Some features, like <code>canvas</code> and <code>video</code>, are getting implemented in most<br />
+        browsers as we speak. Others will take longer.</p>
+</blockquote>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p> What can standards-savvy WaSP readers do to get involved with the specification process?</p>
+</blockquote>
+<p><cite>Hixie</cite> </p>
+<blockquote>
+<p>There are a number of ways of taking part. What we need most of all these<br />
+        days is technical review of the specification text, calling out places<br />
+        where I screwed up, where the spec defines something that&#8217;s not easy to<br />
+        use for Web authors, where the spec contradicts itself, typos, spelling<br />
+        mistakes, grammar errors, errors in examples, you name it.</p>
+<p>I posted a blog entry recently detailing <a href="http://blog.whatwg.org/help-us-review-html5">how people can send feedback</a>. You can join the <a href="http://www.w3.org/2004/01/pp-impl/40318/instructions"><abbr>W3C</abbr> <abbr>HTML</abbr> Working Group</a>  or the <a href="http://www.whatwg.org/mailing-list">WHATWG</a>. There are also <a href="http://wiki.whatwg.org/wiki/What_you_can_do">lots of other things people can do</a>&mdash;write demos, write tutorials, edit other related specs, write articles introducing parts of<br />
+        the spec on the blog, write test cases&hellip; Anyone who wants to help out but doesn&#8217;t know where to start should drop<br />
+        me an e-mail at ian@hixie.ch.</p>
+</blockquote>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p> Will there ever be an <abbr>HTML</abbr> 6, or is it a convenient fiction to park<br />
+        out-of-scope discussions?</p>
+</blockquote>
+<p><cite>Hixie</cite></p>
+<blockquote>
+<p>I&#8217;m sure there will be an <abbr>HTML</abbr> 6, and 7, and 8, and probably many more,<br />
+        until someone comes up with something so radically better that we stop<br />
+        evolving the Web as we know it. </p>
+<p> I expect work on <abbr>HTML</abbr> 6 will start even before <abbr>HTML</abbr> 5 is completely done, in<br />
+        fact. Putting the finishing touches on <abbr>HTML</abbr> 5 will be a long and tedious<br />
+        job involving writing a massive test suite. <abbr>HTML</abbr> 4 never had a serious test<br />
+        suite created (it was too vague as a specification to really be properly<br />
+        tested), so we have to start from scratch with <abbr>HTML</abbr> 5. The <abbr>HTML</abbr> 6 team will<br />
+        at least be able to build on what we&#8217;ve done with <abbr>HTML</abbr> 5, I&#8217;m jealous!</p>
+<p> Actually if it was up to me, after <abbr>HTML</abbr> 5 I would probably transition <abbr>HTML</abbr> to an incremental model. Once we have a basic spec that is well-defined<br />
+        and has been proven, instead of releasing a frozen snapshot every few<br />
+        years, I&#8217;d prefer a model where we can slowly evolve the language, call it<br />
+        &quot;<abbr>HTML</abbr> Current&quot; or something, without having to worry about versioning it.<br />
+        To some extent that&#8217;s what we&#8217;re doing with <abbr>HTML</abbr> 5, but I think formalising<br />
+        it would really help.</p>
+<p> Having versions of specs doesn&#8217;t make sense when you have multiple<br />
+        implementations that are all evolving as well. No browser is ever going to<br />
+        be exactly <abbr>HTML</abbr> 5, they&#8217;ll all be subsets or supersets. So why bother with<br />
+        versioning the spec?</p>
+<p> It&#8217;s a very unusual idea in the standards world, so I don&#8217;t expect us to<br />
+        do this. But I do think it&#8217;d be the best way forward.</p>
+</blockquote>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p>Would you like to be the <abbr>HTML</abbr> 6 editor?</p>
+</blockquote>
+<p><cite>Hixie</cite></p>
+<blockquote>
+<p>Too early to tell! It&#8217;s been a lot of fun working on <abbr>HTML</abbr> 5, it&#8217;s quite<br />
+        challenging and you have to deal with all kinds of issues from the deeply<br />
+        technical to the highly political. I might want a change of pace when<br />
+        we&#8217;re done with <abbr>HTML</abbr> 5, though.</p>
+</blockquote>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p>What&#8217;s your fave feature that didn&#8217;t get into <abbr>HTML</abbr> 5 that you&#8217;d put<br />
+        into <abbr>HTML</abbr> 6?</p>
+</blockquote>
+<p><cite>Hixie</cite></p>
+<blockquote>
+<p>In-window modal dialogs or dialog box&mdash;the kind of prompt you get when the<br />
+        computer asks you a question and won&#8217;t let you do anything else until you<br />
+        answer the question. For instance, the window that comes up when you say<br />
+        &quot;Save As&#8230;&quot; is usually a modal dialog.</p>
+<p>Right now people fake it with <code>div</code>s and<br />
+        complicated styles and script. It would be neat to just be able to say<br />
+        &quot;make this section a modal dialog&quot;. Like <code>showModalDialog()</code>, but within<br />
+        the page instead of opening a new window with a new page.</p>
+<p>I&#8217;d add it to <abbr>HTML</abbr> 5, but there are so many new features already that we<br />
+        need to wait for the browsers to catch up.</p>
+</blockquote>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p>Finally, is it true that you and Mr Last Week are the same person, like Edward<br />
+        Norton and Brad Pitt in &quot;Fight Club&quot;?</p>
+</blockquote>
+<p><cite>Hixie</cite></p>
+<blockquote>
+<p>Oh, no. Our pet troll is a phenomenon all to himself.</p>
+</blockquote>
+<p><cite>Bruce</cite></p>
+<blockquote>
+<p>Thanks for your time.</p>
+</blockquote>
+
+		</div>
+	
+		
+
+		<div id="content-replies">
+
+
+			<h3 id="comments">Your Replies</h3> 
+
+				<dl>
+
+
+					<dt id="comment-75129"><a href="#comment-75129" title="Link to this reply">#1</a> On May 13th, 2009 8:42 am <span><a href='http://kechjo.cogia.net/' rel='external nofollow' class='url'>Keith</a> replied:</span></dt>
+					<dd>
+												<p>It would be funny if it were to come out in 2012, on the day before the end of the world.</p>
+					</dd>
+
+
+					<dt id="comment-75131"><a href="#comment-75131" title="Link to this reply">#2</a> On May 13th, 2009 9:55 am <span><a href='http://www.dreamberry.co.uk/' rel='external nofollow' class='url'>Phil Houghton</a> replied:</span></dt>
+					<dd>
+												<p>I think if we&#8217;re talking about conflating structure and behaviour then surely we&#8217;re already in the realm of redefining what we mean by &#8220;Hyper-Text&#8221; and therefore should be defining the spec as something other than HTML? </p>
+<p>The concept of paving the cow path is a most welcome one but perhaps we need to recognise that the cows have been trampling over the idea of a simple online document format for years now and signpost the paving with something that reaches beyond that idea. (While allowing for an underpass for the hedgehogs of simple semantics!)</p>
+					</dd>
+
+
+					<dt id="comment-75133"><a href="#comment-75133" title="Link to this reply">#3</a> On May 13th, 2009 10:32 am <span><a href='http://blogs.adobe.com/jd' rel='external nofollow' class='url'>John Dowdell</a> replied:</span></dt>
+					<dd>
+												<p><em>&#8220;If we don’t keep up, then the proprietary technologies will gain ground.&#8221;</em></p>
+<p>Try speaking without the label &#8220;proprietary&#8221;, and instead describe the specific outcomes you fear so much, that you will sacrifice HTML&#8217;s practicality in return.</p>
+<p>I don&#8217;t think that a variety of slowly-updated browser brands can realistically provide content creators and consumers with the same reliable functionality that a common cross-browser extension can. And yet there is talk of war, of fighting rather than cooperation. Something is wrong at a very deep level there.</p>
+<p>I want to see Flash continue to provide all browsers with identical high-end functionality, uniting audiences for content developers, innovating fastest while enfranchising all browser choices. The browsers actually &#8220;gain ground&#8221; when Flash does.</p>
+<p>jd/adobe</p>
+					</dd>
+
+
+					<dt id="comment-75135"><a href="#comment-75135" title="Link to this reply">#4</a> On May 13th, 2009 11:06 am <span><a href='http://flexewebs.com/semantix' rel='external nofollow' class='url'>Jason Grant</a> replied:</span></dt>
+					<dd>
+												<p>This is a very useful contextual insight into HTML5 and its progress. </p>
+<p>Writing the spec for it must be a very energy consuming matter, so all respect to Hixie for working on it.</p>
+					</dd>
+
+
+					<dt id="comment-75141"><a href="#comment-75141" title="Link to this reply">#5</a> On May 13th, 2009 3:31 pm <span><a href='http://www.nota-bene.org/' rel='external nofollow' class='url'>Stephane Deschamps</a> replied:</span></dt>
+					<dd>
+												<p>@John Dowdell: I would say it&#8217;s one of the main problems with the web. Most clients/projects don&#8217;t see that one of the most interesting uses of Flash and HTML is exactly that: a mix of both, a hybrid thing (think Google Finance here, think EasyYouTube).</p>
+<p>Using tools for what they&#8217;re good at and mixing them in the process is not that common. So at the end of the day people fight a fight of &#8220;I want HTML&#8221; &#8211; &#8220;no, I want Flash&#8221;. So HTMLers resolve to be radical and tell projects and clients that it&#8217;s either one or the other, because most of the time you eiher have a good Flash artist or a good HTML developer, but not both for budget questions etc.</p>
+<p>At the end of the day, though, I&#8217;ll always find HTML more reliable than Flash. I don&#8217;t have a machine too powerful, or a big broadband connection. I *do* surf with Flash sometimes, never without HTML.</p>
+					</dd>
+
+
+					<dt id="comment-75143"><a href="#comment-75143" title="Link to this reply">#6</a> On May 13th, 2009 4:10 pm <span><a href='http://ln.hixie.ch/' rel='external nofollow' class='url'>Ian Hickson</a> replied:</span></dt>
+					<dd>
+												<p>@Phil Houghton: Actually the HTML5 spec was originally called &#8220;Web Applications 1.0&#8243; (you can see the remnants of this in the URL to the spec: <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/" rel="nofollow">http://www.whatwg.org/specs/web-apps/current-work/multipage/</a>). The name changed when the W3C changed their minds and asked us to work with them again.</p>
+					</dd>
+
+
+					<dt id="comment-75146"><a href="#comment-75146" title="Link to this reply">#7</a> On May 13th, 2009 5:31 pm <span><a href='http://www.mattrobin.com/' rel='external nofollow' class='url'>Matt Robin</a> replied:</span></dt>
+					<dd>
+												<p>So that&#8217;s October this year. Maybe, perhaps, if the browser vendors are up to speed on it. So it might not be October then, HTML 6 possibly to start in development&#8230;</p>
+<p>Good interview because I think it nicely clarifies HTML 5&#8242;s status at the moment.<br />
+I liked the bit about &#8216;showModalDialog()&#8217; &#8211; that actually does sound good/useful.<br />
+I also favour the &#8216;HTML Current&#8217; naming suggestion, versioning has always been a bit clunky for something as broadly-used as the Web (although that might not have been anticipated when first specs of HTML were originally being written of course!)</p>
+<p>Here&#8217;s to October then! :)</p>
+					</dd>
+
+
+					<dt id="comment-75170"><a href="#comment-75170" title="Link to this reply">#8</a> On May 14th, 2009 12:38 pm <span>EM replied:</span></dt>
+					<dd>
+												<p>@John Dowdell: I fear what has already happened &#8212; lock-in to whichever vendors Adobe decides to support.  I fear a terrible Flash plugin on Linux that crashes my browser all the time.  I fear not being able to use Flash on computing devices of the future unless Adobe decides they aren&#8217;t against Adobe&#8217;s interests.</p>
+					</dd>
+
+
+					<dt id="comment-75199"><a href="#comment-75199" title="Link to this reply">#9</a> On May 15th, 2009 11:40 am <span>WaSP Member <a href='http://www.brucelawson.co.uk/' rel='external nofollow' class='url'>blawson</a> replied:</span></dt>
+					<dd>
+												<p>There&#8217;s an article by John Dowdell of Adobe that takes issue with Hixie&#8217;s statements that&#8217;s worth a read: <a href="http://blogs.adobe.com/jd/2009/05/building_upon_untested_assumpt.html" rel="nofollow">Building upon untested assumptions</a>.</p>
+					</dd>
+
+
+					<dt id="comment-75202"><a href="#comment-75202" title="Link to this reply">#10</a> On May 15th, 2009 12:55 pm <span><a href='http://rimantas.com/' rel='external nofollow' class='url'>Rimantas</a> replied:</span></dt>
+					<dd>
+												<p>I still hope to see the day the Flash dies.</p>
+					</dd>
+
+
+					<dt id="comment-75209"><a href="#comment-75209" title="Link to this reply">#11</a> On May 15th, 2009 5:51 pm <span><a href='http://blogs.adobe.com/jd' rel='external nofollow' class='url'>John Dowdell</a> replied:</span></dt>
+					<dd>
+												<p>To &#8220;EM&#8221; (of the closed identity ;-)</p>
+<p>You fear things which have not happened, and which (considering history of PostScript, PDF, and SWF) are not likely to happen. Such theoreticals are difficult for others to meaningfully address. </p>
+<p>Like HTML, Flash Flex and AIR enfranchise Linux use. It&#8217;s not an iTunes &#8220;control&#8221; type of model. I&#8217;d urge you to reconsider your fears.</p>
+<p>jd/adobe</p>
+					</dd>
+
+
+					<dt id="comment-75397"><a href="#comment-75397" title="Link to this reply">#12</a> On May 22nd, 2009 12:09 pm <span><a href='http://jethrolarson.com/' rel='external nofollow' class='url'>Jethro Larson</a> replied:</span></dt>
+					<dd>
+												<p>Regarding RDFa: I agree on XML namespaces being confusing. They&#8217;ve been a source of endless problems in my experience. They&#8217;re one of the last things that turn XML from a human-readable language into something far more sinister.</p>
+					</dd>
+
+
+					<dt id="comment-75531"><a href="#comment-75531" title="Link to this reply">#13</a> On May 26th, 2009 2:00 pm <span><a href='http://www.methylblue.com/' rel='external nofollow' class='url'>Max Howell</a> replied:</span></dt>
+					<dd>
+												<p>Proprietary technologies evolve fastest. They react to the market. They erupt forwards and improve things, in general.</p>
+<p>After a while though, a proper, thought out, standards driven replacement can emerge. And it will be better than the rapidly developed, almost-designed, proprietary product it replaces.</p>
+<p>Flash has served us well. And thanks for that. But the web will now evolve quicker with some parts replaced by HTML 5.</p>
+<p>I suggest, John Dowdell, you start looking to the next thing that you can advance the web with.</p>
+					</dd>
+
+
+					<dt id="comment-75533"><a href="#comment-75533" title="Link to this reply">#14</a> On May 26th, 2009 3:06 pm <span>Stefanie replied:</span></dt>
+					<dd>
+												<p>I never knew that Ian is into eugenics. How sad.</p>
+<p>But thinking of himself as an “benevolent dictator” it shoudn&#8217;t have surprised me.</p>
+					</dd>
+
+
+					<dt id="comment-75536"><a href="#comment-75536" title="Link to this reply">#15</a> On May 26th, 2009 4:24 pm <span>Hamranhansenhansen replied:</span></dt>
+					<dd>
+												<p>&gt; I think if we’re talking about conflating<br />
+&gt; structure and behaviour</p>
+<p>Structure and behavior is already conflated in HTML 4. You can separate them as much as you like in your own applications. HTML 5 is not forcing your hand either way.</p>
+<p>&gt; [Flash]</p>
+<p>I started working with Flash in 1997 and it frustrates me that things I could do then easily in Flash are still either hard to do or basically impossible on the Web.</p>
+<p>However, Flash is not now and has never been part of the World Wide Web. The Web is an application of the Internet, same as Flash. They&#8217;re peers. The browser and Flash Player are 2 separate apps pretending to be one because Windows still doesn&#8217;t have its own MPEG-4 player.</p>
+<p>WebKit is just a few megabytes, and it runs on Intel, PowerPC, and ARM with industry-leading performance. And it&#8217;s free and open source and used by Apple, Google, Nokia, Blackberry, Palm, and others. Mobiles have MPEG-4 decoder chips. There is no need for Flash on mobiles. If there was, it would already be there.</p>
+					</dd>
+
+
+					<dt id="comment-75562"><a href="#comment-75562" title="Link to this reply">#16</a> On May 27th, 2009 10:09 am <span><a href='http://identi.ca/snan' rel='external nofollow' class='url'>Sandra</a> replied:</span></dt>
+					<dd>
+												<p>Flash is a &#8220;common cross-browser extension&#8221;? Sure, a common, non-free implementantation (with variants and ports between browsers and platform).</p>
+<p>If Gnash or other non-Flash flash implementations were to take off, we&#8217;d see the same slowdown as between browser implementors today.</p>
+<p>I don&#8217;t have Flash installed. I will install a good HTML 5 implementation.</p>
+<p>I don&#8217;t want to lock my works in a platform that&#8217;s basically controlled by a single restricted-use, restricted-modification implementation. If Flash were DSFG-free, it&#8217;d be back in the running.</p>
+					</dd>
+
+
+					<dt id="comment-75605"><a href="#comment-75605" title="Link to this reply">#17</a> On May 30th, 2009 5:27 pm <span>Dominic Shiells replied:</span></dt>
+					<dd>
+												<p>With the spec is there any examples of the code to see how it is used in a practical format!<br />
+Dom</p>
+					</dd>
+
+
+					<dt id="comment-75623"><a href="#comment-75623" title="Link to this reply">#18</a> On June 4th, 2009 8:49 am <span><a href='http://ngin.de/' rel='external nofollow' class='url'>Schoschie</a> replied:</span></dt>
+					<dd>
+												<p>Dammit, now you spoiled Fight Club for me.</p>
+					</dd>
+
+
+					<dt id="comment-75681"><a href="#comment-75681" title="Link to this reply">#19</a> On June 27th, 2009 5:59 am <span>Christian replied:</span></dt>
+					<dd>
+												<p>The main thing that I miss about HTML5 is extensibility. Everything is either baked in and bloats the main spec or has to rely on clumsy, underspecified class-attribute hacks.</p>
+<p>XML may not be perfect and the convention of using URLs as namespace identifiers must have created confusion without end. But at least XHTML has an extension mechanism &#8211; only that Microsoft never started supporting it. Why is there no consideration to do something similar with non-XML HTML5? Is using divs with strange attributes really better than using additional vocabularies in HTML? (RDFa is also a hack in this respect IMO, but at least it can accomodate extension vocabularies in a decentralized and conflict-free fashion. Before tossing that out of the window, an attempt should be made of doing namespaces in a clearer fashion, if URNs are considered to be too complicated).</p>
+<p>I really don&#8217;t understand this whole aspect of HTML5. Yes, the W3C XHTML stuff was over-engineered and sometimes far away from reality. Yes, they put the bar a bit too high and so the transition never happened. </p>
+<p>But baking every possible use case into one core vocabulary won&#8217;t do either.</p>
+					</dd>
+
+
+					<dt id="comment-75684"><a href="#comment-75684" title="Link to this reply">#20</a> On June 28th, 2009 8:18 am <span><a href='http://www.yazgunu.net/' rel='external nofollow' class='url'>Yazgunu</a> replied:</span></dt>
+					<dd>
+												<p>I still hope to see the day the Flash dies.</p>
+					</dd>
+
+
+					<dt id="comment-75696"><a href="#comment-75696" title="Link to this reply">#21</a> On July 4th, 2009 11:59 am <span><a href='http://www.joooc.info/' rel='external nofollow' class='url'>joooc</a> replied:</span></dt>
+					<dd>
+												<p>I like the idea of non-version HTML standard. A lot of web apps doesn&#8217;t use versions anymore (they just simply update on the run).</p>
+<p>However I&#8217;m scared about possible mess generated by various browsers and their implementation of the most recent rules &#8230; on the other hand it should be less work to do it step by step so they can better react &#8230; sounds interesting.</p>
+<p>Looking forward for my first HTML 5 valid web page ;-)</p>
+					</dd>
+
+
+					<dt id="comment-75706"><a href="#comment-75706" title="Link to this reply">#22</a> On July 9th, 2009 11:16 pm <span><a href='http://www.bevanwistar.com/' rel='external nofollow' class='url'>Bevan</a> replied:</span></dt>
+					<dd>
+												<p>Nice Interview, great sharing about HTML</p>
+<p><a href="http://www.bevanwistar.com/" rel="nofollow">Bevanwistar</a></p>
+					</dd>
+
+
+					<dt id="comment-75710"><a href="#comment-75710" title="Link to this reply">#23</a> On July 11th, 2009 4:54 pm <span><a href='http://www.proxy-servers.biz/' rel='external nofollow' class='url'>Proxy</a> replied:</span></dt>
+					<dd>
+												<p>Sounds useful, i´ll try the new specification. What about XHTML? Will core elements of XHTML get integrated into HTML 5 specs?</p>
+					</dd>
+
+
+					<dt id="comment-75767"><a href="#comment-75767" title="Link to this reply">#24</a> On August 6th, 2009 6:05 am <span><a href='http://www.goyax.de/' rel='external nofollow' class='url'>Goyax</a> replied:</span></dt>
+					<dd>
+												<p>It is very important that the new standard and the team behind it (for example the Microsoft employee sitting on one of the chairs of the W3C) is able to connect browser vendors more and involve them that far, so web-developpers are not forced anymore to keep an eye on every single browser implementation. The success of the www is that all applications in it (talking about applications means even a simple html-only-page) are usable on so many diffenrent devices and operating systems. Eliminating differences between the browser implementations will speed up the evolution of the www.</p>
+					</dd>
+
+
+				</dl>
+
+		</div>
+
+
+
+		<div id="content-sub" title="Comment form">
+			<a href="#top" id="stmjrCollapse-content-sub" title="Return to top">Return to top</a>
+
+			<h3 class="stmjrNoCollapse">Post a Reply</h3>
+
+
+			<p>Comments are closed.</p>
+
+
+		</div>
+	
+	
+	</div>
+
+	<hr />
+
+	<div id="nav-supp">
+		<p><a href="#top" title="Back to Top">Back to Top</a></p> 
+	</div>
+
+	<div id="siteinfo">
+		<p>All of the entries posted in <abbr title="The Web Standards Project">WaSP</abbr> Buzz express the opinions of their individual authors. They do not necessarily reflect the plans or positions of the Web Standards Project as a group.</p>
+		<p>This site is valid <a href="http://validator.w3.org/check/referer" title="Validate this document">XHTML 1.0 Strict</a>, <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate this CSS">CSS</a> | Get Buzz via <a href="../../../../feed/index.html"><abbr title="Really Simple Syndication">RSS</abbr></a> or <a href="../../../../feed/atom/index.html">Atom</a> | <a href="../../../../about/colophon/index.html">Colophon</a> | <a href="../../../../about/legal/index.html">Legal</a></p>
+		<!-- 11 queries. 0.234 seconds. -->
+	</div>
+
+</div>
+
+
+</body>
+
+<!-- Mirrored from www.webstandards.org/2009/05/13/interview-with-ian-hickson-editor-of-the-html-5-specification/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Aug 2017 17:32:20 GMT -->
+</html>
+
+<!-- Dynamic page generated in 0.222 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2017-08-18 12:26:16 -->
+
+<!-- super cache -->

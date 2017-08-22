@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>The Web Standards Project &#187; Acid2</title>
+	<atom:link href="http://www.webstandards.org/buzz/action/acid2/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.webstandards.org</link>
+	<description>Working together for standards</description>
+	<lastBuildDate>Fri, 01 Mar 2013 18:30:30 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Acid 2 Test Back to Normal</title>
+		<link>http://www.webstandards.org/2008/07/24/acid-2-test-back-to-normal/</link>
+		<comments>http://www.webstandards.org/2008/07/24/acid-2-test-back-to-normal/#comments</comments>
+		<pubDate>Fri, 25 Jul 2008 02:11:37 +0000</pubDate>
+		<dc:creator>feather</dc:creator>
+				<category><![CDATA[Acid2]]></category>
+		<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[Bugs]]></category>
+
+		<guid isPermaLink="false">http://www.webstandards.org/?p=1139</guid>
+		<description><![CDATA[The Acid 2 test hosted here on the WaSP site was broken but is now fixed.]]></description>
+			<content:encoded><![CDATA[<p>For a while now we&#8217;ve had a problem with the <a href="http://www.webstandards.org/files/acid2/test.html">Acid 2 Test</a> on the WaSP site. If you&#8217;re unfamiliar with the Acid 2 Test, it is essentially a test for browser vendors to use as a means to gauge their standards compliance. If your browser renders the Acid 2 Test page the same as the <a href="http://www.webstandards.org/files/acid2/reference.html">Acid 2 reference rendering</a>, then you know you&#8217;re hitting the mark.</p>
+<p>I&#8217;ll be honest: over the last 10 days, I&#8217;ve learned more about the Acid 2 Test than I ever wanted to know. If you want to do the same, you might start with <a href="http://www.webstandards.org/action/acid2/guide/">Acid 2: The Guided Tour</a>.</p>
+<p>The short version is that part of Acid 2 is a test for the way a browser handles an <code>&lt;object&gt;</code> element when the data attribute references a URL that returns an HTTP status code of 404. A number of caching rules, mod_rewrite rules and redirects all collided to create a problem with our 404. The cached version of our 404 page was returning an HTTP status of 200. As you might expect, this basically makes the test useless.</p>
+<p>Acid 2 was broken. Now it is not. Carry on.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2008/07/24/acid-2-test-back-to-normal/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>What&#8217;s the best test for Acid3?</title>
+		<link>http://www.webstandards.org/2008/01/16/whats-the-best-test-for-acid3/</link>
+		<comments>http://www.webstandards.org/2008/01/16/whats-the-best-test-for-acid3/#comments</comments>
+		<pubDate>Wed, 16 Jan 2008 08:17:07 +0000</pubDate>
+		<dc:creator>Kimberly Blessing</dc:creator>
+				<category><![CDATA[Acid2]]></category>
+		<category><![CDATA[Acid3]]></category>
+		<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[Web Standards (general)]]></category>
+
+		<guid isPermaLink="false">http://www.webstandards.org/2008/01/16/whats-the-best-test-for-acid3/</guid>
+		<description><![CDATA[Now that all the major browsers (and many minor ones) have pledged support for Acid2, Ian Hickson has moved on to preparing Acid3 -- and you can help!]]></description>
+			<content:encoded><![CDATA[<p>Perhaps you expected this announcement, given the news that <a href="http://www.webstandards.org/2007/12/19/ie8-passes-acid2-test-2/">IE8 passes Acid2</a>. Or maybe it already seems like old news, if you caught the <a href="http://it.slashdot.org/it/08/01/11/1429216.shtml">recent Slashdot post</a>. In either case, the news is true &#8212; Acid3 will be coming soon!</p>
+<p>Whereas <a href="http://www.webstandards.org/action/acid2">Acid2</a> tested static HTML and CSS, Acid3 will focus on ECMAScript and DOM &#8212; the dynamic side of the Web. While it will include a few rendering tests to make things look interesting, the core of the test will be 100 scripting subtests.</p>
+<p>And that is where you can contribute! Ian has compiled 84 of the 100 scripts but is <a href="http://ln.hixie.ch/?start=1200301306&#038;count=1">seeking 16 additional tests</a>. If you&#8217;re up to the challenge, read the criteria, create your test, and submit it &#8212; within the next five days!</p>
+<p>As with Acid2, the Web Standards Project will play host to Acid3&#8230; so stay tuned for the final test, and the play-by-play on the browsers&#8217; progress!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2008/01/16/whats-the-best-test-for-acid3/feed/</wfw:commentRss>
+		<slash:comments>42</slash:comments>
+		</item>
+		<item>
+		<title>IE8 passes Acid2 test</title>
+		<link>http://www.webstandards.org/2007/12/19/ie8-passes-acid2-test-2/</link>
+		<comments>http://www.webstandards.org/2007/12/19/ie8-passes-acid2-test-2/#comments</comments>
+		<pubDate>Wed, 19 Dec 2007 20:53:43 +0000</pubDate>
+		<dc:creator>blawson</dc:creator>
+				<category><![CDATA[Acid2]]></category>
+		<category><![CDATA[Action]]></category>
+		<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[HTML/XHTML]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[Microsoft TF]]></category>
+		<category><![CDATA[Web Standards (general)]]></category>
+
+		<guid isPermaLink="false">http://www.webstandards.org/2007/12/19/ie8-passes-acid2-test-2/</guid>
+		<description><![CDATA[Blimey. Cor luvvaduck and no mistake. Just after the announcement that Opera are complaining to the European Union about Internet Explorer&#8217;s dodgy standards support, Chris Wilson reports that an internal build of Internet Explorer 8 passes the Acid2 test. This doesn&#8217;t necessarily mean that IE8 has fixed all its float oddities, or its hasLayout hilarities. [...]]]></description>
+			<content:encoded><![CDATA[<p>Blimey. Cor luvvaduck and no mistake. Just after the announcement that <a href="/2007/12/13/opera-complains-to-europe-over-ie-lock-in/">Opera are complaining to the European Union</a> about Internet Explorer&#8217;s dodgy standards support, <a href="/2007/12/13/opera-complains-to-europe-over-ie-lock-in/#comment-59212">Chris Wilson reports</a> that an internal build of <a href="http://blogs.msdn.com/ie/archive/2007/12/19/internet-explorer-8-and-acid2-a-milestone.aspx">Internet Explorer 8 passes</a> the <a href="/action/acid2/">Acid2 test</a>.</p>
+<p>This doesn&#8217;t necessarily mean that IE8 has fixed all its float oddities, or its hasLayout hilarities. But what it does mean is that there is another browser war, and <a href="http://www.codinghorror.com/blog/archives/001006.html">Microsoft <em>did</em> decide to come</a>.</p>
+<p>Added 20 December 2007: Markus Mielke of the Internet Explorer team confirms &#8220;<a href="http://lists.w3.org/Archives/Public/www-style/2007Dec/0151.html">HasLayout will be history with IE8</a>&#8220;. Exciting times&hellip;</p>
+<p>(<a href="http://www.e-unlimited.net/ie8-spelnia-wymogi-testu-acid2/">This post translated into Polish</a>.)</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2007/12/19/ie8-passes-acid2-test-2/feed/</wfw:commentRss>
+		<slash:comments>50</slash:comments>
+		</item>
+		<item>
+		<title>Safari 3 Public Beta for Mac and Windows</title>
+		<link>http://www.webstandards.org/2007/06/12/safari-3-public-beta-for-mac-and-windows/</link>
+		<comments>http://www.webstandards.org/2007/06/12/safari-3-public-beta-for-mac-and-windows/#comments</comments>
+		<pubDate>Tue, 12 Jun 2007 06:07:10 +0000</pubDate>
+		<dc:creator>Kimberly Blessing</dc:creator>
+				<category><![CDATA[Acid2]]></category>
+		<category><![CDATA[Browsers]]></category>
+		<category><![CDATA[Bugs]]></category>
+
+		<guid isPermaLink="false">http://www.webstandards.org/2007/06/12/safari-3-public-beta-for-mac-and-windows/</guid>
+		<description><![CDATA[As the Apple Worldwide Developers Conference kicked off today, Steve Jobs announced the availability of the Safari 3 Public Beta — for both Mac and Windows. Caution: bug reports abound.]]></description>
+			<content:encoded><![CDATA[<p>As the Apple Worldwide Developers Conference kicked off today, Steve Jobs announced the availability of the Safari 3 Public Beta &#8212; for both Mac and Windows. <a href="http://www.apple.com/safari/">Download it here</a>.</p>
+<p>I&#8217;ve only just installed it on Windows XP, but it has frozen once and crashed once already. There are complaints of <a href="http://www.codinghorror.com/blog/archives/000884.html">blurry fonts</a> and <a href="http://apple.slashdot.org/apple/07/06/12/0120230.shtml">security bugs</a>. It&#8217;s not rendering <a href="http://www.webstandards.org/files/acid2/test.html#top">the Acid2 test</a> correctly. (In fact, it&#8217;s not rendering the WaSP site correctly either. I assume the same is true on the Mac, but can someone verify?)</p>
+<p>Don&#8217;t forget to send in your bug reports via the <a href="http://webkit.org/quality/reporting.html">WebKit bug reporting form</a> or the browser itself (Help > Report Bugs to Apple).</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2007/06/12/safari-3-public-beta-for-mac-and-windows/feed/</wfw:commentRss>
+		<slash:comments>85</slash:comments>
+		</item>
+		<item>
+		<title>Acid2 and Opera 9 Clarifications: Yes, Opera 9 Passes the Test</title>
+		<link>http://www.webstandards.org/2006/07/20/acid2-and-opera-9-clarifications/</link>
+		<comments>http://www.webstandards.org/2006/07/20/acid2-and-opera-9-clarifications/#comments</comments>
+		<pubDate>Fri, 21 Jul 2006 01:01:12 +0000</pubDate>
+		<dc:creator>mollyeh</dc:creator>
+				<category><![CDATA[Acid2]]></category>
+		<category><![CDATA[Action]]></category>
+		<category><![CDATA[General]]></category>
+
+		<guid isPermaLink="false">http://www.webstandards.org/2006/07/20/acid2-and-opera-9-clarifications/</guid>
+		<description><![CDATA[There's been a bit of confusion over the Acid2 test and Opera 9 results. Ian Hickson has provided WaSP with the following clarifications about the Acid2 test and how things should behave. Hopefully, this insight will serve to clarify why some people are reporting issues in Opera 9 compliance.]]></description>
+			<content:encoded><![CDATA[<p>From Ian:</p>
+<ol>
+<li>The image changes when you scroll: Not a bug. This is part of the<br />
+test&#8217;s checking of fixed positioning.</li>
+<li>The image changes when you resize the window such that the text in the becomes jagged when you zoom in. It should not; just like the text, it should remain smooth.</li>
+<li> The image breaks dramatically if you enable &#8220;Fit to Width&#8221; mode: This is a standards compliance bug, but it is by design. Fit to Width works by ignoring the specs. In this case, however, it shouldn&#8217;t need to change anything, and is therefore IMHO a bug; but it is not something that affects whether the browser complies to the test or not since anything that happens in &#8220;Fit to Width&#8221; mode is done with the understanding that it will probably violate the specs.</li>
+<li>The image breaks dramatically if you enable &#8220;Small Screen&#8221; mode: Same as &#8220;Fit to Width&#8221; mode, but more so.</li>
+<li>The image breaks if you change any of the user rendering preferences (e.g. colours, fonts): Not a bug. If you change the preferences, then you are changing how you want the test to look. Tests should only be tested with all the preferences set to their initial values.</li>
+<li>The eyes go orange if you view the test zoomed in or zoomed out: This is a bug. The image should get bigger as you zoom in, but it should not change colour. Another bug is that the nose becomes jagged when you zoom in. It should not; just like the text, it should remain smooth.</li>
+<li>The nose goes blue if you hover it: Not a bug. This is part of the test.</li>
+<li>The eyes disappear and show red if you disable images then reenable them: This is a bug. The eyes should disappear (and say &#8220;ERROR&#8221;, if I&#8217;m not mistaken) when you disable images, but when you reenable them, they should return to the normal rendering.</li>
+</ol>
+<p>So in conclusion: There are some standards compliance bugs (6 and 8 above), they are both exposed by the more advanced features that Opera has compared to other browsers. There are also a couple of minor UI bugs (2, 3, 4), but they don&#8217;t affect the WaSP&#8217;s mission.</p>
+<p>An additional note from Håkon Lie points out that &#8220;When taking the test, you should use the default settings of the browser you are testing. Changing the zoom level, minimum font<br />
+size, applying a fit-to-width algorithm, or making other changes may alter the rendition of the Acid2 page without this constituting a failure in compliance.&#8221;</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2006/07/20/acid2-and-opera-9-clarifications/feed/</wfw:commentRss>
+		<slash:comments>26</slash:comments>
+		</item>
+		<item>
+		<title>Acid2 and Opera 9 Problems?</title>
+		<link>http://www.webstandards.org/2006/07/13/acid2-and-opera-9-problems/</link>
+		<comments>http://www.webstandards.org/2006/07/13/acid2-and-opera-9-problems/#comments</comments>
+		<pubDate>Thu, 13 Jul 2006 15:59:06 +0000</pubDate>
+		<dc:creator>mollyeh</dc:creator>
+				<category><![CDATA[Acid2]]></category>
+
+		<guid isPermaLink="false">http://www.webstandards.org/2006/07/13/acid2-and-opera-9-problems/</guid>
+		<description><![CDATA[We've received some reports here at WaSP that Opera 9 is not passing <a href="http://webstandards.org/files/acid2/test.html">Acid2</a> under certain unique scenarios. We'd like to hear from you in comments if this is the case.]]></description>
+			<content:encoded><![CDATA[<p>If you&#8217;re running across any problems with the rendering of <a href="http://webstandards.org/files/acid2/test.html">Acid2</a> in Opera 9, please comment below and let us know the following:</p>
+<ul>
+<li>OS and version</li>
+<li>Screen resolution settings</li>
+<li>Does the test resolve on refresh?</li>
+</ul>
+<p>If you can do a screen grab of your results as well, and pop &#8216;em up on a server somewhere and provide the URL, that&#8217;d be great too.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2006/07/13/acid2-and-opera-9-problems/feed/</wfw:commentRss>
+		<slash:comments>61</slash:comments>
+		</item>
+		<item>
+		<title>Acid2 Supported in Opera One Year Later</title>
+		<link>http://www.webstandards.org/2006/03/28/acid2-supported-in-opera-one-year-later/</link>
+		<comments>http://www.webstandards.org/2006/03/28/acid2-supported-in-opera-one-year-later/#comments</comments>
+		<pubDate>Tue, 28 Mar 2006 21:44:47 +0000</pubDate>
+		<dc:creator>mollyeh</dc:creator>
+				<category><![CDATA[Acid2]]></category>
+		<category><![CDATA[Action]]></category>
+		<category><![CDATA[General]]></category>
+
+		<guid isPermaLink="false">http://www.webstandards.org/2006/03/28/acid2-supported-in-opera-one-year-later/</guid>
+		<description><![CDATA[Opera 9 passes Acid2, next step for Opera is mobile, and preliminary mumblings about Acid3 have begun.]]></description>
+			<content:encoded><![CDATA[<p><a href="http://webstandards.org/acid2/">Acid2</a> is a year old now, and recent beta builds of Opera 9 <a href="http://my.opera.com/desktopteam/">now support the test</a>. Håkon Wium Lie, CTO of Opera Software and one of the contributing authors to the Acid2 test, says:</p>
+<blockquote>
+<p>&ldquo;Some people thought Acid2 would be easy for Opera since we were involved in shaping the test. Not so. Acid2 rightfully exposed many bugs in Opera and we have squashed them, one by one.&rdquo;</p>
+</blockquote>
+<p>The next challenge for Opera? &ldquo;Getting that smiley face on phones&rdquo; Lie says. </p>
+<p>There&#8217;s also mumblings regarding an Acid3 test or suite, this would be authored by a collaborative group including representatives from major browser and software developers.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2006/03/28/acid2-supported-in-opera-one-year-later/feed/</wfw:commentRss>
+		<slash:comments>35</slash:comments>
+		</item>
+		<item>
+		<title>Prince 5.1 Passes Acid2</title>
+		<link>http://www.webstandards.org/2005/12/10/prince-51-passes-acid2/</link>
+		<comments>http://www.webstandards.org/2005/12/10/prince-51-passes-acid2/#comments</comments>
+		<pubDate>Sat, 10 Dec 2005 13:26:40 +0000</pubDate>
+		<dc:creator>chrisk</dc:creator>
+				<category><![CDATA[Acid2]]></category>
+		<category><![CDATA[CSS]]></category>
+
+		<guid isPermaLink="false">http://webstandards.kimberlyblessing.com/2005/12/10/prince-51-passes-acid2/</guid>
+		<description><![CDATA[Prince, a program that converts XML documents styled with CSS into PDF files for printing, has passed the Acid2 test. While Prince isn&#8217;t a browser per se &#8212; it&#8217;s a file converter &#8212; it does join Konqueror and Apple&#8217;s Safari as the first CSS &#38; HTML implementations to pass the WaSP&#8217;s Acid2 Test (disclosure: H&#229;kon [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://www.princexml.com/overview/">Prince</a>, a program that converts <abbr title="eXtensible Markup Language">XML</abbr> documents styled with <abbr title="Cascading Style Sheets">CSS</abbr> into <abbr title="Portable Document Format">PDF</abbr> files for printing, has <a href="http://www.princexml.com/samples/acid2/">passed the Acid2 test</a>. While Prince isn&#8217;t a browser per se &#8212; it&#8217;s a file converter &#8212; it does join <a href="http://www.konqueror.org/features/browser.php">Konqueror</a> and Apple&#8217;s Safari as the first CSS &amp; HTML implementations to pass the WaSP&#8217;s <a href="http://webstandards.org/act/acid2/" title="The Acid2 Test home page">Acid2 Test</a> (disclosure: H&#229;kon Wium Lie, one of the authors of the Acid2 Test, is on the board of YesLogic Pty Ltd).</p>
+<p>Congratulations, guys! Nice work.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2005/12/10/prince-51-passes-acid2/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>We love to see you smile</title>
+		<link>http://www.webstandards.org/2005/10/31/we-love-to-see-you-smile/</link>
+		<comments>http://www.webstandards.org/2005/10/31/we-love-to-see-you-smile/#comments</comments>
+		<pubDate>Tue, 01 Nov 2005 03:58:03 +0000</pubDate>
+		<dc:creator>dori</dc:creator>
+				<category><![CDATA[Acid2]]></category>
+		<category><![CDATA[Browsers]]></category>
+
+		<guid isPermaLink="false">http://www.kimberlyblessing.com/wasp/browsers/2005/10/we-love-to-see-you-smile/</guid>
+		<description><![CDATA[Just ten days ago, Dean wrote here about Acid2: there has been no officially released browser that passes the test I&#8217;m thrilled to say that that&#8217;s no longer the case &#8212; we have a winner! With today&#8217;s release of Mac OS X 10.4.3, Apple&#8217;s Safari RSS (version 2.0.2/416.12) is the first (publicly-released, non-beta, non-preview) browser [...]]]></description>
+			<content:encoded><![CDATA[<p>Just ten days ago, Dean wrote here about Acid2:</p>
+<blockquote><p>there has been no officially released browser that passes the test</p>
+</blockquote>
+<p>I&#8217;m thrilled to say that that&#8217;s no longer the case &mdash; we have a winner!</p>
+<p>With today&#8217;s release of <a href="http://docs.info.apple.com/article.html?artnum=301984">Mac OS X 10.4.3</a>, Apple&#8217;s <a href="http://www.apple.com/macosx/features/safari/">Safari RSS</a> (version 2.0.2/416.12) is the first (publicly-released, non-beta, non-preview) browser to successfully pass the <a href="http://www.webstandards.org/act/acid2/">Acid2 test</a>.</p>
+<p>On behalf of the Web Standards Project, congratulations to <a href="http://webkit.opendarwin.org/blog/">everyone who contributed to Safari and WebKit</a>, and thanks for the hard work! We look forward to the day when Safari isn&#8217;t the only browser that can make this claim.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2005/10/31/we-love-to-see-you-smile/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Opera to Use acid2 Beyond the Desktop</title>
+		<link>http://www.webstandards.org/2005/06/18/opera-to-use-acid2-beyond-the-desktop/</link>
+		<comments>http://www.webstandards.org/2005/06/18/opera-to-use-acid2-beyond-the-desktop/#comments</comments>
+		<pubDate>Sat, 18 Jun 2005 19:08:41 +0000</pubDate>
+		<dc:creator>mollyeh</dc:creator>
+				<category><![CDATA[Acid2]]></category>
+		<category><![CDATA[Browsers]]></category>
+
+		<guid isPermaLink="false">http://www.kimberlyblessing.com/wasp/browsers/2005/06/opera-to-use-acid2-beyond-the-desktop/</guid>
+		<description><![CDATA[Opera Software plans to use the acid2 test not only to improve implementation and correct bugs within the desktop browser, but then do so for its mobile browsers, too. Jon S. von Tetzchner, co-founder and CEO of Opera Software, writes: &#8220;When our rendering engine gets it right, you can expect to see the smiley face [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://opera.com/">Opera Software</a> plans to use the <a href="http://webstandards.org/acid2/">acid2 test</a> not only to improve implementation and correct bugs within the desktop browser, but then do so for its mobile browsers, too.</p>
+<p><a href="http://opera.com/company/about/executives/">Jon S. von Tetzchner</a>, co-founder and CEO of Opera Software, writes:</p>
+<blockquote><p>&ldquo;When our rendering engine gets it right, you can expect to see the smiley face on handheld devices and home media terminals as well.&rdquo;</p>
+</blockquote>
+<p>Opera Software&#8217;s advancing influence in the mobile space means a very good future for the implementation of Web standards within mobile phones and related devices.</p>
+<p>For more information on Opera&#8217;s progress with the acid2 test, please see the <a href="http://my.opera.com/forums/showthread.php?s=&amp;threadid=91018)">acid2 progress thread</a> on the My Opera Forums. While Opera isn&#8217;t doing a step-by-step report, they are posting their progress at least once a month along with a PNG image of the acid2 rendering as it looks at that point in their process.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.webstandards.org/2005/06/18/opera-to-use-acid2-beyond-the-desktop/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>
+
+<!-- Dynamic page generated in 0.204 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2017-08-18 12:43:28 -->
