@@ -15,7 +15,7 @@
 <link rel="alternate" type="text/xml" title="RSS .92" href="/feed/rss/index.html" />
 <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="/feed/atom/index.html" />
 <link rel="pingback" href="../../../../wp/xmlrpc.php" />
-<link rel="Shortcut Icon" type="image/ico" href="../../../../files/theme/wasp.ico" />
+<link rel="Shortcut Icon" type="image/ico" href="/files/theme/wasp.ico" />
 <link rel="home" title="Web Standards Project Home" href="../../../../index.html" />
 	<link rel='archives' title='March 2013' href='../../../../2013/03/index.html' />
 	<link rel='archives' title='February 2012' href='../../../../2012/02/index.html' />
@@ -178,7 +178,7 @@
 				<a href="#content-sub" id="stmjrCollapse-content-summary" title="Skip to comment form">Skip to comment form</a>
 			</div>
 
-			<p>For a while now we&#8217;ve had a problem with the <a href="../../../../files/acid2/test.html">Acid 2 Test</a> on the WaSP site. If you&#8217;re unfamiliar with the Acid 2 Test, it is essentially a test for browser vendors to use as a means to gauge their standards compliance. If your browser renders the Acid 2 Test page the same as the <a href="../../../../files/acid2/reference.html">Acid 2 reference rendering</a>, then you know you&#8217;re hitting the mark.</p>
+			<p>For a while now we&#8217;ve had a problem with the <a href="/files/acid2/test.html">Acid 2 Test</a> on the WaSP site. If you&#8217;re unfamiliar with the Acid 2 Test, it is essentially a test for browser vendors to use as a means to gauge their standards compliance. If your browser renders the Acid 2 Test page the same as the <a href="/files/acid2/reference.html">Acid 2 reference rendering</a>, then you know you&#8217;re hitting the mark.</p>
 <p>I&#8217;ll be honest: over the last 10 days, I&#8217;ve learned more about the Acid 2 Test than I ever wanted to know. If you want to do the same, you might start with <a href="/action/acid2/guide/index.html">Acid 2: The Guided Tour</a>.</p>
 <p>The short version is that part of Acid 2 is a test for the way a browser handles an <code>&lt;object&gt;</code> element when the data attribute references a URL that returns an HTTP status code of 404. A number of caching rules, mod_rewrite rules and redirects all collided to create a problem with our 404. The cached version of our 404 page was returning an HTTP status of 200. As you might expect, this basically makes the test useless.</p>
 <p>Acid 2 was broken. Now it is not. Carry on.</p>

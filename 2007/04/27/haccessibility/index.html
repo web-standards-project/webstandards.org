@@ -15,7 +15,7 @@
 <link rel="alternate" type="text/xml" title="RSS .92" href="/feed/rss/index.html" />
 <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="/feed/atom/index.html" />
 <link rel="pingback" href="../../../../wp/xmlrpc.php" />
-<link rel="Shortcut Icon" type="image/ico" href="../../../../files/theme/wasp.ico" />
+<link rel="Shortcut Icon" type="image/ico" href="/files/theme/wasp.ico" />
 <link rel="home" title="Web Standards Project Home" href="../../../../index.html" />
 	<link rel='archives' title='March 2013' href='../../../../2013/03/index.html' />
 	<link rel='archives' title='February 2012' href='../../../../2012/02/index.html' />
@@ -196,7 +196,7 @@
 &lt;/abbr&gt;</code></pre>
 <p>As you may have guessed from the previous examples, screen readers expanding the abbreviation will try to read the title element. JAWS helpfully attempts to render numeric strings into human-readable numbers, so &#8220;1234&#8221; is spoken &#8220;one-thousand two-hundred thirty-four&#8221; instead of &#8220;one two three four.&#8221; Given a title value of &#8220;20070312T1700-06&#8221;, JAWS and Window Eyes both try to read an ISO date string never intended to assault human ears:</p>
 <blockquote>
-<p>Twenty million seventy-thousand three-hundred twelve tee seventeen-hundred dash zero six. (JAWS 8 on IE7: <a href="../../../../files/atf_microformats/jaws.mp3">MP3</a>, <a href="../../../../files/atf_microformats/jaws.ogg">Ogg</a>)</p>
+<p>Twenty million seventy-thousand three-hundred twelve tee seventeen-hundred dash zero six. (JAWS 8 on IE7: <a href="/files/atf_microformats/jaws.mp3">MP3</a>, <a href="/files/atf_microformats/jaws.ogg">Ogg</a>)</p>
 </blockquote>
 <p>Though it may sound silly, the screen readers&#8217; behavior is implemented according to the HTML 4 specification.</p>
 <blockquote cite="http://www.w3.org/TR/html4/struct/text.html#edef-ABBR"><p>The content of the ABBR and ACRONYM elements specifies the abbreviated expression itself, as it would normally appear in running text. The title attribute of these elements may be used to provide the full or expanded form of the expression. (<a href="http://www.w3.org/TR/html4/struct/text.html#edef-ABBR">HTML 4, ABBR</a>)</p>
@@ -225,7 +225,7 @@
 &lt;/span&gt;</code></pre>
 <p>The markup is still fairly simple, it retains its semantic purity, and it&#8217;s accessible. But&#8230;</p>
 <h4>What&#8217;s the Catch?</h4>
-<p>The catch? Okay. Even when the browsers are instructed to hide the <code>&lt;object&gt;</code>, there are still some minor display bugs in <a href="../../../../files/atf_microformats/uF-IE7objectData.gif">Internet Explorer (screen shot)</a> and <a href="../../../../files/atf_microformats/webkit_bug.gif">Safari (screen shot)</a>. At the time of this writing, Internet Explorer (version 7) doesn&#8217;t honour the space characters in the text around the object, and Safari (WebKit nightly) adds extra line breaks.</p>
+<p>The catch? Okay. Even when the browsers are instructed to hide the <code>&lt;object&gt;</code>, there are still some minor display bugs in <a href="/files/atf_microformats/uF-IE7objectData.gif">Internet Explorer (screen shot)</a> and <a href="/files/atf_microformats/webkit_bug.gif">Safari (screen shot)</a>. At the time of this writing, Internet Explorer (version 7) doesn&#8217;t honour the space characters in the text around the object, and Safari (WebKit nightly) adds extra line breaks.</p>
 <p>Many developers could overlook these flaws. Most designers would not. It&#8217;s an easy CSS fix: wrap the object in one extra <code>&lt;span&gt;</code> element and hide it instead.</p>
 <h4>The Hacked (Ugly) Object Version</h4>
 <pre><code>&lt;span class="dtstart"&gt;
@@ -248,7 +248,7 @@
  &lt;span class="value" title="20070312T1700-06"&gt;&lt;/span&gt;
 &lt;/span&gt;</code></pre>
 <p>Like the abbr-design-pattern, both of the previous examples use the title attribute to store the ISO data. The second version just avoids GUI tool tips. With custom verbosity settings, it is possible that a screen reader user may hear the text spoken in either example, but that circumstance is much less likely than a fully-expanded ABBR.</p>
-<p>We are not recommending the abolishment of the abbr-design-pattern, just its misuse. Again, <strong>we encourage the Microformats group to consider the problem, <em>whether or not</em> they accept any of the proposed solutions.</strong> All of the examples listed are more accessible than the abbr-design-pattern. Check the <a href="../../../../files/atf_microformats/uf.html">final examples</a> for details.</p>
+<p>We are not recommending the abolishment of the abbr-design-pattern, just its misuse. Again, <strong>we encourage the Microformats group to consider the problem, <em>whether or not</em> they accept any of the proposed solutions.</strong> All of the examples listed are more accessible than the abbr-design-pattern. Check the <a href="/files/atf_microformats/uf.html">final examples</a> for details.</p>
 <p>Like we said, we like Microformats. Their simplicity and usefulness means that they&#8217;re on the verge of widespread acceptance. We urge the Microformats community to re-evaluate the accessibility of the specification now, before the technology goes mainstream and it&#8217;s too late.</p>
 <p><em>This article was co-authored by <a href="../../../../about/members/blawson/index.html">Bruce Lawson</a> and <a href="../../../../about/members/jcraig/index.html">James Craig</a>, and incorporates feedback from other members of the <a href="/action/atf/index.html">Accessibility Task Force</a>.</em></p>
 <p>(Added 13 February 2008) <a href="http://www.isolani.co.uk/blog/access/ConfiguringLinksInScreenReaders">&#8220;Configuring links in Screen readers&#8221; by Mike Davis</a> looks at the screenreader accessiiblity of the <a href="http://microformats.org/wiki/include-pattern">Microformat Include Pattern</a>. (Bruce)</p>
